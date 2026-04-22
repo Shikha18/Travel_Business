@@ -1,0 +1,566 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ──────────────────────────────────────────────────────────────
+   NAMASTE JOURNEYS — "Dal Lake & Jodhpur" theme
+   Aqua, indigo, khadi. Inspired by Kashmir's Dal Lake, the
+   painted blue houses of Jodhpur, and Himalayan glacial rivers.
+   ────────────────────────────────────────────────────────────── */
+
+@layer base {
+  :root {
+    /* Warm khadi background + warm espresso foreground */
+    --foreground: 26 20 14; /* ink-900, warm espresso */
+    --background: 253 249 240; /* cream-50, khadi */
+    --brand-warm: 15 154 177; /* saffron-500 — Dal Lake aqua (primary) */
+    --brand-plum: 44 98 178; /* teal-500 — Jodhpur indigo */
+    --brand-clay: 179 63 30; /* terracotta-500 — warm clay */
+    --brand-rose: 201 62 92; /* rose-500 */
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    color: rgb(var(--foreground));
+    background: rgb(var(--background));
+    font-feature-settings: "cv11", "ss01";
+    /* Subtle Dal Lake haze — barely visible, adds cool depth */
+    background-image:
+      radial-gradient(
+        circle at 15% 5%,
+        rgba(15, 154, 177, 0.05) 0%,
+        transparent 40%
+      ),
+      radial-gradient(
+        circle at 90% 90%,
+        rgba(44, 98, 178, 0.045) 0%,
+        transparent 45%
+      );
+    background-attachment: fixed;
+  }
+  h1, h2, h3, h4 {
+    font-family: "Fraunces", ui-serif, Georgia, serif;
+    letter-spacing: -0.015em;
+  }
+  /* Selection: Dal Lake water on khadi */
+  ::selection {
+    background: rgba(15, 154, 177, 0.28);
+    color: rgb(26, 20, 14);
+  }
+}
+
+@layer components {
+  .container-narrow {
+    @apply max-w-6xl mx-auto px-5 sm:px-8;
+  }
+  .container-wide {
+    @apply max-w-7xl mx-auto px-5 sm:px-8;
+  }
+
+  /* ── BUTTONS ─────────────────────────────────────────────── */
+
+  /* Primary — aqua-to-indigo gradient with aqua glow on hover */
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 rounded-full
+           bg-gradient-to-r from-saffron-500 to-teal-500
+           px-6 py-3 text-sm font-semibold text-white shadow-soft
+           transition-all duration-300
+           hover:from-saffron-600 hover:to-teal-600
+           hover:-translate-y-0.5
+           focus:outline-none focus:ring-2 focus:ring-saffron-400 focus:ring-offset-2;
+  }
+  .btn-primary:hover {
+    @apply shadow-glow;
+  }
+
+  /* Secondary — soft card with subtle aqua border */
+  .btn-secondary {
+    @apply inline-flex items-center justify-center gap-2 rounded-full
+           border border-saffron-200 bg-white px-6 py-3 text-sm font-semibold
+           text-ink-900 shadow-soft transition-all duration-300
+           hover:bg-cream-100 hover:border-saffron-300
+           hover:-translate-y-0.5
+           focus:outline-none focus:ring-2 focus:ring-saffron-400 focus:ring-offset-2;
+  }
+
+  .btn-ghost {
+    @apply inline-flex items-center justify-center gap-2 rounded-full px-4 py-2 text-sm font-semibold text-ink-900 transition hover:bg-cream-100;
+  }
+
+  /* Plum accent — use for premium / Mughal-royal moments */
+  .btn-plum {
+    @apply inline-flex items-center justify-center gap-2 rounded-full
+           bg-teal-500 px-6 py-3 text-sm font-semibold text-white shadow-soft
+           transition-all duration-300
+           hover:bg-teal-600 hover:-translate-y-0.5
+           focus:outline-none focus:ring-2 focus:ring-teal-400 focus:ring-offset-2;
+  }
+  .btn-plum:hover {
+    @apply shadow-plum;
+  }
+
+  /* ── CHIPS / TAGS ─────────────────────────────────────────── */
+
+  /* Default chip — warm cream */
+  .chip {
+    @apply inline-flex items-center gap-1.5 rounded-full bg-cream-100 px-3 py-1 text-xs font-medium text-ink-800;
+  }
+
+  .chip-saffron {
+    @apply inline-flex items-center gap-1.5 rounded-full bg-saffron-50 px-3 py-1 text-xs font-semibold text-saffron-700 ring-1 ring-saffron-200;
+  }
+
+  .chip-clay {
+    @apply inline-flex items-center gap-1.5 rounded-full bg-terracotta-50 px-3 py-1 text-xs font-semibold text-terracotta-700 ring-1 ring-terracotta-200;
+  }
+
+  .chip-plum {
+    @apply inline-flex items-center gap-1.5 rounded-full bg-teal-50 px-3 py-1 text-xs font-semibold text-teal-700 ring-1 ring-teal-200;
+  }
+
+  .chip-rose {
+    @apply inline-flex items-center gap-1.5 rounded-full bg-rose-50 px-3 py-1 text-xs font-semibold text-rose-700 ring-1 ring-rose-200;
+  }
+
+  /* ── CARDS ────────────────────────────────────────────────── */
+
+  .card {
+    @apply rounded-3xl bg-white shadow-card ring-1 ring-teal-900/5 overflow-hidden;
+  }
+
+  /* Elevated card — for the hero/featured tours */
+  .card-elevated {
+    @apply rounded-3xl bg-white shadow-card ring-1 ring-saffron-200/60 overflow-hidden transition-all duration-500 hover:-translate-y-1;
+  }
+  .card-elevated:hover {
+    @apply shadow-glow;
+  }
+
+  /* ── DECORATIVE DIVIDER ───────────────────────────────────── */
+
+  /* Ornamental SVG divider between sections. Usage:
+     <div class="divider-ornate" aria-hidden="true" /> */
+  .divider-ornate {
+    @apply mx-auto h-5 w-24 bg-no-repeat bg-center bg-contain opacity-60;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 96 20'><path fill='none' stroke='%232c62b2' stroke-width='1.5' stroke-linecap='round' d='M4 10 H36 M60 10 H92'/><circle cx='48' cy='10' r='4' fill='none' stroke='%230f9ab1' stroke-width='1.5'/><circle cx='48' cy='10' r='1.2' fill='%230f9ab1'/><circle cx='40' cy='10' r='1.2' fill='%232c62b2'/><circle cx='56' cy='10' r='1.2' fill='%232c62b2'/></svg>");
+  }
+
+  /* Thin underline flourish for headings — an aqua stroke */
+  .heading-accent::after {
+    content: "";
+    display: block;
+    width: 3.5rem;
+    height: 3px;
+    margin-top: 0.6rem;
+    border-radius: 9999px;
+    background: linear-gradient(90deg, #0f9ab1 0%, #2c62b2 100%);
+  }
+}
+
+/* Subtle on-scroll motion for interactive cards (respects reduced motion) */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* ──────────────────────────────────────────────────────────────
+   INTRO MAP OVERLAY — landing animation (space → globe → India)
+   ────────────────────────────────────────────────────────────── */
+
+/* Pre-hydration hide: an inline <script> in app/layout.tsx adds this
+   class on `<html>` synchronously on every page load if the intro has
+   already played this session OR if prefers-reduced-motion is set. The
+   overlay is rendered by default, so this class is what prevents a
+   flash of intro on subsequent navigations. */
+html.nj-no-intro .intro-overlay {
+  display: none !important;
+}
+
+.intro-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 120;
+  /* Deep space background — inky-blue fading outward */
+  background:
+    radial-gradient(
+      ellipse at 50% 40%,
+      #0b1740 0%,
+      #050816 65%,
+      #010208 100%
+    );
+  opacity: 1;
+  transition: opacity 0.85s ease-in-out;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.intro-overlay--fading {
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* ── Starfield ──────────────────────────────────────────────── */
+/* A handful of dots scattered across the space background, painted
+   with radial-gradients so we don't need an image asset. */
+.intro-overlay__stars {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background-image:
+    radial-gradient(1.5px 1.5px at 20% 15%, #ffffff, transparent 50%),
+    radial-gradient(1px 1px at 40% 35%, rgba(255,255,255,0.85), transparent 50%),
+    radial-gradient(1.5px 1.5px at 65% 25%, #ffffff, transparent 50%),
+    radial-gradient(1px 1px at 80% 60%, rgba(255,255,255,0.8), transparent 50%),
+    radial-gradient(1px 1px at 12% 70%, rgba(255,255,255,0.7), transparent 50%),
+    radial-gradient(1.5px 1.5px at 90% 85%, #ffffff, transparent 50%),
+    radial-gradient(1px 1px at 30% 90%, rgba(255,255,255,0.75), transparent 50%),
+    radial-gradient(1px 1px at 55% 55%, rgba(255,255,255,0.65), transparent 50%),
+    radial-gradient(1px 1px at 72% 42%, rgba(255,255,255,0.7), transparent 50%),
+    radial-gradient(1.2px 1.2px at 5% 45%, rgba(255,255,255,0.8), transparent 50%),
+    radial-gradient(1.5px 1.5px at 95% 12%, #ffffff, transparent 50%),
+    radial-gradient(1px 1px at 48% 78%, rgba(255,255,255,0.6), transparent 50%);
+  animation: introTwinkle 4.5s ease-in-out infinite alternate;
+  opacity: 0.85;
+  /* Stars fade out as we "enter the atmosphere" (fly phase) */
+  transition: opacity 1.6s ease-out;
+}
+
+.intro-overlay--descent .intro-overlay__stars,
+.intro-overlay--india .intro-overlay__stars,
+.intro-overlay--fading .intro-overlay__stars {
+  opacity: 0.25;
+}
+
+/* ── Stage (contains globe + india reveal) ──────────────────── */
+.intro-stage {
+  position: relative;
+  width: 320px;
+  height: 320px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: scale(1);
+  transition:
+    transform 2.5s cubic-bezier(0.55, 0, 0.25, 1);
+  animation: introStageIn 1s 0.1s ease-out both;
+}
+
+.intro-overlay--descent .intro-stage {
+  transform: scale(3.2);
+}
+
+.intro-overlay--india .intro-stage,
+.intro-overlay--fading .intro-stage {
+  transform: scale(3.2);
+}
+
+/* ── Globe halo (outer atmospheric glow) ───────────────────── */
+.intro-globe-halo {
+  position: absolute;
+  inset: -22%;
+  border-radius: 50%;
+  background:
+    radial-gradient(
+      circle,
+      rgba(120, 200, 220, 0.32) 42%,
+      rgba(60, 140, 200, 0.18) 56%,
+      transparent 72%
+    );
+  filter: blur(10px);
+  pointer-events: none;
+  transition: opacity 1s ease-out;
+}
+
+.intro-overlay--india .intro-globe-halo,
+.intro-overlay--fading .intro-globe-halo {
+  opacity: 0;
+}
+
+/* ── The Globe — pure CSS + inline SVG continents ────────── */
+.intro-globe {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow:
+    0 0 0 2px rgba(120, 200, 220, 0.22),
+    0 0 60px rgba(80, 160, 220, 0.3),
+    0 0 140px rgba(15, 154, 177, 0.2),
+    inset 0 -30px 60px rgba(0, 0, 0, 0.55),
+    inset 25px 20px 45px rgba(255, 255, 255, 0.06);
+  transition: opacity 0.9s ease-out;
+}
+
+.intro-overlay--india .intro-globe,
+.intro-overlay--fading .intro-globe {
+  opacity: 0;
+}
+
+.intro-globe__ocean {
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  background:
+    radial-gradient(
+      circle at 30% 28%,
+      #2a75c3 0%,
+      #165097 35%,
+      #0a2a5a 72%,
+      #061225 100%
+    );
+}
+
+.intro-globe__continents {
+  position: absolute;
+  inset: 0;
+  width: 200%;
+  height: 100%;
+  display: flex;
+  animation: introSpin 22s linear infinite;
+}
+
+.intro-overlay--descent .intro-globe__continents {
+  animation-duration: 8s;
+}
+
+.intro-globe__continents-svg {
+  width: 50%;
+  height: 100%;
+  flex-shrink: 0;
+}
+
+.intro-globe__clouds {
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  background:
+    radial-gradient(ellipse 30% 12% at 20% 25%, rgba(255, 255, 255, 0.35), transparent 65%),
+    radial-gradient(ellipse 25% 10% at 65% 40%, rgba(255, 255, 255, 0.28), transparent 65%),
+    radial-gradient(ellipse 35% 14% at 45% 70%, rgba(255, 255, 255, 0.22), transparent 65%),
+    radial-gradient(ellipse 22% 9% at 80% 75%, rgba(255, 255, 255, 0.25), transparent 65%);
+  mix-blend-mode: screen;
+  animation: introClouds 30s linear infinite;
+  opacity: 0.8;
+}
+
+.intro-overlay--descent .intro-globe__clouds {
+  animation-duration: 12s;
+  opacity: 1;
+}
+
+/* Glossy highlight across the top of the globe, like light hitting
+   a curved surface. */
+.intro-globe__gloss {
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  pointer-events: none;
+  background:
+    radial-gradient(
+      ellipse 120% 90% at 30% 10%,
+      rgba(255, 255, 255, 0.35) 0%,
+      rgba(255, 255, 255, 0.08) 32%,
+      transparent 55%
+    ),
+    radial-gradient(
+      ellipse at center,
+      transparent 55%,
+      rgba(0, 0, 0, 0.45) 100%
+    );
+}
+
+/* ── India reveal — fades in at phase="india" ──────────────── */
+.intro-india {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transform: scale(0.7);
+  transition:
+    opacity 0.9s ease-out,
+    transform 1s cubic-bezier(0.3, 0, 0.2, 1);
+  pointer-events: none;
+}
+
+.intro-overlay--india .intro-india,
+.intro-overlay--fading .intro-india {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.intro-india__svg {
+  width: 60%;
+  height: auto;
+  filter:
+    drop-shadow(0 10px 40px rgba(217, 104, 27, 0.45))
+    drop-shadow(0 0 30px rgba(255, 200, 140, 0.35));
+}
+
+.intro-india__pin {
+  transform-origin: 186px 120px;
+  animation: introPinPulse 1.6s ease-out infinite;
+}
+
+.intro-overlay__copy {
+  position: absolute;
+  left: 50%;
+  bottom: 10%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.3rem;
+  padding: 1rem 2rem;
+  border-radius: 999px;
+  background: rgba(253, 249, 240, 0.14);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 10px 30px -12px rgba(0, 0, 0, 0.35);
+  max-width: calc(100% - 2rem);
+  text-align: center;
+  animation: introCopyIn 1.2s 0.2s ease-out both;
+}
+
+.intro-overlay__eyebrow {
+  font-size: 0.72rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.82);
+  transition: color 0.8s ease;
+}
+
+.intro-overlay__title {
+  font-family: "Fraunces", ui-serif, Georgia, serif;
+  font-size: clamp(2rem, 5vw, 3.2rem);
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  line-height: 1;
+  background: linear-gradient(90deg, #8ce3ef 0%, #b5cdff 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  transition: background 1s ease;
+}
+
+.intro-overlay--india .intro-overlay__title,
+.intro-overlay--fading .intro-overlay__title {
+  background: linear-gradient(90deg, #f4a55a 0%, #d97833 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.intro-overlay__sub {
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.78);
+}
+
+.intro-overlay__skip {
+  position: absolute;
+  top: 1.25rem;
+  right: 1.25rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.5rem 0.9rem;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: #ffffff;
+  transition: transform 0.2s ease, background 0.2s ease;
+  z-index: 5;
+}
+
+.intro-overlay__skip:hover {
+  transform: translateY(-1px);
+  background: rgba(255, 255, 255, 0.22);
+}
+
+/* Pulse animation applied to the inline-SVG pin group in <IndiaSVG /> */
+@keyframes introPinPulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.12);
+  }
+}
+
+@keyframes introCopyIn {
+  from {
+    opacity: 0;
+    transform: translate(-50%, 12px);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, 0);
+  }
+}
+
+@keyframes introTwinkle {
+  from {
+    opacity: 0.75;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes introStageIn {
+  from {
+    transform: scale(0.55);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* Seamless continent-strip rotation — the strip is 200% wide containing
+   two copies of the world, translating -50% lands on an identical frame. */
+@keyframes introSpin {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes introClouds {
+  from {
+    background-position:
+      0% 25%,
+      0% 40%,
+      0% 70%,
+      0% 75%;
+  }
+  to {
+    background-position:
+      -100% 25%,
+      -100% 40%,
+      -100% 70%,
+      -100% 75%;
+  }
+}
+
+/* Reduced motion: never show the overlay at all. The component already
+   checks this, but we belt-and-brace here so SSR flash is avoided. */
+@media (prefers-reduced-motion: reduce) {
+  .intro-overlay {
+    display: none !important;
+  }
+}
