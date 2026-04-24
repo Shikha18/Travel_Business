@@ -127,6 +127,7 @@ export default function AboutPage({
                       fill
                       sizes="(max-width: 768px) 100vw, 40vw"
                       className="object-cover transition-transform duration-[1200ms] group-hover:scale-110 group-focus:scale-110"
+                      style={{ objectPosition: m.photoPosition ?? "center center" }}
                     />
                   ) : (
                     <div

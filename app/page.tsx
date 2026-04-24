@@ -443,7 +443,7 @@ export default function Home({
           <div className="absolute inset-0 bg-gradient-to-br from-ink-900/80 via-ink-900/50 to-saffron-900/60" />
         </div>
 
-        <div className="relative container-wide py-24 md:py-32 text-white">
+        <div className="relative container-wide py-14 md:py-32 text-white">
           {/* Tagline wrapper is wider so the two-line hero headline can
               breathe. The subtitle underneath is capped narrower so it
               still reads like a paragraph. */}
@@ -495,7 +495,7 @@ export default function Home({
       </section>
 
       {/* FEATURED TOURS */}
-      <section className="container-wide py-20">
+      <section className="container-wide py-10 md:py-20">
         <div className="flex flex-col items-start justify-between gap-4 md:flex-row md:items-end">
           <div>
             <span className="chip">{t("home.featured.chip")}</span>
@@ -517,7 +517,7 @@ export default function Home({
       </section>
 
       {/* TRUST */}
-      <section className="bg-cream-100 py-20">
+      <section className="bg-cream-100 py-10 md:py-20">
         <div className="container-wide">
           <div className="w-full">
             <span className="chip">{t("home.trust.chip")}</span>
@@ -544,7 +544,7 @@ export default function Home({
       </section>
 
       {/* TESTIMONIALS */}
-      <section className="container-wide py-20">
+      <section className="container-wide py-10 md:py-20">
         <div className="max-w-2xl">
           <span className="chip">{t("home.testimonials.chip")}</span>
           <h2 className="mt-3 font-display text-3xl font-semibold md:text-4xl">
@@ -580,7 +580,7 @@ export default function Home({
       </section>
 
       {/* FAQ */}
-      <section className="bg-cream-100 py-20">
+      <section className="bg-cream-100 py-10 md:py-20">
         <div className="container-narrow">
           <div className="max-w-2xl">
             <span className="chip">{t("home.faq.chip")}</span>
@@ -630,7 +630,7 @@ export default function Home({
       </section>
 
       {/* FINAL CTA */}
-      <section className="container-wide py-20">
+      <section className="container-wide py-10 md:py-20">
         <div className="relative overflow-hidden rounded-3xl bg-warm-gradient px-8 py-14 text-center text-white md:py-20">
           <h2 className="font-display text-3xl font-semibold md:text-5xl">
             {t("home.finalCTA.title")}

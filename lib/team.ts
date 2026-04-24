@@ -19,6 +19,8 @@ export type TeamMember = {
   firstName: string;
   flag: string;
   photo: string;
+  /** CSS object-position for the photo crop (e.g. "center top", "50% 20%") */
+  photoPosition?: string;
   /** Accent color used in ring / chip / quote block */
   accent: "saffron" | "teal";
   /** Initials-placeholder gradient (Tailwind class) */
@@ -39,6 +41,7 @@ export const team: TeamMember[] = [
     firstName: siteConfig.founder.firstName,
     flag: siteConfig.founder.flag,
     photo: siteConfig.founder.photo,
+    photoPosition: "center 20%",
     accent: "saffron",
     gradient: "from-saffron-300 via-saffron-500 to-terracotta-600",
     instagram: siteConfig.founder.instagram,
@@ -54,6 +57,7 @@ export const team: TeamMember[] = [
     firstName: siteConfig.partner.firstName,
     flag: siteConfig.partner.flag,
     photo: siteConfig.partner.photo,
+    photoPosition: "center 25%",
     accent: "teal",
     gradient: "from-teal-300 via-teal-500 to-ink-700",
     instagram: siteConfig.partner.instagram,

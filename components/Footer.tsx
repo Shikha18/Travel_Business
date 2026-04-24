@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import LocaleLink from "./LocaleLink";
 import { siteConfig } from "@/lib/site-config";
 import { useTranslator } from "@/lib/use-i18n";
@@ -9,17 +8,16 @@ export default function Footer() {
   const t = useTranslator();
 
   return (
-    <footer className="mt-24 border-t border-ink-900/5 bg-ink-900 text-cream-50">
-      <div className="container-wide grid gap-10 py-14 md:grid-cols-4">
+    <footer className="border-t border-ink-900/5 bg-ink-900 text-cream-50">
+      <div className="container-wide grid gap-10 py-12 md:grid-cols-4">
         <div className="md:col-span-2">
-          <div className="flex items-center">
-            <Image
-              src="/images/gotrustelle.png"
-              alt={siteConfig.name}
-              width={180}
-              height={64}
-              className="h-16 w-auto object-contain brightness-0 invert"
-            />
+          <div className="flex flex-col gap-1">
+            <span className="font-display text-3xl font-bold tracking-tight bg-gradient-to-r from-saffron-300 via-cream-50 to-saffron-200 bg-clip-text text-transparent">
+              {siteConfig.name}
+            </span>
+            <span className="text-[10px] uppercase tracking-[0.2em] text-cream-50/50">
+              Travel Experiences in India · by a woman, for you
+            </span>
           </div>
           <p className="mt-4 max-w-md text-sm text-cream-50/70">
             {siteConfig.description}
