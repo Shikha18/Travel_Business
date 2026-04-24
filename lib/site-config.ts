@@ -6,13 +6,13 @@
 
 export const siteConfig = {
   // Brand
-  name: "Namaste Journeys",
-  tagline: "I don't want to show India. I want to explain India.",
+  name: "GoTrustelle",
+  tagline: "Travel Experiences in India · by a woman, for you",
   description:
-    "Small-group tours across India designed for international travelers. Immersive itineraries, trusted local guides, and seamless end-to-end planning.",
+    "Curated small-group tours across India — Experience. Trust. Connection. Female-founded, built for international travelers who want depth, not a checklist.",
 
   // URL (update after deploying to Vercel — used for SEO/Open Graph)
-  url: "https://namaste-journeys.vercel.app",
+  url: "https://gotrustelle.vercel.app",
 
   // Contact
   email: "mangal.shikha1997@gmail.com",
@@ -20,7 +20,7 @@ export const siteConfig = {
   phoneE164: "+919589739723", // no spaces — used in tel: links
   whatsappNumber: "919589739723", // no '+' or spaces — used in wa.me links
   whatsappDefaultMessage:
-    "Hi! I'd love to know more about your group tours to India.",
+    "Hi! I'd love to know more about GoTrustelle group tours to India.",
 
   // Location
   address: "New Delhi, India",
@@ -57,7 +57,7 @@ export const siteConfig = {
     linkedin: "",
     email: "",
     whatsapp: "",
-    photo: "/images/melissa.jpg", // file lives at /public/images/melissa.jpg
+    photo: "/images/melissa.jpeg", // file lives at /public/images/melissa.jpeg
   },
 
   // Trust signals shown in the footer / about page

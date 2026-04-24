@@ -7,7 +7,7 @@ import { getLocale, getTranslator } from "@/lib/i18n";
 export const metadata: Metadata = {
   title: "All Tours — small-group departures across India",
   description:
-    "Browse every small-group tour by Namaste Journeys. Spiti Valley, Kashmir, Golden Triangle and more — all-inclusive itineraries built for international travelers.",
+    "Browse every small-group tour by GoTrustelle. Spiti Valley, Kashmir, Golden Triangle and more — all-inclusive itineraries built for international travelers.",
 };
 
 export default function ToursPage({

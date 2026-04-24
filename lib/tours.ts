@@ -168,7 +168,7 @@ export const tours: Tour[] = [
     title: "Paradise of Kashmir",
     subtitle: "Shikara rides, Mughal gardens, and the Meadow of Gold",
     heroImage:
-      "https://images.unsplash.com/photo-1609766856051-c84f45c0b3d0?auto=format&fit=crop&w=1600&q=80",
+      "https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?auto=format&fit=crop&w=1600&q=80",
     galleryImages: [
       "https://images.unsplash.com/photo-1609766856051-c84f45c0b3d0?auto=format&fit=crop&w=1200&q=80",
       "https://images.unsplash.com/photo-1566576912321-d58ddd7a6088?auto=format&fit=crop&w=1200&q=80",

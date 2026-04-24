@@ -134,7 +134,7 @@ export const translations = {
     "about.chip": "Our story",
     "about.title": "A small team obsessed with getting every detail right.",
     "about.p1":
-      "Namaste Journeys is a young Indian travel company, founded in 2026 by a team that grew up traveling and hosting guests across India. We started with one observation: most group tours to India feel like factories. You're rushed through monuments, pushed into emporiums, and fed the same buffet. We thought travelers deserved better.",
+      "GoTrustelle is a young Indian travel company, founded in 2026 by a team that grew up traveling and hosting guests across India. We started with one observation: most group tours to India feel like factories. You're rushed through monuments, pushed into emporiums, and fed the same buffet. We thought travelers deserved better.",
     "about.p2":
       "So we built the kind of tours we'd want our friends from abroad to take — small groups, long evenings, real meals with real people, and the freedom to slow down. Every departure is personally overseen by a founder or senior team member.",
     "about.principles.chip": "What we believe",
@@ -171,11 +171,11 @@ export const translations = {
     "about.founder.chip2": "🏔️ Works from the mountains",
     "about.founder.chip3": "🧭 Led trips across North India",
     "about.founder.story1":
-      "Hi — I'm Shikha. Namaste Journeys is my baby, and honestly, the project I've wanted to build for years. I grew up in a small town in central India (Madhya Pradesh), in a family that never travelled much but always made space for guests. That's where I first learned that looking after someone on the road is really just an extension of looking after someone at home.",
+      "Hi — I'm Shikha. GoTrustelle is my baby, and honestly, the project I've wanted to build for years. I grew up in a small town in central India (Madhya Pradesh), in a family that never travelled much but always made space for guests. That's where I first learned that looking after someone on the road is really just an extension of looking after someone at home.",
     "about.founder.story2":
       "By profession I'm a software developer — I spent years building products at fast-moving Indian tech companies. By passion, I'm a backpacker. Over the last several years I've travelled solo across every major region of North India — from the cafés of Dharamkot and the blue lanes of Jodhpur, to the frozen rivers of Ladakh, the silent monasteries of Spiti, the houseboats of Srinagar, and the old havelis of Rajasthan. I speak Hindi and English fluently, work from the mountains for months at a stretch, and genuinely believe the best way to see this country is slowly.",
     "about.founder.story3":
-      "A few years ago I started hosting small group trips for friends-of-friends visiting India. Guests kept telling me the same thing — \"it felt more like staying with a good host than booking a tour.\" That single line is the whole reason Namaste Journeys exists. I wanted to make that feeling available to people who don't happen to know me personally.",
+      "A few years ago I started hosting small group trips for friends-of-friends visiting India. Guests kept telling me the same thing — \"it felt more like staying with a good host than booking a tour.\" That single line is the whole reason GoTrustelle exists. I wanted to make that feeling available to people who don't happen to know me personally.",
     "about.founder.story4":
       "I'm the person you'll actually meet on the ground. I plan every itinerary personally, I travel with each group from arrival to departure, and I'm the one you'll call at 10pm if your luggage got lost or you want to try the best paratha in the neighbourhood. I pick the homestays, I vet the drivers, I cook with the cooks. No sub-contracting, no handing you off.",
     "about.founder.story5":
@@ -198,7 +198,7 @@ export const translations = {
     "about.partner.story3":
       "Professionally, I've worked in the travel industry in Germany for years, so I know exactly how European travellers think about booking — what questions you'll ask, what guarantees you need in writing, how you want your itinerary structured before you commit. Personally, India is part of my family — my daughter has Indian roots, and her grandmother's house is where I learned most of what I know about everyday Indian life.",
     "about.partner.story4":
-      "My job at Namaste Journeys is to take care of everything on the European side. I answer questions in German and English, help you prepare properly (visa, packing, food sensitivities, what to expect in the first 48 hours), and make sure there's nothing left to guess about before you board your flight. Shikha handles you on the ground. I handle you before you get there.",
+      "My job at GoTrustelle is to take care of everything on the European side. I answer questions in German and English, help you prepare properly (visa, packing, food sensitivities, what to expect in the first 48 hours), and make sure there's nothing left to guess about before you board your flight. Shikha handles you on the ground. I handle you before you get there.",
     "about.partner.story5":
       "If you've been curious about India but didn't know where to start, or you've tried bigger packaged tours and felt pushed through — that's exactly the gap I wanted us to fill.",
     "about.partner.signature": "— Melissa",
@@ -406,7 +406,7 @@ export const translations = {
     "about.chip": "Unsere Geschichte",
     "about.title": "Ein kleines Team, das jedes Detail ernst nimmt.",
     "about.p1":
-      "Namaste Journeys ist ein junges indisches Reiseunternehmen, gegründet 2026 von einem Team, das selbst in Indien aufgewachsen ist und dort Gäste empfangen hat. Wir haben eine klare Beobachtung gemacht: Die meisten Gruppenreisen nach Indien fühlen sich wie Fabriken an. Man wird durch Monumente gehetzt, in Souvenirläden gedrängt und mit dem immer gleichen Buffet gefüttert. Wir finden, Reisende verdienen mehr.",
+      "GoTrustelle ist ein junges indisches Reiseunternehmen, gegründet 2026 von einem Team, das selbst in Indien aufgewachsen ist und dort Gäste empfangen hat. Wir haben eine klare Beobachtung gemacht: Die meisten Gruppenreisen nach Indien fühlen sich wie Fabriken an. Man wird durch Monumente gehetzt, in Souvenirläden gedrängt und mit dem immer gleichen Buffet gefüttert. Wir finden, Reisende verdienen mehr.",
     "about.p2":
       "Also haben wir die Reisen gebaut, die wir unseren Freunden aus dem Ausland wünschen würden — kleine Gruppen, lange Abende, echte Mahlzeiten mit echten Menschen und die Freiheit, langsamer zu machen. Jede Abfahrt wird persönlich von einer Gründerin oder einem erfahrenen Teammitglied begleitet.",
     "about.principles.chip": "Woran wir glauben",
@@ -443,11 +443,11 @@ export const translations = {
     "about.founder.chip2": "🏔️ Arbeitet aus den Bergen",
     "about.founder.chip3": "🧭 Reisen in Nordindien geleitet",
     "about.founder.story1":
-      "Hallo — ich bin Shikha. Namaste Journeys ist mein Herzensprojekt und ehrlich gesagt das Projekt, das ich seit Jahren bauen wollte. Ich bin in einer kleinen Stadt in Zentralindien (Madhya Pradesh) aufgewachsen, in einer Familie, die selbst nicht viel gereist ist, aber immer Platz für Gäste hatte. Dort habe ich zum ersten Mal gelernt, dass jemanden unterwegs zu umsorgen im Grunde eine Erweiterung davon ist, jemanden zu Hause zu umsorgen.",
+      "Hallo — ich bin Shikha. GoTrustelle ist mein Herzensprojekt und ehrlich gesagt das Projekt, das ich seit Jahren bauen wollte. Ich bin in einer kleinen Stadt in Zentralindien (Madhya Pradesh) aufgewachsen, in einer Familie, die selbst nicht viel gereist ist, aber immer Platz für Gäste hatte. Dort habe ich zum ersten Mal gelernt, dass jemanden unterwegs zu umsorgen im Grunde eine Erweiterung davon ist, jemanden zu Hause zu umsorgen.",
     "about.founder.story2":
       "Von Beruf bin ich Softwareentwicklerin — ich habe Jahre lang bei dynamischen indischen Tech-Unternehmen an Produkten gebaut. Von Leidenschaft bin ich Backpackerin. In den letzten Jahren bin ich solo durch jede große Region Nordindiens gereist — von den Cafés in Dharamkot und den blauen Gassen Jodhpurs über die zugefrorenen Flüsse Ladakhs, die stillen Klöster des Spiti-Tals, die Hausboote in Srinagar bis hin zu den alten Havelis Rajasthans. Ich spreche fließend Hindi und Englisch, arbeite monatelang aus den Bergen und bin fest davon überzeugt: Der beste Weg, dieses Land zu sehen, ist langsam.",
     "about.founder.story3":
-      "Vor einigen Jahren habe ich angefangen, kleine Gruppenreisen für Freunde von Freunden zu begleiten, die nach Indien kamen. Gäste sagten mir immer wieder dasselbe: „Es fühlte sich mehr wie ein Aufenthalt bei einer guten Gastgeberin an als wie eine Tour.\" Dieser eine Satz ist der Grund, warum es Namaste Journeys überhaupt gibt. Ich wollte genau dieses Gefühl für Menschen zugänglich machen, die mich nicht zufällig persönlich kennen.",
+      "Vor einigen Jahren habe ich angefangen, kleine Gruppenreisen für Freunde von Freunden zu begleiten, die nach Indien kamen. Gäste sagten mir immer wieder dasselbe: „Es fühlte sich mehr wie ein Aufenthalt bei einer guten Gastgeberin an als wie eine Tour.\" Dieser eine Satz ist der Grund, warum es GoTrustelle überhaupt gibt. Ich wollte genau dieses Gefühl für Menschen zugänglich machen, die mich nicht zufällig persönlich kennen.",
     "about.founder.story4":
       "Ich bin die Person, die Sie tatsächlich vor Ort treffen. Ich plane jede Reise persönlich, begleite jede Gruppe von Ankunft bis Abreise, und wenn um 22 Uhr Ihr Gepäck verloren geht oder Sie das beste Paratha im Viertel probieren wollen, rufen Sie mich an. Ich suche die Homestays aus, ich prüfe die Fahrer, ich koche mit den Köchinnen. Nichts wird weitergegeben, niemand reicht Sie weiter.",
     "about.founder.story5":
@@ -470,7 +470,7 @@ export const translations = {
     "about.partner.story3":
       "Beruflich arbeite ich seit Jahren in der deutschen Reisebranche und weiß genau, wie europäische Reisende ans Buchen herangehen — welche Fragen Sie stellen werden, welche Zusagen Sie schriftlich brauchen und wie Ihr Programm strukturiert sein muss, bevor Sie sich entscheiden. Privat ist Indien Teil meiner Familie: Meine Tochter hat indische Wurzeln, und im Haus ihrer Großmutter habe ich das meiste über den indischen Alltag gelernt.",
     "about.partner.story4":
-      "Meine Aufgabe bei Namaste Journeys ist es, alles auf der europäischen Seite abzudecken. Ich beantworte Fragen auf Deutsch und Englisch, helfe bei der Vorbereitung (Visum, Packliste, Ernährung, was Sie in den ersten 48 Stunden erwartet) und sorge dafür, dass vor dem Abflug nichts offen bleibt. Shikha kümmert sich um Sie vor Ort. Ich kümmere mich um Sie davor.",
+      "Meine Aufgabe bei GoTrustelle ist es, alles auf der europäischen Seite abzudecken. Ich beantworte Fragen auf Deutsch und Englisch, helfe bei der Vorbereitung (Visum, Packliste, Ernährung, was Sie in den ersten 48 Stunden erwartet) und sorge dafür, dass vor dem Abflug nichts offen bleibt. Shikha kümmert sich um Sie vor Ort. Ich kümmere mich um Sie davor.",
     "about.partner.story5":
       "Wenn Sie schon länger neugierig auf Indien waren, aber nicht wussten, wo Sie anfangen sollen — oder wenn Sie größere Pauschalreisen versucht haben und sich durchgeschleust gefühlt haben — genau diese Lücke wollten wir schließen.",
     "about.partner.signature": "— Melissa",

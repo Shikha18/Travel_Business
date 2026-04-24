@@ -1,6 +1,6 @@
 import Image from "next/image";
 import LocaleLink from "@/components/LocaleLink";
-import TourCard from "@/components/TourCard";
+import TourCarousel from "@/components/TourCarousel";
 import { siteConfig } from "@/lib/site-config";
 import { getLocalizedFeaturedTours } from "@/lib/tours";
 import { getLocale, getTranslator } from "@/lib/i18n";
@@ -66,7 +66,7 @@ const testimonials = [
   },
   {
     quote:
-      "As a solo female traveler, I was nervous about India. Namaste Journeys made it feel safe and warm. I've already booked a second trip with them.",
+      "As a solo female traveler, I was nervous about India. GoTrustelle made it feel safe and warm. I've already booked a second trip with them.",
     name: "Sofia M.",
     location: "Barcelona, Spain",
     trip: "Paradise of Kashmir",
@@ -511,10 +511,8 @@ export default function Home({
           </LocaleLink>
         </div>
 
-        <div className="mt-10 grid gap-7 md:grid-cols-2 lg:grid-cols-3">
-          {featured.map((tour) => (
-            <TourCard key={tour.slug} tour={tour} />
-          ))}
+        <div className="mt-10">
+          <TourCarousel tours={featured} />
         </div>
       </section>
 

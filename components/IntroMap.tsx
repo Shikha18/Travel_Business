@@ -9,7 +9,7 @@
  *   2. descent  — the globe plunges toward the camera (scales up 3x)
  *                 while its rotation accelerates
  *   3. india    — Earth fades out and a stylised India silhouette
- *                 fades in with a pulsing pin on "Namaste Journeys"
+ *                 fades in with a pulsing pin on "GoTrustelle"
  *   4. fading   — the whole overlay fades out to reveal the site
  *
  * No external tile servers, no Leaflet, no API keys — everything is
@@ -116,7 +116,7 @@ export default function IntroMap() {
         </span>
         <span className="intro-overlay__title">India</span>
         <span className="intro-overlay__sub">
-          Namaste Journeys · group tours for the curious traveler
+          GoTrustelle · travel experiences in India, by a woman, for you
         </span>
       </div>
 

@@ -180,7 +180,7 @@ export default function TeamMemberPage({
                 {member.whatsapp && (
                   <a
                     href={`https://wa.me/${member.whatsapp}?text=${encodeURIComponent(
-                      `Hi ${member.firstName}! I just read your story on the Namaste Journeys site.`
+                      `Hi ${member.firstName}! I just read your story on the GoTrustelle site.`
                     )}`}
                     target="_blank"
                     rel="noopener noreferrer"

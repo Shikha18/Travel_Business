@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 import LocaleLink from "./LocaleLink";
 import LanguageSwitcher from "./LanguageSwitcher";
 import { siteConfig } from "@/lib/site-config";
@@ -20,23 +21,15 @@ export default function Header() {
   return (
     <header className="sticky top-0 z-40 border-b border-ink-900/5 bg-cream-50/90 backdrop-blur">
       <div className="container-wide flex h-16 items-center justify-between">
-        <LocaleLink href="/" className="flex items-center gap-2">
-          <span className="flex h-9 w-9 items-center justify-center rounded-full bg-warm-gradient text-white shadow-soft">
-            <svg
-              viewBox="0 0 24 24"
-              fill="none"
-              className="h-5 w-5"
-              aria-hidden="true"
-            >
-              <path
-                d="M12 2L14.5 9H22L16 13.5L18.5 21L12 16.5L5.5 21L8 13.5L2 9H9.5L12 2Z"
-                fill="currentColor"
-              />
-            </svg>
-          </span>
-          <span className="font-display text-xl font-semibold tracking-tight">
-            {siteConfig.name}
-          </span>
+        <LocaleLink href="/" className="flex items-center">
+          <Image
+            src="/images/gotrustelle.png"
+            alt={siteConfig.name}
+            width={160}
+            height={56}
+            className="h-12 w-auto object-contain"
+            priority
+          />
         </LocaleLink>
 
         <nav className="hidden items-center gap-1 md:flex">

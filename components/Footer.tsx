@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import LocaleLink from "./LocaleLink";
 import { siteConfig } from "@/lib/site-config";
 import { useTranslator } from "@/lib/use-i18n";
@@ -11,15 +12,14 @@ export default function Footer() {
     <footer className="mt-24 border-t border-ink-900/5 bg-ink-900 text-cream-50">
       <div className="container-wide grid gap-10 py-14 md:grid-cols-4">
         <div className="md:col-span-2">
-          <div className="flex items-center gap-2">
-            <span className="flex h-9 w-9 items-center justify-center rounded-full bg-warm-gradient text-white">
-              <svg viewBox="0 0 24 24" fill="currentColor" className="h-5 w-5">
-                <path d="M12 2L14.5 9H22L16 13.5L18.5 21L12 16.5L5.5 21L8 13.5L2 9H9.5L12 2Z" />
-              </svg>
-            </span>
-            <span className="font-display text-xl font-semibold tracking-tight text-white">
-              {siteConfig.name}
-            </span>
+          <div className="flex items-center">
+            <Image
+              src="/images/gotrustelle.png"
+              alt={siteConfig.name}
+              width={180}
+              height={64}
+              className="h-16 w-auto object-contain brightness-0 invert"
+            />
           </div>
           <p className="mt-4 max-w-md text-sm text-cream-50/70">
             {siteConfig.description}

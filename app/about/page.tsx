@@ -8,7 +8,7 @@ import type { TranslationKey } from "@/lib/translations";
 export const metadata: Metadata = {
   title: "About us — a small team obsessed with getting it right",
   description:
-    "Namaste Journeys is a young Indian travel company founded in 2026. Small-group tours, female-founded, built for international travelers.",
+    "GoTrustelle is a female-founded Indian travel company offering curated small-group tours. Experience. Trust. Connection. Built for international travelers.",
 };
 
 export default function AboutPage({
@@ -47,7 +47,7 @@ export default function AboutPage({
   return (
     <>
       <section className="bg-cream-100">
-        <div className="container-wide grid gap-10 py-16 md:grid-cols-2 md:py-20">
+        <div className="container-wide grid gap-10 py-16 md:grid-cols-2 md:items-center md:py-20">
           <div>
             <span className="chip">{t("about.chip")}</span>
             <h1 className="mt-3 font-display text-4xl font-semibold md:text-5xl">

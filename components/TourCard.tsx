@@ -6,14 +6,16 @@ import type { Tour } from "@/lib/tours";
 import { useTranslator } from "@/lib/use-i18n";
 import type { TranslationKey } from "@/lib/translations";
 
-export default function TourCard({ tour }: { tour: Tour }) {
+export default function TourCard({ tour, defaultHover = false }: { tour: Tour; defaultHover?: boolean }) {
   const t = useTranslator();
   const fromPrice = Math.min(...tour.pricing.map((p) => p.priceEUR));
 
   return (
     <LocaleLink
       href={`/tours/${tour.slug}`}
-      className="group block card transition hover:-translate-y-1 hover:shadow-[0_30px_60px_-20px_rgba(24,20,16,0.35)]"
+      className={`group block card transition hover:-translate-y-1 hover:shadow-[0_30px_60px_-20px_rgba(24,20,16,0.35)] ${
+        defaultHover ? "-translate-y-1 shadow-[0_30px_60px_-20px_rgba(24,20,16,0.35)]" : ""
+      }`}
     >
       <div className="relative aspect-[4/3] w-full overflow-hidden">
         <Image
@@ -21,7 +23,7 @@ export default function TourCard({ tour }: { tour: Tour }) {
           alt={tour.title}
           fill
           sizes="(max-width: 768px) 100vw, 33vw"
-          className="object-cover transition duration-700 group-hover:scale-105"
+          className={`object-cover transition duration-700 group-hover:scale-105 ${defaultHover ? "scale-105" : ""}`}
         />
         <div className="absolute left-4 top-4 flex gap-2">
           {tour.months.map((m) => (
@@ -58,7 +60,11 @@ export default function TourCard({ tour }: { tour: Tour }) {
               </span>
             </div>
           </div>
-          <span className="rounded-full border border-ink-900/10 px-4 py-2 text-xs font-semibold text-ink-900 transition group-hover:border-saffron-500 group-hover:bg-saffron-500 group-hover:text-white">
+          <span className={`rounded-full border px-4 py-2 text-xs font-semibold transition group-hover:border-saffron-500 group-hover:bg-saffron-500 group-hover:text-white ${
+            defaultHover
+              ? "border-saffron-500 bg-saffron-500 text-white"
+              : "border-ink-900/10 text-ink-900"
+          }`}>
             {t("cta.viewTrip")}
           </span>
         </div>
