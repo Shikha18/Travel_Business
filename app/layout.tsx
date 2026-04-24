@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Fraunces, Inter } from "next/font/google";
+import { Fraunces, Inter, Dancing_Script } from "next/font/google";
 import { Suspense } from "react";
 import "./globals.css";
 import { siteConfig } from "@/lib/site-config";
@@ -20,39 +20,66 @@ const inter = Inter({
   display: "swap",
 });
 
+const dancingScript = Dancing_Script({
+  subsets: ["latin"],
+  variable: "--font-script",
+  display: "swap",
+});
+
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
   title: {
-    default: `${siteConfig.name} — ${siteConfig.tagline}`,
+    default: `${siteConfig.name} — Small-group tours across India`,
     template: `%s | ${siteConfig.name}`,
   },
   description: siteConfig.description,
   keywords: [
-    "India tours",
-    "group tours India",
-    "Spiti Valley tour",
-    "Kashmir tour",
-    "Golden Triangle",
-    "India travel for foreigners",
-    "India small group tour",
-    "June July India travel",
+    // English
+    "India tours", "small group tours India", "group tours India 2026",
+    "Spiti Valley tour", "Kashmir tour", "Ladakh tour", "Golden Triangle India",
+    "India travel for Europeans", "female founded travel company India",
+    "customisable India tours", "private tours India", "India tour operator",
+    "Himalaya tours", "India travel 2026", "best India tour operator",
+    // German
+    "Indien Reise", "Indien Gruppenreise", "Kleingruppe Indien",
+    "Ladakh Reise", "Kaschmir Reise", "Spiti Tal Reise",
+    "Indien Rundreise 2026", "Indien Tour für Deutsche",
+    "private Indien Reise", "individuelle Indien Reise",
+    "Himalaya Reise", "Indien Reiseveranstalter",
   ],
+  authors: [{ name: "Shikha Mangal", url: siteConfig.url }],
+  creator: "GoTrustelle",
   openGraph: {
     type: "website",
     locale: "en_US",
+    alternateLocale: ["de_DE"],
     url: siteConfig.url,
     siteName: siteConfig.name,
-    title: `${siteConfig.name} — ${siteConfig.tagline}`,
+    title: `${siteConfig.name} — Small-group tours across India`,
     description: siteConfig.description,
   },
   twitter: {
     card: "summary_large_image",
-    title: `${siteConfig.name} — ${siteConfig.tagline}`,
+    title: `${siteConfig.name} — Small-group tours across India`,
     description: siteConfig.description,
+    creator: "@gotrustelle",
+  },
+  alternates: {
+    canonical: siteConfig.url,
+    languages: {
+      "en": siteConfig.url,
+      "de": `${siteConfig.url}?lang=de`,
+    },
   },
   robots: {
     index: true,
     follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
   },
 };
 
@@ -80,9 +107,34 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`${fraunces.variable} ${inter.variable}`}>
+    <html lang="en" className={`${fraunces.variable} ${inter.variable} ${dancingScript.variable}`}>
       <head>
         <script dangerouslySetInnerHTML={{ __html: INTRO_GUARD_SCRIPT }} />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "TravelAgency",
+              name: siteConfig.name,
+              description: siteConfig.description,
+              url: siteConfig.url,
+              logo: `${siteConfig.url}/images/gotrustelle.png`,
+              foundingDate: "2026",
+              founders: [{ "@type": "Person", name: siteConfig.founder.name }],
+              areaServed: { "@type": "Country", name: "India" },
+              telephone: siteConfig.phone,
+              email: siteConfig.email,
+              address: {
+                "@type": "PostalAddress",
+                addressLocality: "New Delhi",
+                addressCountry: "IN",
+              },
+              sameAs: [siteConfig.social.instagram],
+              priceRange: "€€",
+            }),
+          }}
+        />
       </head>
       <body className="font-sans bg-cream-50 text-ink-900 antialiased">
         {/*
@@ -100,7 +152,7 @@ export default function RootLayout({
         <Suspense fallback={null}>
           <Header />
         </Suspense>
-        <main className="min-h-[70vh]">{children}</main>
+        <main className="min-h-[50vh]">{children}</main>
         <Suspense fallback={null}>
           <Footer />
         </Suspense>

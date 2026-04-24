@@ -23,10 +23,27 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const tour = getTourBySlug(params.slug);
   if (!tour) return { title: "Tour not found" };
+  const url = `${siteConfig.url}/tours/${tour.slug}`;
   return {
-    title: `${tour.title} — ${tour.durationNights}N/${tour.durationDays}D`,
+    title: `${tour.title} — ${tour.durationDays}-Day Small-Group Tour India`,
     description: tour.summary,
+    keywords: [
+      tour.title, tour.region, "India tour", "small group tour India",
+      "customisable India tour", `${tour.region} tour`, "Indien Reise",
+      `${tour.region} Gruppenreise`,
+    ],
+    alternates: {
+      canonical: url,
+      languages: { en: url, de: `${url}?lang=de` },
+    },
     openGraph: {
+      title: `${tour.title} | ${siteConfig.name}`,
+      description: tour.summary,
+      url,
+      images: [{ url: tour.heroImage, width: 1200, height: 630, alt: tour.title }],
+    },
+    twitter: {
+      card: "summary_large_image",
       title: `${tour.title} | ${siteConfig.name}`,
       description: tour.summary,
       images: [tour.heroImage],
@@ -54,8 +71,44 @@ export default function TourDetail({
     whatsappText
   )}`;
 
+  const tourSchema = {
+    "@context": "https://schema.org",
+    "@type": "TouristTrip",
+    name: tour.title,
+    description: tour.summary,
+    image: tour.heroImage,
+    url: `${siteConfig.url}/tours/${tour.slug}`,
+    touristType: ["International tourists", "European travelers"],
+    availableLanguage: ["English", "German"],
+    provider: {
+      "@type": "TravelAgency",
+      name: siteConfig.name,
+      url: siteConfig.url,
+    },
+    offers: {
+      "@type": "Offer",
+      price: Math.min(...tour.pricing.map((p) => p.priceEUR)),
+      priceCurrency: "EUR",
+      availability: "https://schema.org/InStock",
+      validFrom: "2026-01-01",
+    },
+    itinerary: {
+      "@type": "ItemList",
+      numberOfItems: tour.durationDays,
+      itemListElement: tour.itinerary.map((day, i) => ({
+        "@type": "ListItem",
+        position: i + 1,
+        name: day.title,
+      })),
+    },
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(tourSchema) }}
+      />
       {/* HERO */}
       <section className="relative">
         <div className="relative h-[60vh] min-h-[420px] w-full overflow-hidden">

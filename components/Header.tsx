@@ -20,22 +20,22 @@ export default function Header() {
 
   return (
     <header className="sticky top-0 z-40 border-b border-ink-900/5 bg-cream-50/90 backdrop-blur">
-      <div className="container-wide flex h-18 items-center justify-between py-2">
-        <LocaleLink href="/" className="flex items-center gap-2">
+      <div className="container-wide flex h-24 items-center justify-between py-3">
+        <LocaleLink href="/" className="flex items-center gap-3">
           <Image
             src="/images/gotrustelle.png"
             alt={siteConfig.name}
-            width={140}
-            height={50}
-            className="h-10 w-auto object-contain"
+            width={160}
+            height={60}
+            className="h-20 w-auto object-contain mix-blend-multiply"
             priority
           />
-          <div className="hidden md:flex flex-col leading-none">
-            <span className="font-display text-2xl font-bold tracking-tight bg-gradient-to-r from-ink-900 via-terracotta-600 to-saffron-600 bg-clip-text text-transparent">
+          <div className="hidden md:flex flex-col items-center leading-none gap-0">
+            <span className="font-display text-3xl font-bold tracking-tight bg-gradient-to-r from-ink-900 via-terracotta-600 to-saffron-600 bg-clip-text text-transparent">
               {siteConfig.name}
             </span>
-            <span className="text-[10px] uppercase tracking-[0.2em] text-ink-400 mt-0.5">
-              Travel Experiences in India
+            <span className="text-xs text-ink-400 tracking-wide -mt-0.5">
+              Where Trust Leads Travel
             </span>
           </div>
         </LocaleLink>

@@ -39,8 +39,6 @@ export const translations = {
 
     // Home hero
     "home.hero.season": "Small-group departures · 2026",
-    // Tagline is displayed on two lines — both halves are emphasised in
-    // the hero. Line 1 sets the refusal, Line 2 delivers the promise.
     "home.hero.titleLine1": "I don't want to show India.",
     "home.hero.titleLine2": "I want to explain India.",
     "home.hero.title":
@@ -62,9 +60,9 @@ export const translations = {
     "home.trust.subtitle":
       "We're a young company founded in 2026 with one clear belief: traveling in India should feel safe, warm and unhurried — whether it's your first trip abroad or your fiftieth.",
 
-    "home.trust.smallGroups.title": "Small, intimate groups",
+    "home.trust.smallGroups.title": "Max 8–10 people per group",
     "home.trust.smallGroups.body":
-      "We cap every departure at 10–12 travelers so you're never herded. Expect real conversations and friendships that outlast the trip.",
+      "Small enough to feel personal, flexible enough to adapt to you. Every departure is capped at 8–10 travelers so you always get real attention — not a crowd.",
     "home.trust.localGuides.title": "Hand-picked local guides",
     "home.trust.localGuides.body":
       "Our guides are storytellers first — historians, photographers and chefs who live in the regions we visit. No scripted spiels, no hidden commissions.",
@@ -95,10 +93,10 @@ export const translations = {
     "tours.filter.all": "All",
     "tours.filter.himalayan": "Himalayan",
     "tours.filter.cultural": "Cultural",
-    "tours.customCTA.title": "Don't see your dream trip?",
+    "tours.customCTA.title": "Want a trip built just for you?",
     "tours.customCTA.subtitle":
-      "We design private, custom journeys across India — Rajasthan desert camps, Kerala backwaters, Ladakh, wildlife safaris, and more. Tell us what you have in mind.",
-    "tours.customCTA.wa": "WhatsApp us",
+      "Every journey we run can also be built from scratch — your dates, your group size, your pace. Families, couples, solo travelers, corporate retreats. You choose the regions; we handle every detail from first enquiry to airport drop-off.",
+    "tours.customCTA.wa": "Plan my custom trip →",
 
     // Tour card
     "tourCard.from": "From",
@@ -208,13 +206,13 @@ export const translations = {
     "about.stats.supportLabel": "On-trip support",
     "about.stats.supportBody":
       "A real human on WhatsApp any hour, any day of your trip.",
-    "about.stats.groupLabel": "Travelers per group",
-    "about.stats.groupBody": "Intimate, personal, and never rushed.",
+    "about.stats.groupLabel": "Travelers per group — max",
+    "about.stats.groupBody": "Intimate, personal, and fully adaptable to you.",
 
     // About principles list
-    "about.v.smallGroups.title": "Small groups. Always.",
+    "about.v.smallGroups.title": "Small groups. Always 8–10 max.",
     "about.v.smallGroups.body":
-      "We cap every departure at 10–12 travelers. It's less scalable, but it's how you actually connect with a place.",
+      "We cap every departure at 8–10 travelers. Less scalable, yes — but it's the only way to travel at your pace, not the group's.",
     "about.v.local.title": "Hire local, pay fair.",
     "about.v.local.body":
       "Our guides, drivers and homestay hosts live in the regions we visit and are paid above local market rates.",
@@ -334,9 +332,9 @@ export const translations = {
     "home.trust.subtitle":
       "Wir sind ein junges Unternehmen, gegründet 2026, mit einer klaren Überzeugung: Eine Reise nach Indien soll sich sicher, herzlich und entspannt anfühlen — egal ob es Ihre erste Auslandsreise ist oder Ihre fünfzigste.",
 
-    "home.trust.smallGroups.title": "Kleine, familiäre Gruppen",
+    "home.trust.smallGroups.title": "Max. 8–10 Personen pro Gruppe",
     "home.trust.smallGroups.body":
-      "Wir begrenzen jede Abfahrt auf 10–12 Reisende, damit niemand durchgeschleust wird. Echte Gespräche und Freundschaften, die über die Reise hinaus halten.",
+      "Klein genug für echte Nähe, flexibel genug für Ihre Bedürfnisse. Jede Abfahrt ist auf 8–10 Reisende begrenzt — damit Sie immer echte Aufmerksamkeit bekommen.",
     "home.trust.localGuides.title": "Handverlesene lokale Guides",
     "home.trust.localGuides.body":
       "Unsere Guides sind zuerst Geschichtenerzähler — Historiker, Fotografen und Köche, die in den Regionen leben, die wir besuchen. Keine auswendig gelernten Texte, keine versteckten Provisionen.",
@@ -367,10 +365,10 @@ export const translations = {
     "tours.filter.all": "Alle",
     "tours.filter.himalayan": "Himalaya",
     "tours.filter.cultural": "Kulturell",
-    "tours.customCTA.title": "Nicht die passende Reise dabei?",
+    "tours.customCTA.title": "Möchten Sie eine Reise ganz nach Maß?",
     "tours.customCTA.subtitle":
-      "Wir gestalten private, individuelle Reisen durch ganz Indien — Wüstencamps in Rajasthan, Backwaters in Kerala, Ladakh, Wildlife-Safaris und mehr. Sagen Sie uns, was Sie sich vorstellen.",
-    "tours.customCTA.wa": "WhatsApp senden",
+      "Jede unserer Reisen kann auch von Grund auf neu geplant werden — Ihre Daten, Ihre Gruppengröße, Ihr Tempo. Familien, Paare, Alleinreisende, Firmenreisen. Sie wählen die Regionen; wir kümmern uns um jedes Detail — von der ersten Anfrage bis zum Abflug.",
+    "tours.customCTA.wa": "Meine Wunschreise planen →",
 
     // Tour card
     "tourCard.from": "Ab",
@@ -480,13 +478,13 @@ export const translations = {
     "about.stats.supportLabel": "Unterstützung unterwegs",
     "about.stats.supportBody":
       "Ein echter Mensch auf WhatsApp, jederzeit während Ihrer Reise.",
-    "about.stats.groupLabel": "Reisende pro Gruppe",
-    "about.stats.groupBody": "Intim, persönlich und nie gehetzt.",
+    "about.stats.groupLabel": "Reisende pro Gruppe — max.",
+    "about.stats.groupBody": "Intim, persönlich und ganz auf Sie zugeschnitten.",
 
     // About principles list
-    "about.v.smallGroups.title": "Kleine Gruppen. Immer.",
+    "about.v.smallGroups.title": "Kleine Gruppen. Immer max. 8–10.",
     "about.v.smallGroups.body":
-      "Wir begrenzen jede Abfahrt auf 10–12 Reisende. Weniger skalierbar, aber so entsteht echte Verbindung zu einem Ort.",
+      "Wir begrenzen jede Abfahrt auf 8–10 Reisende. Weniger skalierbar — aber nur so reisen Sie in Ihrem Tempo, nicht dem der Gruppe.",
     "about.v.local.title": "Lokal einstellen, fair bezahlen.",
     "about.v.local.body":
       "Unsere Guides, Fahrer und Gastgeber leben in den Regionen, die wir besuchen, und werden über den lokalen Marktpreisen bezahlt.",

@@ -4,11 +4,24 @@ import LocaleLink from "@/components/LocaleLink";
 import { team } from "@/lib/team";
 import { getLocale, getTranslator } from "@/lib/i18n";
 import type { TranslationKey } from "@/lib/translations";
+import { siteConfig } from "@/lib/site-config";
 
 export const metadata: Metadata = {
-  title: "About us — a small team obsessed with getting it right",
+  title: "About GoTrustelle — female-founded India tour company",
   description:
-    "GoTrustelle is a female-founded Indian travel company offering curated small-group tours. Experience. Trust. Connection. Built for international travelers.",
+    "GoTrustelle is a female-founded India travel company built by Shikha (New Delhi) and Melissa (Germany). Small-group, customisable tours across India — max 8–10 travelers, built for depth not checklists.",
+  keywords: [
+    "female founded India travel company", "India tour company", "GoTrustelle founders",
+    "Shikha Mangal GoTrustelle", "woman led travel India", "India tour operator 2026",
+    "weiblich gegründetes Reiseunternehmen Indien", "Indien Reiseveranstalterin",
+  ],
+  alternates: {
+    canonical: `${siteConfig.url}/about`,
+    languages: {
+      en: `${siteConfig.url}/about`,
+      de: `${siteConfig.url}/about?lang=de`,
+    },
+  },
 };
 
 export default function AboutPage({
@@ -46,8 +59,55 @@ export default function AboutPage({
 
   return (
     <>
+      {/* BRAND STORY — sits above the team hero */}
+      <section className="container-wide py-10 md:py-16">
+        <div className="grid gap-10 md:grid-cols-2 md:items-center">
+          <div className="flex items-center justify-center">
+            <Image
+              src="/images/gotrustelle.png"
+              alt="GoTrustelle logo"
+              width={380}
+              height={380}
+              className="w-64 md:w-80 h-auto mix-blend-multiply"
+            />
+          </div>
+          <div>
+            <span className="chip">The name</span>
+            <h2 className="mt-3 font-display text-3xl font-semibold md:text-4xl">
+              Why <span className="bg-gradient-to-r from-terracotta-600 to-saffron-500 bg-clip-text text-transparent">GoTrustelle</span>?
+            </h2>
+            <p className="mt-4 text-ink-600 leading-relaxed">
+              GoTrustelle is built on three simple ideas — the freedom to explore, the comfort of trust, and the warmth of a woman-led journey.
+            </p>
+            <div className="mt-8 space-y-5">
+              <div className="flex items-start gap-4">
+                <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-saffron-100 font-display text-lg font-bold text-saffron-600">Go</span>
+                <div>
+                  <div className="font-semibold text-ink-900">Freedom to explore</div>
+                  <div className="mt-0.5 text-sm text-ink-600">Movement, adventure, and the courage to discover India beyond the guidebook.</div>
+                </div>
+              </div>
+              <div className="flex items-start gap-4">
+                <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-terracotta-50 font-display text-lg font-bold text-terracotta-600">Tr</span>
+                <div>
+                  <div className="font-semibold text-ink-900">The comfort of trust</div>
+                  <div className="mt-0.5 text-sm text-ink-600">Every detail planned, every partner vetted. You travel — we take care of the rest.</div>
+                </div>
+              </div>
+              <div className="flex items-start gap-4">
+                <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-teal-50 font-display text-lg font-bold text-teal-600">elle</span>
+                <div>
+                  <div className="font-semibold text-ink-900">A woman-led journey</div>
+                  <div className="mt-0.5 text-sm text-ink-600"><em>Elle</em> — French for "she". Built by a woman, designed with you in mind.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section className="bg-cream-100">
-        <div className="container-wide grid gap-10 py-16 md:grid-cols-2 md:items-center md:py-20">
+        <div className="container-wide grid gap-10 py-10 md:grid-cols-2 md:items-center md:py-16">
           <div>
             <span className="chip">{t("about.chip")}</span>
             <h1 className="mt-3 font-display text-4xl font-semibold md:text-5xl">
@@ -77,7 +137,7 @@ export default function AboutPage({
       </section>
 
       {/* MEET THE TEAM — two hover-reveal portrait cards, above principles */}
-      <section className="relative overflow-hidden bg-gradient-to-b from-cream-100 to-cream-50 py-20">
+      <section className="relative overflow-hidden bg-gradient-to-b from-cream-100 to-cream-50 py-10 md:py-16">
         <div
           aria-hidden="true"
           className="pointer-events-none absolute -left-20 top-10 h-64 w-64 rounded-full bg-saffron-200/40 blur-3xl"
@@ -206,7 +266,7 @@ export default function AboutPage({
           above link to them with the "Read full story" CTA. */}
 
       {/* PRINCIPLES — below the team section */}
-      <section className="container-wide py-20">
+      <section className="container-wide py-10 md:py-14">
         <div className="max-w-2xl">
           <span className="chip">{t("about.principles.chip")}</span>
           <h2 className="mt-3 font-display text-3xl font-semibold md:text-4xl">
@@ -226,7 +286,7 @@ export default function AboutPage({
         </div>
       </section>
 
-      <section className="container-wide py-20">
+      <section className="container-wide py-10 md:py-14">
         <div className="grid gap-8 rounded-3xl bg-cream-100 p-10 md:grid-cols-3">
           <div>
             <div className="font-display text-4xl font-semibold text-saffron-600">
@@ -252,7 +312,7 @@ export default function AboutPage({
           </div>
           <div>
             <div className="font-display text-4xl font-semibold text-saffron-600">
-              ≤ 12
+              8–10
             </div>
             <div className="mt-2 text-sm font-semibold text-ink-900">
               {t("about.stats.groupLabel")}

@@ -4,9 +4,21 @@ import { getLocalizedTours } from "@/lib/tours";
 import { getLocale, getTranslator } from "@/lib/i18n";
 
 export const metadata: Metadata = {
-  title: "Contact us",
+  title: "Contact GoTrustelle — plan your India trip",
   description:
-    "Send us a message, WhatsApp us, or email directly. We typically respond within a few hours.",
+    "Get in touch with GoTrustelle to plan your India trip. WhatsApp us for the fastest reply — we respond within a few hours (Indian Standard Time). Custom itineraries available.",
+  keywords: [
+    "contact GoTrustelle", "plan India trip", "India tour enquiry",
+    "custom India itinerary", "WhatsApp India tour",
+    "Indien Reise anfragen", "GoTrustelle kontaktieren",
+  ],
+  alternates: {
+    canonical: `${siteConfig.url}/contact`,
+    languages: {
+      en: `${siteConfig.url}/contact`,
+      de: `${siteConfig.url}/contact?lang=de`,
+    },
+  },
 };
 
 export default function ContactPage({
@@ -26,7 +38,7 @@ export default function ContactPage({
   return (
     <>
       <section className="bg-cream-100">
-        <div className="container-wide py-14 md:py-20">
+        <div className="container-wide py-10 md:py-14">
           <span className="chip">{t("contact.chip")}</span>
           <h1 className="mt-3 font-display text-4xl font-semibold md:text-5xl">
             {t("contact.title")}
@@ -35,7 +47,7 @@ export default function ContactPage({
         </div>
       </section>
 
-      <section className="container-wide grid gap-10 py-14 md:grid-cols-5">
+      <section className="container-wide grid gap-8 py-8 md:grid-cols-5 md:py-12">
         <div className="md:col-span-3">
           <form
             action={FORMSPREE_ENDPOINT}

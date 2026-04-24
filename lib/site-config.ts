@@ -7,7 +7,7 @@
 export const siteConfig = {
   // Brand
   name: "GoTrustelle",
-  tagline: "Travel Experiences in India · by a woman, for you",
+  tagline: "Feel India, Not Just Visit",
   description:
     "Curated small-group tours across India — Experience. Trust. Connection. Female-founded, built for international travelers who want depth, not a checklist.",
 

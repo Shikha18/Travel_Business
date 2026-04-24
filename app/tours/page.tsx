@@ -5,9 +5,22 @@ import { siteConfig } from "@/lib/site-config";
 import { getLocale, getTranslator } from "@/lib/i18n";
 
 export const metadata: Metadata = {
-  title: "All Tours — small-group departures across India",
+  title: "Tours — small-group & customisable journeys across India",
   description:
-    "Browse every small-group tour by GoTrustelle. Spiti Valley, Kashmir, Golden Triangle and more — all-inclusive itineraries built for international travelers.",
+    "Browse GoTrustelle's small-group tours across India — Spiti Valley, Kashmir, Ladakh, Golden Triangle and more. All-inclusive, max 8–10 travelers, fully customisable to your dates.",
+  keywords: [
+    "India tour packages", "small group India tours", "Spiti Valley group tour",
+    "Kashmir group tour", "Ladakh group tour", "Golden Triangle tour India",
+    "customisable India tours", "private India tour", "all inclusive India tour",
+    "Indien Gruppenreise buchen", "Indien Pauschalreise", "Ladakh Gruppenreise",
+  ],
+  alternates: {
+    canonical: `${siteConfig.url}/tours`,
+    languages: {
+      en: `${siteConfig.url}/tours`,
+      de: `${siteConfig.url}/tours?lang=de`,
+    },
+  },
 };
 
 export default function ToursPage({
@@ -22,7 +35,7 @@ export default function ToursPage({
   return (
     <>
       <section className="bg-cream-100">
-        <div className="container-wide py-16 md:py-20">
+        <div className="container-wide py-10 md:py-14">
           <span className="chip">{t("tours.chip")}</span>
           <h1 className="mt-3 font-display text-4xl font-semibold md:text-5xl">
             {t("tours.title")}
@@ -45,7 +58,7 @@ export default function ToursPage({
         </div>
       </section>
 
-      <section className="container-wide py-14">
+      <section className="container-wide py-8 md:py-12">
         <div className="grid gap-7 md:grid-cols-2 lg:grid-cols-3">
           {tours.map((tour) => (
             <TourCard key={tour.slug} tour={tour} />

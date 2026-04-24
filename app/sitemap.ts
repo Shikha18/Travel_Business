@@ -1,6 +1,7 @@
 import type { MetadataRoute } from "next";
 import { siteConfig } from "@/lib/site-config";
 import { tours } from "@/lib/tours";
+import { team } from "@/lib/team";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const base = siteConfig.url.replace(/\/$/, "");
@@ -20,5 +21,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.9,
   }));
 
-  return [...staticPages, ...tourPages];
+  const teamPages = team.map((m) => ({
+    url: `${base}/about/team/${m.slug}`,
+    lastModified: now,
+    changeFrequency: "monthly" as const,
+    priority: 0.6,
+  }));
+
+  return [...staticPages, ...tourPages, ...teamPages];
 }

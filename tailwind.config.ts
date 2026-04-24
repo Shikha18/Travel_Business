@@ -78,10 +78,10 @@ const config: Config = {
           800: "#551a28",
           900: "#34101a",
         },
-        // KHADI — warmer handspun ivory.
+        // OFF-WHITE — near white with the faintest warm undertone.
         cream: {
-          50: "#fdf9f0",
-          100: "#f8ecd2",
+          50: "#ffffff",
+          100: "#faf7f3",
         },
         // EARTH — warm dark brown instead of cool near-black.
         ink: {
@@ -100,6 +100,7 @@ const config: Config = {
       fontFamily: {
         display: ["'Fraunces'", "ui-serif", "Georgia", "serif"],
         sans: ["'Inter'", "ui-sans-serif", "system-ui", "sans-serif"],
+        script: ["var(--font-script)", "cursive"],
       },
       boxShadow: {
         // Slightly cool earth shadows — work on both blue and warm content.

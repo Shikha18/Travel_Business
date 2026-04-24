@@ -29,7 +29,7 @@ export type Tour = {
   durationDays: number;
   route: string;           // e.g., "Delhi → Shimla → Kaza → Delhi"
   months: ("June" | "July" | "August" | "September")[];
-  groupSize: string;       // e.g., "Max 12 travelers"
+  groupSize: string;       // e.g., "Max 10 travelers"
   difficulty: "Easy" | "Moderate" | "Challenging";
   summary: string;         // short card blurb
   overview: string;        // long paragraph for detail page
@@ -59,7 +59,7 @@ export const tours: Tour[] = [
     durationDays: 7,
     route: "Delhi → Shimla → Chitkul → Tabo → Kaza → Kalpa → Shimla → Delhi",
     months: ["June", "July"],
-    groupSize: "Max 12 travelers",
+    groupSize: "Max 10 travelers",
     difficulty: "Moderate",
     summary:
       "Cross the mighty Kinnaur gorge, sip butter tea in cliffside monasteries, and stand in the world's highest village. A once-in-a-lifetime Himalayan circuit.",
@@ -273,7 +273,7 @@ export const tours: Tour[] = [
     durationDays: 6,
     route: "Delhi → Agra → Jaipur → Delhi",
     months: ["June", "July"],
-    groupSize: "Max 12 travelers",
+    groupSize: "Max 10 travelers",
     difficulty: "Easy",
     summary:
       "The perfect first trip to India. Stand before the Taj Mahal at sunrise, ride an elephant up to Amber Fort, and feast on Old Delhi street food with a local food writer.",
@@ -534,7 +534,7 @@ const toursDeOverrides: Record<string, TourI18nFields> = {
       "Hochgelegene Dörfer, uralte Klöster, Himalaya-Himmel",
     region: "Himachal Pradesh, Nordindien",
     route: "Delhi → Shimla → Chitkul → Tabo → Kaza → Kalpa → Shimla → Delhi",
-    groupSize: "Max. 12 Reisende",
+    groupSize: "Max. 10 Reisende",
     difficulty: "Moderate",
     summary:
       "Durchquere die gewaltige Kinnaur-Schlucht, trinke Buttertee in Klippen-Klöstern und stehe im höchsten Dorf der Welt. Eine Himalaya-Runde, die einmal im Leben stattfindet.",
@@ -725,7 +725,7 @@ const toursDeOverrides: Record<string, TourI18nFields> = {
     subtitle: "Delhi · Agra · Jaipur — Indiens bekannteste Route",
     region: "Delhi, Uttar Pradesh & Rajasthan",
     route: "Delhi → Agra → Jaipur → Delhi",
-    groupSize: "Max. 12 Reisende",
+    groupSize: "Max. 10 Reisende",
     difficulty: "Easy",
     summary:
       "Die perfekte erste Indien-Reise. Stehen Sie bei Sonnenaufgang vor dem Taj Mahal, reiten Sie auf einem Elefanten zum Amber Fort hinauf und schlemmen Sie Street Food in Alt-Delhi mit einem lokalen Foodexperten.",
