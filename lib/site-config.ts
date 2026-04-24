@@ -12,7 +12,7 @@ export const siteConfig = {
     "Curated small-group tours across India — Experience. Trust. Connection. Female-founded, built for international travelers who want depth, not a checklist.",
 
   // URL (update after deploying to Vercel — used for SEO/Open Graph)
-  url: "https://gotrustelle.vercel.app",
+  url: "https://www.gotrustelle.com",
 
   // Contact
   email: "mangal.shikha1997@gmail.com",
