@@ -469,7 +469,7 @@ export default function Home({
             priority
             className="object-cover"
           />
-          <div className="absolute inset-0 bg-gradient-to-br from-ink-900/85 via-terracotta-900/60 to-terracotta-800/30" />
+          <div className="absolute inset-0 bg-gradient-to-br from-ink-900/80 via-terracotta-800/55 to-saffron-900/20" />
         </div>
 
         <div className="relative container-wide py-14 md:py-32 text-white">
@@ -666,7 +666,7 @@ export default function Home({
             </h2>
           </div>
 
-          <div className="mt-6 divide-y divide-ink-900/10 rounded-3xl bg-white shadow-soft">
+          <div className="mt-6 divide-y divide-ink-900/10 rounded-3xl bg-cream-50 shadow-soft">
             {localeFaqs
               .flatMap((cat) => cat.items)
               .map((faq, i) => (
@@ -708,20 +708,22 @@ export default function Home({
 
       {/* FINAL CTA */}
       <section className="container-wide py-8 md:py-12">
-        <div className="relative overflow-hidden rounded-3xl bg-warm-gradient px-8 py-10 text-center text-white md:py-14">
-          <h2 className="font-display text-3xl font-semibold md:text-5xl">
+        <div className="relative overflow-hidden rounded-3xl bg-warm-gradient px-8 py-10 text-center text-white shadow-card md:py-14">
+          <div aria-hidden="true" className="pointer-events-none absolute -left-10 -top-10 h-48 w-48 rounded-full bg-white/10 blur-3xl" />
+          <div aria-hidden="true" className="pointer-events-none absolute -right-10 bottom-0 h-40 w-40 rounded-full bg-black/10 blur-3xl" />
+          <h2 className="relative font-display text-3xl font-semibold md:text-5xl">
             {t("home.finalCTA.title")}
           </h2>
-          <p className="mx-auto mt-4 max-w-xl text-white/90">
+          <p className="relative mx-auto mt-4 max-w-xl text-white/90">
             {t("home.finalCTA.subtitle")}
           </p>
-          <div className="mt-8 flex flex-wrap justify-center gap-3">
-            <LocaleLink href="/tours" className="btn-secondary">
+          <div className="relative mt-8 flex flex-wrap justify-center gap-3">
+            <LocaleLink href="/tours" className="inline-flex items-center justify-center gap-2 rounded-full bg-white px-6 py-3 text-sm font-semibold text-terracotta-700 shadow-soft transition-all duration-300 hover:-translate-y-0.5 hover:bg-cream-50">
               {t("cta.browseTours")}
             </LocaleLink>
             <LocaleLink
               href="/contact"
-              className="btn-primary bg-ink-900 hover:bg-ink-800"
+              className="inline-flex items-center justify-center gap-2 rounded-full border border-white/40 bg-white/15 px-6 py-3 text-sm font-semibold text-white backdrop-blur transition-all duration-300 hover:-translate-y-0.5 hover:bg-white/25"
             >
               {t("cta.talkToUs")}
             </LocaleLink>

@@ -19,42 +19,51 @@ export default function Header() {
   ];
 
   return (
-    <header className="sticky top-0 z-40 border-b border-ink-900/5 bg-cream-50/90 backdrop-blur">
-      <div className="container-wide flex h-24 items-center justify-between py-3">
+    <header
+      className="sticky top-0 z-40 bg-cream-50/95 backdrop-blur-md"
+      style={{
+        borderBottom: "1px solid rgba(180, 130, 40, 0.15)",
+        boxShadow: "0 2px 20px -6px rgba(140, 90, 10, 0.12)",
+      }}
+    >
+      <div className="container-wide flex h-20 items-center justify-between">
+        {/* Logo + Brand */}
         <LocaleLink href="/" className="flex items-center gap-3">
           <Image
             src="/images/gotrustelle.png"
             alt={siteConfig.name}
-            width={160}
-            height={60}
-            className="h-20 w-auto object-contain mix-blend-multiply"
+            width={120}
+            height={48}
+            className="h-14 w-auto object-contain mix-blend-multiply"
             priority
           />
-          <div className="hidden md:flex flex-col items-center leading-none gap-0">
-            <span className="font-display text-3xl font-bold tracking-tight bg-gradient-to-r from-ink-900 via-terracotta-600 to-saffron-600 bg-clip-text text-transparent">
+          <div className="hidden md:flex flex-col items-start leading-none gap-1">
+            <span className="font-display text-2xl font-bold tracking-tight bg-gradient-to-r from-terracotta-600 via-ink-900 to-saffron-600 bg-clip-text text-transparent">
               {siteConfig.name}
             </span>
-            <span className="text-xs text-ink-400 tracking-wide -mt-0.5">
+            <span className="text-[10px] font-medium uppercase tracking-[0.2em] text-ink-400">
               Where Trust Leads Travel
             </span>
           </div>
         </LocaleLink>
 
+        {/* Desktop nav */}
         <nav className="hidden items-center gap-1 md:flex">
           {navLinks.map((link) => (
             <LocaleLink
               key={link.href}
               href={link.href}
-              className="rounded-full px-4 py-2 text-sm font-medium text-ink-800 transition hover:bg-cream-100 hover:text-ink-900"
+              className="rounded-full px-4 py-2 text-sm font-medium text-ink-700 transition-colors hover:bg-cream-100 hover:text-terracotta-600"
             >
               {link.label}
             </LocaleLink>
           ))}
-          <div className="ml-2">
+          <div className="ml-3 pl-3 border-l border-ink-900/10">
             <LanguageSwitcher />
           </div>
         </nav>
 
+        {/* Mobile menu button */}
         <div className="flex items-center gap-2 md:hidden">
           <LanguageSwitcher />
           <button
@@ -63,7 +72,7 @@ export default function Header() {
             onClick={() => setOpen(!open)}
             aria-label={t("nav.toggleMenu")}
           >
-            <svg viewBox="0 0 24 24" fill="none" className="h-6 w-6" stroke="currentColor" strokeWidth="2">
+            <svg viewBox="0 0 24 24" fill="none" className="h-5 w-5" stroke="currentColor" strokeWidth="2">
               {open ? (
                 <path strokeLinecap="round" strokeLinejoin="round" d="M6 6l12 12M18 6L6 18" />
               ) : (
@@ -74,15 +83,16 @@ export default function Header() {
         </div>
       </div>
 
+      {/* Mobile drawer */}
       {open && (
-        <div className="md:hidden border-t border-ink-900/5 bg-cream-50">
+        <div className="md:hidden border-t border-ink-900/8 bg-cream-50">
           <nav className="container-wide flex flex-col gap-1 py-3">
             {navLinks.map((link) => (
               <LocaleLink
                 key={link.href}
                 href={link.href}
                 onClick={() => setOpen(false)}
-                className="rounded-xl px-4 py-3 text-base font-medium text-ink-800 hover:bg-cream-100"
+                className="rounded-xl px-4 py-3 text-base font-medium text-ink-800 hover:bg-cream-100 hover:text-terracotta-600"
               >
                 {link.label}
               </LocaleLink>

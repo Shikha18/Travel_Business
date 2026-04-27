@@ -78,10 +78,10 @@ const config: Config = {
           800: "#551a28",
           900: "#34101a",
         },
-        // OFF-WHITE — near white with the faintest warm undertone.
+        // WARM KHADI — honey ivory + amber wheat, the heart of the warmth palette.
         cream: {
-          50: "#ffffff",
-          100: "#faf7f3",
+          50:  "#fef9ee",  // warm ivory — header, cards, page base
+          100: "#fef0cc",  // soft honey — section bands (brand teaser, trust, FAQ)
         },
         // EARTH — warm dark brown instead of cool near-black.
         ink: {
@@ -103,23 +103,22 @@ const config: Config = {
         script: ["var(--font-script)", "cursive"],
       },
       boxShadow: {
-        // Slightly cool earth shadows — work on both blue and warm content.
-        soft: "0 8px 30px -12px rgba(20, 43, 83, 0.18)",
-        card: "0 14px 40px -14px rgba(20, 43, 83, 0.28)",
-        // Signature glows for hero/CTA accents.
-        glow: "0 20px 60px -20px rgba(15, 154, 177, 0.45)", // aqua glow
-        plum: "0 20px 60px -20px rgba(44, 98, 178, 0.38)", // Jodhpur blue glow
+        soft: "0 8px 30px -12px rgba(120, 70, 20, 0.14)",
+        card: "0 14px 40px -14px rgba(120, 70, 20, 0.18)",
+        glow: "0 20px 60px -20px rgba(205, 89, 48, 0.45)",
+        plum: "0 20px 60px -20px rgba(44, 98, 178, 0.38)",
+        warm: "0 20px 60px -20px rgba(200, 130, 30, 0.40)",
       },
       backgroundImage: {
-        // Aqua → indigo with warm clay highlight in the middle.
+        // Warm golden amber → terracotta → deep rust
         "warm-gradient":
-          "linear-gradient(135deg, #9fe6ec 0%, #0f9ab1 35%, #2c62b2 70%, #142b53 100%)",
+          "linear-gradient(135deg, #f7c87e 0%, #e07840 30%, #b33f1e 62%, #6a2613 100%)",
         "sunset-gradient":
-          "linear-gradient(135deg, #0f9ab1 0%, #2c62b2 55%, #142b53 100%)",
+          "linear-gradient(135deg, #f4a55a 0%, #cd5930 50%, #8e3218 100%)",
         "spice-gradient":
-          "linear-gradient(135deg, #eefbfc 0%, #9fe6ec 40%, #2fb8c5 100%)",
+          "linear-gradient(135deg, #fef9ee 0%, #fef0cc 40%, #f7c87e 100%)",
         "haveli-gradient":
-          "linear-gradient(135deg, #eefbfc 0%, #fbe0e1 55%, #9fe6ec 100%)",
+          "linear-gradient(135deg, #fef9ee 0%, #fdf3ed 55%, #f8ddcb 100%)",
       },
     },
   },

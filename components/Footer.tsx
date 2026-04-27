@@ -83,7 +83,7 @@ export default function Footer() {
           <ul className="mt-4 space-y-2 text-sm">
             <li>
               <a href={`mailto:${siteConfig.email}`} className="hover:text-saffron-300">
-                {siteConfig.email}
+                Write to us
               </a>
             </li>
             <li>

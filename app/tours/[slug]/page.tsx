@@ -65,7 +65,6 @@ export default function TourDetail({
 
   const otherTours = getLocalizedTours(locale);
   const difficultyKey = `difficulty.${tour.difficulty}` as TranslationKey;
-  const fromPriceEUR = Math.min(...tour.pricing.map((p) => p.priceEUR));
   const whatsappText = t("tourDetail.waMessage").replace("{tour}", tour.title);
   const waLink = `https://wa.me/${siteConfig.whatsappNumber}?text=${encodeURIComponent(
     whatsappText
@@ -84,13 +83,6 @@ export default function TourDetail({
       "@type": "TravelAgency",
       name: siteConfig.name,
       url: siteConfig.url,
-    },
-    offers: {
-      "@type": "Offer",
-      price: Math.min(...tour.pricing.map((p) => p.priceEUR)),
-      priceCurrency: "EUR",
-      availability: "https://schema.org/InStock",
-      validFrom: "2026-01-01",
     },
     itinerary: {
       "@type": "ItemList",
@@ -147,7 +139,6 @@ export default function TourDetail({
               <Stat label={t("tourDetail.duration")} value={`${tour.durationNights}N / ${tour.durationDays}D`} />
               <Stat label={t("tourDetail.groupSize")} value={tour.groupSize} />
               <Stat label={t("tourDetail.region")} value={tour.region} />
-              <Stat label={t("tourDetail.startsFrom")} value={`€${fromPriceEUR.toLocaleString("en-GB")} pp`} />
             </div>
           </div>
         </div>
@@ -270,20 +261,7 @@ export default function TourDetail({
         <aside className="md:col-span-1">
           <div className="sticky top-24 space-y-5">
             <div className="card p-6">
-              <div className="text-xs font-semibold uppercase tracking-wider text-ink-600">
-                {t("tourDetail.startingFrom")}
-              </div>
-              <div className="mt-1 flex items-baseline gap-2">
-                <span className="font-display text-4xl font-semibold text-saffron-600">
-                  €{fromPriceEUR.toLocaleString("en-GB")}
-                </span>
-                <span className="text-sm text-ink-600">{t("tourDetail.perPerson")}</span>
-              </div>
-              <div className="mt-1 text-xs text-ink-600">
-                {t("tourDetail.deposit")}
-              </div>
-
-              <div className="mt-5 rounded-xl bg-cream-100 p-4">
+              <div className="rounded-xl bg-cream-100 p-4">
                 <div className="text-xs font-semibold uppercase tracking-wider text-ink-600">
                   {t("tourDetail.departures")}
                 </div>
@@ -310,30 +288,6 @@ export default function TourDetail({
                   {t("cta.requestEmail")}
                 </LocaleLink>
               </div>
-            </div>
-
-            <div className="card p-6">
-              <h4 className="font-display text-lg font-semibold">
-                {t("tourDetail.pricingOptions")}
-              </h4>
-              <ul className="mt-4 divide-y divide-ink-900/5">
-                {tour.pricing.map((p) => (
-                  <li
-                    key={p.label}
-                    className="flex items-center justify-between py-3 text-sm"
-                  >
-                    <span className="text-ink-700">{p.label}</span>
-                    <div className="text-right">
-                      <div className="font-semibold text-ink-900">
-                        €{p.priceEUR.toLocaleString("en-GB")}
-                      </div>
-                      <div className="text-xs text-ink-600">
-                        ≈ ₹{p.priceINR.toLocaleString("en-IN")}
-                      </div>
-                    </div>
-                  </li>
-                ))}
-              </ul>
             </div>
           </div>
         </aside>

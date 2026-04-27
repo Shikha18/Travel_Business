@@ -8,8 +8,6 @@ import type { TranslationKey } from "@/lib/translations";
 
 export default function TourCard({ tour, defaultHover = false }: { tour: Tour; defaultHover?: boolean }) {
   const t = useTranslator();
-  const fromPrice = Math.min(...tour.pricing.map((p) => p.priceEUR));
-
   return (
     <LocaleLink
       href={`/tours/${tour.slug}`}
@@ -50,16 +48,7 @@ export default function TourCard({ tour, defaultHover = false }: { tour: Tour; d
           {tour.summary}
         </p>
 
-        <div className="mt-5 flex items-center justify-between border-t border-ink-900/5 pt-4">
-          <div>
-            <div className="text-xs text-ink-600">{t("tourCard.from")}</div>
-            <div className="font-display text-xl font-semibold text-saffron-600">
-              €{fromPrice.toLocaleString("en-GB")}{" "}
-              <span className="text-sm font-normal text-ink-600">
-                {t("tourCard.perPerson")}
-              </span>
-            </div>
-          </div>
+        <div className="mt-5 flex items-center justify-end border-t border-ink-900/5 pt-4">
           <span className={`rounded-full border px-4 py-2 text-xs font-semibold transition group-hover:border-saffron-500 group-hover:bg-saffron-500 group-hover:text-white ${
             defaultHover
               ? "border-saffron-500 bg-saffron-500 text-white"

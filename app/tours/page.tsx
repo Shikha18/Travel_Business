@@ -65,29 +65,31 @@ export default function ToursPage({
           ))}
         </div>
 
-        <div className="mt-16 rounded-3xl bg-ink-900 px-8 py-14 text-center text-white md:py-16">
-          <h2 className="font-display text-3xl font-semibold md:text-4xl">
+        <div className="relative mt-16 overflow-hidden rounded-3xl bg-warm-gradient px-8 py-14 text-center text-white shadow-card md:py-16">
+          <div aria-hidden="true" className="pointer-events-none absolute -left-10 -top-10 h-48 w-48 rounded-full bg-white/10 blur-3xl" />
+          <div aria-hidden="true" className="pointer-events-none absolute -right-10 bottom-0 h-40 w-40 rounded-full bg-black/10 blur-3xl" />
+          <h2 className="relative font-display text-3xl font-semibold md:text-4xl">
             {t("tours.customCTA.title")}
           </h2>
-          <p className="mx-auto mt-4 max-w-xl text-white/80">
+          <p className="relative mx-auto mt-4 max-w-xl text-white/90">
             {t("tours.customCTA.subtitle")}
           </p>
-          <div className="mt-8 flex flex-wrap justify-center gap-3">
+          <div className="relative mt-8 flex flex-wrap justify-center gap-3">
             <a
               href={`https://wa.me/${siteConfig.whatsappNumber}?text=${encodeURIComponent(
                 siteConfig.whatsappDefaultMessage
               )}`}
               target="_blank"
               rel="noopener noreferrer"
-              className="btn-primary"
+              className="inline-flex items-center justify-center gap-2 rounded-full bg-white px-6 py-3 text-sm font-semibold text-terracotta-700 shadow-soft transition-all duration-300 hover:-translate-y-0.5 hover:bg-cream-50"
             >
               {t("tours.customCTA.wa")}
             </a>
             <a
               href={`mailto:${siteConfig.email}`}
-              className="btn-secondary"
+              className="inline-flex items-center justify-center gap-2 rounded-full border border-white/40 bg-white/15 px-6 py-3 text-sm font-semibold text-white backdrop-blur transition-all duration-300 hover:-translate-y-0.5 hover:bg-white/25"
             >
-              {t("cta.emailUs")} {siteConfig.email}
+              {t("cta.emailUs")}
             </a>
           </div>
         </div>

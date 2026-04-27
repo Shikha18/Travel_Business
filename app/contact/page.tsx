@@ -161,9 +161,9 @@ export default function ContactPage({
             </h3>
             <a
               href={`mailto:${siteConfig.email}`}
-              className="mt-2 block break-all text-sm text-saffron-600 hover:underline"
+              className="mt-2 inline-flex items-center gap-1.5 rounded-full bg-terracotta-50 px-4 py-2 text-sm font-semibold text-terracotta-700 ring-1 ring-terracotta-200 transition hover:bg-terracotta-100"
             >
-              {siteConfig.email}
+              Send us an email →
             </a>
             <p className="mt-3 text-sm text-ink-600">
               {t("contact.sidebar.phone")}:{" "}

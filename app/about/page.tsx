@@ -260,10 +260,106 @@ export default function AboutPage({
           </div>
         </div>
       </section>
+      
+      {/* HOW WE MET — the origin story */}
+      <section className="container-wide py-12 md:py-20">
+        <div className="mx-auto max-w-3xl">
+          <span className="chip">Our story</span>
+          <h2 className="mt-3 font-display text-3xl font-semibold md:text-4xl">
+            How GoTrustelle began — <span className="bg-gradient-to-r from-terracotta-600 to-terracotta-300 bg-clip-text text-transparent">a café, a baby, and a real conversation</span>
+          </h2>
+        </div>
 
-      {/* Full founder bios have moved to dedicated pages — see
-          /about/team/shikha and /about/team/melissa. The hover cards
-          above link to them with the "Read full story" CTA. */}
+        <div className="mx-auto mt-10 max-w-3xl">
+          <div className="relative rounded-3xl bg-gradient-to-br from-cream-50 via-white to-terracotta-50 px-8 py-10 shadow-card ring-1 ring-terracotta-100 md:px-12 md:py-12">
+            {/* Decorative quote mark */}
+            <div aria-hidden="true" className="absolute -top-5 left-10 font-display text-8xl leading-none text-terracotta-200 select-none">&ldquo;</div>
+
+            <p className="relative text-ink-700 leading-[1.85] text-base md:text-lg">
+              It started with a baby&apos;s smile at Freedom Café in Rishikesh. It was May 2022 when I noticed Melissa sitting there with her little one — and because I have never been able to walk past a baby without stopping, I sat down beside her. What began as a brief, warm moment turned into hours of conversation: about travel, about India, about what it truly means to arrive somewhere and feel completely held by it.
+            </p>
+
+            <p className="relative mt-5 text-ink-700 leading-[1.85] text-base md:text-lg">
+              We stayed in touch across continents for years, making plans that life kept kindly postponing. Then in early 2026, Melissa returned to India — and this time, I didn&apos;t take her to a resort or a tourist trail. I brought her home. To my family in Madhya Pradesh, near the Rajasthan border, where culture lives in every corner and festivals fill the air with colour and music. A big local celebration was underway. She stayed for three days, wrapped in a traditional Indian outfit, eating my mother&apos;s home cooking, joining the pooja, wandering through the fair, and sitting in our courtyard long after midnight as the festival lights flickered around us.
+            </p>
+
+            <p className="relative mt-5 text-ink-700 leading-[1.85] text-base md:text-lg">
+              On the last evening, she said something I have thought about every single day since: <em className="text-terracotta-700 not-italic font-semibold">&ldquo;This is what we miss when we travel to India. We don&apos;t just want to see India — we want to feel India.&rdquo;</em> That one sentence became everything. GoTrustelle was born not from a pitch deck or a spreadsheet, but from the belief that travel, at its most beautiful, is really just connection — to a place, to its people, and to something deeper in yourself that you didn&apos;t know was waiting to be found.
+            </p>
+
+            {/* <footer className="mt-6 flex items-center gap-3 border-t border-terracotta-100 pt-5">
+              <div className="h-px flex-1 bg-terracotta-100" />
+              <span className="text-sm font-semibold text-terracotta-600">— Shikha &amp; Melissa, co-founders</span>
+              <div className="h-px flex-1 bg-terracotta-100" />
+            </footer> */}
+          </div>
+        </div>
+
+        {/* PHOTO & VIDEO GALLERY — real moments */}
+        <div className="mx-auto mt-12 max-w-5xl">
+          <p className="mb-5 text-center text-[11px] font-semibold uppercase tracking-[0.22em] text-ink-400">
+            Real moments · not stock photos
+          </p>
+          <div className="grid grid-cols-2 gap-3 md:grid-cols-3 md:gap-4">
+            {([
+              { src: "/images/story-shikha-baby-rishikesh.jpg", caption: "Freedom Café, Rishikesh · May 2022 — where it all began", pos: "center top" },
+              { src: "/images/story-shikha-baby-cafe.jpg",       caption: "Playing with Melissa's daughter — the moment we first spoke", pos: "center top" },
+              { src: "/images/story-family-3.jpg",               caption: "Melissa in a traditional Indian saree with Shikha's mother", pos: "center top" },
+              { src: "/images/story-shikha-melissa-car.jpg",     caption: "Shikha & Melissa on the road together, 2026", pos: "center center" },
+              { src: "/images/story-family-2.jpg",               caption: "Melissa joins the pooja at the local festival", pos: "center center" },
+              { src: "/images/story-family-1.jpg",               caption: "Road-trip snacks and real conversations", pos: "center center" },
+            ] as { src: string; caption: string; pos: string }[]).map(({ src, caption, pos }) => (
+              <div key={src} className="group relative aspect-[3/4] overflow-hidden rounded-2xl shadow-card ring-1 ring-ink-900/5">
+                <Image
+                  src={src}
+                  alt={caption}
+                  fill
+                  sizes="(max-width: 768px) 50vw, 33vw"
+                  className="object-cover transition-transform duration-700 group-hover:scale-105"
+                  style={{ objectPosition: pos }}
+                />
+                <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/75 to-transparent px-4 py-4 opacity-0 transition-opacity duration-300 group-hover:opacity-100 md:opacity-100">
+                  <p className="text-[11px] font-medium leading-snug text-white/90">{caption}</p>
+                </div>
+              </div>
+            ))}
+
+            {/* Video card — spans 2 cols on mobile, 3 on md (full row) */}
+            <div className="group relative col-span-2 overflow-hidden rounded-2xl shadow-card ring-1 ring-ink-900/5 md:col-span-3">
+              <video
+                src="/videos/story-moment.mov"
+                autoPlay
+                muted
+                loop
+                playsInline
+                className="h-full w-full object-cover"
+                style={{ maxHeight: "340px" }}
+              />
+              <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/75 to-transparent px-4 py-4">
+                <p className="text-[11px] font-medium leading-snug text-white/90">A real moment from our time together in India</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Closing */}
+        <div className="mx-auto mt-10 max-w-3xl rounded-3xl bg-warm-gradient px-8 py-10 text-center text-white shadow-card md:py-12">
+          <p className="font-display text-2xl font-semibold leading-snug md:text-3xl">
+            Come, don&apos;t just explore India — <em>feel</em> India.
+          </p>
+          <p className="mx-auto mt-4 max-w-xl text-white/85 leading-relaxed">
+            Every journey we create is an invitation to step past the surface — into family homes, festival grounds, local kitchens, and conversations that linger long after you&apos;ve come home.
+          </p>
+          <div className="mt-7 flex flex-wrap justify-center gap-3">
+            <LocaleLink href="/tours" className="inline-flex items-center justify-center gap-2 rounded-full bg-white px-6 py-3 text-sm font-semibold text-terracotta-700 shadow-soft transition-all duration-300 hover:-translate-y-0.5 hover:bg-cream-50">
+              See our journeys
+            </LocaleLink>
+            <LocaleLink href="/contact" className="inline-flex items-center justify-center gap-2 rounded-full border border-white/40 bg-white/10 px-6 py-3 text-sm font-semibold text-white shadow-soft backdrop-blur transition-all duration-300 hover:-translate-y-0.5 hover:bg-white/20">
+              Write to Shikha
+            </LocaleLink>
+          </div>
+        </div>
+      </section>
 
       {/* PRINCIPLES — below the team section */}
       <section className="container-wide py-10 md:py-14">
