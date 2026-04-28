@@ -16,7 +16,7 @@ export default function Footer() {
               {siteConfig.name}
             </span>
             <span className="text-[10px] uppercase tracking-[0.2em] text-cream-50/50">
-              Travel Experiences in India · by a woman, for you
+              {t("footer.tagline")}
             </span>
           </div>
           <p className="mt-4 max-w-md text-sm text-cream-50/70">

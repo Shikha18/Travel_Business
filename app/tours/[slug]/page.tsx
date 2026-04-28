@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Image from "next/image";
+import HeroImageCarousel from "@/components/HeroImageCarousel";
 import LocaleLink from "@/components/LocaleLink";
 import { notFound } from "next/navigation";
 import {
@@ -101,41 +102,37 @@ export default function TourDetail({
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(tourSchema) }}
       />
-      {/* HERO */}
-      <section className="relative">
-        <div className="relative h-[60vh] min-h-[420px] w-full overflow-hidden">
-          <Image
-            src={tour.heroImage}
+      {/* HERO — full-bleed image with gradient; all text stays inside the dark overlay */}
+      <section className="relative min-h-[560px] overflow-hidden md:min-h-[680px]">
+        {/* Background carousel + gradient */}
+        <div className="absolute inset-0">
+          <HeroImageCarousel
+            images={tour.galleryImages.length > 0 ? tour.galleryImages : [tour.heroImage]}
             alt={tour.title}
-            fill
-            priority
-            className="object-cover"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-ink-900/90 via-ink-900/40 to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-t from-ink-900 via-ink-900/65 to-ink-900/15" />
         </div>
-        <div className="container-wide -mt-40 relative z-10 text-white">
+
+        {/* All content lives inside the dark gradient — never on the cream page background */}
+        <div className="relative container-wide flex min-h-[560px] flex-col justify-end pb-12 pt-20 text-white md:min-h-[680px] md:pb-16 md:pt-28">
           <div className="max-w-3xl">
+            {/* Difficulty chip only */}
             <div className="flex flex-wrap gap-2">
-              {tour.months.map((m) => (
-                <span
-                  key={m}
-                  className="rounded-full bg-saffron-500 px-3 py-1 text-[11px] font-semibold uppercase tracking-wide"
-                >
-                  {t(`month.${m}` as TranslationKey)} 2026
-                </span>
-              ))}
-              <span className="rounded-full bg-white/15 px-3 py-1 text-[11px] font-semibold uppercase tracking-wide backdrop-blur">
+              <span className="rounded-full border border-white/25 bg-white/15 px-3 py-1 text-[11px] font-semibold uppercase tracking-wide text-white backdrop-blur-sm">
                 {t(difficultyKey)}
               </span>
             </div>
-            <h1 className="mt-4 font-display text-4xl font-semibold leading-tight md:text-6xl">
+
+            {/* Title */}
+            <h1 className="mt-4 font-display text-4xl font-semibold leading-tight text-white drop-shadow-lg md:text-6xl">
               {tour.title}
             </h1>
-            <p className="mt-3 max-w-2xl text-lg text-white/85">
+            <p className="mt-3 max-w-2xl text-base text-white/85 md:text-lg">
               {tour.subtitle}
             </p>
 
-            <div className="mt-6 grid grid-cols-2 gap-4 rounded-2xl bg-white/10 p-5 backdrop-blur md:grid-cols-4">
+            {/* Quick-stats bar — dark frosted glass, always on the image */}
+            <div className="mt-7 grid grid-cols-2 gap-4 rounded-2xl border border-white/10 bg-black/35 px-5 py-4 backdrop-blur-sm md:grid-cols-3">
               <Stat label={t("tourDetail.duration")} value={`${tour.durationNights}N / ${tour.durationDays}D`} />
               <Stat label={t("tourDetail.groupSize")} value={tour.groupSize} />
               <Stat label={t("tourDetail.region")} value={tour.region} />
@@ -194,30 +191,43 @@ export default function TourDetail({
               {tour.itinerary.map((day) => (
                 <li
                   key={day.day}
-                  className="relative rounded-2xl border border-ink-900/5 bg-white p-6 shadow-soft"
+                  className="relative overflow-hidden rounded-2xl border border-ink-900/5 bg-white shadow-soft"
                 >
-                  <div className="flex items-start gap-5">
-                    <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-warm-gradient text-lg font-semibold text-white">
-                      {day.day}
+                  {day.image && (
+                    <div className="relative h-48 w-full sm:h-56">
+                      <Image
+                        src={day.image}
+                        alt={day.title}
+                        fill
+                        sizes="(max-width: 768px) 100vw, 66vw"
+                        className="object-cover"
+                      />
                     </div>
-                    <div className="flex-1">
-                      <h3 className="font-display text-lg font-semibold text-ink-900">
-                        {day.title}
-                      </h3>
-                      <p className="mt-2 text-sm text-ink-700 leading-relaxed">
-                        {day.description}
-                      </p>
-                      <div className="mt-3 flex flex-wrap gap-3 text-xs text-ink-600">
-                        {day.overnight && (
-                          <span className="rounded-full bg-cream-100 px-3 py-1">
-                            🏠 {day.overnight}
-                          </span>
-                        )}
-                        {day.highlight && (
-                          <span className="rounded-full bg-saffron-100 px-3 py-1 text-saffron-700">
-                            ✨ {day.highlight}
-                          </span>
-                        )}
+                  )}
+                  <div className="p-6">
+                    <div className="flex items-start gap-5">
+                      <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-warm-gradient text-lg font-semibold text-white">
+                        {day.day}
+                      </div>
+                      <div className="flex-1">
+                        <h3 className="font-display text-lg font-semibold text-ink-900">
+                          {day.title}
+                        </h3>
+                        <p className="mt-2 text-sm text-ink-700 leading-relaxed">
+                          {day.description}
+                        </p>
+                        <div className="mt-3 flex flex-wrap gap-3 text-xs text-ink-600">
+                          {day.overnight && (
+                            <span className="rounded-full bg-cream-100 px-3 py-1">
+                              🏠 {day.overnight}
+                            </span>
+                          )}
+                          {day.highlight && (
+                            <span className="rounded-full bg-saffron-100 px-3 py-1 text-saffron-700">
+                              ✨ {day.highlight}
+                            </span>
+                          )}
+                        </div>
                       </div>
                     </div>
                   </div>

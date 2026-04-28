@@ -23,19 +23,19 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        // DAL LAKE AQUA — primary brand color. Kept under "saffron" key
-        // for backward-compat with existing components.
+        // GOLDEN AMBER — matches the logo's circular golden border.
+        // Kept under "saffron" key for backward-compat with existing components.
         saffron: {
-          50: "#eefbfc",
-          100: "#cff3f6",
-          200: "#9fe6ec",
-          300: "#63d2dc",
-          400: "#2fb8c5",
-          500: "#0f9ab1", // primary brand aqua — Dal Lake, Kashmir water
-          600: "#0a7c92",
-          700: "#0b6074",
-          800: "#0d4654",
-          900: "#0a2c37",
+          50:  "#fdf8ee",
+          100: "#f8eacc",
+          200: "#f0cc84",
+          300: "#e4aa42",
+          400: "#cc8c24",
+          500: "#b47018", // primary golden amber — logo gold
+          600: "#8e5510",
+          700: "#693e0c",
+          800: "#462908",
+          900: "#251504",
         },
         // CLAY — warm sandstone-terracotta that grounds the palette.
         // Kept as warm counter-accent to the blues.
@@ -78,10 +78,10 @@ const config: Config = {
           800: "#551a28",
           900: "#34101a",
         },
-        // WARM KHADI — honey ivory + amber wheat, the heart of the warmth palette.
+        // WARM SANDY CREAM — matches the logo's background color.
         cream: {
-          50:  "#fef9ee",  // warm ivory — header, cards, page base
-          100: "#fef0cc",  // soft honey — section bands (brand teaser, trust, FAQ)
+          50:  "#fdf4ec",  // warm sandy cream — page base, cards, header
+          100: "#f5e2c8",  // logo background sand — section bands (brand teaser, trust, FAQ)
         },
         // EARTH — warm dark brown instead of cool near-black.
         ink: {

@@ -4,7 +4,6 @@ import Image from "next/image";
 import LocaleLink from "./LocaleLink";
 import type { Tour } from "@/lib/tours";
 import { useTranslator } from "@/lib/use-i18n";
-import type { TranslationKey } from "@/lib/translations";
 
 export default function TourCard({ tour, defaultHover = false }: { tour: Tour; defaultHover?: boolean }) {
   const t = useTranslator();
@@ -24,14 +23,9 @@ export default function TourCard({ tour, defaultHover = false }: { tour: Tour; d
           className={`object-cover transition duration-700 group-hover:scale-105 ${defaultHover ? "scale-105" : ""}`}
         />
         <div className="absolute left-4 top-4 flex gap-2">
-          {tour.months.map((m) => (
-            <span
-              key={m}
-              className="rounded-full bg-white/90 px-2.5 py-1 text-[11px] font-semibold uppercase tracking-wide text-ink-900"
-            >
-              {t(`month.${m}` as TranslationKey)}
-            </span>
-          ))}
+          <span className="rounded-full bg-white/90 px-2.5 py-1 text-[11px] font-semibold uppercase tracking-wide text-ink-900">
+            {tour.durationDays}D · {tour.region}
+          </span>
         </div>
       </div>
       <div className="p-6">

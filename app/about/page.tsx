@@ -72,33 +72,33 @@ export default function AboutPage({
             />
           </div>
           <div>
-            <span className="chip">The name</span>
+            <span className="chip">{t("about.brand.chip")}</span>
             <h2 className="mt-3 font-display text-3xl font-semibold md:text-4xl">
-              Why <span className="bg-gradient-to-r from-terracotta-600 to-saffron-500 bg-clip-text text-transparent">GoTrustelle</span>?
+              {t("about.brand.titlePrefix")} <span className="bg-gradient-to-r from-terracotta-600 to-saffron-500 bg-clip-text text-transparent">GoTrustelle</span>{t("about.brand.titleSuffix")}
             </h2>
             <p className="mt-4 text-ink-600 leading-relaxed">
-              GoTrustelle is built on three simple ideas — the freedom to explore, the comfort of trust, and the warmth of a woman-led journey.
+              {t("about.brand.desc")}
             </p>
             <div className="mt-8 space-y-5">
               <div className="flex items-start gap-4">
                 <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-saffron-100 font-display text-lg font-bold text-saffron-600">Go</span>
                 <div>
-                  <div className="font-semibold text-ink-900">Freedom to explore</div>
-                  <div className="mt-0.5 text-sm text-ink-600">Movement, adventure, and the courage to discover India beyond the guidebook.</div>
+                  <div className="font-semibold text-ink-900">{t("brand.go.title")}</div>
+                  <div className="mt-0.5 text-sm text-ink-600">{t("brand.go.body")}</div>
                 </div>
               </div>
               <div className="flex items-start gap-4">
                 <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-terracotta-50 font-display text-lg font-bold text-terracotta-600">Tr</span>
                 <div>
-                  <div className="font-semibold text-ink-900">The comfort of trust</div>
-                  <div className="mt-0.5 text-sm text-ink-600">Every detail planned, every partner vetted. You travel — we take care of the rest.</div>
+                  <div className="font-semibold text-ink-900">{t("brand.trust.title")}</div>
+                  <div className="mt-0.5 text-sm text-ink-600">{t("brand.trust.body")}</div>
                 </div>
               </div>
               <div className="flex items-start gap-4">
                 <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-teal-50 font-display text-lg font-bold text-teal-600">elle</span>
                 <div>
-                  <div className="font-semibold text-ink-900">A woman-led journey</div>
-                  <div className="mt-0.5 text-sm text-ink-600"><em>Elle</em> — French for "she". Built by a woman, designed with you in mind.</div>
+                  <div className="font-semibold text-ink-900">{t("brand.elle.title")}</div>
+                  <div className="mt-0.5 text-sm text-ink-600">{t("brand.elle.body")}</div>
                 </div>
               </div>
             </div>
@@ -264,9 +264,9 @@ export default function AboutPage({
       {/* HOW WE MET — the origin story */}
       <section className="container-wide py-12 md:py-20">
         <div className="mx-auto max-w-3xl">
-          <span className="chip">Our story</span>
+          <span className="chip">{t("about.origin.chip")}</span>
           <h2 className="mt-3 font-display text-3xl font-semibold md:text-4xl">
-            How GoTrustelle began — <span className="bg-gradient-to-r from-terracotta-600 to-terracotta-300 bg-clip-text text-transparent">a café, a baby, and a real conversation</span>
+            {t("about.origin.titleBefore")} <span className="bg-gradient-to-r from-terracotta-600 to-terracotta-300 bg-clip-text text-transparent">{t("about.origin.titleHighlight")}</span>
           </h2>
         </div>
 
@@ -276,50 +276,50 @@ export default function AboutPage({
             <div aria-hidden="true" className="absolute -top-5 left-10 font-display text-8xl leading-none text-terracotta-200 select-none">&ldquo;</div>
 
             <p className="relative text-ink-700 leading-[1.85] text-base md:text-lg">
-              It started with a baby&apos;s smile at Freedom Café in Rishikesh. It was May 2022 when I noticed Melissa sitting there with her little one — and because I have never been able to walk past a baby without stopping, I sat down beside her. What began as a brief, warm moment turned into hours of conversation: about travel, about India, about what it truly means to arrive somewhere and feel completely held by it.
+              {t("about.origin.p1")}
             </p>
 
             <p className="relative mt-5 text-ink-700 leading-[1.85] text-base md:text-lg">
-              We stayed in touch across continents for years, making plans that life kept kindly postponing. Then in early 2026, Melissa returned to India — and this time, I didn&apos;t take her to a resort or a tourist trail. I brought her home. To my family in Madhya Pradesh, near the Rajasthan border, where culture lives in every corner and festivals fill the air with colour and music. A big local celebration was underway. She stayed for three days, wrapped in a traditional Indian outfit, eating my mother&apos;s home cooking, joining the pooja, wandering through the fair, and sitting in our courtyard long after midnight as the festival lights flickered around us.
+              {t("about.origin.p2")}
             </p>
 
             <p className="relative mt-5 text-ink-700 leading-[1.85] text-base md:text-lg">
-              On the last evening, she said something I have thought about every single day since: <em className="text-terracotta-700 not-italic font-semibold">&ldquo;This is what we miss when we travel to India. We don&apos;t just want to see India — we want to feel India.&rdquo;</em> That one sentence became everything. GoTrustelle was born not from a pitch deck or a spreadsheet, but from the belief that travel, at its most beautiful, is really just connection — to a place, to its people, and to something deeper in yourself that you didn&apos;t know was waiting to be found.
+              {t("about.origin.p3a")} <em className="text-terracotta-700 not-italic font-semibold">&ldquo;{t("about.origin.quote")}&rdquo;</em> {t("about.origin.p3b")}
             </p>
 
-            {/* <footer className="mt-6 flex items-center gap-3 border-t border-terracotta-100 pt-5">
+            <footer className="mt-6 flex items-center gap-3 border-t border-terracotta-100 pt-5">
               <div className="h-px flex-1 bg-terracotta-100" />
-              <span className="text-sm font-semibold text-terracotta-600">— Shikha &amp; Melissa, co-founders</span>
+              <span className="text-sm font-semibold text-terracotta-600">{t("about.origin.signature")}</span>
               <div className="h-px flex-1 bg-terracotta-100" />
-            </footer> */}
+            </footer>
           </div>
         </div>
 
         {/* PHOTO & VIDEO GALLERY — real moments */}
         <div className="mx-auto mt-12 max-w-5xl">
           <p className="mb-5 text-center text-[11px] font-semibold uppercase tracking-[0.22em] text-ink-400">
-            Real moments · not stock photos
+            {t("about.origin.gallery.label")}
           </p>
           <div className="grid grid-cols-2 gap-3 md:grid-cols-3 md:gap-4">
             {([
-              { src: "/images/story-shikha-baby-rishikesh.jpg", caption: "Freedom Café, Rishikesh · May 2022 — where it all began", pos: "center top" },
-              { src: "/images/story-shikha-baby-cafe.jpg",       caption: "Playing with Melissa's daughter — the moment we first spoke", pos: "center top" },
-              { src: "/images/story-family-3.jpg",               caption: "Melissa in a traditional Indian saree with Shikha's mother", pos: "center top" },
-              { src: "/images/story-shikha-melissa-car.jpg",     caption: "Shikha & Melissa on the road together, 2026", pos: "center center" },
-              { src: "/images/story-family-2.jpg",               caption: "Melissa joins the pooja at the local festival", pos: "center center" },
-              { src: "/images/story-family-1.jpg",               caption: "Road-trip snacks and real conversations", pos: "center center" },
-            ] as { src: string; caption: string; pos: string }[]).map(({ src, caption, pos }) => (
+              { src: "/images/story-rishikesh-first-meet.jpg",  captionKey: "about.origin.photo1" as const, pos: "center top" },
+              { src: "/images/story-shikha-lily-rishikesh.jpg",   captionKey: "about.origin.photo2" as const, pos: "center top" },
+              { src: "/images/story-family-3.jpg",               captionKey: "about.origin.photo3" as const, pos: "center top" },
+              { src: "/images/story-shikha-melissa-car.jpg",     captionKey: "about.origin.photo4" as const, pos: "center center" },
+              { src: "/images/story-family-2.jpg",               captionKey: "about.origin.photo5" as const, pos: "center center" },
+              { src: "/images/story-family-1.jpg",               captionKey: "about.origin.photo6" as const, pos: "center center" },
+            ]).map(({ src, captionKey, pos }) => (
               <div key={src} className="group relative aspect-[3/4] overflow-hidden rounded-2xl shadow-card ring-1 ring-ink-900/5">
                 <Image
                   src={src}
-                  alt={caption}
+                  alt={t(captionKey)}
                   fill
                   sizes="(max-width: 768px) 50vw, 33vw"
                   className="object-cover transition-transform duration-700 group-hover:scale-105"
                   style={{ objectPosition: pos }}
                 />
                 <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/75 to-transparent px-4 py-4 opacity-0 transition-opacity duration-300 group-hover:opacity-100 md:opacity-100">
-                  <p className="text-[11px] font-medium leading-snug text-white/90">{caption}</p>
+                  <p className="text-[11px] font-medium leading-snug text-white/90">{t(captionKey)}</p>
                 </div>
               </div>
             ))}
@@ -336,7 +336,7 @@ export default function AboutPage({
                 style={{ maxHeight: "340px" }}
               />
               <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/75 to-transparent px-4 py-4">
-                <p className="text-[11px] font-medium leading-snug text-white/90">A real moment from our time together in India</p>
+                <p className="text-[11px] font-medium leading-snug text-white/90">{t("about.origin.video.caption")}</p>
               </div>
             </div>
           </div>
@@ -345,17 +345,17 @@ export default function AboutPage({
         {/* Closing */}
         <div className="mx-auto mt-10 max-w-3xl rounded-3xl bg-warm-gradient px-8 py-10 text-center text-white shadow-card md:py-12">
           <p className="font-display text-2xl font-semibold leading-snug md:text-3xl">
-            Come, don&apos;t just explore India — <em>feel</em> India.
+            {t("about.origin.closing.title")}
           </p>
           <p className="mx-auto mt-4 max-w-xl text-white/85 leading-relaxed">
-            Every journey we create is an invitation to step past the surface — into family homes, festival grounds, local kitchens, and conversations that linger long after you&apos;ve come home.
+            {t("about.origin.closing.body")}
           </p>
           <div className="mt-7 flex flex-wrap justify-center gap-3">
             <LocaleLink href="/tours" className="inline-flex items-center justify-center gap-2 rounded-full bg-white px-6 py-3 text-sm font-semibold text-terracotta-700 shadow-soft transition-all duration-300 hover:-translate-y-0.5 hover:bg-cream-50">
-              See our journeys
+              {t("about.origin.closing.cta1")}
             </LocaleLink>
             <LocaleLink href="/contact" className="inline-flex items-center justify-center gap-2 rounded-full border border-white/40 bg-white/10 px-6 py-3 text-sm font-semibold text-white shadow-soft backdrop-blur transition-all duration-300 hover:-translate-y-0.5 hover:bg-white/20">
-              Write to Shikha
+              {t("about.origin.closing.cta2")}
             </LocaleLink>
           </div>
         </div>

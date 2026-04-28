@@ -10,9 +10,9 @@
 
 @layer base {
   :root {
-    --foreground: 26 20 14;   /* ink-900 */
-    --background: 254 249 238; /* warm ivory — matches cream-50 #fef9ee */
-    --brand-warm: 15 154 177;  /* saffron-500 — Dal Lake aqua (primary) */
+    --foreground: 26 20 14;    /* ink-900 */
+    --background: 253 244 236; /* warm sandy cream — matches cream-50 #fdf4ec */
+    --brand-warm: 180 112 24;  /* saffron-500 — golden amber (logo gold) */
     --brand-plum: 44 98 178;   /* teal-500 — Jodhpur indigo */
     --brand-clay: 179 63 30;   /* terracotta-500 — warm clay */
     --brand-rose: 201 62 92;   /* rose-500 */
@@ -46,9 +46,9 @@
     font-family: "Fraunces", ui-serif, Georgia, serif;
     letter-spacing: -0.015em;
   }
-  /* Selection: Dal Lake water on khadi */
+  /* Selection: golden amber on sandy cream */
   ::selection {
-    background: rgba(15, 154, 177, 0.28);
+    background: rgba(180, 112, 24, 0.25);
     color: rgb(26, 20, 14);
   }
 }
@@ -149,7 +149,7 @@
     background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 96 20'><path fill='none' stroke='%232c62b2' stroke-width='1.5' stroke-linecap='round' d='M4 10 H36 M60 10 H92'/><circle cx='48' cy='10' r='4' fill='none' stroke='%230f9ab1' stroke-width='1.5'/><circle cx='48' cy='10' r='1.2' fill='%230f9ab1'/><circle cx='40' cy='10' r='1.2' fill='%232c62b2'/><circle cx='56' cy='10' r='1.2' fill='%232c62b2'/></svg>");
   }
 
-  /* Thin underline flourish for headings — an aqua stroke */
+  /* Thin underline flourish for headings — golden amber stroke */
   .heading-accent::after {
     content: "";
     display: block;
@@ -157,7 +157,7 @@
     height: 3px;
     margin-top: 0.6rem;
     border-radius: 9999px;
-    background: linear-gradient(90deg, #0f9ab1 0%, #2c62b2 100%);
+    background: linear-gradient(90deg, #b47018 0%, #cc8c24 100%);
   }
 }
 

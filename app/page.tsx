@@ -463,8 +463,8 @@ export default function Home({
       <section className="relative overflow-hidden">
         <div className="absolute inset-0">
           <Image
-            src="https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?auto=format&fit=crop&w=2000&q=80"
-            alt="Himalayan mountains of Ladakh, India"
+            src="/images/tours/ladakh/speedy-sandy-IJfpVYlRv5I-unsplash.jpg"
+            alt="Motorbike on the open road through Ladakh, India"
             fill
             priority
             className="object-cover"
@@ -527,7 +527,7 @@ export default function Home({
             {/* Name label */}
             <div className="flex flex-col gap-0.5">
               <p className="text-[10px] font-semibold uppercase tracking-[0.22em] text-ink-400">
-                The name behind every journey
+                {t("home.teaser.eyebrow")}
               </p>
               <p className="font-display text-xl font-semibold tracking-tight md:text-2xl">
                 <span className="text-saffron-600">Go</span>
@@ -544,19 +544,19 @@ export default function Home({
                 <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-saffron-100 font-display text-xs font-bold text-saffron-600">
                   Go
                 </span>
-                <span className="text-sm text-ink-600">Freedom to explore</span>
+                <span className="text-sm text-ink-600">{t("brand.go.title")}</span>
               </div>
               <div className="flex items-center gap-3">
                 <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-terracotta-50 font-display text-xs font-bold text-terracotta-600">
                   Tr
                 </span>
-                <span className="text-sm text-ink-600">The comfort of trust</span>
+                <span className="text-sm text-ink-600">{t("brand.trust.title")}</span>
               </div>
               <div className="flex items-center gap-3">
                 <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-teal-50 font-display text-xs font-bold text-teal-600">
                   elle
                 </span>
-                <span className="text-sm text-ink-600">A woman-led journey</span>
+                <span className="text-sm text-ink-600">{t("brand.elle.title")}</span>
               </div>
             </div>
 

@@ -278,6 +278,45 @@ export const translations = {
     "month.August": "August",
     "month.September": "September",
 
+    // Brand name breakdown (About page + Home teaser)
+    "about.brand.chip": "The name",
+    "about.brand.titlePrefix": "Why",
+    "about.brand.titleSuffix": "?",
+    "about.brand.desc": "GoTrustelle is built on three simple ideas — the freedom to explore, the comfort of trust, and the warmth of a woman-led journey.",
+    "brand.go.title": "Freedom to explore",
+    "brand.go.body": "Movement, adventure, and the courage to discover India beyond the guidebook.",
+    "brand.trust.title": "The comfort of trust",
+    "brand.trust.body": "Every detail planned, every partner vetted. You travel — we take care of the rest.",
+    "brand.elle.title": "A woman-led journey",
+    "brand.elle.body": "Elle — French for \"she\". Built by a woman, designed with you in mind.",
+    "home.teaser.eyebrow": "The name behind every journey",
+
+    // Founding story (About page)
+    "about.origin.chip": "Our story",
+    "about.origin.titleBefore": "How GoTrustelle began —",
+    "about.origin.titleHighlight": "a café, a baby, and a real conversation",
+    "about.origin.p1": "It started with a baby's smile at Freedom Café in Rishikesh. It was May 2022 when I noticed Melissa sitting there with her little one — and because I have never been able to walk past a baby without stopping, I sat down beside her. What began as a brief, warm moment turned into hours of conversation: about travel, about India, about what it truly means to arrive somewhere and feel completely held by it.",
+    "about.origin.p2": "We stayed in touch across continents for years, making plans that life kept kindly postponing. Then in early 2026, Melissa returned to India — and this time, I didn't take her to a resort or a tourist trail. I brought her home. To my family in Madhya Pradesh, near the Rajasthan border, where culture lives in every corner and festivals fill the air with colour and music. A big local celebration was underway. She stayed for three days, wrapped in a traditional Indian outfit, eating my mother's home cooking, joining the pooja, wandering through the fair, and sitting in our courtyard long after midnight as the festival lights flickered around us.",
+    "about.origin.p3a": "On the last evening, she said something I have thought about every single day since:",
+    "about.origin.quote": "This is what we miss when we travel to India. We don't just want to see India — we want to feel India.",
+    "about.origin.p3b": "That one sentence became everything. GoTrustelle was born not from a pitch deck or a spreadsheet, but from the belief that travel, at its most beautiful, is really just connection — to a place, to its people, and to something deeper in yourself that you didn't know was waiting to be found.",
+    "about.origin.signature": "— Shikha & Melissa, co-founders",
+    "about.origin.gallery.label": "Real moments · not stock photos",
+    "about.origin.photo1": "Rishikesh — the very first time we met",
+    "about.origin.photo2": "Playing with Melissa's daughter — the moment we first spoke",
+    "about.origin.photo3": "Melissa in a traditional Indian saree with Shikha's mother",
+    "about.origin.photo4": "Shikha & Melissa on the road together, 2026",
+    "about.origin.photo5": "Melissa joins the pooja at the local festival",
+    "about.origin.photo6": "Road-trip snacks and real conversations",
+    "about.origin.video.caption": "A real moment from our time together in India",
+    "about.origin.closing.title": "Come, don't just explore India — feel India.",
+    "about.origin.closing.body": "Every journey we create is an invitation to step past the surface — into family homes, festival grounds, local kitchens, and conversations that linger long after you've come home.",
+    "about.origin.closing.cta1": "See our journeys",
+    "about.origin.closing.cta2": "Write to Shikha",
+
+    // Footer tagline
+    "footer.tagline": "Travel Experiences in India · by a woman, for you",
+
     // Misc
     "common.season": "2026",
     "common.loading": "Loading…",
@@ -549,6 +588,45 @@ export const translations = {
     "month.July": "Juli",
     "month.August": "August",
     "month.September": "September",
+
+    // Markenname-Erklärung (About-Seite + Startseiten-Teaser)
+    "about.brand.chip": "Der Name",
+    "about.brand.titlePrefix": "Warum",
+    "about.brand.titleSuffix": "?",
+    "about.brand.desc": "GoTrustelle basiert auf drei einfachen Ideen — der Freiheit zu entdecken, der Sicherheit des Vertrauens und der Wärme einer frauengeführten Reise.",
+    "brand.go.title": "Freiheit zu entdecken",
+    "brand.go.body": "Bewegung, Abenteuer und der Mut, Indien jenseits des Reiseführers zu entdecken.",
+    "brand.trust.title": "Die Sicherheit des Vertrauens",
+    "brand.trust.body": "Jedes Detail geplant, jeder Partner geprüft. Sie reisen — wir kümmern uns um den Rest.",
+    "brand.elle.title": "Eine frauengeführte Reise",
+    "brand.elle.body": "Elle — Französisch für \"sie\". Von einer Frau erbaut, mit Ihnen im Sinn gestaltet.",
+    "home.teaser.eyebrow": "Der Name hinter jeder Reise",
+
+    // Gründungsgeschichte (About-Seite)
+    "about.origin.chip": "Unsere Geschichte",
+    "about.origin.titleBefore": "Wie GoTrustelle begann —",
+    "about.origin.titleHighlight": "ein Café, ein Baby und ein echtes Gespräch",
+    "about.origin.p1": "Es begann mit dem Lächeln eines Babys im Freedom Café in Rishikesh. Es war im Mai 2022, als ich Melissa dort mit ihrem Kleinen sitzen sah — und weil ich an einem Baby noch nie vorbeigehen konnte, ohne innezuhalten, setzte ich mich zu ihr. Was als kurzer, herzlicher Moment begann, wurde zu stundenlangen Gesprächen: über das Reisen, über Indien, darüber, was es wirklich bedeutet, irgendwo anzukommen und sich vollkommen geborgen zu fühlen.",
+    "about.origin.p2": "Über viele Jahre blieben wir trotz Kontinenten dazwischen in Kontakt und machten Pläne, die das Leben immer wieder sanft verschob. Dann kehrte Melissa Anfang 2026 nach Indien zurück — und dieses Mal brachte ich sie nicht in ein Resort oder auf eine Touristenroute. Ich brachte sie nach Hause. Zu meiner Familie in Madhya Pradesh, nahe der Rajasthan-Grenze, wo Kultur in jedem Winkel lebt und Feste die Luft mit Farbe und Musik erfüllen. Ein großes lokales Fest war im Gange. Sie blieb drei Tage: in ein traditionelles indisches Outfit gekleidet, aß das Essen meiner Mutter, nahm an der Pooja teil, streifte durch den Jahrmarkt und saß noch lange nach Mitternacht in unserem Hof, während die Festlichter um uns herum flackerten.",
+    "about.origin.p3a": "Am letzten Abend sagte sie etwas, das ich seitdem jeden einzelnen Tag denke:",
+    "about.origin.quote": "Das ist es, was uns beim Reisen nach Indien fehlt. Wir wollen Indien nicht nur sehen — wir wollen Indien fühlen.",
+    "about.origin.p3b": "Dieser eine Satz wurde zu allem. GoTrustelle entstand nicht aus einem Businessplan oder einer Tabelle, sondern aus der Überzeugung, dass Reisen in seiner schönsten Form wirklich nur Verbindung ist — zu einem Ort, zu seinen Menschen und zu etwas Tieferem in einem selbst, von dem man nicht wusste, dass es darauf wartete, entdeckt zu werden.",
+    "about.origin.signature": "— Shikha & Melissa, Mitgründerinnen",
+    "about.origin.gallery.label": "Echte Momente · keine Stockfotos",
+    "about.origin.photo1": "Rishikesh — das allererste Mal, als wir uns trafen",
+    "about.origin.photo2": "Mit Melissas Tochter — der Moment, als wir uns zum ersten Mal sprachen",
+    "about.origin.photo3": "Melissa in einem traditionellen indischen Sari mit Shikhas Mutter",
+    "about.origin.photo4": "Shikha & Melissa gemeinsam unterwegs, 2026",
+    "about.origin.photo5": "Melissa nimmt an der Pooja mit der Familie teil",
+    "about.origin.photo6": "Straßenessen und echte Gespräche auf dem Roadtrip",
+    "about.origin.video.caption": "Ein echter Moment aus unserer gemeinsamen Zeit in Indien",
+    "about.origin.closing.title": "Komm — erkunde Indien nicht nur. Spüre es.",
+    "about.origin.closing.body": "Jede Reise, die wir gestalten, ist eine Einladung, über die Oberfläche hinauszugehen — in Familienhäuser, Festplätze, lokale Küchen und Gespräche, die noch lange nach der Heimkehr nachhallen.",
+    "about.origin.closing.cta1": "Unsere Reisen entdecken",
+    "about.origin.closing.cta2": "Schreib an Shikha",
+
+    // Footer-Tagline
+    "footer.tagline": "Reiseerlebnisse in Indien · von einer Frau, für Sie",
 
     // Misc
     "common.season": "2026",
