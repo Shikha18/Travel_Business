@@ -110,7 +110,7 @@ export default function TourDetail({
             images={tour.galleryImages.length > 0 ? tour.galleryImages : [tour.heroImage]}
             alt={tour.title}
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-black via-black/65 to-black/15" />
+          <div className="absolute inset-0 bg-gradient-to-t from-ink-900 via-ink-900/65 to-ink-900/15" />
         </div>
 
         {/* All content lives inside the dark gradient — never on the cream page background */}
@@ -150,7 +150,7 @@ export default function TourDetail({
               {t("tourDetail.overview")}
             </h2>
             <p className="mt-4 text-ink-700 leading-relaxed">{tour.overview}</p>
-            <div className="mt-6 rounded-2xl px-5 py-4" style={{ background: "#1a1816", border: "1px solid rgba(255,255,255,0.07)" }}>
+            <div className="mt-6 rounded-2xl border border-ink-900/5 bg-cream-50 px-5 py-4">
               <div className="text-xs font-semibold uppercase tracking-wider text-ink-600">
                 {t("tourDetail.route")}
               </div>
@@ -169,10 +169,9 @@ export default function TourDetail({
               {tour.highlights.map((h, i) => (
                 <li
                   key={i}
-                  className="flex gap-3 rounded-2xl p-4 shadow-soft"
-                  style={{ background: "#1a1816", border: "1px solid rgba(255,255,255,0.07)" }}
+                  className="flex gap-3 rounded-2xl border border-ink-900/5 bg-white p-4 shadow-soft"
                 >
-                  <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full text-saffron-500" style={{ background: "rgba(200,146,10,0.18)" }}>
+                  <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-saffron-100 text-saffron-600">
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" className="h-3.5 w-3.5">
                       <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
                     </svg>
@@ -192,8 +191,7 @@ export default function TourDetail({
               {tour.itinerary.map((day) => (
                 <li
                   key={day.day}
-                  className="relative overflow-hidden rounded-2xl shadow-soft"
-                  style={{ background: "#1a1816", border: "1px solid rgba(255,255,255,0.07)" }}
+                  className="relative overflow-hidden rounded-2xl border border-ink-900/5 bg-white shadow-soft"
                 >
                   {day.image && (
                     <div className="relative h-48 w-full sm:h-56">
@@ -220,12 +218,12 @@ export default function TourDetail({
                         </p>
                         <div className="mt-3 flex flex-wrap gap-3 text-xs text-ink-600">
                           {day.overnight && (
-                            <span className="rounded-full bg-ink-200 px-3 py-1">
+                            <span className="rounded-full bg-cream-100 px-3 py-1">
                               🏠 {day.overnight}
                             </span>
                           )}
                           {day.highlight && (
-                            <span className="rounded-full px-3 py-1 text-saffron-500" style={{ background: "rgba(200,146,10,0.15)" }}>
+                            <span className="rounded-full bg-saffron-100 px-3 py-1 text-saffron-700">
                               ✨ {day.highlight}
                             </span>
                           )}
@@ -240,7 +238,7 @@ export default function TourDetail({
 
           {/* Inclusions & Exclusions */}
           <div className="grid gap-6 md:grid-cols-2">
-            <div className="rounded-2xl p-6" style={{ background: "rgba(44,98,178,0.1)", border: "1px solid rgba(44,98,178,0.25)" }}>
+            <div className="rounded-2xl border border-teal-200 bg-teal-50/50 p-6">
               <h3 className="font-display text-xl font-semibold text-teal-700">
                 {t("tourDetail.included")}
               </h3>
@@ -253,7 +251,7 @@ export default function TourDetail({
                 ))}
               </ul>
             </div>
-            <div className="rounded-2xl bg-cream-100 p-6" style={{ border: "1px solid rgba(255,255,255,0.07)" }}>
+            <div className="rounded-2xl border border-ink-900/5 bg-cream-100 p-6">
               <h3 className="font-display text-xl font-semibold text-ink-900">
                 {t("tourDetail.notIncluded")}
               </h3>
@@ -273,7 +271,7 @@ export default function TourDetail({
         <aside className="md:col-span-1">
           <div className="sticky top-24 space-y-5">
             <div className="card p-6">
-              <div className="rounded-xl bg-ink-200 p-4">
+              <div className="rounded-xl bg-cream-100 p-4">
                 <div className="text-xs font-semibold uppercase tracking-wider text-ink-600">
                   {t("tourDetail.departures")}
                 </div>

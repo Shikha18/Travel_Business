@@ -33,7 +33,7 @@ export default function ContactDateFields({
           min={today}
           value={startDate}
           onChange={(e) => setStartDate(e.target.value)}
-          className="mt-1 w-full rounded-xl border border-white/10 bg-ink-100 text-ink-900 px-4 py-3 text-sm focus:border-saffron-500 focus:outline-none focus:ring-1 focus:ring-saffron-500"
+          className="mt-1 w-full rounded-xl border border-ink-900/10 bg-white px-4 py-3 text-sm focus:border-saffron-500 focus:outline-none focus:ring-1 focus:ring-saffron-500"
         />
       </div>
       <div>
@@ -45,10 +45,10 @@ export default function ContactDateFields({
           type="date"
           min={startDate || today}
           onChange={handleEndChange}
-          className={`mt-1 w-full rounded-xl border bg-ink-100 text-ink-900 px-4 py-3 text-sm focus:outline-none focus:ring-1 ${
+          className={`mt-1 w-full rounded-xl border bg-white px-4 py-3 text-sm focus:outline-none focus:ring-1 ${
             endError
               ? "border-red-400 focus:border-red-400 focus:ring-red-300"
-              : "border-white/10 focus:border-saffron-500 focus:ring-saffron-500"
+              : "border-ink-900/10 focus:border-saffron-500 focus:ring-saffron-500"
           }`}
         />
         {endError && (

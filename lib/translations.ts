@@ -140,7 +140,7 @@ export const translations = {
     "about.team.chip": "Who you'll travel with",
     "about.team.title": "The team behind your journey.",
     "about.team.subtitle":
-      "Two co-founders, one in India and one in Germany — so you have a trusted person on both sides of your trip.",
+      "Founded in India, supported by a partner in Germany — so you have a trusted person on both sides of your journey.",
     "about.team.hoverHint": "Hover over the cards to learn more",
     "about.heroAlt": "Himalayan landscape, North India",
     "about.bios.chip": "The longer story",
@@ -153,7 +153,7 @@ export const translations = {
     // Individual story page (/about/team/[slug])
     "about.story.backToAbout": "← Back to About",
     "about.story.readFullStory": "Read full story →",
-    "about.story.meetOther": "Meet the other co-founder",
+    "about.story.meetOther": "Meet our Germany partner",
     "about.story.ctaTitle": "Ready to travel with us?",
     "about.story.ctaSubtitle":
       "Browse the 2026 group departures or message us directly.",
@@ -184,9 +184,9 @@ export const translations = {
     "about.founder.emailDirect": "Email me directly",
     "about.founder.photoCaption": "Shikha · Founder",
 
-    "about.partner.tag": "Co-founder",
+    "about.partner.tag": "Partner · Germany",
     "about.partner.country": "Based in Germany",
-    "about.partner.role": "Co-founder · European travel liaison",
+    "about.partner.role": "Partner · European travel liaison",
     "about.partner.quote":
       "\"India isn't better or worse — it's just different.\"",
     "about.partner.story1":
@@ -206,8 +206,10 @@ export const translations = {
     "about.stats.supportLabel": "On-trip support",
     "about.stats.supportBody":
       "A real human on WhatsApp any hour, any day of your trip.",
-    "about.stats.groupLabel": "Travelers per group — max",
-    "about.stats.groupBody": "Intimate, personal, and fully adaptable to you.",
+    "about.stats.groupLabel": "Small groups (max 12)",
+    "about.stats.groupBody": "Intimate, personal, and fully customisable to your pace and interests.",
+    "about.stats.customLabel": "Customisable",
+    "about.stats.customBody": "Every itinerary is built around you — dates, pace, interests. No fixed templates.",
 
     // About principles list
     "about.v.smallGroups.title": "Small groups. Always 7–10 max.",
@@ -300,7 +302,7 @@ export const translations = {
     "about.origin.p3a": "On the last evening, she said something I have thought about every single day since:",
     "about.origin.quote": "This is what we miss when we travel to India. We don't just want to see India — we want to feel India.",
     "about.origin.p3b": "That one sentence became everything. GoTrustelle was born not from a pitch deck or a spreadsheet, but from the belief that travel, at its most beautiful, is really just connection — to a place, to its people, and to something deeper in yourself that you didn't know was waiting to be found.",
-    "about.origin.signature": "— Shikha & Melissa, co-founders",
+    "about.origin.signature": "— Shikha, Founder",
     "about.origin.gallery.label": "Real moments · not stock photos",
     "about.origin.photo1": "Rishikesh — the very first time we met",
     "about.origin.photo2": "Playing with Melissa's daughter — the moment we first spoke",
@@ -451,7 +453,7 @@ export const translations = {
     "about.team.chip": "Mit wem Sie reisen",
     "about.team.title": "Das Team hinter Ihrer Reise.",
     "about.team.subtitle":
-      "Zwei Mitgründerinnen — eine in Indien und eine in Deutschland. So haben Sie auf beiden Seiten Ihrer Reise eine vertraute Ansprechperson.",
+      "In Indien gegründet, mit einer Partnerin in Deutschland — damit Sie auf beiden Seiten Ihrer Reise eine vertraute Ansprechperson haben.",
     "about.team.hoverHint": "Mit dem Mauszeiger über die Karten fahren",
     "about.heroAlt": "Himalaya-Landschaft, Nordindien",
     "about.bios.chip": "Die längere Geschichte",
@@ -464,7 +466,7 @@ export const translations = {
     // Einzel-Story-Seite (/about/team/[slug])
     "about.story.backToAbout": "← Zurück zu „Über uns“",
     "about.story.readFullStory": "Ganze Geschichte lesen →",
-    "about.story.meetOther": "Die andere Mitgründerin kennenlernen",
+    "about.story.meetOther": "Unsere Partnerin in Deutschland kennenlernen",
     "about.story.ctaTitle": "Bereit, mit uns zu reisen?",
     "about.story.ctaSubtitle":
       "Sehen Sie sich die Gruppenreisen für 2026 an oder schreiben Sie uns direkt.",
@@ -495,9 +497,9 @@ export const translations = {
     "about.founder.emailDirect": "Direkt per E-Mail schreiben",
     "about.founder.photoCaption": "Shikha · Gründerin",
 
-    "about.partner.tag": "Mitgründerin",
+    "about.partner.tag": "Partnerin · Deutschland",
     "about.partner.country": "In Deutschland",
-    "about.partner.role": "Mitgründerin · Europäische Ansprechpartnerin",
+    "about.partner.role": "Partnerin · Europäische Ansprechpartnerin",
     "about.partner.quote":
       "\"Indien ist nicht besser oder schlechter — es ist einfach anders.\"",
     "about.partner.story1":
@@ -517,8 +519,10 @@ export const translations = {
     "about.stats.supportLabel": "Unterstützung unterwegs",
     "about.stats.supportBody":
       "Ein echter Mensch auf WhatsApp, jederzeit während Ihrer Reise.",
-    "about.stats.groupLabel": "Reisende pro Gruppe — max.",
-    "about.stats.groupBody": "Intim, persönlich und ganz auf Sie zugeschnitten.",
+    "about.stats.groupLabel": "Kleine Gruppen (max. 12)",
+    "about.stats.groupBody": "Intim, persönlich und vollständig an Ihr Tempo und Ihre Interessen angepasst.",
+    "about.stats.customLabel": "Individualisierbar",
+    "about.stats.customBody": "Jedes Programm wird nach Ihren Wünschen gestaltet — Daten, Tempo, Interessen. Keine festen Vorlagen.",
 
     // About principles list
     "about.v.smallGroups.title": "Kleine Gruppen. Immer max. 7–10.",
@@ -611,7 +615,7 @@ export const translations = {
     "about.origin.p3a": "Am letzten Abend sagte sie etwas, das ich seitdem jeden einzelnen Tag denke:",
     "about.origin.quote": "Das ist es, was uns beim Reisen nach Indien fehlt. Wir wollen Indien nicht nur sehen — wir wollen Indien fühlen.",
     "about.origin.p3b": "Dieser eine Satz wurde zu allem. GoTrustelle entstand nicht aus einem Businessplan oder einer Tabelle, sondern aus der Überzeugung, dass Reisen in seiner schönsten Form wirklich nur Verbindung ist — zu einem Ort, zu seinen Menschen und zu etwas Tieferem in einem selbst, von dem man nicht wusste, dass es darauf wartete, entdeckt zu werden.",
-    "about.origin.signature": "— Shikha & Melissa, Mitgründerinnen",
+    "about.origin.signature": "— Shikha, Gründerin",
     "about.origin.gallery.label": "Echte Momente · keine Stockfotos",
     "about.origin.photo1": "Rishikesh — das allererste Mal, als wir uns trafen",
     "about.origin.photo2": "Mit Melissas Tochter — der Moment, als wir uns zum ersten Mal sprachen",

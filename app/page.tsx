@@ -468,13 +468,19 @@ export default function Home({
       <section className="relative overflow-hidden">
         <div className="absolute inset-0">
           <Image
-            src="/images/tours/ladakh/speedy-sandy-IJfpVYlRv5I-unsplash.jpg"
-            alt="Motorbike on the open road through Ladakh, India"
+            src="/images/hero-pangong-shikha.jpg"
+            alt="Pangong Lake, Ladakh — standing at the edge of the world"
             fill
             priority
             className="object-cover"
+            style={{
+              objectPosition: "22% center",
+              filter: "contrast(1.08) saturate(1.18) brightness(0.92)",
+            }}
           />
-          <div className="absolute inset-0 bg-gradient-to-br from-black/85 via-black/50 to-black/20" />
+          {/* Layered gradient: left side darker for text legibility, fades right to show the lake */}
+          <div className="absolute inset-0 bg-gradient-to-r from-black/75 via-black/45 to-black/10" />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-black/20" />
         </div>
 
         <div className="relative container-wide py-14 md:py-32 text-white">
@@ -547,19 +553,19 @@ export default function Home({
             {/* Three pillars */}
             <div className="flex flex-col gap-3 sm:flex-row sm:gap-6 md:gap-8">
               <div className="flex items-center gap-3">
-                <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full font-display text-xs font-bold text-saffron-500" style={{ background: "rgba(200,146,10,0.18)" }}>
+                <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-saffron-100 font-display text-xs font-bold text-saffron-600">
                   Go
                 </span>
                 <span className="text-sm text-ink-600">{t("brand.go.title")}</span>
               </div>
               <div className="flex items-center gap-3">
-                <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full font-display text-xs font-bold text-terracotta-500" style={{ background: "rgba(205,89,48,0.18)" }}>
+                <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-terracotta-50 font-display text-xs font-bold text-terracotta-600">
                   Tr
                 </span>
                 <span className="text-sm text-ink-600">{t("brand.trust.title")}</span>
               </div>
               <div className="flex items-center gap-3">
-                <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full font-display text-xs font-bold text-teal-500" style={{ background: "rgba(44,98,178,0.2)" }}>
+                <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-teal-50 font-display text-xs font-bold text-teal-600">
                   elle
                 </span>
                 <span className="text-sm text-ink-600">{t("brand.elle.title")}</span>
@@ -623,7 +629,7 @@ export default function Home({
             {trustPoints.map((point, i) => (
               <ScrollReveal key={point.titleKey} direction="bottom" delay={i * 100}>
               <div className="card p-6 h-full">
-                <div className="flex h-11 w-11 items-center justify-center rounded-full text-saffron-500" style={{ background: "rgba(200,146,10,0.15)" }}>
+                <div className="flex h-11 w-11 items-center justify-center rounded-full bg-saffron-100 text-saffron-600">
                   {point.icon}
                 </div>
                 <h3 className="mt-5 font-display text-xl font-semibold">
@@ -658,7 +664,7 @@ export default function Home({
                   &ldquo;{tm.quote}&rdquo;
                 </blockquote>
               </div>
-              <figcaption className="mt-6 pt-4 text-sm" style={{ borderTop: "1px solid rgba(255,255,255,0.06)" }}>
+              <figcaption className="mt-6 border-t border-ink-900/5 pt-4 text-sm">
                 <div className="font-semibold text-ink-900">{tm.name}</div>
                 <div className="text-ink-600">
                   {tm.location} · {tm.trip}

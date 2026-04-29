@@ -47,8 +47,7 @@ export default function LanguageSwitcher() {
         aria-label="Select language"
         aria-haspopup="true"
         aria-expanded={open}
-        className="flex items-center gap-1.5 rounded-full px-3 py-1.5 text-sm font-medium text-ink-800 transition hover:bg-ink-100"
-        style={{ border: "1px solid rgba(255,255,255,0.1)", background: "rgba(255,255,255,0.05)" }}
+        className="flex items-center gap-1.5 rounded-full border border-ink-900/10 bg-white/60 px-3 py-1.5 text-sm font-medium text-ink-900 transition hover:bg-cream-100"
       >
         <span aria-hidden="true" className="text-base leading-none">
           {current.flag}
@@ -69,8 +68,7 @@ export default function LanguageSwitcher() {
       {open && (
         <ul
           role="menu"
-          className="absolute right-0 top-full z-50 mt-2 min-w-[10rem] overflow-hidden rounded-xl shadow-card"
-          style={{ background: "#1a1816", border: "1px solid rgba(255,255,255,0.08)" }}
+          className="absolute right-0 top-full z-50 mt-2 min-w-[10rem] overflow-hidden rounded-xl border border-ink-900/5 bg-white shadow-card"
         >
           {SUPPORTED_LOCALES.map((l) => {
             const info = LANGUAGE_LABELS[l];
@@ -83,8 +81,8 @@ export default function LanguageSwitcher() {
                   onClick={() => selectLocale(l)}
                   className={`flex w-full items-center gap-2.5 px-4 py-2.5 text-left text-sm transition ${
                     active
-                      ? "bg-saffron-100 text-saffron-500 font-semibold"
-                      : "text-ink-700 hover:bg-ink-200"
+                      ? "bg-saffron-50 text-saffron-700 font-semibold"
+                      : "text-ink-800 hover:bg-cream-100"
                   }`}
                 >
                   <span aria-hidden="true" className="text-base leading-none">

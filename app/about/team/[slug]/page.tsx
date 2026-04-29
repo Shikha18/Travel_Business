@@ -20,7 +20,7 @@ export async function generateMetadata({
   if (!member) return { title: "Team member not found" };
   return {
     title: `${member.fullName} — ${siteConfig.name}`,
-    description: `The full story of ${member.fullName}, co-founder of ${siteConfig.name}.`,
+    description: `The full story of ${member.fullName} — ${siteConfig.name}.`,
   };
 }
 

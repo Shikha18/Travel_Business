@@ -80,8 +80,7 @@ export default function TourCarousel({ tours }: { tours: Tour[] }) {
         <button
           onClick={prev}
           aria-label="Previous tour"
-          className="group flex h-11 w-11 items-center justify-center rounded-full shadow-soft transition-all duration-200 hover:-translate-x-0.5 hover:bg-saffron-400 hover:shadow-glow"
-          style={{ background: "#1a1816", border: "1px solid rgba(255,255,255,0.08)" }}
+          className="group flex h-11 w-11 items-center justify-center rounded-full bg-white shadow-soft ring-1 ring-ink-900/8 transition-all duration-200 hover:-translate-x-0.5 hover:bg-saffron-500 hover:shadow-glow hover:ring-saffron-500"
         >
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" className="h-4 w-4 text-ink-700 transition group-hover:text-white">
             <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
@@ -98,7 +97,7 @@ export default function TourCarousel({ tours }: { tours: Tour[] }) {
               className={`rounded-full transition-all duration-400 ${
                 i === activeIndex
                   ? "h-2.5 w-8 bg-gradient-to-r from-saffron-400 to-terracotta-500 shadow-sm"
-                  : "h-2.5 w-2.5 bg-ink-300 hover:bg-ink-400"
+                  : "h-2.5 w-2.5 bg-ink-900/15 hover:bg-ink-900/35"
               }`}
             />
           ))}
@@ -108,8 +107,7 @@ export default function TourCarousel({ tours }: { tours: Tour[] }) {
         <button
           onClick={next}
           aria-label="Next tour"
-          className="group flex h-11 w-11 items-center justify-center rounded-full shadow-soft transition-all duration-200 hover:translate-x-0.5 hover:bg-saffron-400 hover:shadow-glow"
-          style={{ background: "#1a1816", border: "1px solid rgba(255,255,255,0.08)" }}
+          className="group flex h-11 w-11 items-center justify-center rounded-full bg-white shadow-soft ring-1 ring-ink-900/8 transition-all duration-200 hover:translate-x-0.5 hover:bg-saffron-500 hover:shadow-glow hover:ring-saffron-500"
         >
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" className="h-4 w-4 text-ink-700 transition group-hover:text-white">
             <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />

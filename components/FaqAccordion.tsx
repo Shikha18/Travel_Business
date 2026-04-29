@@ -17,18 +17,16 @@ export default function FaqAccordion({ items }: { items: FaqItem[] }) {
 
   return (
     <>
-      <div className="mt-6 rounded-3xl shadow-soft overflow-hidden" style={{ background: "#1a1816", border: "1px solid rgba(255,255,255,0.06)" }}>
+      <div className="mt-6 divide-y divide-ink-900/10 rounded-3xl bg-cream-50 shadow-soft">
         {visible.map((faq, i) => (
           <details
             key={i}
             className="group px-6 py-5"
-            style={i > 0 ? { borderTop: "1px solid rgba(255,255,255,0.05)" } : {}}
             {...(i === 0 ? { open: true } : {})}
           >
             <summary className="flex cursor-pointer list-none items-start justify-between gap-4 font-display text-base font-semibold text-ink-900 md:text-lg">
               <span>{faq.q}</span>
-              <span className="mt-0.5 flex h-8 w-8 shrink-0 items-center justify-center rounded-full text-ink-900 transition group-open:rotate-45"
-                style={{ background: "rgba(228,170,66,0.12)" }}>
+              <span className="mt-0.5 flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-cream-100 text-ink-900 transition group-open:rotate-45">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="h-4 w-4">
                   <path strokeLinecap="round" d="M12 5v14M5 12h14" />
                 </svg>
@@ -51,8 +49,7 @@ export default function FaqAccordion({ items }: { items: FaqItem[] }) {
         <div className="mt-4 text-center">
           <button
             onClick={() => setExpanded(!expanded)}
-            className="inline-flex items-center gap-2 rounded-full px-5 py-2.5 text-sm font-semibold text-ink-700 shadow-soft transition hover:text-saffron-500"
-            style={{ background: "#1a1816", border: "1px solid rgba(255,255,255,0.08)" }}
+            className="inline-flex items-center gap-2 rounded-full border border-ink-900/10 bg-white px-5 py-2.5 text-sm font-semibold text-ink-700 shadow-soft transition hover:bg-cream-100 hover:text-terracotta-600"
           >
             {expanded ? "See less" : `See ${items.length - VISIBLE} more questions`}
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className={`h-4 w-4 transition-transform duration-300 ${expanded ? "rotate-180" : ""}`}>
