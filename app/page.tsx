@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import LocaleLink from "@/components/LocaleLink";
 import TourCarousel from "@/components/TourCarousel";
+import FaqAccordion from "@/components/FaqAccordion";
 import { siteConfig } from "@/lib/site-config";
 import { getLocalizedFeaturedTours } from "@/lib/tours";
 import { getLocale, getTranslator } from "@/lib/i18n";
@@ -666,43 +667,7 @@ export default function Home({
             </h2>
           </div>
 
-          <div className="mt-6 divide-y divide-ink-900/10 rounded-3xl bg-cream-50 shadow-soft">
-            {localeFaqs
-              .flatMap((cat) => cat.items)
-              .map((faq, i) => (
-                <details
-                  key={i}
-                  className="group px-6 py-5"
-                  {...(i === 0 ? { open: true } : {})}
-                >
-                  <summary className="flex cursor-pointer list-none items-start justify-between gap-4 font-display text-base font-semibold text-ink-900 md:text-lg">
-                    <span>{faq.q}</span>
-                    <span className="mt-0.5 flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-cream-100 text-ink-900 transition group-open:rotate-45">
-                      <svg
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        strokeWidth="2"
-                        className="h-4 w-4"
-                      >
-                        <path strokeLinecap="round" d="M12 5v14M5 12h14" />
-                      </svg>
-                    </span>
-                  </summary>
-                  <div className="mt-3 space-y-3 text-sm leading-relaxed text-ink-600">
-                    <p>{faq.a}</p>
-                    {faq.bullets && faq.bullets.length > 0 && (
-                      <ul className="ml-1 list-disc space-y-1 pl-5 marker:text-saffron-500">
-                        {faq.bullets.map((b, j) => (
-                          <li key={j}>{b}</li>
-                        ))}
-                      </ul>
-                    )}
-                    {faq.after && <p>{faq.after}</p>}
-                  </div>
-                </details>
-              ))}
-          </div>
+          <FaqAccordion items={localeFaqs.flatMap((cat) => cat.items)} />
         </div>
       </section>
 

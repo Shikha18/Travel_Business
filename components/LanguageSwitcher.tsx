@@ -1,9 +1,8 @@
 "use client";
 
 import { useState, useRef, useEffect } from "react";
-import { usePathname, useRouter, useSearchParams } from "next/navigation";
-import { SUPPORTED_LOCALES, DEFAULT_LOCALE } from "@/lib/i18n";
-import { useLocale } from "@/lib/use-i18n";
+import { SUPPORTED_LOCALES } from "@/lib/i18n";
+import { useLocale, setStoredLocale } from "@/lib/use-i18n";
 import type { Locale } from "@/lib/translations";
 
 const LANGUAGE_LABELS: Record<Locale, { short: string; label: string; flag: string }> = {
@@ -13,9 +12,6 @@ const LANGUAGE_LABELS: Record<Locale, { short: string; label: string; flag: stri
 
 export default function LanguageSwitcher() {
   const [open, setOpen] = useState(false);
-  const router = useRouter();
-  const pathname = usePathname();
-  const searchParams = useSearchParams();
   const locale = useLocale();
   const menuRef = useRef<HTMLDivElement>(null);
 
@@ -31,14 +27,7 @@ export default function LanguageSwitcher() {
   }, [open]);
 
   function selectLocale(newLocale: Locale) {
-    const params = new URLSearchParams(searchParams?.toString() ?? "");
-    if (newLocale === DEFAULT_LOCALE) {
-      params.delete("lang");
-    } else {
-      params.set("lang", newLocale);
-    }
-    const query = params.toString();
-    router.push(query ? `${pathname}?${query}` : pathname);
+    setStoredLocale(newLocale);
     setOpen(false);
   }
 

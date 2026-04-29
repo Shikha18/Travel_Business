@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { siteConfig } from "@/lib/site-config";
 import { getLocalizedTours } from "@/lib/tours";
 import { getLocale, getTranslator } from "@/lib/i18n";
+import ContactDateFields from "./ContactDateFields";
 
 export const metadata: Metadata = {
   title: "Contact GoTrustelle — plan your India trip",
@@ -93,20 +94,10 @@ export default function ContactPage({
               <label className="block text-sm font-medium text-ink-900">
                 {t("contact.form.dates")}
               </label>
-              <div className="mt-1.5 grid gap-3 sm:grid-cols-2">
-                <Field
-                  label={t("contact.form.startDate")}
-                  name="startDate"
-                  type="date"
-                  compact
-                />
-                <Field
-                  label={t("contact.form.endDate")}
-                  name="endDate"
-                  type="date"
-                  compact
-                />
-              </div>
+              <ContactDateFields
+                startLabel={t("contact.form.startDate")}
+                endLabel={t("contact.form.endDate")}
+              />
             </div>
             <div>
               <Field

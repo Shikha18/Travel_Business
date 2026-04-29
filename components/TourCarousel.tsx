@@ -1,16 +1,26 @@
 "use client";
 
-import { useState, useEffect, useCallback } from "react";
+import { useState, useEffect, useCallback, useRef } from "react";
 import TourCard from "./TourCard";
 import type { Tour } from "@/lib/tours";
 
 export default function TourCarousel({ tours }: { tours: Tour[] }) {
   const [activeIndex, setActiveIndex] = useState(0);
   const [isAutoPlaying, setIsAutoPlaying] = useState(true);
+  const [transitioning, setTransitioning] = useState(false);
   const len = tours.length;
+  const touchStartX = useRef<number | null>(null);
 
-  const next = useCallback(() => setActiveIndex((i) => (i + 1) % len), [len]);
-  const prev = useCallback(() => setActiveIndex((i) => (i - 1 + len) % len), [len]);
+  const goTo = useCallback((idx: number) => {
+    setTransitioning(true);
+    setTimeout(() => {
+      setActiveIndex((idx + len) % len);
+      setTransitioning(false);
+    }, 150);
+  }, [len]);
+
+  const next = useCallback(() => goTo(activeIndex + 1), [activeIndex, goTo]);
+  const prev = useCallback(() => goTo(activeIndex - 1), [activeIndex, goTo]);
 
   useEffect(() => {
     if (!isAutoPlaying) return;
@@ -18,11 +28,23 @@ export default function TourCarousel({ tours }: { tours: Tour[] }) {
     return () => clearInterval(timer);
   }, [isAutoPlaying, next]);
 
+  function onTouchStart(e: React.TouchEvent) {
+    touchStartX.current = e.touches[0].clientX;
+  }
+  function onTouchEnd(e: React.TouchEvent) {
+    if (touchStartX.current === null) return;
+    const diff = touchStartX.current - e.changedTouches[0].clientX;
+    if (Math.abs(diff) > 40) diff > 0 ? next() : prev();
+    touchStartX.current = null;
+  }
+
   return (
     <div
       className="relative"
       onMouseEnter={() => setIsAutoPlaying(false)}
       onMouseLeave={() => setIsAutoPlaying(true)}
+      onTouchStart={onTouchStart}
+      onTouchEnd={onTouchEnd}
     >
       {/* Desktop: 3-card layout, center card elevated */}
       <div className="hidden md:flex md:items-center md:gap-5">
@@ -32,8 +54,10 @@ export default function TourCarousel({ tours }: { tours: Tour[] }) {
           return (
             <div
               key={`${idx}-${offset}`}
-              onClick={() => !isCenter && setActiveIndex(idx)}
+              onClick={() => !isCenter && goTo(idx)}
               className={`flex-1 transition-all duration-500 ${
+                transitioning ? "opacity-0 scale-95" : "opacity-100"
+              } ${
                 isCenter
                   ? "z-10 scale-[1.04] cursor-default"
                   : "scale-[0.93] opacity-60 cursor-pointer hover:opacity-80"
@@ -45,8 +69,8 @@ export default function TourCarousel({ tours }: { tours: Tour[] }) {
         })}
       </div>
 
-      {/* Mobile: single card */}
-      <div className="md:hidden">
+      {/* Mobile: single card with fade transition */}
+      <div className={`md:hidden transition-opacity duration-300 ${transitioning ? "opacity-0" : "opacity-100"}`}>
         <TourCard tour={tours[activeIndex]} defaultHover />
       </div>
 

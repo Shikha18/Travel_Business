@@ -83,23 +83,25 @@ export default function Header() {
         </div>
       </div>
 
-      {/* Mobile drawer */}
-      {open && (
-        <div className="md:hidden border-t border-ink-900/8 bg-cream-50">
-          <nav className="container-wide flex flex-col gap-1 py-3">
-            {navLinks.map((link) => (
-              <LocaleLink
-                key={link.href}
-                href={link.href}
-                onClick={() => setOpen(false)}
-                className="rounded-xl px-4 py-3 text-base font-medium text-ink-800 hover:bg-cream-100 hover:text-terracotta-600"
-              >
-                {link.label}
-              </LocaleLink>
-            ))}
-          </nav>
-        </div>
-      )}
+      {/* Mobile drawer — absolute so it doesn't push page content */}
+      <div
+        className={`absolute inset-x-0 top-full z-30 md:hidden border-t border-ink-900/8 bg-cream-50 shadow-lg transition-all duration-300 ease-in-out ${
+          open ? "opacity-100 translate-y-0 pointer-events-auto" : "opacity-0 -translate-y-2 pointer-events-none"
+        }`}
+      >
+        <nav className="container-wide flex flex-col gap-1 py-3">
+          {navLinks.map((link) => (
+            <LocaleLink
+              key={link.href}
+              href={link.href}
+              onClick={() => setOpen(false)}
+              className="rounded-xl px-4 py-3 text-base font-medium text-ink-800 hover:bg-cream-100 hover:text-terracotta-600"
+            >
+              {link.label}
+            </LocaleLink>
+          ))}
+        </nav>
+      </div>
     </header>
   );
 }
