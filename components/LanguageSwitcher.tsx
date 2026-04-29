@@ -1,7 +1,8 @@
 "use client";
 
 import { useState, useRef, useEffect } from "react";
-import { SUPPORTED_LOCALES } from "@/lib/i18n";
+import { useRouter, usePathname } from "next/navigation";
+import { SUPPORTED_LOCALES, DEFAULT_LOCALE } from "@/lib/i18n";
 import { useLocale, setStoredLocale } from "@/lib/use-i18n";
 import type { Locale } from "@/lib/translations";
 
@@ -14,6 +15,8 @@ export default function LanguageSwitcher() {
   const [open, setOpen] = useState(false);
   const locale = useLocale();
   const menuRef = useRef<HTMLDivElement>(null);
+  const router = useRouter();
+  const pathname = usePathname();
 
   // Close menu when clicking outside
   useEffect(() => {
@@ -29,6 +32,9 @@ export default function LanguageSwitcher() {
   function selectLocale(newLocale: Locale) {
     setStoredLocale(newLocale);
     setOpen(false);
+    // Update URL so server components re-render with the new locale
+    const url = newLocale === DEFAULT_LOCALE ? pathname : `${pathname}?lang=${newLocale}`;
+    router.push(url);
   }
 
   const current = LANGUAGE_LABELS[locale];
@@ -41,7 +47,8 @@ export default function LanguageSwitcher() {
         aria-label="Select language"
         aria-haspopup="true"
         aria-expanded={open}
-        className="flex items-center gap-1.5 rounded-full border border-ink-900/10 bg-white/60 px-3 py-1.5 text-sm font-medium text-ink-900 transition hover:bg-cream-100"
+        className="flex items-center gap-1.5 rounded-full px-3 py-1.5 text-sm font-medium text-ink-800 transition hover:bg-ink-100"
+        style={{ border: "1px solid rgba(255,255,255,0.1)", background: "rgba(255,255,255,0.05)" }}
       >
         <span aria-hidden="true" className="text-base leading-none">
           {current.flag}
@@ -62,7 +69,8 @@ export default function LanguageSwitcher() {
       {open && (
         <ul
           role="menu"
-          className="absolute right-0 top-full z-50 mt-2 min-w-[10rem] overflow-hidden rounded-xl border border-ink-900/5 bg-white shadow-card"
+          className="absolute right-0 top-full z-50 mt-2 min-w-[10rem] overflow-hidden rounded-xl shadow-card"
+          style={{ background: "#1a1816", border: "1px solid rgba(255,255,255,0.08)" }}
         >
           {SUPPORTED_LOCALES.map((l) => {
             const info = LANGUAGE_LABELS[l];
@@ -75,8 +83,8 @@ export default function LanguageSwitcher() {
                   onClick={() => selectLocale(l)}
                   className={`flex w-full items-center gap-2.5 px-4 py-2.5 text-left text-sm transition ${
                     active
-                      ? "bg-saffron-50 text-saffron-700 font-semibold"
-                      : "text-ink-800 hover:bg-cream-100"
+                      ? "bg-saffron-100 text-saffron-500 font-semibold"
+                      : "text-ink-700 hover:bg-ink-200"
                   }`}
                 >
                   <span aria-hidden="true" className="text-base leading-none">

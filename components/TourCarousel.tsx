@@ -16,7 +16,7 @@ export default function TourCarousel({ tours }: { tours: Tour[] }) {
     setTimeout(() => {
       setActiveIndex((idx + len) % len);
       setTransitioning(false);
-    }, 150);
+    }, 400);
   }, [len]);
 
   const next = useCallback(() => goTo(activeIndex + 1), [activeIndex, goTo]);
@@ -24,7 +24,7 @@ export default function TourCarousel({ tours }: { tours: Tour[] }) {
 
   useEffect(() => {
     if (!isAutoPlaying) return;
-    const timer = setInterval(next, 4500);
+    const timer = setInterval(next, 8000);
     return () => clearInterval(timer);
   }, [isAutoPlaying, next]);
 
@@ -55,7 +55,7 @@ export default function TourCarousel({ tours }: { tours: Tour[] }) {
             <div
               key={`${idx}-${offset}`}
               onClick={() => !isCenter && goTo(idx)}
-              className={`flex-1 transition-all duration-500 ${
+              className={`flex-1 transition-all duration-700 ${
                 transitioning ? "opacity-0 scale-95" : "opacity-100"
               } ${
                 isCenter
@@ -70,7 +70,7 @@ export default function TourCarousel({ tours }: { tours: Tour[] }) {
       </div>
 
       {/* Mobile: single card with fade transition */}
-      <div className={`md:hidden transition-opacity duration-300 ${transitioning ? "opacity-0" : "opacity-100"}`}>
+      <div className={`md:hidden transition-opacity duration-700 ${transitioning ? "opacity-0" : "opacity-100"}`}>
         <TourCard tour={tours[activeIndex]} defaultHover />
       </div>
 
@@ -80,7 +80,8 @@ export default function TourCarousel({ tours }: { tours: Tour[] }) {
         <button
           onClick={prev}
           aria-label="Previous tour"
-          className="group flex h-11 w-11 items-center justify-center rounded-full bg-white shadow-soft ring-1 ring-ink-900/8 transition-all duration-200 hover:-translate-x-0.5 hover:bg-saffron-500 hover:shadow-glow hover:ring-saffron-500"
+          className="group flex h-11 w-11 items-center justify-center rounded-full shadow-soft transition-all duration-200 hover:-translate-x-0.5 hover:bg-saffron-400 hover:shadow-glow"
+          style={{ background: "#1a1816", border: "1px solid rgba(255,255,255,0.08)" }}
         >
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" className="h-4 w-4 text-ink-700 transition group-hover:text-white">
             <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
@@ -97,7 +98,7 @@ export default function TourCarousel({ tours }: { tours: Tour[] }) {
               className={`rounded-full transition-all duration-400 ${
                 i === activeIndex
                   ? "h-2.5 w-8 bg-gradient-to-r from-saffron-400 to-terracotta-500 shadow-sm"
-                  : "h-2.5 w-2.5 bg-ink-900/15 hover:bg-ink-900/35"
+                  : "h-2.5 w-2.5 bg-ink-300 hover:bg-ink-400"
               }`}
             />
           ))}
@@ -107,7 +108,8 @@ export default function TourCarousel({ tours }: { tours: Tour[] }) {
         <button
           onClick={next}
           aria-label="Next tour"
-          className="group flex h-11 w-11 items-center justify-center rounded-full bg-white shadow-soft ring-1 ring-ink-900/8 transition-all duration-200 hover:translate-x-0.5 hover:bg-saffron-500 hover:shadow-glow hover:ring-saffron-500"
+          className="group flex h-11 w-11 items-center justify-center rounded-full shadow-soft transition-all duration-200 hover:translate-x-0.5 hover:bg-saffron-400 hover:shadow-glow"
+          style={{ background: "#1a1816", border: "1px solid rgba(255,255,255,0.08)" }}
         >
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" className="h-4 w-4 text-ink-700 transition group-hover:text-white">
             <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />

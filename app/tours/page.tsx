@@ -7,7 +7,7 @@ import { getLocale, getTranslator } from "@/lib/i18n";
 export const metadata: Metadata = {
   title: "Tours — small-group & customisable journeys across India",
   description:
-    "Browse GoTrustelle's small-group tours across India — Spiti Valley, Kashmir, Ladakh, Golden Triangle and more. All-inclusive, max 8–10 travelers, fully customisable to your dates.",
+    "Browse GoTrustelle's small-group tours across India — Spiti Valley, Kashmir, Ladakh, Golden Triangle and more. All-inclusive, max 7–10 travelers, fully customisable to your dates.",
   keywords: [
     "India tour packages", "small group India tours", "Spiti Valley group tour",
     "Kashmir group tour", "Ladakh group tour", "Golden Triangle tour India",
@@ -49,7 +49,7 @@ export default function ToursPage({
             ].map((chip) => (
               <span
                 key={chip}
-                className="chip border border-ink-900/5 bg-white"
+                className="chip"
               >
                 {chip}
               </span>

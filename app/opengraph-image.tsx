@@ -101,7 +101,7 @@ export default function Image() {
 
         {/* Trust badges */}
         <div style={{ display: "flex", gap: 14 }}>
-          {["Max 8–10 travelers", "Female-founded", "24/7 on-trip support"].map(
+          {["Max 7–10 travelers", "Female-founded", "24/7 on-trip support"].map(
             (badge) => (
               <div
                 key={badge}

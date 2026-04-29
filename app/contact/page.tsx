@@ -68,7 +68,7 @@ export default function ContactPage({
               <Field
                 label={t("contact.form.whatsapp")}
                 name="whatsapp"
-                placeholder="+49…"
+                placeholder="+91…"
               />
             </div>
             <div>
@@ -77,7 +77,7 @@ export default function ContactPage({
               </label>
               <select
                 name="tour"
-                className="mt-1.5 w-full rounded-xl border border-ink-900/10 bg-white px-4 py-3 text-sm focus:border-saffron-500 focus:outline-none focus:ring-1 focus:ring-saffron-500"
+                className="mt-1.5 w-full rounded-xl border border-white/10 bg-ink-100 text-ink-900 px-4 py-3 text-sm focus:border-saffron-500 focus:outline-none focus:ring-1 focus:ring-saffron-500"
                 defaultValue=""
               >
                 <option value="" disabled>
@@ -114,7 +114,7 @@ export default function ContactPage({
                 name="message"
                 rows={5}
                 placeholder={t("contact.form.messagePlaceholder")}
-                className="mt-1.5 w-full rounded-xl border border-ink-900/10 bg-white px-4 py-3 text-sm focus:border-saffron-500 focus:outline-none focus:ring-1 focus:ring-saffron-500"
+                className="mt-1.5 w-full rounded-xl border border-white/10 bg-ink-100 text-ink-900 px-4 py-3 text-sm focus:border-saffron-500 focus:outline-none focus:ring-1 focus:ring-saffron-500"
               />
             </div>
             <button type="submit" className="btn-primary w-full sm:w-auto">
@@ -220,7 +220,7 @@ function Field({
         placeholder={placeholder}
         className={`${
           compact ? "mt-1" : "mt-1.5"
-        } w-full rounded-xl border border-ink-900/10 bg-white px-4 py-3 text-sm focus:border-saffron-500 focus:outline-none focus:ring-1 focus:ring-saffron-500`}
+        } w-full rounded-xl border border-white/10 bg-ink-100 text-ink-900 px-4 py-3 text-sm focus:border-saffron-500 focus:outline-none focus:ring-1 focus:ring-saffron-500`}
       />
     </div>
   );

@@ -60,18 +60,18 @@ export const translations = {
     "home.trust.subtitle":
       "We're a young company founded in 2026 with one clear belief: traveling in India should feel safe, warm and unhurried — whether it's your first trip abroad or your fiftieth.",
 
-    "home.trust.smallGroups.title": "Max 8–10 people per group",
+    "home.trust.smallGroups.title": "Max 7–10 people per group",
     "home.trust.smallGroups.body":
-      "Small enough to feel personal, flexible enough to adapt to you. Every departure is capped at 8–10 travelers so you always get real attention — not a crowd.",
+      "Small enough to feel personal, flexible enough to adapt to you. Every departure is capped at 7–10 travelers so you always get real attention — not a crowd.",
     "home.trust.localGuides.title": "Hand-picked local guides",
     "home.trust.localGuides.body":
       "Our guides are storytellers first — historians, photographers and chefs who live in the regions we visit. No scripted spiels, no hidden commissions.",
     "home.trust.female.title": "Female & solo-friendly",
     "home.trust.female.body":
       "Founded by a woman, built with solo and female travelers in mind. Verified stays, 24/7 on-trip support, and zero pressure on pace.",
-    "home.trust.transparent.title": "No hidden costs",
+    "home.trust.transparent.title": "Fully customisable",
     "home.trust.transparent.body":
-      "What you see is what you pay. Transfers, guides, entries, permits, stays — all laid out before booking. Flexible payments in USD or INR.",
+      "No fixed itineraries. Every trip is shaped around your pace, interests and budget — tell us what matters to you and we'll build it from scratch.",
 
     "home.testimonials.chip": "What travelers say",
     "home.testimonials.title": "Stories from the road.",
@@ -210,9 +210,9 @@ export const translations = {
     "about.stats.groupBody": "Intimate, personal, and fully adaptable to you.",
 
     // About principles list
-    "about.v.smallGroups.title": "Small groups. Always 8–10 max.",
+    "about.v.smallGroups.title": "Small groups. Always 7–10 max.",
     "about.v.smallGroups.body":
-      "We cap every departure at 8–10 travelers. Less scalable, yes — but it's the only way to travel at your pace, not the group's.",
+      "We cap every departure at 7–10 travelers. Less scalable, yes — but it's the only way to travel at your pace, not the group's.",
     "about.v.local.title": "Hire local, pay fair.",
     "about.v.local.body":
       "Our guides, drivers and homestay hosts live in the regions we visit and are paid above local market rates.",
@@ -371,18 +371,18 @@ export const translations = {
     "home.trust.subtitle":
       "Wir sind ein junges Unternehmen, gegründet 2026, mit einer klaren Überzeugung: Eine Reise nach Indien soll sich sicher, herzlich und entspannt anfühlen — egal ob es Ihre erste Auslandsreise ist oder Ihre fünfzigste.",
 
-    "home.trust.smallGroups.title": "Max. 8–10 Personen pro Gruppe",
+    "home.trust.smallGroups.title": "Max. 7–10 Personen pro Gruppe",
     "home.trust.smallGroups.body":
-      "Klein genug für echte Nähe, flexibel genug für Ihre Bedürfnisse. Jede Abfahrt ist auf 8–10 Reisende begrenzt — damit Sie immer echte Aufmerksamkeit bekommen.",
+      "Klein genug für echte Nähe, flexibel genug für Ihre Bedürfnisse. Jede Abfahrt ist auf 7–10 Reisende begrenzt — damit Sie immer echte Aufmerksamkeit bekommen.",
     "home.trust.localGuides.title": "Handverlesene lokale Guides",
     "home.trust.localGuides.body":
       "Unsere Guides sind zuerst Geschichtenerzähler — Historiker, Fotografen und Köche, die in den Regionen leben, die wir besuchen. Keine auswendig gelernten Texte, keine versteckten Provisionen.",
     "home.trust.female.title": "Frauen- & Solo-freundlich",
     "home.trust.female.body":
       "Von einer Frau gegründet, gemacht für solo- und weibliche Reisende. Geprüfte Unterkünfte, 24/7-Unterstützung unterwegs und kein Druck bei der Reisegeschwindigkeit.",
-    "home.trust.transparent.title": "Keine versteckten Kosten",
+    "home.trust.transparent.title": "Vollständig individualisierbar",
     "home.trust.transparent.body":
-      "Was Sie sehen, zahlen Sie. Transfers, Guides, Eintritte, Genehmigungen, Unterkünfte — alles vor der Buchung offengelegt. Flexible Zahlungen in EUR, USD oder INR.",
+      "Keine festen Reisepläne. Jede Reise wird nach Ihrem Tempo, Ihren Interessen und Ihrem Budget gestaltet — sagen Sie uns, was wichtig ist, und wir bauen sie von Grund auf.",
 
     "home.testimonials.chip": "Was Reisende sagen",
     "home.testimonials.title": "Geschichten von unterwegs.",
@@ -521,9 +521,9 @@ export const translations = {
     "about.stats.groupBody": "Intim, persönlich und ganz auf Sie zugeschnitten.",
 
     // About principles list
-    "about.v.smallGroups.title": "Kleine Gruppen. Immer max. 8–10.",
+    "about.v.smallGroups.title": "Kleine Gruppen. Immer max. 7–10.",
     "about.v.smallGroups.body":
-      "Wir begrenzen jede Abfahrt auf 8–10 Reisende. Weniger skalierbar — aber nur so reisen Sie in Ihrem Tempo, nicht dem der Gruppe.",
+      "Wir begrenzen jede Abfahrt auf 7–10 Reisende. Weniger skalierbar — aber nur so reisen Sie in Ihrem Tempo, nicht dem der Gruppe.",
     "about.v.local.title": "Lokal einstellen, fair bezahlen.",
     "about.v.local.body":
       "Unsere Guides, Fahrer und Gastgeber leben in den Regionen, die wir besuchen, und werden über den lokalen Marktpreisen bezahlt.",

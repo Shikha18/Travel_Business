@@ -9,7 +9,7 @@ import { siteConfig } from "@/lib/site-config";
 export const metadata: Metadata = {
   title: "About GoTrustelle — female-founded India tour company",
   description:
-    "GoTrustelle is a female-founded India travel company built by Shikha (New Delhi) and Melissa (Germany). Small-group, customisable tours across India — max 8–10 travelers, built for depth not checklists.",
+    "GoTrustelle is a female-founded India travel company built by Shikha (New Delhi) and Melissa (Germany). Small-group, customisable tours across India — max 7–10 travelers, built for depth not checklists.",
   keywords: [
     "female founded India travel company", "India tour company", "GoTrustelle founders",
     "Shikha Mangal GoTrustelle", "woman led travel India", "India tour operator 2026",
@@ -63,13 +63,22 @@ export default function AboutPage({
       <section className="container-wide py-10 md:py-16">
         <div className="grid gap-10 md:grid-cols-2 md:items-center">
           <div className="flex items-center justify-center">
-            <Image
-              src="/images/gotrustelle.png"
-              alt="GoTrustelle logo"
-              width={380}
-              height={380}
-              className="w-64 md:w-80 h-auto mix-blend-multiply"
-            />
+            <div className="relative flex items-center justify-center rounded-3xl p-6"
+              style={{
+                background: "radial-gradient(circle at 50% 50%, rgba(200,146,10,0.08) 0%, transparent 70%)",
+              }}
+            >
+              <Image
+                src="/images/gotrustelle-logo.png"
+                alt="GoTrustelle logo"
+                width={480}
+                height={480}
+                className="w-72 md:w-96 h-auto"
+                style={{
+                  filter: "drop-shadow(0 0 28px rgba(200,146,10,0.35)) drop-shadow(0 0 8px rgba(200,146,10,0.2)) brightness(1.08) contrast(1.05)",
+                }}
+              />
+            </div>
           </div>
           <div>
             <span className="chip">{t("about.brand.chip")}</span>
@@ -81,21 +90,21 @@ export default function AboutPage({
             </p>
             <div className="mt-8 space-y-5">
               <div className="flex items-start gap-4">
-                <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-saffron-100 font-display text-lg font-bold text-saffron-600">Go</span>
+                <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full font-display text-lg font-bold text-saffron-500" style={{ background: "rgba(200,146,10,0.18)" }}>Go</span>
                 <div>
                   <div className="font-semibold text-ink-900">{t("brand.go.title")}</div>
                   <div className="mt-0.5 text-sm text-ink-600">{t("brand.go.body")}</div>
                 </div>
               </div>
               <div className="flex items-start gap-4">
-                <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-terracotta-50 font-display text-lg font-bold text-terracotta-600">Tr</span>
+                <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full font-display text-lg font-bold text-terracotta-500" style={{ background: "rgba(205,89,48,0.18)" }}>Tr</span>
                 <div>
                   <div className="font-semibold text-ink-900">{t("brand.trust.title")}</div>
                   <div className="mt-0.5 text-sm text-ink-600">{t("brand.trust.body")}</div>
                 </div>
               </div>
               <div className="flex items-start gap-4">
-                <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-teal-50 font-display text-lg font-bold text-teal-600">elle</span>
+                <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full font-display text-lg font-bold text-teal-500" style={{ background: "rgba(44,98,178,0.2)" }}>elle</span>
                 <div>
                   <div className="font-semibold text-ink-900">{t("brand.elle.title")}</div>
                   <div className="mt-0.5 text-sm text-ink-600">{t("brand.elle.body")}</div>
@@ -137,14 +146,16 @@ export default function AboutPage({
       </section>
 
       {/* MEET THE TEAM — two hover-reveal portrait cards, above principles */}
-      <section className="relative overflow-hidden bg-gradient-to-b from-cream-100 to-cream-50 py-10 md:py-16">
+      <section className="relative overflow-hidden bg-cream-100 py-10 md:py-16">
         <div
           aria-hidden="true"
-          className="pointer-events-none absolute -left-20 top-10 h-64 w-64 rounded-full bg-saffron-200/40 blur-3xl"
+          className="pointer-events-none absolute -left-20 top-10 h-64 w-64 rounded-full blur-3xl"
+          style={{ background: "rgba(200,146,10,0.12)" }}
         />
         <div
           aria-hidden="true"
-          className="pointer-events-none absolute -right-20 bottom-10 h-64 w-64 rounded-full bg-teal-200/30 blur-3xl"
+          className="pointer-events-none absolute -right-20 bottom-10 h-64 w-64 rounded-full blur-3xl"
+          style={{ background: "rgba(44,98,178,0.1)" }}
         />
 
         <div className="container-wide relative">
@@ -163,8 +174,8 @@ export default function AboutPage({
             {teamCards.map((m) => {
               const ringClass =
                 m.accent === "saffron"
-                  ? "ring-saffron-200/70"
-                  : "ring-teal-200/70";
+                  ? "ring-saffron-400/40"
+                  : "ring-teal-400/40";
               const tagBadgeClass =
                 m.accent === "saffron"
                   ? "bg-saffron-500 text-white"
@@ -177,7 +188,8 @@ export default function AboutPage({
                   key={m.slug}
                   href={`/about/team/${m.slug}`}
                   aria-label={`${m.fullName}, ${m.role} — read full story`}
-                  className={`group relative block aspect-[3/4] overflow-hidden rounded-3xl bg-white shadow-xl ring-1 ${ringClass} transition-transform duration-500 hover:-translate-y-1 focus:-translate-y-1 focus:outline-none focus-visible:ring-4 focus-visible:ring-saffron-400`}
+                  className={`group relative block aspect-[3/4] overflow-hidden rounded-3xl shadow-xl ring-1 ${ringClass} transition-transform duration-500 hover:-translate-y-1 focus:-translate-y-1 focus:outline-none focus-visible:ring-4 focus-visible:ring-saffron-500`}
+                  style={{ background: "#1a1816" }}
                 >
                   {/* Background: photo or gradient initial */}
                   {m.photo ? (
@@ -246,10 +258,8 @@ export default function AboutPage({
                         contact links. We use a styled span here because
                         the whole card is already wrapped in a LocaleLink. */}
                     <span
-                      className={`mt-5 inline-flex w-fit items-center gap-1.5 rounded-full bg-white px-4 py-2 text-xs font-semibold text-ink-900 shadow-soft transition group-hover:translate-x-0.5 ${accentText.replace(
-                        "text-",
-                        "ring-1 ring-",
-                      )}`}
+                      className={`mt-5 inline-flex w-fit items-center gap-1.5 rounded-full px-4 py-2 text-xs font-semibold text-ink-900 shadow-soft transition group-hover:translate-x-0.5`}
+                      style={{ background: "rgba(255,255,255,0.12)", border: "1px solid rgba(255,255,255,0.18)" }}
                     >
                       {t("about.story.readFullStory")}
                     </span>
@@ -271,9 +281,10 @@ export default function AboutPage({
         </div>
 
         <div className="mx-auto mt-10 max-w-3xl">
-          <div className="relative rounded-3xl bg-gradient-to-br from-cream-50 via-white to-terracotta-50 px-8 py-10 shadow-card ring-1 ring-terracotta-100 md:px-12 md:py-12">
+          <div className="relative rounded-3xl px-8 py-10 shadow-card md:px-12 md:py-12"
+            style={{ background: "#1a1816", border: "1px solid rgba(205,89,48,0.2)" }}>
             {/* Decorative quote mark */}
-            <div aria-hidden="true" className="absolute -top-5 left-10 font-display text-8xl leading-none text-terracotta-200 select-none">&ldquo;</div>
+            <div aria-hidden="true" className="absolute -top-5 left-10 font-display text-8xl leading-none text-terracotta-400 select-none">&ldquo;</div>
 
             <p className="relative text-ink-700 leading-[1.85] text-base md:text-lg">
               {t("about.origin.p1")}
@@ -284,13 +295,13 @@ export default function AboutPage({
             </p>
 
             <p className="relative mt-5 text-ink-700 leading-[1.85] text-base md:text-lg">
-              {t("about.origin.p3a")} <em className="text-terracotta-700 not-italic font-semibold">&ldquo;{t("about.origin.quote")}&rdquo;</em> {t("about.origin.p3b")}
+              {t("about.origin.p3a")} <em className="text-terracotta-500 not-italic font-semibold">&ldquo;{t("about.origin.quote")}&rdquo;</em> {t("about.origin.p3b")}
             </p>
 
-            <footer className="mt-6 flex items-center gap-3 border-t border-terracotta-100 pt-5">
-              <div className="h-px flex-1 bg-terracotta-100" />
-              <span className="text-sm font-semibold text-terracotta-600">{t("about.origin.signature")}</span>
-              <div className="h-px flex-1 bg-terracotta-100" />
+            <footer className="mt-6 flex items-center gap-3 pt-5" style={{ borderTop: "1px solid rgba(205,89,48,0.15)" }}>
+              <div className="h-px flex-1" style={{ background: "rgba(205,89,48,0.15)" }} />
+              <span className="text-sm font-semibold text-terracotta-500">{t("about.origin.signature")}</span>
+              <div className="h-px flex-1" style={{ background: "rgba(205,89,48,0.15)" }} />
             </footer>
           </div>
         </div>
@@ -385,7 +396,7 @@ export default function AboutPage({
       <section className="container-wide py-10 md:py-14">
         <div className="grid gap-8 rounded-3xl bg-cream-100 p-10 md:grid-cols-3">
           <div>
-            <div className="font-display text-4xl font-semibold text-saffron-600">
+            <div className="font-display text-4xl font-semibold text-saffron-500">
               100%
             </div>
             <div className="mt-2 text-sm font-semibold text-ink-900">
@@ -407,8 +418,8 @@ export default function AboutPage({
             </p>
           </div>
           <div>
-            <div className="font-display text-4xl font-semibold text-saffron-600">
-              8–10
+            <div className="font-display text-4xl font-semibold text-saffron-500">
+              7–10
             </div>
             <div className="mt-2 text-sm font-semibold text-ink-900">
               {t("about.stats.groupLabel")}

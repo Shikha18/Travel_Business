@@ -3,6 +3,7 @@ import Image from "next/image";
 import LocaleLink from "@/components/LocaleLink";
 import TourCarousel from "@/components/TourCarousel";
 import FaqAccordion from "@/components/FaqAccordion";
+import ScrollReveal from "@/components/ScrollReveal";
 import { siteConfig } from "@/lib/site-config";
 import { getLocalizedFeaturedTours } from "@/lib/tours";
 import { getLocale, getTranslator } from "@/lib/i18n";
@@ -58,7 +59,10 @@ const trustPoints: TrustPoint[] = [
     bodyKey: "home.trust.transparent.body",
     icon: (
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" className="h-6 w-6">
-        <path strokeLinecap="round" strokeLinejoin="round" d="M3 10h18M5 6h14a2 2 0 012 2v8a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2zM7 15h3" />
+        <path strokeLinecap="round" strokeLinejoin="round" d="M4 6h16M4 12h10M4 18h6" />
+        <circle cx="19" cy="6" r="2" />
+        <circle cx="17" cy="12" r="2" />
+        <circle cx="13" cy="18" r="2" />
       </svg>
     ),
   },
@@ -470,7 +474,7 @@ export default function Home({
             priority
             className="object-cover"
           />
-          <div className="absolute inset-0 bg-gradient-to-br from-ink-900/80 via-terracotta-800/55 to-saffron-900/20" />
+          <div className="absolute inset-0 bg-gradient-to-br from-black/85 via-black/50 to-black/20" />
         </div>
 
         <div className="relative container-wide py-14 md:py-32 text-white">
@@ -522,7 +526,8 @@ export default function Home({
       </section>
 
       {/* BRAND TEASER */}
-      <section className="border-y border-ink-900/8 bg-cream-100">
+      <ScrollReveal direction="bottom">
+      <section className="border-y bg-cream-100" style={{ borderColor: "rgba(228,170,66,0.1)" }}>
         <div className="container-wide py-6 md:py-7">
           <div className="flex flex-col gap-5 md:flex-row md:items-center md:justify-between">
             {/* Name label */}
@@ -542,19 +547,19 @@ export default function Home({
             {/* Three pillars */}
             <div className="flex flex-col gap-3 sm:flex-row sm:gap-6 md:gap-8">
               <div className="flex items-center gap-3">
-                <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-saffron-100 font-display text-xs font-bold text-saffron-600">
+                <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full font-display text-xs font-bold text-saffron-500" style={{ background: "rgba(200,146,10,0.18)" }}>
                   Go
                 </span>
                 <span className="text-sm text-ink-600">{t("brand.go.title")}</span>
               </div>
               <div className="flex items-center gap-3">
-                <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-terracotta-50 font-display text-xs font-bold text-terracotta-600">
+                <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full font-display text-xs font-bold text-terracotta-500" style={{ background: "rgba(205,89,48,0.18)" }}>
                   Tr
                 </span>
                 <span className="text-sm text-ink-600">{t("brand.trust.title")}</span>
               </div>
               <div className="flex items-center gap-3">
-                <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-teal-50 font-display text-xs font-bold text-teal-600">
+                <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full font-display text-xs font-bold text-teal-500" style={{ background: "rgba(44,98,178,0.2)" }}>
                   elle
                 </span>
                 <span className="text-sm text-ink-600">{t("brand.elle.title")}</span>
@@ -571,10 +576,12 @@ export default function Home({
           </div>
         </div>
       </section>
+      </ScrollReveal>
 
       {/* FEATURED TOURS */}
       <section className="container-wide py-8 md:py-12">
         <div className="flex flex-col items-start justify-between gap-4 md:flex-row md:items-end">
+          <ScrollReveal direction="left">
           <div>
             <span className="chip">{t("home.featured.chip")}</span>
             <h2 className="mt-3 font-display text-3xl font-semibold md:text-4xl">
@@ -584,19 +591,25 @@ export default function Home({
               {t("home.featured.subtitle")}
             </p>
           </div>
+          </ScrollReveal>
+          <ScrollReveal direction="right">
           <LocaleLink href="/tours" className="btn-ghost self-start md:self-auto">
             {t("cta.viewAll")}
           </LocaleLink>
+          </ScrollReveal>
         </div>
 
+        <ScrollReveal direction="bottom" delay={150}>
         <div className="mt-10">
           <TourCarousel tours={featured} />
         </div>
+        </ScrollReveal>
       </section>
 
       {/* TRUST */}
       <section className="bg-cream-100 py-8 md:py-12">
         <div className="container-wide">
+          <ScrollReveal direction="left">
           <div className="w-full">
             <span className="chip">{t("home.trust.chip")}</span>
             <h2 className="mt-3 font-display text-3xl font-semibold md:text-4xl">
@@ -604,11 +617,13 @@ export default function Home({
             </h2>
             <p className="mt-3 text-ink-600">{t("home.trust.subtitle")}</p>
           </div>
+          </ScrollReveal>
 
           <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-            {trustPoints.map((point) => (
-              <div key={point.titleKey} className="card p-6">
-                <div className="flex h-11 w-11 items-center justify-center rounded-full bg-saffron-100 text-saffron-600">
+            {trustPoints.map((point, i) => (
+              <ScrollReveal key={point.titleKey} direction="bottom" delay={i * 100}>
+              <div className="card p-6 h-full">
+                <div className="flex h-11 w-11 items-center justify-center rounded-full text-saffron-500" style={{ background: "rgba(200,146,10,0.15)" }}>
                   {point.icon}
                 </div>
                 <h3 className="mt-5 font-display text-xl font-semibold">
@@ -616,6 +631,7 @@ export default function Home({
                 </h3>
                 <p className="mt-2 text-sm text-ink-600">{t(point.bodyKey)}</p>
               </div>
+              </ScrollReveal>
             ))}
           </div>
         </div>
@@ -623,32 +639,33 @@ export default function Home({
 
       {/* TESTIMONIALS */}
       <section className="container-wide py-8 md:py-12">
+        <ScrollReveal direction="bottom">
         <div className="max-w-2xl">
           <span className="chip">{t("home.testimonials.chip")}</span>
           <h2 className="mt-3 font-display text-3xl font-semibold md:text-4xl">
             {t("home.testimonials.title")}
           </h2>
         </div>
+        </ScrollReveal>
 
         <div className="mt-6 grid gap-6 md:grid-cols-3">
-          {testimonials.map((tm) => (
-            <figure
-              key={tm.name}
-              className="card flex flex-col justify-between p-7"
-            >
+          {testimonials.map((tm, i) => (
+            <ScrollReveal key={tm.name} direction={i % 2 === 0 ? "left" : "right"} delay={i * 120}>
+            <figure className="card flex flex-col justify-between p-7 h-full">
               <div>
                 <div className="text-saffron-500">★★★★★</div>
                 <blockquote className="mt-4 font-display text-lg leading-snug text-ink-900">
                   &ldquo;{tm.quote}&rdquo;
                 </blockquote>
               </div>
-              <figcaption className="mt-6 border-t border-ink-900/5 pt-4 text-sm">
+              <figcaption className="mt-6 pt-4 text-sm" style={{ borderTop: "1px solid rgba(255,255,255,0.06)" }}>
                 <div className="font-semibold text-ink-900">{tm.name}</div>
                 <div className="text-ink-600">
                   {tm.location} · {tm.trip}
                 </div>
               </figcaption>
             </figure>
+            </ScrollReveal>
           ))}
         </div>
 
@@ -660,18 +677,23 @@ export default function Home({
       {/* FAQ */}
       <section className="bg-cream-100 py-8 md:py-12">
         <div className="container-narrow">
+          <ScrollReveal direction="left">
           <div className="max-w-2xl">
             <span className="chip">{t("home.faq.chip")}</span>
             <h2 className="mt-3 font-display text-3xl font-semibold md:text-4xl">
               {t("home.faq.title")}
             </h2>
           </div>
+          </ScrollReveal>
 
+          <ScrollReveal direction="bottom" delay={100}>
           <FaqAccordion items={localeFaqs.flatMap((cat) => cat.items)} />
+          </ScrollReveal>
         </div>
       </section>
 
       {/* FINAL CTA */}
+      <ScrollReveal direction="bottom">
       <section className="container-wide py-8 md:py-12">
         <div className="relative overflow-hidden rounded-3xl bg-warm-gradient px-8 py-10 text-center text-white shadow-card md:py-14">
           <div aria-hidden="true" className="pointer-events-none absolute -left-10 -top-10 h-48 w-48 rounded-full bg-white/10 blur-3xl" />
@@ -695,6 +717,7 @@ export default function Home({
           </div>
         </div>
       </section>
+      </ScrollReveal>
     </>
   );
 }
