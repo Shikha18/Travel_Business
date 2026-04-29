@@ -34,7 +34,7 @@ export default function ContactPage({
   // Formspree endpoint — Shikha, replace FORM_ID with your own free Formspree endpoint.
   // Sign up at https://formspree.io, create a new form pointing to mangal.shikha1997@gmail.com,
   // then paste the URL here (e.g., https://formspree.io/f/xxxxxxx).
-  const FORMSPREE_ENDPOINT = "https://formspree.io/f/YOUR_FORM_ID";
+  const FORMSPREE_ENDPOINT = "https://formspree.io/f/xbdwrraw";
 
   return (
     <>
