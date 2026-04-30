@@ -92,7 +92,7 @@ export default function TourCarousel({ tours }: { tours: Tour[] }) {
           {tours.map((_, i) => (
             <button
               key={i}
-              onClick={() => setActiveIndex(i)}
+              onClick={() => goTo(i)}
               aria-label={`Go to tour ${i + 1}`}
               className={`rounded-full transition-all duration-400 ${
                 i === activeIndex

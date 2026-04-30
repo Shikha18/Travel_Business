@@ -206,7 +206,7 @@ export const translations = {
     "about.stats.supportLabel": "On-trip support",
     "about.stats.supportBody":
       "A real human on WhatsApp any hour, any day of your trip.",
-    "about.stats.groupLabel": "Small groups (max 12)",
+    "about.stats.groupLabel": "Small groups (max 10)",
     "about.stats.groupBody": "Intimate, personal, and fully customisable to your pace and interests.",
     "about.stats.customLabel": "Customisable",
     "about.stats.customBody": "Every itinerary is built around you — dates, pace, interests. No fixed templates.",
@@ -519,7 +519,7 @@ export const translations = {
     "about.stats.supportLabel": "Unterstützung unterwegs",
     "about.stats.supportBody":
       "Ein echter Mensch auf WhatsApp, jederzeit während Ihrer Reise.",
-    "about.stats.groupLabel": "Kleine Gruppen (max. 12)",
+    "about.stats.groupLabel": "Kleine Gruppen (max. 10)",
     "about.stats.groupBody": "Intim, persönlich und vollständig an Ihr Tempo und Ihre Interessen angepasst.",
     "about.stats.customLabel": "Individualisierbar",
     "about.stats.customBody": "Jedes Programm wird nach Ihren Wünschen gestaltet — Daten, Tempo, Interessen. Keine festen Vorlagen.",

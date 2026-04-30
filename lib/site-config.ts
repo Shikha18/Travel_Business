@@ -15,7 +15,7 @@ export const siteConfig = {
   url: "https://www.gotrustelle.com",
 
   // Contact
-  email: "mangal.shikha1997@gmail.com",
+  email: "gotrustelle@gmail.com",
   phone: "+91 95897 39723",
   phoneE164: "+919589739723", // no spaces — used in tel: links
   whatsappNumber: "919589739723", // no '+' or spaces — used in wa.me links
@@ -43,7 +43,7 @@ export const siteConfig = {
     instagram: "https://www.instagram.com/backpacker_shikha/",
     instagramHandle: "@backpacker_shikha",
     linkedin: "https://www.linkedin.com/in/shikha-mangal-898945141/",
-    email: "mangal.shikha1997@gmail.com",
+    email: "gotrustelle@gmail.com",
     whatsapp: "919589739723",
     photo: "/images/shikha.jpg", // file lives at /public/images/shikha.jpg
   },
@@ -62,7 +62,7 @@ export const siteConfig = {
 
   // Trust signals shown in the footer / about page
   trustBadges: [
-    "Small groups (max 12 travelers)",
+    "Small groups (max 10 travelers)",
     "24/7 on-trip support",
     "Handpicked local guides",
     "Safe for solo & female travelers",

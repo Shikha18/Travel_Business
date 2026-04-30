@@ -324,6 +324,7 @@ export default function AboutPage({
                 muted
                 loop
                 playsInline
+                preload="none"
                 className="h-full w-full object-cover"
                 style={{ maxHeight: "340px" }}
               />
@@ -387,7 +388,7 @@ export default function AboutPage({
             <p className="mt-1 text-sm text-ink-600">{t("about.stats.supportBody")}</p>
           </div>
           <div>
-            <div className="font-display text-4xl font-semibold text-saffron-500">Max 12</div>
+            <div className="font-display text-4xl font-semibold text-saffron-500">Max 10</div>
             <div className="mt-2 text-sm font-semibold text-ink-900">{t("about.stats.groupLabel")}</div>
             <p className="mt-1 text-sm text-ink-600">{t("about.stats.groupBody")}</p>
           </div>

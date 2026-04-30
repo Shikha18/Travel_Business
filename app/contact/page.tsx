@@ -31,9 +31,7 @@ export default function ContactPage({
   const t = getTranslator(locale);
   const localizedTours = getLocalizedTours(locale);
 
-  // Formspree endpoint — Shikha, replace FORM_ID with your own free Formspree endpoint.
-  // Sign up at https://formspree.io, create a new form pointing to mangal.shikha1997@gmail.com,
-  // then paste the URL here (e.g., https://formspree.io/f/xxxxxxx).
+  // Formspree endpoint — submissions are forwarded to gotrustelle@gmail.com.
   const FORMSPREE_ENDPOINT = "https://formspree.io/f/xbdwrraw";
 
   return (
