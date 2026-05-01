@@ -88,7 +88,7 @@ export default function AboutPage({
                 </div>
               </div>
               <div className="flex items-start gap-4">
-                <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-terracotta-50 font-display text-lg font-bold text-terracotta-600">Tr</span>
+                <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-terracotta-50 font-display text-xs font-bold text-terracotta-600">Trust</span>
                 <div>
                   <div className="font-semibold text-ink-900">{t("brand.trust.title")}</div>
                   <div className="mt-0.5 text-sm text-ink-600">{t("brand.trust.body")}</div>

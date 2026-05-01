@@ -224,8 +224,8 @@ export default function Home({
                 <span className="text-sm text-ink-600">{t("brand.go.title")}</span>
               </div>
               <div className="flex items-center gap-3">
-                <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-terracotta-50 font-display text-xs font-bold text-terracotta-600">
-                  Tr
+                <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-terracotta-50 font-display text-[9px] font-bold text-terracotta-600">
+                  Trust
                 </span>
                 <span className="text-sm text-ink-600">{t("brand.trust.title")}</span>
               </div>
