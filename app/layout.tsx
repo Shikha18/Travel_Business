@@ -109,6 +109,13 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${fraunces.variable} ${inter.variable} ${dancingScript.variable}`}>
       <head>
+        {/* Google Analytics */}
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-X7QYGNLDXL" />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-X7QYGNLDXL');`,
+          }}
+        />
         <script dangerouslySetInnerHTML={{ __html: INTRO_GUARD_SCRIPT }} />
         <script
           type="application/ld+json"

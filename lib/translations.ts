@@ -44,7 +44,7 @@ export const translations = {
     "home.hero.title":
       "I don't want to show India. I want to explain India.",
     "home.hero.subtitle":
-      "Small-group journeys across the Himalayas, Kashmir and the Golden Triangle — led by people who live here, for travelers who want depth rather than a checklist.",
+      "Himalayan journeys built by a woman who lives here — not for tourists, but for travelers who want the real India.",
     "home.hero.rating": "4.9/5 average traveler rating",
     "home.hero.countries": "Travelers from 20+ countries",
     "home.hero.support": "24/7 on-trip support",
