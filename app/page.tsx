@@ -2,13 +2,11 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import LocaleLink from "@/components/LocaleLink";
 import TourCarousel from "@/components/TourCarousel";
-import FaqAccordion from "@/components/FaqAccordion";
 import ScrollReveal from "@/components/ScrollReveal";
 import { siteConfig } from "@/lib/site-config";
 import { getLocalizedFeaturedTours } from "@/lib/tours";
 import { getLocale, getTranslator } from "@/lib/i18n";
 import type { TranslationKey } from "@/lib/translations";
-import { faqs } from "@/lib/faqs";
 
 export const metadata: Metadata = {
   alternates: {
@@ -104,31 +102,9 @@ export default function Home({
   const locale = getLocale(searchParams);
   const t = getTranslator(locale);
   const featured = getLocalizedFeaturedTours(locale);
-  const localeFaqs = faqs[locale];
-
-  const faqSchema = {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    mainEntity: localeFaqs.flatMap((cat) =>
-      cat.items.map((faq) => ({
-        "@type": "Question",
-        name: faq.q,
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: [faq.a, ...(faq.bullets ?? []), faq.after ?? ""]
-            .filter(Boolean)
-            .join(" "),
-        },
-      }))
-    ),
-  };
 
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
-      />
       {/* HERO */}
       <section className="relative overflow-hidden">
         <div className="absolute inset-0">
@@ -154,10 +130,13 @@ export default function Home({
               <span className="h-2 w-2 rounded-full bg-saffron-300" />
               {t("home.hero.season")}
             </span>
-            <h1 className="mt-6 font-display text-2xl font-semibold leading-snug tracking-tight md:text-3xl lg:text-4xl">
-              <span className="block whitespace-nowrap">{t("home.hero.titleLine1")}</span>
-              <span className="block whitespace-nowrap bg-gradient-to-r from-saffron-200 via-saffron-300 to-cream-50 bg-clip-text text-transparent">
-                {t("home.hero.titleLine2")}
+            <h1 className="mt-6 font-display text-3xl font-semibold leading-tight tracking-tight md:text-4xl lg:text-5xl">
+              <span className="block">{t("home.hero.titleLine1")}</span>
+              <span className="block">
+                and understands{" "}
+                <span className="bg-gradient-to-r from-saffron-200 via-saffron-300 to-cream-50 bg-clip-text text-transparent">
+                  you.
+                </span>
               </span>
             </h1>
             <p className="mt-6 text-base text-white/85">
@@ -165,18 +144,11 @@ export default function Home({
             </p>
             <div className="mt-10 flex flex-wrap gap-3">
               <LocaleLink href="/tours" className="btn-primary">
-                {t("cta.viewDepartures")}
+                Explore journeys →
               </LocaleLink>
-              <a
-                href={`https://wa.me/${siteConfig.whatsappNumber}?text=${encodeURIComponent(
-                  siteConfig.whatsappDefaultMessage
-                )}`}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="btn-secondary"
-              >
-                {t("cta.chatWhatsApp")}
-              </a>
+              <LocaleLink href="/contact" className="btn-secondary">
+                Plan your trip with us
+              </LocaleLink>
             </div>
             <div className="mt-10 flex flex-wrap gap-6 text-sm text-white/80">
               <div className="flex items-center gap-2">
@@ -340,28 +312,8 @@ export default function Home({
           ))}
         </div>
 
-        <p className="mt-6 text-xs text-ink-600">
-          {t("home.testimonials.sampleNote")}
-        </p>
       </section>
 
-      {/* FAQ */}
-      <section className="bg-cream-100 py-8 md:py-12">
-        <div className="container-narrow">
-          <ScrollReveal direction="left">
-          <div className="max-w-2xl">
-            <span className="chip">{t("home.faq.chip")}</span>
-            <h2 className="mt-3 font-display text-3xl font-semibold md:text-4xl">
-              {t("home.faq.title")}
-            </h2>
-          </div>
-          </ScrollReveal>
-
-          <ScrollReveal direction="bottom" delay={100}>
-          <FaqAccordion items={localeFaqs.flatMap((cat) => cat.items)} />
-          </ScrollReveal>
-        </div>
-      </section>
 
       {/* FINAL CTA */}
       <ScrollReveal direction="bottom">

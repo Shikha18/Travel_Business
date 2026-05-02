@@ -17,6 +17,8 @@ export const translations = {
     "nav.home": "Home",
     "nav.tours": "Tours",
     "nav.about": "About",
+    "nav.why": "Why Trustelle",
+    "nav.faq": "FAQ",
     "nav.contact": "Contact",
     "nav.planTrip": "Plan my trip",
     "nav.toggleMenu": "Toggle menu",
@@ -39,12 +41,12 @@ export const translations = {
 
     // Home hero
     "home.hero.season": "Small-group departures · 2026",
-    "home.hero.titleLine1": "I don't want to show India.",
-    "home.hero.titleLine2": "I want to explain India.",
+    "home.hero.titleLine1": "Travel India with someone who understands it —",
+    "home.hero.titleLine2": "and understands you.",
     "home.hero.title":
-      "I don't want to show India. I want to explain India.",
+      "Travel India with someone who understands it — and understands you.",
     "home.hero.subtitle":
-      "Himalayan journeys built by a woman who lives here — not for tourists, but for travelers who want the real India.",
+      "Thoughtfully guided journeys for women and curious travelers who want to experience India deeply, safely, and without the overwhelm.",
     "home.hero.rating": "4.9/5 average traveler rating",
     "home.hero.countries": "Travelers from 20+ countries",
     "home.hero.support": "24/7 on-trip support",
@@ -330,6 +332,8 @@ export const translations = {
     "nav.home": "Start",
     "nav.tours": "Reisen",
     "nav.about": "Über uns",
+    "nav.why": "Warum Trustelle",
+    "nav.faq": "FAQ",
     "nav.contact": "Kontakt",
     "nav.planTrip": "Reise planen",
     "nav.toggleMenu": "Menü umschalten",

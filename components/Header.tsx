@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect, useCallback } from "react";
+import { usePathname } from "next/navigation";
 import { createPortal } from "react-dom";
 import Image from "next/image";
 import LocaleLink from "./LocaleLink";
@@ -12,6 +13,10 @@ export default function Header() {
   const [open, setOpen] = useState(false);
   const [mounted, setMounted] = useState(false);
   const t = useTranslator();
+  const pathname = usePathname();
+
+  const isActive = (href: string) =>
+    href === "/" ? pathname === "/" : pathname.startsWith(href);
 
   useEffect(() => { setMounted(true); }, []);
 
@@ -27,6 +32,8 @@ export default function Header() {
     { href: "/", label: t("nav.home") },
     { href: "/tours", label: t("nav.tours") },
     { href: "/about", label: t("nav.about") },
+    { href: "/why-trustelle", label: t("nav.why") },
+    { href: "/faq", label: t("nav.faq") },
     { href: "/contact", label: t("nav.contact") },
   ];
 
@@ -68,26 +75,36 @@ export default function Header() {
         </div>
 
         <nav className="flex flex-col px-4 py-3">
-          {navLinks.map((link, i) => (
-            <LocaleLink
-              key={link.href}
-              href={link.href}
-              onClick={closeMenu}
-              className="group flex items-center justify-between rounded-xl px-3 py-4 transition-colors hover:bg-cream-100"
-            >
-              <div className="flex items-center gap-4">
-                <span className="font-display text-[11px] font-semibold tabular-nums text-ink-300 group-hover:text-saffron-500">
-                  {String(i + 1).padStart(2, "0")}
-                </span>
-                <span className="font-display text-2xl font-semibold tracking-tight text-ink-900 group-hover:text-terracotta-600">
-                  {link.label}
-                </span>
-              </div>
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="h-4 w-4 -translate-x-1 text-ink-300 opacity-0 transition-all duration-200 group-hover:translate-x-0 group-hover:text-terracotta-500 group-hover:opacity-100">
-                <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
-              </svg>
-            </LocaleLink>
-          ))}
+          {navLinks.map((link, i) => {
+            const active = isActive(link.href);
+            return (
+              <LocaleLink
+                key={link.href}
+                href={link.href}
+                onClick={closeMenu}
+                className={`group flex items-center justify-between rounded-xl px-3 py-4 transition-colors ${
+                  active ? "bg-terracotta-50" : "hover:bg-cream-100"
+                }`}
+              >
+                <div className="flex items-center gap-4">
+                  <span className={`font-display text-[11px] font-semibold tabular-nums ${active ? "text-terracotta-500" : "text-ink-300 group-hover:text-saffron-500"}`}>
+                    {String(i + 1).padStart(2, "0")}
+                  </span>
+                  <span className={`font-display text-2xl font-semibold tracking-tight ${active ? "text-terracotta-600" : "text-ink-900 group-hover:text-terracotta-600"}`}>
+                    {link.label}
+                  </span>
+                  {active && (
+                    <span className="rounded-full bg-terracotta-500 px-2 py-0.5 text-[10px] font-bold uppercase tracking-wide text-white">
+                      You&apos;re here
+                    </span>
+                  )}
+                </div>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className={`h-4 w-4 transition-all duration-200 ${active ? "translate-x-0 text-terracotta-500 opacity-100" : "-translate-x-1 text-ink-300 opacity-0 group-hover:translate-x-0 group-hover:text-terracotta-500 group-hover:opacity-100"}`}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
+                </svg>
+              </LocaleLink>
+            );
+          })}
         </nav>
 
         {/* Footer hint */}
@@ -129,16 +146,29 @@ export default function Header() {
 
           {/* Desktop nav */}
           <nav className="hidden items-center gap-1 md:flex">
-            {navLinks.map((link) => (
-              <LocaleLink
-                key={link.href}
-                href={link.href}
-                className="group relative px-4 py-2 font-display text-[15px] font-semibold tracking-wide text-ink-700 transition-colors hover:text-terracotta-600"
-              >
-                {link.label}
-                <span className="absolute inset-x-4 bottom-0 h-[2px] origin-left scale-x-0 rounded-full bg-gradient-to-r from-saffron-400 to-terracotta-500 transition-transform duration-300 group-hover:scale-x-100" />
-              </LocaleLink>
-            ))}
+            {navLinks.map((link) => {
+              const active = isActive(link.href);
+              return (
+                <LocaleLink
+                  key={link.href}
+                  href={link.href}
+                  className={`group relative px-4 py-2 font-display text-[15px] font-semibold tracking-wide transition-colors ${
+                    active
+                      ? "text-terracotta-600"
+                      : "text-ink-700 hover:text-terracotta-600"
+                  }`}
+                >
+                  {link.label}
+                  <span
+                    className={`absolute inset-x-4 bottom-0 h-[2px] rounded-full bg-gradient-to-r from-saffron-400 to-terracotta-500 transition-transform duration-300 ${
+                      active
+                        ? "scale-x-100"
+                        : "origin-left scale-x-0 group-hover:scale-x-100"
+                    }`}
+                  />
+                </LocaleLink>
+              );
+            })}
             <div className="ml-3 pl-3 border-l border-ink-900/10">
               <LanguageSwitcher />
             </div>
