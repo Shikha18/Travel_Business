@@ -1,14 +1,14 @@
 "use client";
 
 import { useState, useEffect, useCallback, useRef } from "react";
-import TourCard from "./TourCard";
-import type { Tour } from "@/lib/tours";
+import JourneyCard from "./JourneyCard";
+import type { Journey } from "@/lib/journeys";
 
-export default function TourCarousel({ tours }: { tours: Tour[] }) {
+export default function JourneyCarousel({ journeys }: { journeys: Journey[] }) {
   const [activeIndex, setActiveIndex] = useState(0);
   const [isAutoPlaying, setIsAutoPlaying] = useState(true);
   const [transitioning, setTransitioning] = useState(false);
-  const len = tours.length;
+  const len = journeys.length;
   const touchStartX = useRef<number | null>(null);
 
   const goTo = useCallback((idx: number) => {
@@ -63,7 +63,7 @@ export default function TourCarousel({ tours }: { tours: Tour[] }) {
                   : "scale-[0.93] opacity-60 cursor-pointer hover:opacity-80"
               }`}
             >
-              <TourCard tour={tours[idx]} defaultHover={isCenter} />
+              <JourneyCard journey={journeys[idx]} defaultHover={isCenter} />
             </div>
           );
         })}
@@ -71,7 +71,7 @@ export default function TourCarousel({ tours }: { tours: Tour[] }) {
 
       {/* Mobile: single card with fade transition */}
       <div className={`md:hidden transition-opacity duration-700 ${transitioning ? "opacity-0" : "opacity-100"}`}>
-        <TourCard tour={tours[activeIndex]} defaultHover />
+        <JourneyCard journey={journeys[activeIndex]} defaultHover />
       </div>
 
       {/* Navigation row */}
@@ -79,7 +79,7 @@ export default function TourCarousel({ tours }: { tours: Tour[] }) {
         {/* Prev button */}
         <button
           onClick={prev}
-          aria-label="Previous tour"
+          aria-label="Previous journey"
           className="group flex h-11 w-11 items-center justify-center rounded-full bg-white shadow-soft ring-1 ring-ink-900/8 transition-all duration-200 hover:-translate-x-0.5 hover:bg-saffron-500 hover:shadow-glow hover:ring-saffron-500"
         >
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" className="h-4 w-4 text-ink-700 transition group-hover:text-white">
@@ -89,11 +89,11 @@ export default function TourCarousel({ tours }: { tours: Tour[] }) {
 
         {/* Dots */}
         <div className="flex items-center gap-2.5">
-          {tours.map((_, i) => (
+          {journeys.map((_, i) => (
             <button
               key={i}
               onClick={() => goTo(i)}
-              aria-label={`Go to tour ${i + 1}`}
+              aria-label={`Go to journey ${i + 1}`}
               className={`rounded-full transition-all duration-400 ${
                 i === activeIndex
                   ? "h-2.5 w-8 bg-gradient-to-r from-saffron-400 to-terracotta-500 shadow-sm"
@@ -106,7 +106,7 @@ export default function TourCarousel({ tours }: { tours: Tour[] }) {
         {/* Next button */}
         <button
           onClick={next}
-          aria-label="Next tour"
+          aria-label="Next journey"
           className="group flex h-11 w-11 items-center justify-center rounded-full bg-white shadow-soft ring-1 ring-ink-900/8 transition-all duration-200 hover:translate-x-0.5 hover:bg-saffron-500 hover:shadow-glow hover:ring-saffron-500"
         >
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" className="h-4 w-4 text-ink-700 transition group-hover:text-white">

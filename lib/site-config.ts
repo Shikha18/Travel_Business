@@ -9,7 +9,7 @@ export const siteConfig = {
   name: "GoTrustelle",
   tagline: "Feel India, Not Just Visit",
   description:
-    "Curated small-group tours across India — Experience. Trust. Connection. Female-founded, built for international travelers who want depth, not a checklist.",
+    "Curated small-group journeys across India — Experience. Trust. Connection. Female-founded, built for international travelers who want depth, not a checklist.",
 
   // URL (update after deploying to Vercel — used for SEO/Open Graph)
   url: "https://www.gotrustelle.com",
@@ -20,7 +20,7 @@ export const siteConfig = {
   phoneE164: "+919589739723", // no spaces — used in tel: links
   whatsappNumber: "919589739723", // no '+' or spaces — used in wa.me links
   whatsappDefaultMessage:
-    "Hi! I'd love to know more about GoTrustelle group tours to India.",
+    "Hi! I'd love to know more about GoTrustelle group journeys to India.",
 
   // Location
   address: "New Delhi, India",

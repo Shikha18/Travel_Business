@@ -1,36 +1,36 @@
 import type { Metadata } from "next";
-import TourCard from "@/components/TourCard";
-import { getLocalizedTours } from "@/lib/tours";
+import JourneyCard from "@/components/JourneyCard";
+import { getLocalizedJourneys } from "@/lib/journeys";
 import { siteConfig } from "@/lib/site-config";
 import { getLocale, getTranslator } from "@/lib/i18n";
 
 export const metadata: Metadata = {
-  title: "Tours — small-group & customisable journeys across India",
+  title: "Journeys — small-group & customisable journeys across India",
   description:
-    "Browse GoTrustelle's small-group tours across India — Spiti Valley, Kashmir, Ladakh, Golden Triangle and more. All-inclusive, max 7–10 travelers, fully customisable to your dates.",
+    "Browse GoTrustelle's small-group journeys across India — Spiti Valley, Kashmir, Ladakh, Golden Triangle and more. All-inclusive, max 7–10 travelers, fully customisable to your dates.",
   keywords: [
-    "India tour packages", "small group India tours", "Spiti Valley group tour",
-    "Kashmir group tour", "Ladakh group tour", "Golden Triangle tour India",
-    "customisable India tours", "private India tour", "all inclusive India tour",
+    "India journey packages", "small group India journeys", "Spiti Valley group journey",
+    "Kashmir group journey", "Ladakh group journey", "Golden Triangle journey India",
+    "customisable India journeys", "private India journey", "all inclusive India journey",
     "Indien Gruppenreise buchen", "Indien Pauschalreise", "Ladakh Gruppenreise",
   ],
   alternates: {
-    canonical: `${siteConfig.url}/tours`,
+    canonical: `${siteConfig.url}/journeys`,
     languages: {
-      en: `${siteConfig.url}/tours`,
-      de: `${siteConfig.url}/tours?lang=de`,
+      en: `${siteConfig.url}/journeys`,
+      de: `${siteConfig.url}/journeys?lang=de`,
     },
   },
 };
 
-export default function ToursPage({
+export default function JourneysPage({
   searchParams,
 }: {
   searchParams?: { lang?: string };
 }) {
   const locale = getLocale(searchParams);
   const t = getTranslator(locale);
-  const tours = getLocalizedTours(locale);
+  const journeys = getLocalizedJourneys(locale);
 
   return (
     <>
@@ -60,8 +60,8 @@ export default function ToursPage({
 
       <section className="container-wide py-8 md:py-12">
         <div className="grid gap-7 md:grid-cols-2 lg:grid-cols-3">
-          {tours.map((tour) => (
-            <TourCard key={tour.slug} tour={tour} />
+          {journeys.map((journey) => (
+            <JourneyCard key={journey.slug} journey={journey} />
           ))}
         </div>
 

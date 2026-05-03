@@ -183,7 +183,7 @@ export default function WhyTrustelle({
           </p>
           <div className="mt-7 flex flex-wrap justify-center gap-3">
             <LocaleLink
-              href="/tours"
+              href="/journeys"
               className="inline-flex items-center justify-center gap-2 rounded-full bg-white px-6 py-3 text-sm font-semibold text-terracotta-700 shadow-soft transition-all duration-300 hover:-translate-y-0.5 hover:bg-cream-50"
             >
               {t("about.origin.closing.cta1")}

@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import LocaleLink from "@/components/LocaleLink";
-import TourCarousel from "@/components/TourCarousel";
+import JourneyCarousel from "@/components/JourneyCarousel";
 import ScrollReveal from "@/components/ScrollReveal";
 import { siteConfig } from "@/lib/site-config";
-import { getLocalizedFeaturedTours } from "@/lib/tours";
+import { getLocalizedFeaturedJourneys } from "@/lib/journeys";
 import { getLocale, getTranslator } from "@/lib/i18n";
 import type { TranslationKey } from "@/lib/translations";
 
@@ -101,68 +101,81 @@ export default function Home({
 }) {
   const locale = getLocale(searchParams);
   const t = getTranslator(locale);
-  const featured = getLocalizedFeaturedTours(locale);
+  const featured = getLocalizedFeaturedJourneys(locale);
 
   return (
     <>
       {/* HERO */}
       <section className="relative overflow-hidden">
+        {/* Base image — bright and vibrant */}
         <div className="absolute inset-0">
           <Image
-            src="/images/hero-pangong-shikha.jpg"
-            alt="Pangong Lake, Ladakh — standing at the edge of the world"
+            src="/images/hero-manali-shikha.jpg"
+            alt="Shikha overlooking a Himalayan village, Manali"
             fill
             priority
             className="object-cover"
-            style={{
-              objectPosition: "22% center",
-              filter: "contrast(1.08) saturate(1.18) brightness(0.92)",
-            }}
+            style={{ objectPosition: "60% center", filter: "contrast(1.08) saturate(1.25) brightness(1.0)" }}
           />
-          {/* Layered gradient: left side darker for text legibility, fades right to show the lake */}
-          <div className="absolute inset-0 bg-gradient-to-r from-black/75 via-black/45 to-black/10" />
-          <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-black/20" />
         </div>
 
-        <div className="relative container-wide py-14 md:py-32 text-white">
+        {/* Warm dark gradient — left text area darkened, right photo shows fully */}
+        <div
+          className="absolute inset-0"
+          style={{
+            background:
+              "linear-gradient(to right, rgba(18,10,4,0.72) 0%, rgba(18,10,4,0.55) 30%, rgba(18,10,4,0.20) 58%, transparent 80%)",
+          }}
+        />
+        {/* Soft bottom fade into next section */}
+        <div className="absolute inset-x-0 bottom-0 h-16 bg-gradient-to-t from-black/30 to-transparent" />
+        {/* Subtle warm amber glow on left — adds brand warmth, not bleach */}
+        <div
+          className="absolute inset-0"
+          style={{
+            background:
+              "linear-gradient(to right, rgba(160,80,20,0.18) 0%, transparent 55%)",
+          }}
+        />
+
+        <div className="relative container-wide py-12 md:py-24 text-white">
           <div className="max-w-xl">
-            <span className="inline-flex items-center gap-2 rounded-full bg-white/10 px-4 py-1.5 text-xs font-semibold backdrop-blur">
-              <span className="h-2 w-2 rounded-full bg-saffron-300" />
+            <span className="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-4 py-1.5 text-[11px] font-semibold uppercase tracking-[0.18em] backdrop-blur-sm">
+              <span className="h-1.5 w-1.5 animate-pulse rounded-full bg-saffron-300" />
               {t("home.hero.season")}
             </span>
-            <h1 className="mt-6 font-display text-3xl font-semibold leading-tight tracking-tight md:text-4xl lg:text-5xl">
+
+            <h1 className="mt-6 font-display text-3xl font-semibold leading-tight tracking-tight text-white md:text-4xl lg:text-5xl">
               <span className="block">{t("home.hero.titleLine1")}</span>
               <span className="block">
                 and understands{" "}
-                <span className="bg-gradient-to-r from-saffron-200 via-saffron-300 to-cream-50 bg-clip-text text-transparent">
-                  you.
-                </span>
+                <span className="text-saffron-300">you.</span>
               </span>
             </h1>
-            <p className="mt-6 text-base text-white/85">
+
+            <p className="mt-5 max-w-md text-[15px] leading-relaxed text-white/80">
               {t("home.hero.subtitle")}
             </p>
-            <div className="mt-10 flex flex-wrap gap-3">
-              <LocaleLink href="/tours" className="btn-primary">
+
+            <div className="mt-8 flex flex-wrap gap-3">
+              <LocaleLink href="/journeys" className="btn-primary">
                 Explore journeys →
               </LocaleLink>
-              <LocaleLink href="/contact" className="btn-secondary">
+              <LocaleLink
+                href="/contact"
+                className="inline-flex items-center justify-center gap-2 rounded-full border border-white/35 bg-white/12 px-6 py-3 text-sm font-semibold text-white backdrop-blur-sm transition-all duration-300 hover:bg-white/22"
+              >
                 Plan your trip with us
               </LocaleLink>
             </div>
-            <div className="mt-10 flex flex-wrap gap-6 text-sm text-white/80">
-              <div className="flex items-center gap-2">
+
+            <div className="mt-8 flex flex-wrap gap-x-6 gap-y-2 text-xs text-white/60">
+              <span className="flex items-center gap-1.5">
                 <span className="text-saffron-300">★★★★★</span>
-                <span>{t("home.hero.rating")}</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <span>🌏</span>
-                <span>{t("home.hero.countries")}</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <span>🛡️</span>
-                <span>{t("home.hero.support")}</span>
-              </div>
+                {t("home.hero.rating")}
+              </span>
+              <span className="flex items-center gap-1.5">🌏 {t("home.hero.countries")}</span>
+              <span className="flex items-center gap-1.5">🛡️ {t("home.hero.support")}</span>
             </div>
           </div>
         </div>
@@ -211,11 +224,127 @@ export default function Home({
 
             {/* CTA */}
             <LocaleLink
-              href="/about"
+              href="/why-trustelle"
               className="shrink-0 text-sm font-semibold text-saffron-600 hover:text-saffron-700 hover:underline"
             >
               Our story →
             </LocaleLink>
+          </div>
+        </div>
+      </section>
+      </ScrollReveal>
+
+      {/* TRUST STRIP */}
+      <section className="border-b bg-cream-50" style={{ borderColor: "rgba(228,170,66,0.15)" }}>
+        <div className="container-wide py-10 md:py-14">
+          {/* Heading */}
+          <div className="mb-10">
+            <span className="chip">{t("home.trust.chip")}</span>
+            <h2 className="mt-3 font-display text-2xl font-semibold md:text-3xl">
+              {t("home.trust.title")}
+            </h2>
+            <p className="mt-3 max-w-2xl text-sm leading-relaxed text-ink-600">
+              {t("home.trust.subtitle")}
+            </p>
+          </div>
+          {/* 4-column icon strip */}
+          <div className="grid grid-cols-2 gap-8 md:grid-cols-4">
+            {[
+              {
+                title: "Small groups only",
+                sub: "Max 7–10 travelers",
+                icon: (
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.4" className="h-7 w-7">
+                    <circle cx="9" cy="7" r="3" />
+                    <path strokeLinecap="round" d="M3 21v-1a6 6 0 0112 0v1" />
+                    <circle cx="17.5" cy="9" r="2.5" />
+                    <path strokeLinecap="round" d="M21 21v-1a4 4 0 00-5-3.87" />
+                  </svg>
+                ),
+              },
+              {
+                title: "Female-friendly",
+                sub: "Women-led & solo-friendly",
+                icon: (
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.4" className="h-7 w-7">
+                    <circle cx="12" cy="8" r="5" />
+                    <path strokeLinecap="round" d="M12 13v8M9 18h6" />
+                  </svg>
+                ),
+              },
+              {
+                title: "Trusted & safe",
+                sub: "Verified stays, drivers & 24/7 support",
+                icon: (
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.4" className="h-7 w-7">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M12 2l8 4v6c0 5-3.5 8-8 10-4.5-2-8-5-8-10V6l8-4z" />
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M9 12l2 2 4-4" />
+                  </svg>
+                ),
+              },
+              {
+                title: "Made for you",
+                sub: "Flexible, personal & stress-free",
+                icon: (
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.4" className="h-7 w-7">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78L12 21.23l7.78-7.78a5.5 5.5 0 000-7.78z" />
+                  </svg>
+                ),
+              },
+            ].map((item) => (
+              <div key={item.title} className="flex flex-col items-start gap-2">
+                <span className="text-ink-400">{item.icon}</span>
+                <span className="text-sm font-semibold text-ink-900">{item.title}</span>
+                <span className="text-xs leading-snug text-ink-500">{item.sub}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* WE SEE YOU */}
+      <ScrollReveal direction="bottom">
+      <section className="bg-white py-10 md:py-16">
+        <div className="container-wide">
+          <div className="grid gap-10 md:grid-cols-2 md:items-center md:gap-16">
+            {/* Left — text */}
+            <div>
+              <span className="chip">We see you ♡</span>
+              <h2 className="mt-4 font-display text-2xl font-semibold leading-snug md:text-3xl">
+                India can be{" "}
+                <em className="not-italic text-terracotta-500 italic">incredible.</em>
+                <br />But it can also be a lot.
+              </h2>
+              <ul className="mt-6 space-y-3.5">
+                {[
+                  "The noise. The pace. The attention.",
+                  "The moments where you're not quite sure what's happening — or who to trust.",
+                  "We've seen it.",
+                  "That's exactly why we created this.",
+                ].map((line) => (
+                  <li key={line} className="flex items-start gap-3 text-ink-700">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="mt-0.5 h-5 w-5 shrink-0 text-terracotta-400">
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78L12 21.23l7.78-7.78a5.5 5.5 0 000-7.78z" />
+                    </svg>
+                    <span className="text-sm leading-relaxed">{line}</span>
+                  </li>
+                ))}
+              </ul>
+              <p className="mt-6 text-sm leading-relaxed text-ink-500">
+                We stand beside you — not just showing you places,<br />
+                but helping you feel at home in them.
+              </p>
+            </div>
+            {/* Right — image */}
+            <div className="relative aspect-[4/3] overflow-hidden rounded-2xl shadow-card">
+              <Image
+                src="/images/story-shikha-baby-cafe.jpg"
+                alt="Warm connection — real moments in India"
+                fill
+                className="object-cover"
+              />
+              <div className="absolute inset-0 rounded-2xl ring-1 ring-inset ring-black/5" />
+            </div>
           </div>
         </div>
       </section>
@@ -236,7 +365,7 @@ export default function Home({
           </div>
           </ScrollReveal>
           <ScrollReveal direction="right">
-          <LocaleLink href="/tours" className="btn-ghost self-start md:self-auto">
+          <LocaleLink href="/journeys" className="btn-ghost self-start md:self-auto">
             {t("cta.viewAll")}
           </LocaleLink>
           </ScrollReveal>
@@ -244,41 +373,60 @@ export default function Home({
 
         <ScrollReveal direction="bottom" delay={150}>
         <div className="mt-10">
-          <TourCarousel tours={featured} />
+          <JourneyCarousel journeys={featured} />
         </div>
         </ScrollReveal>
       </section>
 
-      {/* TRUST */}
-      <section className="bg-cream-100 py-8 md:py-12">
+      {/* OUR PROMISE */}
+      <ScrollReveal direction="bottom">
+      <section className="bg-cream-50 py-10 md:py-14">
         <div className="container-wide">
-          <ScrollReveal direction="left">
-          <div className="w-full">
-            <span className="chip">{t("home.trust.chip")}</span>
-            <h2 className="mt-3 font-display text-3xl font-semibold md:text-4xl">
-              {t("home.trust.title")}
-            </h2>
-            <p className="mt-3 text-ink-600">{t("home.trust.subtitle")}</p>
-          </div>
-          </ScrollReveal>
+          <div className="grid gap-8 md:grid-cols-2 md:items-center md:gap-14">
+            {/* Left — photo */}
+            <div className="relative aspect-[4/3] overflow-hidden rounded-2xl shadow-card">
+              <Image
+                src="/images/shikha.jpg"
+                alt="Shikha — founder of GoTrustelle"
+                fill
+                className="object-cover object-top"
+              />
+              <div className="absolute inset-0 rounded-2xl ring-1 ring-inset ring-black/5" />
+            </div>
 
-          <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-            {trustPoints.map((point, i) => (
-              <ScrollReveal key={point.titleKey} direction="bottom" delay={i * 100}>
-              <div className="card p-6 h-full">
-                <div className="flex h-11 w-11 items-center justify-center rounded-full bg-saffron-100 text-saffron-600">
-                  {point.icon}
-                </div>
-                <h3 className="mt-5 font-display text-xl font-semibold">
-                  {t(point.titleKey)}
-                </h3>
-                <p className="mt-2 text-sm text-ink-600">{t(point.bodyKey)}</p>
+            {/* Right — content */}
+            <div>
+              <span className="chip">Our promise ♡</span>
+              <h2 className="mt-4 font-display text-2xl font-semibold leading-snug md:text-3xl">
+                You&apos;re not just another booking.<br />
+                You&apos;re{" "}
+                <span className="font-script text-3xl text-terracotta-500 md:text-4xl" style={{ fontStyle: "italic", letterSpacing: "-0.01em" }}>
+                  our guest.
+                </span>
+              </h2>
+              <p className="mt-4 text-sm leading-relaxed text-ink-600">
+                We take care of the details, the logistics and the fine print — so
+                you can be fully present for the beauty, the people and the stories
+                that matter.
+              </p>
+              <ul className="mt-5 space-y-3">
+                {["No hidden costs", "Hand-picked local guides", "Responsible & thoughtful travel"].map((item) => (
+                  <li key={item} className="flex items-center gap-3 text-sm font-medium text-ink-800">
+                    <span className="flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-terracotta-100 text-[10px] text-terracotta-600">✓</span>
+                    {item}
+                  </li>
+                ))}
+              </ul>
+              <div className="mt-7">
+                <LocaleLink href="/contact" className="btn-primary">
+                  Plan your trip with us →
+                </LocaleLink>
               </div>
-              </ScrollReveal>
-            ))}
+            </div>
           </div>
         </div>
       </section>
+      </ScrollReveal>
 
       {/* TESTIMONIALS */}
       <section className="container-wide py-8 md:py-12">
@@ -328,7 +476,7 @@ export default function Home({
             {t("home.finalCTA.subtitle")}
           </p>
           <div className="relative mt-8 flex flex-wrap justify-center gap-3">
-            <LocaleLink href="/tours" className="inline-flex items-center justify-center gap-2 rounded-full bg-white px-6 py-3 text-sm font-semibold text-terracotta-700 shadow-soft transition-all duration-300 hover:-translate-y-0.5 hover:bg-cream-50">
+            <LocaleLink href="/journeys" className="inline-flex items-center justify-center gap-2 rounded-full bg-white px-6 py-3 text-sm font-semibold text-terracotta-700 shadow-soft transition-all duration-300 hover:-translate-y-0.5 hover:bg-cream-50">
               {t("cta.browseTours")}
             </LocaleLink>
             <LocaleLink

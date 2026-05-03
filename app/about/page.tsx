@@ -7,12 +7,12 @@ import type { TranslationKey } from "@/lib/translations";
 import { siteConfig } from "@/lib/site-config";
 
 export const metadata: Metadata = {
-  title: "About GoTrustelle — female-founded India tour company",
+  title: "About GoTrustelle — female-founded India journey company",
   description:
-    "GoTrustelle is a female-founded India travel company built by Shikha (New Delhi) and Melissa (Germany). Small-group, customisable tours across India — max 7–10 travelers, built for depth not checklists.",
+    "GoTrustelle is a female-founded India travel company built by Shikha (New Delhi) and Melissa (Germany). Small-group, customisable journeys across India — max 7–10 travelers, built for depth not checklists.",
   keywords: [
-    "female founded India travel company", "India tour company", "GoTrustelle founders",
-    "Shikha Mangal GoTrustelle", "woman led travel India", "India tour operator 2026",
+    "female founded India travel company", "India journey company", "GoTrustelle founders",
+    "Shikha Mangal GoTrustelle", "woman led travel India", "India journey operator 2026",
     "weiblich gegründetes Reiseunternehmen Indien", "Indien Reiseveranstalterin",
   ],
   alternates: {
@@ -69,7 +69,7 @@ export default function AboutPage({
             <p className="mt-5 text-ink-700 leading-relaxed">{t("about.p1")}</p>
             <p className="mt-4 text-ink-700 leading-relaxed">{t("about.p2")}</p>
             <div className="mt-8 flex flex-wrap gap-3">
-              <LocaleLink href="/tours" className="btn-primary">
+              <LocaleLink href="/journeys" className="btn-primary">
                 {t("cta.ourTours")}
               </LocaleLink>
               <LocaleLink href="/contact" className="btn-secondary">

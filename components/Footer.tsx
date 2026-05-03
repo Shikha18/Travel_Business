@@ -91,7 +91,7 @@ export default function Footer() {
             <ul className="mt-4 space-y-3 text-sm">
               {[
                 { href: "/", label: t("nav.home") },
-                { href: "/tours", label: t("nav.tours") },
+                { href: "/journeys", label: t("nav.tours") },
                 { href: "/about", label: t("nav.about") },
                 { href: "/contact", label: t("nav.contact") },
               ].map((link) => (

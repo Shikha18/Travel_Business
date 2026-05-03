@@ -15,7 +15,7 @@ export const translations = {
   en: {
     // Navigation
     "nav.home": "Home",
-    "nav.tours": "Tours",
+    "nav.tours": "Journeys",
     "nav.about": "About",
     "nav.why": "Why Trustelle",
     "nav.faq": "FAQ",
@@ -26,9 +26,9 @@ export const translations = {
     // Buttons / CTA
     "cta.viewDepartures": "View 2026 departures",
     "cta.chatWhatsApp": "Chat on WhatsApp",
-    "cta.browseTours": "Browse tours",
+    "cta.browseTours": "Browse Journeys",
     "cta.talkToUs": "Talk to us",
-    "cta.viewAll": "View all tours →",
+    "cta.viewAll": "View all journeys →",
     "cta.viewTrip": "View trip →",
     "cta.reserveWA": "Reserve on WhatsApp",
     "cta.requestEmail": "Request details by email",
@@ -37,7 +37,7 @@ export const translations = {
     "cta.openWhatsApp": "Open WhatsApp chat",
     "cta.emailUs": "Email us",
     "cta.messageFounderWA": "Message Shikha on WhatsApp",
-    "cta.ourTours": "View our tours",
+    "cta.ourTours": "View our journeys",
 
     // Home hero
     "home.hero.season": "Small-group departures · 2026",
@@ -52,8 +52,8 @@ export const translations = {
     "home.hero.support": "24/7 on-trip support",
 
     // Home sections
-    "home.featured.chip": "Featured 2026 departures",
-    "home.featured.title": "Hand-crafted group journeys",
+    "home.featured.chip": "JOURNEYS YOU'LL LOVE",
+    "home.featured.title": "Hand-crafted journeys, filled with real moments.",
     "home.featured.subtitle":
       "Three signature trips for summer 2026. Secure your seat with a 30% deposit — balance due on arrival.",
 
@@ -87,8 +87,8 @@ export const translations = {
     "home.finalCTA.subtitle":
       "Reserve a seat on a June or July 2026 departure, or tell us your dates and we'll design a private trip around you.",
 
-    // Tours listing
-    "tours.chip": "Our tours",
+    // Journeys listing
+    "tours.chip": "Our journeys",
     "tours.title": "Small-group journeys across India.",
     "tours.subtitle":
       "Every trip below is all-inclusive: transfers, stays, guides, permits and the meals we've listed. Join an upcoming group or ask us to run it privately on your dates.",
@@ -100,11 +100,11 @@ export const translations = {
       "Every journey we run can also be built from scratch — your dates, your group size, your pace. Families, couples, solo travelers, corporate retreats. You choose the regions; we handle every detail from first enquiry to airport drop-off.",
     "tours.customCTA.wa": "Plan my custom trip →",
 
-    // Tour card
+    // Journey card
     "tourCard.from": "From",
     "tourCard.perPerson": "/ person",
 
-    // Tour detail
+    // Journey detail
     "tourDetail.duration": "Duration",
     "tourDetail.groupSize": "Group size",
     "tourDetail.region": "Region",
@@ -123,9 +123,9 @@ export const translations = {
     "tourDetail.otherJourneys": "Other journeys you might love",
     "tourDetail.difficultyLabel": "Difficulty",
     "tourDetail.waMessage":
-      "Hi! I'm interested in the {tour} tour. Can you share more details?",
+      "Hi! I'm interested in the {tour} journey. Can you share more details?",
 
-    // Tour difficulty labels
+    // Journey difficulty labels
     "difficulty.Easy": "Easy",
     "difficulty.Moderate": "Moderate",
     "difficulty.Challenging": "Challenging",
@@ -134,9 +134,9 @@ export const translations = {
     "about.chip": "Our story",
     "about.title": "A small team obsessed with getting every detail right.",
     "about.p1":
-      "GoTrustelle is a young Indian travel company, founded in 2026 by a team that grew up traveling and hosting guests across India. We started with one observation: most group tours to India feel like factories. You're rushed through monuments, pushed into emporiums, and fed the same buffet. We thought travelers deserved better.",
+      "GoTrustelle is a young Indian travel company, founded in 2026 by a team that grew up traveling and hosting guests across India. We started with one observation: most group journeys to India feel like factories. You're rushed through monuments, pushed into emporiums, and fed the same buffet. We thought travelers deserved better.",
     "about.p2":
-      "So we built the kind of tours we'd want our friends from abroad to take — small groups, long evenings, real meals with real people, and the freedom to slow down. Every departure is personally overseen by a founder or senior team member.",
+      "So we built the kind of journeys we'd want our friends from abroad to take — small groups, long evenings, real meals with real people, and the freedom to slow down. Every departure is personally overseen by a founder or senior team member.",
     "about.principles.chip": "What we believe",
     "about.principles.title": "Our travel principles.",
     "about.team.chip": "Who you'll travel with",
@@ -200,7 +200,7 @@ export const translations = {
     "about.partner.story4":
       "My job at GoTrustelle is to take care of everything on the European side. I answer questions in German and English, help you prepare properly (visa, packing, food sensitivities, what to expect in the first 48 hours), and make sure there's nothing left to guess about before you board your flight. Shikha handles you on the ground. I handle you before you get there.",
     "about.partner.story5":
-      "If you've been curious about India but didn't know where to start, or you've tried bigger packaged tours and felt pushed through — that's exactly the gap I wanted us to fill.",
+      "If you've been curious about India but didn't know where to start, or you've tried bigger packaged journeys and felt pushed through — that's exactly the gap I wanted us to fill.",
     "about.partner.signature": "— Melissa",
     "about.stats.inhouseLabel": "In-house planned",
     "about.stats.inhouseBody":
@@ -222,7 +222,7 @@ export const translations = {
       "Our guides, drivers and homestay hosts live in the regions we visit and are paid above local market rates.",
     "about.v.leaveBetter.title": "Leave it better.",
     "about.v.leaveBetter.body":
-      "We offset carbon on every tour, avoid single-use plastics on the road, and partner with women-led artisan collectives.",
+      "We offset carbon on every journey, avoid single-use plastics on the road, and partner with women-led artisan collectives.",
     "about.v.transparent.title": "Transparency, always.",
     "about.v.transparent.body":
       "No hidden emporium stops, no commissions. What we publish is what we deliver.",
@@ -243,8 +243,8 @@ export const translations = {
     "contact.form.country": "Country",
     "contact.form.countryPlaceholder": "e.g., United Kingdom",
     "contact.form.whatsapp": "WhatsApp (optional)",
-    "contact.form.tour": "Which tour(s) are you interested in?",
-    "contact.form.tourSelect": "Select a tour",
+    "contact.form.tour": "Which journey(s) are you interested in?",
+    "contact.form.tourSelect": "Select a journey",
     "contact.form.tourCustom": "Custom private trip",
     "contact.form.tourUnsure": "Not sure yet",
     "contact.form.dates": "Approximate travel dates",
@@ -270,11 +270,11 @@ export const translations = {
 
     // Footer
     "footer.explore": "Explore",
-    "footer.exploreAll": "All tours",
+    "footer.exploreAll": "All journeys",
     "footer.contact": "Contact",
     "footer.waChat": "WhatsApp chat",
     "footer.copyright": "Crafted with care in India.",
-    "footer.subline": "Independent small-group tours · Based in New Delhi",
+    "footer.subline": "Independent small-group journeys · Based in New Delhi",
 
     // Months (used for tour badges)
     "month.June": "June",
@@ -402,7 +402,7 @@ export const translations = {
     "home.finalCTA.subtitle":
       "Reservieren Sie einen Platz für eine Juni- oder Juli-Abreise 2026, oder nennen Sie uns Ihre Daten und wir gestalten eine private Reise um Sie herum.",
 
-    // Tours listing
+    // Journeys listing
     "tours.chip": "Unsere Reisen",
     "tours.title": "Kleine Gruppenreisen durch Indien.",
     "tours.subtitle":
@@ -415,11 +415,11 @@ export const translations = {
       "Jede unserer Reisen kann auch von Grund auf neu geplant werden — Ihre Daten, Ihre Gruppengröße, Ihr Tempo. Familien, Paare, Alleinreisende, Firmenreisen. Sie wählen die Regionen; wir kümmern uns um jedes Detail — von der ersten Anfrage bis zum Abflug.",
     "tours.customCTA.wa": "Meine Wunschreise planen →",
 
-    // Tour card
+    // Journey card
     "tourCard.from": "Ab",
     "tourCard.perPerson": "/ Person",
 
-    // Tour detail
+    // Journey detail
     "tourDetail.duration": "Dauer",
     "tourDetail.groupSize": "Gruppengröße",
     "tourDetail.region": "Region",
@@ -440,7 +440,7 @@ export const translations = {
     "tourDetail.waMessage":
       "Hallo! Ich interessiere mich für die Reise {tour}. Können Sie mir mehr Details zusenden?",
 
-    // Tour difficulty labels
+    // Journey difficulty labels
     "difficulty.Easy": "Einfach",
     "difficulty.Moderate": "Mittel",
     "difficulty.Challenging": "Anspruchsvoll",

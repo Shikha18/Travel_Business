@@ -29,7 +29,7 @@ const dancingScript = Dancing_Script({
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
   title: {
-    default: `${siteConfig.name} — Small-group tours across India`,
+    default: `${siteConfig.name} — Small-group journeys across India`,
     template: `%s | ${siteConfig.name}`,
   },
   description: siteConfig.description,
@@ -55,12 +55,12 @@ export const metadata: Metadata = {
     alternateLocale: ["de_DE"],
     url: siteConfig.url,
     siteName: siteConfig.name,
-    title: `${siteConfig.name} — Small-group tours across India`,
+    title: `${siteConfig.name} — Small-group journeys across India`,
     description: siteConfig.description,
   },
   twitter: {
     card: "summary_large_image",
-    title: `${siteConfig.name} — Small-group tours across India`,
+    title: `${siteConfig.name} — Small-group journeys across India`,
     description: siteConfig.description,
     creator: "@gotrustelle",
   },

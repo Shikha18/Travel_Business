@@ -4,7 +4,7 @@
  * are generated automatically from this array.
  */
 
-export type TourDay = {
+export type JourneyDay = {
   day: number;
   title: string;
   description: string;
@@ -13,13 +13,13 @@ export type TourDay = {
   image?: string;
 };
 
-export type TourPricing = {
+export type JourneyPricing = {
   label: string;       // e.g., "Twin sharing"
   priceEUR: number;    // per person in EUR (primary display currency)
   priceINR: number;    // per person in INR (secondary, for Indian guests)
 };
 
-export type Tour = {
+export type Journey = {
   slug: string;
   title: string;
   subtitle: string;
@@ -35,15 +35,15 @@ export type Tour = {
   summary: string;         // short card blurb
   overview: string;        // long paragraph for detail page
   highlights: string[];
-  itinerary: TourDay[];
+  itinerary: JourneyDay[];
   inclusions: string[];
   exclusions: string[];
-  pricing: TourPricing[];
+  pricing: JourneyPricing[];
   featured: boolean;
   departures: string[];    // e.g., ["June 14, 2026", "July 5, 2026"]
 };
 
-export const tours: Tour[] = [
+export const journeys: Journey[] = [
   {
     slug: "spiti-summer-expedition",
     title: "Spiti Summer Expedition",
@@ -969,12 +969,12 @@ export const tours: Tour[] = [
   },
 ];
 
-export function getTourBySlug(slug: string): Tour | undefined {
-  return tours.find((t) => t.slug === slug);
+export function getJourneyBySlug(slug: string): Journey | undefined {
+  return journeys.find((t) => t.slug === slug);
 }
 
-export function getFeaturedTours(): Tour[] {
-  return tours.filter((t) => t.featured);
+export function getFeaturedJourneys(): Journey[] {
+  return journeys.filter((t) => t.featured);
 }
 
 // ─────────────────────────────────────────────────────────────────────
@@ -983,7 +983,7 @@ export function getFeaturedTours(): Tour[] {
 // Each tour has a German translation below. We keep the English array as
 // the source of truth for structural fields (slug, images, pricing numbers,
 // durations, months, featured flag) and overlay locale-specific text fields
-// at render time via `getLocalizedTours()` / `getLocalizedTourBySlug()`.
+// at render time via `getLocalizedJourneys()` / `getLocalizedJourneyBySlug()`.
 //
 // Translatable fields per tour:
 //   title · subtitle · region · route · groupSize · difficulty (raw string)
@@ -998,8 +998,8 @@ export function getFeaturedTours(): Tour[] {
 
 import type { Locale } from "./translations";
 
-export type TourI18nFields = Pick<
-  Tour,
+export type JourneyI18nFields = Pick<
+  Journey,
   | "title"
   | "subtitle"
   | "region"
@@ -1016,7 +1016,7 @@ export type TourI18nFields = Pick<
   | "departures"
 >;
 
-const toursDeOverrides: Record<string, TourI18nFields> = {
+const journeysDeOverrides: Record<string, JourneyI18nFields> = {
   "spiti-summer-expedition": {
     title: "Spiti Sommer-Expedition",
     subtitle:
@@ -1691,31 +1691,31 @@ const toursDeOverrides: Record<string, TourI18nFields> = {
  * Returns the tour list localized for the given locale.
  * English is the source of truth; other locales overlay translated fields.
  */
-export function getLocalizedTours(locale: Locale): Tour[] {
-  if (locale === "en") return tours;
-  const overrides = locale === "de" ? toursDeOverrides : null;
-  if (!overrides) return tours;
-  return tours.map((tour) => {
-    const override = overrides[tour.slug];
-    if (!override) return tour;
-    return { ...tour, ...override };
+export function getLocalizedJourneys(locale: Locale): Journey[] {
+  if (locale === "en") return journeys;
+  const overrides = locale === "de" ? journeysDeOverrides : null;
+  if (!overrides) return journeys;
+  return journeys.map((journey) => {
+    const override = overrides[journey.slug];
+    if (!override) return journey;
+    return { ...journey, ...override };
   });
 }
 
 /**
  * Returns a single localized tour by slug.
  */
-export function getLocalizedTourBySlug(
+export function getLocalizedJourneyBySlug(
   slug: string,
   locale: Locale
-): Tour | undefined {
-  const localized = getLocalizedTours(locale);
+): Journey | undefined {
+  const localized = getLocalizedJourneys(locale);
   return localized.find((t) => t.slug === slug);
 }
 
 /**
  * Returns only the featured tours, localized.
  */
-export function getLocalizedFeaturedTours(locale: Locale): Tour[] {
-  return getLocalizedTours(locale).filter((t) => t.featured);
+export function getLocalizedFeaturedJourneys(locale: Locale): Journey[] {
+  return getLocalizedJourneys(locale).filter((t) => t.featured);
 }

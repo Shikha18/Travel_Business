@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { siteConfig } from "@/lib/site-config";
-import { getLocalizedTours } from "@/lib/tours";
+import { getLocalizedJourneys } from "@/lib/journeys";
 import { getLocale, getTranslator } from "@/lib/i18n";
 import ContactDateFields from "./ContactDateFields";
 
@@ -29,7 +29,7 @@ export default function ContactPage({
 }) {
   const locale = getLocale(searchParams);
   const t = getTranslator(locale);
-  const localizedTours = getLocalizedTours(locale);
+  const localizedJourneys = getLocalizedJourneys(locale);
 
   // Formspree endpoint — submissions are forwarded to gotrustelle@gmail.com.
   const FORMSPREE_ENDPOINT = "https://formspree.io/f/xbdwrraw";
@@ -74,15 +74,15 @@ export default function ContactPage({
                 {t("contact.form.tour")}
               </label>
               <select
-                name="tour"
+                name="journey"
                 className="mt-1.5 w-full rounded-xl border border-ink-900/10 bg-white px-4 py-3 text-sm focus:border-saffron-500 focus:outline-none focus:ring-1 focus:ring-saffron-500"
                 defaultValue=""
               >
                 <option value="" disabled>
                   {t("contact.form.tourSelect")}
                 </option>
-                {localizedTours.map((tour) => (
-                  <option key={tour.slug}>{tour.title}</option>
+                {localizedJourneys.map((journey) => (
+                  <option key={journey.slug}>{journey.title}</option>
                 ))}
                 <option>{t("contact.form.tourCustom")}</option>
                 <option>{t("contact.form.tourUnsure")}</option>

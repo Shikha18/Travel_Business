@@ -4,17 +4,17 @@ import HeroImageCarousel from "@/components/HeroImageCarousel";
 import LocaleLink from "@/components/LocaleLink";
 import { notFound } from "next/navigation";
 import {
-  getTourBySlug,
-  getLocalizedTourBySlug,
-  getLocalizedTours,
-  tours,
-} from "@/lib/tours";
+  getJourneyBySlug,
+  getLocalizedJourneyBySlug,
+  getLocalizedJourneys,
+  journeys,
+} from "@/lib/journeys";
 import { siteConfig } from "@/lib/site-config";
 import { getLocale, getTranslator } from "@/lib/i18n";
 import type { TranslationKey } from "@/lib/translations";
 
 export async function generateStaticParams() {
-  return tours.map((t) => ({ slug: t.slug }));
+  return journeys.map((j) => ({ slug: j.slug }));
 }
 
 export async function generateMetadata({
@@ -22,37 +22,37 @@ export async function generateMetadata({
 }: {
   params: { slug: string };
 }): Promise<Metadata> {
-  const tour = getTourBySlug(params.slug);
-  if (!tour) return { title: "Tour not found" };
-  const url = `${siteConfig.url}/tours/${tour.slug}`;
+  const journey = getJourneyBySlug(params.slug);
+  if (!journey) return { title: "Journey not found" };
+  const url = `${siteConfig.url}/journeys/${journey.slug}`;
   return {
-    title: `${tour.title} — ${tour.durationDays}-Day Small-Group Tour India`,
-    description: tour.summary,
+    title: `${journey.title} — ${journey.durationDays}-Day Small-Group Journey India`,
+    description: journey.summary,
     keywords: [
-      tour.title, tour.region, "India tour", "small group tour India",
-      "customisable India tour", `${tour.region} tour`, "Indien Reise",
-      `${tour.region} Gruppenreise`,
+      journey.title, journey.region, "India journey", "small group journey India",
+      "customisable India journey", `${journey.region} journey`, "Indien Reise",
+      `${journey.region} Gruppenreise`,
     ],
     alternates: {
       canonical: url,
       languages: { en: url, de: `${url}?lang=de` },
     },
     openGraph: {
-      title: `${tour.title} | ${siteConfig.name}`,
-      description: tour.summary,
+      title: `${journey.title} | ${siteConfig.name}`,
+      description: journey.summary,
       url,
-      images: [{ url: tour.heroImage, width: 1200, height: 630, alt: tour.title }],
+      images: [{ url: journey.heroImage, width: 1200, height: 630, alt: journey.title }],
     },
     twitter: {
       card: "summary_large_image",
-      title: `${tour.title} | ${siteConfig.name}`,
-      description: tour.summary,
-      images: [tour.heroImage],
+      title: `${journey.title} | ${siteConfig.name}`,
+      description: journey.summary,
+      images: [journey.heroImage],
     },
   };
 }
 
-export default function TourDetail({
+export default function JourneyDetail({
   params,
   searchParams,
 }: {
@@ -61,23 +61,23 @@ export default function TourDetail({
 }) {
   const locale = getLocale(searchParams);
   const t = getTranslator(locale);
-  const tour = getLocalizedTourBySlug(params.slug, locale);
-  if (!tour) notFound();
+  const journey = getLocalizedJourneyBySlug(params.slug, locale);
+  if (!journey) notFound();
 
-  const otherTours = getLocalizedTours(locale);
-  const difficultyKey = `difficulty.${tour.difficulty}` as TranslationKey;
-  const whatsappText = t("tourDetail.waMessage").replace("{tour}", tour.title);
+  const otherJourneys = getLocalizedJourneys(locale);
+  const difficultyKey = `difficulty.${journey.difficulty}` as TranslationKey;
+  const whatsappText = t("tourDetail.waMessage").replace("{tour}", journey.title);
   const waLink = `https://wa.me/${siteConfig.whatsappNumber}?text=${encodeURIComponent(
     whatsappText
   )}`;
 
-  const tourSchema = {
+  const journeySchema = {
     "@context": "https://schema.org",
     "@type": "TouristTrip",
-    name: tour.title,
-    description: tour.summary,
-    image: tour.heroImage,
-    url: `${siteConfig.url}/tours/${tour.slug}`,
+    name: journey.title,
+    description: journey.summary,
+    image: journey.heroImage,
+    url: `${siteConfig.url}/journeys/${journey.slug}`,
     touristType: ["International tourists", "European travelers"],
     availableLanguage: ["English", "German"],
     provider: {
@@ -87,8 +87,8 @@ export default function TourDetail({
     },
     itinerary: {
       "@type": "ItemList",
-      numberOfItems: tour.durationDays,
-      itemListElement: tour.itinerary.map((day, i) => ({
+      numberOfItems: journey.durationDays,
+      itemListElement: journey.itinerary.map((day, i) => ({
         "@type": "ListItem",
         position: i + 1,
         name: day.title,
@@ -100,15 +100,15 @@ export default function TourDetail({
     <>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(tourSchema) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(journeySchema) }}
       />
       {/* HERO — full-bleed image with gradient; all text stays inside the dark overlay */}
       <section className="relative min-h-[560px] overflow-hidden md:min-h-[680px]">
         {/* Background carousel + gradient */}
         <div className="absolute inset-0">
           <HeroImageCarousel
-            images={tour.galleryImages.length > 0 ? tour.galleryImages : [tour.heroImage]}
-            alt={tour.title}
+            images={journey.galleryImages.length > 0 ? journey.galleryImages : [journey.heroImage]}
+            alt={journey.title}
           />
           <div className="absolute inset-0 bg-gradient-to-t from-ink-900 via-ink-900/65 to-ink-900/15" />
         </div>
@@ -125,17 +125,17 @@ export default function TourDetail({
 
             {/* Title */}
             <h1 className="mt-4 font-display text-4xl font-semibold leading-tight text-white drop-shadow-lg md:text-6xl">
-              {tour.title}
+              {journey.title}
             </h1>
             <p className="mt-3 max-w-2xl text-base text-white/85 md:text-lg">
-              {tour.subtitle}
+              {journey.subtitle}
             </p>
 
             {/* Quick-stats bar — dark frosted glass, always on the image */}
             <div className="mt-7 grid grid-cols-2 gap-4 rounded-2xl border border-white/10 bg-black/35 px-5 py-4 backdrop-blur-sm md:grid-cols-3">
-              <Stat label={t("tourDetail.duration")} value={`${tour.durationNights}N / ${tour.durationDays}D`} />
-              <Stat label={t("tourDetail.groupSize")} value={tour.groupSize} />
-              <Stat label={t("tourDetail.region")} value={tour.region} />
+              <Stat label={t("tourDetail.duration")} value={`${journey.durationNights}N / ${journey.durationDays}D`} />
+              <Stat label={t("tourDetail.groupSize")} value={journey.groupSize} />
+              <Stat label={t("tourDetail.region")} value={journey.region} />
             </div>
           </div>
         </div>
@@ -149,13 +149,13 @@ export default function TourDetail({
             <h2 className="font-display text-2xl font-semibold md:text-3xl">
               {t("tourDetail.overview")}
             </h2>
-            <p className="mt-4 text-ink-700 leading-relaxed">{tour.overview}</p>
+            <p className="mt-4 text-ink-700 leading-relaxed">{journey.overview}</p>
             <div className="mt-6 rounded-2xl border border-ink-900/5 bg-cream-50 px-5 py-4">
               <div className="text-xs font-semibold uppercase tracking-wider text-ink-600">
                 {t("tourDetail.route")}
               </div>
               <div className="mt-1 font-display text-lg font-semibold">
-                {tour.route}
+                {journey.route}
               </div>
             </div>
           </div>
@@ -166,7 +166,7 @@ export default function TourDetail({
               {t("tourDetail.highlights")}
             </h2>
             <ul className="mt-5 grid gap-3 sm:grid-cols-2">
-              {tour.highlights.map((h, i) => (
+              {journey.highlights.map((h, i) => (
                 <li
                   key={i}
                   className="flex gap-3 rounded-2xl border border-ink-900/5 bg-white p-4 shadow-soft"
@@ -188,7 +188,7 @@ export default function TourDetail({
               {t("tourDetail.itinerary")}
             </h2>
             <ol className="mt-6 space-y-4">
-              {tour.itinerary.map((day) => (
+              {journey.itinerary.map((day) => (
                 <li
                   key={day.day}
                   className="relative overflow-hidden rounded-2xl border border-ink-900/5 bg-white shadow-soft"
@@ -243,7 +243,7 @@ export default function TourDetail({
                 {t("tourDetail.included")}
               </h3>
               <ul className="mt-4 space-y-2.5">
-                {tour.inclusions.map((inc, i) => (
+                {journey.inclusions.map((inc, i) => (
                   <li key={i} className="flex gap-2 text-sm text-ink-800">
                     <span className="text-teal-500">✓</span>
                     <span>{inc}</span>
@@ -256,7 +256,7 @@ export default function TourDetail({
                 {t("tourDetail.notIncluded")}
               </h3>
               <ul className="mt-4 space-y-2.5">
-                {tour.exclusions.map((exc, i) => (
+                {journey.exclusions.map((exc, i) => (
                   <li key={i} className="flex gap-2 text-sm text-ink-700">
                     <span className="text-ink-400">✕</span>
                     <span>{exc}</span>
@@ -276,7 +276,7 @@ export default function TourDetail({
                   {t("tourDetail.departures")}
                 </div>
                 <ul className="mt-2 space-y-1 text-sm font-medium text-ink-900">
-                  {tour.departures.map((d) => (
+                  {journey.departures.map((d) => (
                     <li key={d} className="flex items-center gap-2">
                       <span className="h-1.5 w-1.5 rounded-full bg-saffron-500" />
                       {d}
@@ -303,19 +303,19 @@ export default function TourDetail({
         </aside>
       </section>
 
-      {/* More tours */}
+      {/* More journeys */}
       <section className="bg-cream-100 py-16">
         <div className="container-wide">
           <h2 className="font-display text-2xl font-semibold md:text-3xl">
             {t("tourDetail.otherJourneys")}
           </h2>
           <div className="mt-8 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-            {otherTours
-              .filter((other) => other.slug !== tour.slug)
+            {otherJourneys
+              .filter((other) => other.slug !== journey.slug)
               .map((other) => (
                 <LocaleLink
                   key={other.slug}
-                  href={`/tours/${other.slug}`}
+                  href={`/journeys/${other.slug}`}
                   className="card block p-0 transition hover:-translate-y-1"
                 >
                   <div className="relative aspect-[5/3]">

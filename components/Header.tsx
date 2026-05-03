@@ -30,7 +30,7 @@ export default function Header() {
 
   const navLinks = [
     { href: "/", label: t("nav.home") },
-    { href: "/tours", label: t("nav.tours") },
+    { href: "/journeys", label: t("nav.tours") },
     { href: "/about", label: t("nav.about") },
     { href: "/why-trustelle", label: t("nav.why") },
     { href: "/faq", label: t("nav.faq") },
