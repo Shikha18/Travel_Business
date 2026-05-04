@@ -386,7 +386,7 @@ export default function Home({
             {/* Left — photo */}
             <div className="relative aspect-[4/3] overflow-hidden rounded-2xl shadow-card">
               <Image
-                src="/images/shikha.jpg"
+                src="/images/shikha-promise.jpg"
                 alt="Shikha — founder of GoTrustelle"
                 fill
                 className="object-cover object-top"
