@@ -20,7 +20,7 @@ export const siteConfig = {
   phoneE164: "+919589739723", // no spaces — used in tel: links
   whatsappNumber: "919589739723", // no '+' or spaces — used in wa.me links
   whatsappDefaultMessage:
-    "Hi! I'd love to know more about GoTrustelle group journeys to India.",
+    "Hi! I'd love to plan my trip with Gotrustelle ✨\n\nName:\nFrom (Your Location):\nDestination in India:\nTravel Dates:\nNumber of Travelers:\nBudget (approx per person):\nAny Preferences (luxury / culture / adventure / slow travel):",
 
   // Location
   address: "New Delhi, India",
