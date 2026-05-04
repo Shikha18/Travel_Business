@@ -134,7 +134,7 @@ export default function Header() {
               height={160}
               className="h-16 w-auto object-contain mix-blend-multiply"
             />
-            <div className="hidden md:flex flex-col items-start leading-none gap-1">
+            <div className="hidden lg:flex flex-col items-start leading-none gap-1">
               <span className="font-display text-2xl font-bold tracking-tight bg-gradient-to-r from-terracotta-600 via-ink-900 to-saffron-600 bg-clip-text text-transparent">
                 {siteConfig.name}
               </span>
@@ -145,7 +145,7 @@ export default function Header() {
           </LocaleLink>
 
           {/* Desktop nav */}
-          <nav className="hidden items-center gap-1 md:flex">
+          <nav className="hidden items-center gap-1 lg:flex">
             {navLinks.map((link) => {
               const active = isActive(link.href);
               return (
@@ -169,13 +169,13 @@ export default function Header() {
                 </LocaleLink>
               );
             })}
-            <div className="ml-3 pl-3 border-l border-ink-900/10">
+            <div className="ml-3 hidden lg:block pl-3 border-l border-ink-900/10">
               <LanguageSwitcher />
             </div>
           </nav>
 
-          {/* Mobile: language switcher + hamburger */}
-          <div className="flex items-center gap-2 md:hidden">
+          {/* Mobile/Tablet: language switcher + hamburger */}
+          <div className="flex items-center gap-2 lg:hidden">
             <LanguageSwitcher />
             <button
               type="button"
