@@ -165,7 +165,7 @@ export const journeys: Journey[] = [
       { label: "Double occupancy (from Delhi)", priceEUR: 2699, priceINR: 242900 },
     ],
     featured: true,
-    departures: ["June 14, 2026", "July 5, 2026", "July 26, 2026"],
+    departures: ["May 31 – June 7, 2026"],
   },
 
   {
@@ -260,7 +260,7 @@ export const journeys: Journey[] = [
       { label: "Royal (6 pax)", priceEUR: 2899, priceINR: 260900 },
     ],
     featured: true,
-    departures: ["June 7, 2026", "June 28, 2026", "July 19, 2026"],
+    departures: ["Customisable — contact us"],
   },
 
   {
@@ -384,7 +384,7 @@ export const journeys: Journey[] = [
       { label: "Single supplement", priceEUR: 349, priceINR: 31400 },
     ],
     featured: true,
-    departures: ["June 20, 2026", "July 11, 2026", "September 12, 2026"],
+    departures: ["Customisable — contact us"],
   },
 
   {
@@ -531,7 +531,7 @@ export const journeys: Journey[] = [
       { label: "Single supplement", priceEUR: 599, priceINR: 53900 },
     ],
     featured: true,
-    departures: ["June 15, 2026", "July 6, 2026", "August 3, 2026", "September 7, 2026"],
+    departures: ["June 8 – 15, 2026"],
   },
 
   {
@@ -647,7 +647,7 @@ export const journeys: Journey[] = [
       { label: "Single supplement", priceEUR: 499, priceINR: 44900 },
     ],
     featured: true,
-    departures: ["June 21, 2026", "July 12, 2026", "September 13, 2026"],
+    departures: ["May 22 – 30, 2026"],
   },
 
   // ─── LADAKH DARK SKY CIRCUIT ─────────────────────────────────────────
@@ -819,7 +819,7 @@ export const journeys: Journey[] = [
       { label: "Single supplement", priceEUR: 699, priceINR: 62900 },
     ],
     featured: false,
-    departures: ["July 7, 2026", "August 4, 2026", "September 8, 2026"],
+    departures: ["Customisable — contact us"],
   },
 
   // ─── NORTHEAST INDIA ─────────────────────────────────────────────────
@@ -965,7 +965,7 @@ export const journeys: Journey[] = [
       { label: "Single supplement", priceEUR: 449, priceINR: 40400 },
     ],
     featured: false,
-    departures: ["July 25, 2026", "August 22, 2026", "September 19, 2026"],
+    departures: ["Customisable — contact us"],
   },
 ];
 
@@ -1123,7 +1123,7 @@ const journeysDeOverrides: Record<string, JourneyI18nFields> = {
       { label: "Twin / Triple-Sharing (ab Delhi)", priceEUR: 2499, priceINR: 224900 },
       { label: "Doppelzimmer (ab Delhi)", priceEUR: 2699, priceINR: 242900 },
     ],
-    departures: ["14. Juni 2026", "5. Juli 2026", "26. Juli 2026"],
+    departures: ["31. Mai – 7. Juni 2026"],
   },
 
   "paradise-of-kashmir": {
@@ -1206,7 +1206,7 @@ const journeysDeOverrides: Record<string, JourneyI18nFields> = {
       { label: "Premium (6 Personen)", priceEUR: 2499, priceINR: 224900 },
       { label: "Royal (6 Personen)", priceEUR: 2899, priceINR: 260900 },
     ],
-    departures: ["7. Juni 2026", "28. Juni 2026", "19. Juli 2026"],
+    departures: ["Individuell — Anfrage stellen"],
   },
 
 
@@ -1318,7 +1318,7 @@ const journeysDeOverrides: Record<string, JourneyI18nFields> = {
       { label: "Twin-Sharing — Standard (ab Delhi)", priceEUR: 1199, priceINR: 107900 },
       { label: "Einzelzimmer-Zuschlag", priceEUR: 349, priceINR: 31400 },
     ],
-    departures: ["20. Juni 2026", "11. Juli 2026", "12. September 2026"],
+    departures: ["Individuell — Anfrage stellen"],
   },
 
   "dharamshala-triund-trek": {
@@ -1421,7 +1421,7 @@ const journeysDeOverrides: Record<string, JourneyI18nFields> = {
       { label: "Twin / Triple-Sharing (ab Dharamshala)", priceEUR: 1899, priceINR: 170900 },
       { label: "Einzelzimmer-Zuschlag", priceEUR: 499, priceINR: 44900 },
     ],
-    departures: ["21. Juni 2026", "12. Juli 2026", "13. September 2026"],
+    departures: ["22.–30. Mai 2026"],
   },
 
   "ladakh-grand-circuit": {
@@ -1555,7 +1555,7 @@ const journeysDeOverrides: Record<string, JourneyI18nFields> = {
       { label: "Twin-Sharing — Premium (ab Leh)", priceEUR: 2899, priceINR: 260900 },
       { label: "Einzelzimmer-Zuschlag", priceEUR: 599, priceINR: 53900 },
     ],
-    departures: ["15. Juni 2026", "6. Juli 2026", "3. August 2026", "7. September 2026"],
+    departures: ["8.–15. Juni 2026"],
   },
 
   "ladakh-dark-sky-circuit": {
@@ -1622,7 +1622,7 @@ const journeysDeOverrides: Record<string, JourneyI18nFields> = {
       { label: "Twin-Sharing — Premium (ab Leh)", priceEUR: 3299, priceINR: 296900 },
       { label: "Einzelzimmer-Zuschlag", priceEUR: 699, priceINR: 62900 },
     ],
-    departures: ["7. Juli 2026", "4. August 2026", "8. September 2026"],
+    departures: ["Individuell — Anfrage stellen"],
   },
 
   "northeast-india-meghalaya": {
@@ -1683,7 +1683,7 @@ const journeysDeOverrides: Record<string, JourneyI18nFields> = {
       { label: "Twin-Sharing (ab Delhi)", priceEUR: 2099, priceINR: 188900 },
       { label: "Einzelzimmer-Zuschlag", priceEUR: 449, priceINR: 40400 },
     ],
-    departures: ["25. Juli 2026", "22. August 2026", "19. September 2026"],
+    departures: ["Individuell — Anfrage stellen"],
   },
 };
 
