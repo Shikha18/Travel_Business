@@ -132,7 +132,7 @@ export default function Header() {
               alt={siteConfig.name}
               width={160}
               height={160}
-              className="h-16 w-auto object-contain mix-blend-multiply"
+              className="h-16 w-auto object-contain"
             />
             <div className="hidden lg:flex flex-col items-start leading-none gap-1">
               <span className="font-display text-2xl font-bold tracking-tight bg-gradient-to-r from-terracotta-600 via-ink-900 to-saffron-600 bg-clip-text text-transparent">

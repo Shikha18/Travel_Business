@@ -44,6 +44,155 @@ export type Journey = {
 };
 
 export const journeys: Journey[] = [
+  // ─── BIR ITINERARY ───────────────────────────────────────────────────
+  {
+    slug: "bir-mountains-mindfulness",
+    title: "Bir · Triund · Dharamkot",
+    subtitle: "Mindfulness & Memories in the Hills of Himachal",
+    heroImage: "/images/tours/bir-triund/tejashvi-verma-cyWRGbQx3pE-unsplash.jpg",
+    galleryImages: [
+      "/images/tours/bir-triund/tejashvi-verma-cyWRGbQx3pE-unsplash.jpg",
+      "/images/tours/bir-triund/aana-singh-sQInw81bdYQ-unsplash.jpg",
+      "/images/tours/bir-triund/arun-kashyap-E7C077ex-Zk-unsplash.jpg",
+      "/images/tours/bir-triund/mountain-mysteries-0MQTJh7wecs-unsplash.jpg",
+      "/images/tours/bir-triund/rishabh-pandoh-m1PFxGQ-5x0-unsplash.jpg",
+    ],
+    region: "Himachal Pradesh, North India",
+    durationNights: 9,
+    durationDays: 10,
+    route: "Delhi → Bir → Waterfall → Monasteries → Barot → Hanumangarh → Sherabling → Palampur → Andretta → Machhiyal → Dharamkot → Triund → Delhi",
+    months: ["June"],
+    groupSize: "Small Groups",
+    difficulty: "Moderate",
+    summary:
+      "Let the mountains slow you down. Ten days of waterfalls, ancient monasteries, paragliding over the Kangra Valley, Palampur's tea gardens, Andretta pottery, and an overnight on the Triund ridge — all from the sleepy, beautiful base of Bir.",
+    overview:
+      "Bir is Himachal Pradesh's best-kept secret — a paragliding capital, a Tibetan monastery town, and a gateway to landscapes that most travelers never find. This 10-day circuit is built around slowness, variety, and real experience: you'll watch glaciers from the Barot valley, try your hand at pottery in the craft village of Andretta, walk through rolling Palampur tea estates, and spend a night at a trek camp on the Triund ridge with the Dhauladhars all around you. The group is small, the pace is flexible, and the food is honest. Paragliding in Bir with A-rated pilots is included — and if the weather gods agree, the flight over the green Kangra Valley will be the picture you keep on your phone for years.",
+    highlights: [
+      "Paragliding with A-rated pilots over the Kangra Valley from Bir-Billing",
+      "Overnight trek camp on the Triund ridge",
+      "Pottery experience at Andretta — Himachal's famous craft village",
+      "Palampur tea estates — a landscape of quiet, rolling green",
+      "Chauntra Monastery via Machhiyal",
+      "Monasteries of Sherabling and Bir's Tibetan colony",
+      "Waterfall day and Bir-Billing-Rajgundha circuit",
+      "Barot valley and Hanumangarh exploration",
+    ],
+    itinerary: [
+      {
+        day: 0,
+        title: "Delhi → Bir (overnight journey)",
+        description:
+          "Meet your group in Delhi in the evening and board a comfortable overnight coach to Bir. Wake up in the mountains.",
+        overnight: "On board (travel included)",
+      },
+      {
+        day: 1,
+        title: "Arrival in Bir — Check-in & Café Lunch + Paragliding",
+        description:
+          "Arrive in Bir, check into your accommodation and ease into the pace of this quiet mountain town. Lunch at one of Bir's beloved cafés. In the evening, tandem paragliding with A-rated pilots — soaring over the Kangra Valley with the Dhauladhars as your backdrop.",
+        overnight: "Bir",
+        highlight: "Paragliding with A-rated pilots — one of Asia's best flying sites",
+      },
+      {
+        day: 2,
+        title: "Waterfall Morning + Lunch & Rest + Monasteries",
+        description:
+          "Morning trek to a local waterfall hidden in the forest above Bir. Return for a relaxed lunch and afternoon rest. As the day cools, visit the ancient monasteries of Bir — the Tibetan colony's gompa complex and Sherabling Monastery are two of the most serene in Himachal.",
+        overnight: "Bir",
+        highlight: "The monasteries of Bir's Tibetan colony at golden hour",
+      },
+      {
+        day: 3,
+        title: "Bir → Billing → Rajgundha → Barot",
+        description:
+          "An adventure day: drive up to Billing (the paragliding launch site), then continue on foot or by jeep through the Rajgundha meadows — a high pastoral valley known for its alpine beauty and shepherd communities. Descend to the Barot valley by evening.",
+        overnight: "Barot (stay included)",
+        highlight: "Rajgundha meadows — a high Himalayan pastoral that few visitors ever see",
+      },
+      {
+        day: 4,
+        title: "Barot → Hanumangarh → Bir",
+        description:
+          "Morning at the Uhl River dam and forest trails around Barot. Drive to Hanumangarh — a peaceful Himachali village with mountain views. Return to Bir in the afternoon.",
+        overnight: "Bir (stay included)",
+        highlight: "Barot's river valley and forest trails",
+      },
+      {
+        day: 5,
+        title: "Mata Maheshwari Trek Camp Stay",
+        description:
+          "A full trek day: hike up to the Mata Maheshwari trek camp through oak and rhododendron forest. Set up at camp and spend the evening with the mountains.",
+        overnight: "Sherabling / Trek Camp (stay included)",
+        highlight: "Trek camp in the forest above Bir",
+      },
+      {
+        day: 6,
+        title: "Palampur Tea Estates + Andretta Pottery & Baijnath + Return to Bir",
+        description:
+          "Leave for Palampur and walk through its rolling tea gardens — one of the prettiest landscapes in Himachal. Continue to Andretta, Himachal's renowned craft village, for a hands-on pottery experience. Stop at the 9th-century Baijnath Shiva temple before returning to Bir for dinner at a café.",
+        overnight: "Bir (stay included)",
+        highlight: "Hands-on pottery at Andretta + Palampur's tea-green valleys",
+      },
+      {
+        day: 7,
+        title: "Machhiyal + Chauntra Monastery + Kangri Dham",
+        description:
+          "Day trip to Machhiyal — a local spot of beauty and quiet significance — followed by the serene Chauntra Monastery. End the day at Kangri Dham for a peaceful Himachali evening.",
+        overnight: "Kangri Dham (stay included)",
+        highlight: "Chauntra Monastery — hidden and hushed",
+      },
+      {
+        day: 8,
+        title: "Dharamkot Market & Food",
+        description:
+          "Drive to Dharamkot — the hillside village above McLeod Ganj beloved for its cafés, bookshops, and unhurried pace. Explore the market, try local and international food, and prepare for tomorrow's trek.",
+        overnight: "Dharamkot (stay included)",
+        highlight: "Dharamkot's café culture and mountain views",
+      },
+      {
+        day: 9,
+        title: "Triund Trek + Trek Camp Stay",
+        description:
+          "The classic Triund Trek: a 9 km trail through forest and open meadow to the grassy Triund ridge at 2,875 m. The Dhauladhar range rises directly above; the Kangra Valley spreads below. Spend the night at a proper mountain camp with bonfire and stars.",
+        overnight: "Trek Camp at Triund",
+        highlight: "Triund ridge at sunset — the Dhauladhars turning gold overhead",
+      },
+      {
+        day: 10,
+        title: "Triund → Descent → Delhi (overnight return)",
+        description:
+          "Wake early for sunrise on the ridge. Descend back to Dharamkot by midday. Board an overnight coach to Delhi — arriving home with mountains still in your mind.",
+        overnight: "On board (travel included)",
+        highlight: "Triund sunrise before the journey home",
+      },
+    ],
+    inclusions: [
+      "Delhi to Bir and return travel by AC Volvo / Tempo Traveller",
+      "9 nights stay on double/triple sharing basis, including trek camp stays",
+      "Breakfast and dinner included as per the itinerary plan",
+      "Paragliding in Bir with A-rated pilots",
+      "All local transfers and sightseeing as per itinerary by private vehicle",
+      "Pottery experience at Andretta",
+      "Trek experiences with camp stays: Mata Maheshwari Trek and Triund Trek",
+      "All permits and entry fees included where required",
+      "Toll, parking, driver allowance and fuel",
+    ],
+    exclusions: [
+      "Lunch on all days",
+      "Personal expenses such as shopping, tips, laundry, snacks, etc.",
+      "Adventure activities other than paragliding",
+      "Any entry tickets / camera fees not listed above",
+      "Travel / medical insurance",
+      "Anything not mentioned in inclusions",
+    ],
+    pricing: [
+      { label: "Per person (small group)", priceEUR: 0, priceINR: 39999 },
+    ],
+    featured: true,
+    departures: ["June 18 – 28, 2026"],
+  },
+
   {
     slug: "spiti-summer-expedition",
     title: "Spiti Summer Expedition",
@@ -532,122 +681,6 @@ export const journeys: Journey[] = [
     ],
     featured: true,
     departures: ["June 8 – 15, 2026"],
-  },
-
-  {
-    slug: "dharamshala-triund-trek",
-    title: "Dharamshala, Bir & the Triund Trek",
-    subtitle:
-      "Tibetan monasteries, paragliding skies, and a starlit night on the Triund ridge",
-    heroImage: "/images/tours/bir-triund/tejashvi-verma-cyWRGbQx3pE-unsplash.jpg",
-    galleryImages: [
-      "/images/tours/bir-triund/tejashvi-verma-cyWRGbQx3pE-unsplash.jpg",
-      "/images/tours/bir-triund/aana-singh-sQInw81bdYQ-unsplash.jpg",
-      "/images/tours/bir-triund/arun-kashyap-E7C077ex-Zk-unsplash.jpg",
-      "/images/tours/bir-triund/mountain-mysteries-0MQTJh7wecs-unsplash.jpg",
-      "/images/tours/bir-triund/rishabh-pandoh-m1PFxGQ-5x0-unsplash.jpg",
-    ],
-    region: "Himachal Pradesh, North India",
-    durationNights: 6,
-    durationDays: 7,
-    route:
-      "Delhi → McLeod Ganj → Dharamkot → Triund → Dharamkot → Bir-Billing → Dharamshala → Delhi",
-    months: ["June", "July", "September"],
-    groupSize: "Max 10 travelers",
-    difficulty: "Moderate",
-    summary:
-      "Wake in a Tibetan hillside town, sleep under a million stars on the Triund ridge, and float over pine forests from Asia's paragliding capital. A slow week in the soul of Himachal.",
-    overview:
-      "This week-long circuit weaves together the three most loved corners of Himachal's Kangra Valley — McLeod Ganj (the Dalai Lama's home-in-exile), Dharamkot (a hillside village of cafés, yoga, and long afternoons), and Bir-Billing (the paragliding capital of Asia). At its heart sits the classic Triund Trek: a gentle but stunning overnight hike up to a grassy ridge at 9,400 ft, where the Dhauladhar range feels close enough to touch. We trek in a small group with two experienced local guides, stay in a proper high-altitude campsite, and wake up to one of the most photographed sunrises in India. Designed for travelers who want real Himalayan trekking without a hardcore expedition, and who love slow cafés as much as mountain trails.",
-    highlights: [
-      "Overnight Triund Trek (9,400 ft) with sunrise over the Dhauladhars",
-      "Tea with Tibetan monks at Namgyal & Tsuglagkhang monasteries, McLeod Ganj",
-      "Slow café mornings in Dharamkot — banana pancakes, yoga, pine views",
-      "Tandem paragliding over the Kangra Valley from Billing (weather permitting)",
-      "Kangra Fort, Norbulingka Tibetan arts institute & the 9th-century Baijnath temple",
-    ],
-    itinerary: [
-      {
-        day: 1,
-        title: "Delhi → McLeod Ganj (overnight journey)",
-        description:
-          "Meet your group in Delhi in the evening and board an overnight Volvo coach up to McLeod Ganj. The drive gradually climbs out of the plains and into the Dhauladhar foothills — arrive at breakfast.",
-        overnight: "On board (semi-sleeper Volvo)",
-      },
-      {
-        day: 2,
-        title: "Arrival in McLeod Ganj — Tibetan quarter & monasteries",
-        description:
-          "Check into a hillside guesthouse in McLeod Ganj. After breakfast and a rest, visit the Dalai Lama's Tsuglagkhang temple complex, Namgyal Monastery, and the Tibet Museum. Evening walk through the Bhagsu Nag temple and waterfall area.",
-        overnight: "Boutique guesthouse, McLeod Ganj",
-        highlight: "Tibetan prayer flags, thangka paintings, momos for dinner",
-      },
-      {
-        day: 3,
-        title: "McLeod Ganj → Dharamkot (slow café day + trek briefing)",
-        description:
-          "Short walk over to Dharamkot — the quieter, greener sibling village. Morning at a hillside yoga class (optional), afternoon in the pine-shaded cafés overlooking the valley. Evening trek briefing with your mountain guide: gear check, altitude notes, what to pack for the ridge.",
-        overnight: "Guesthouse in Dharamkot",
-        highlight: "Banana pancakes with a Dhauladhar view",
-      },
-      {
-        day: 4,
-        title: "Dharamkot → Triund Trek (9,400 ft) — overnight on the ridge",
-        description:
-          "A classic 9 km trek up through rhododendron and oak forest to the Triund ridge at 2,875 m. The climb is gradual but steady — expect 4–5 hours with tea stops. Reach the meadow by mid-afternoon, set up camp, watch the Dhauladhar wall turn gold at sunset, then stargaze around a bonfire with dinner cooked by our mountain crew.",
-        overnight: "Permanent tented camp, Triund",
-        highlight: "Sunset behind Mun Peak, a night sky with no light pollution",
-      },
-      {
-        day: 5,
-        title: "Triund sunrise → descent → Bir-Billing",
-        description:
-          "Wake for sunrise on the ridge — the Dhauladhars light up first, then the Kangra Valley. Breakfast at camp, pack up, and descend back to Dharamkot by lunchtime. Afternoon drive (≈3 hrs) to Bir, a sleepy monk town and the landing site for paragliders flying down from Billing.",
-        overnight: "Cottage stay in Bir",
-        highlight: "Sunrise on the ridge, then an easy, scenic descent",
-      },
-      {
-        day: 6,
-        title: "Bir-Billing — tandem paragliding & Tibetan colony",
-        description:
-          "Morning drive up to the Billing take-off site (2,400 m). Tandem paragliding flight (20–30 mins) over pine forests and paddies with a certified pilot (weather permitting — we have buffer days built in). Afternoon at the Sherabling and Chokling Tibetan monasteries, followed by coffee at one of Bir's famous cafés.",
-        overnight: "Cottage stay in Bir",
-        highlight: "Flying with the Dhauladhars at your back",
-      },
-      {
-        day: 7,
-        title: "Bir → Dharamshala → Delhi (overnight return)",
-        description:
-          "Morning visit to the Norbulingka Institute (Tibetan arts & crafts) and, if time allows, the 9th-century Baijnath Shiva temple en route. Reach Dharamshala by evening and board the overnight Volvo back to Delhi — arrive early morning Day 8.",
-        overnight: "On board (semi-sleeper Volvo)",
-        highlight: "Watching Tibetan masters hand-paint thangkas",
-      },
-    ],
-    inclusions: [
-      "6 nights total — 2 in McLeod Ganj, 1 in Dharamkot, 1 on Triund ridge (tented camp), 2 in Bir",
-      "Overnight Volvo coach tickets Delhi ↔ Dharamshala (both ways)",
-      "Private vehicle for all sightseeing and transfers within the circuit",
-      "All breakfasts + dinners on Triund trek days + 2 group dinners",
-      "Two certified mountain guides on the Triund trek, plus porter support for camp gear",
-      "Trek permits, camping gear (tents, sleeping bags, mats), and bonfire dinner on the ridge",
-      "One tandem paragliding flight in Bir with a certified pilot (weather permitting)",
-      "24/7 on-trip support and an English-speaking group host throughout",
-    ],
-    exclusions: [
-      "International or domestic flights to/from Delhi",
-      "Lunches across the trip and any meals during Volvo transits",
-      "Monastery camera fees & personal shopping (Tibetan crafts, cafés)",
-      "Additional adventure activities beyond the one included paragliding flight",
-      "Travel & medical insurance (strongly recommended for the trek day)",
-      "Any cost from weather delays, flight cancellations, or trek reroutes",
-    ],
-    pricing: [
-      { label: "Twin / Triple sharing (from Delhi)", priceEUR: 2099, priceINR: 188900 },
-      { label: "Twin / Triple sharing (from Dharamshala)", priceEUR: 1899, priceINR: 170900 },
-      { label: "Single supplement", priceEUR: 499, priceINR: 44900 },
-    ],
-    featured: true,
-    departures: ["May 22 – 30, 2026"],
   },
 
   // ─── LADAKH DARK SKY CIRCUIT ─────────────────────────────────────────
@@ -1319,109 +1352,6 @@ const journeysDeOverrides: Record<string, JourneyI18nFields> = {
       { label: "Einzelzimmer-Zuschlag", priceEUR: 349, priceINR: 31400 },
     ],
     departures: ["Individuell — Anfrage stellen"],
-  },
-
-  "dharamshala-triund-trek": {
-    title: "Dharamshala, Bir & der Triund-Trek",
-    subtitle:
-      "Tibetische Klöster, Paragliding-Himmel und eine Sternennacht auf dem Triund-Grat",
-    region: "Himachal Pradesh, Nordindien",
-    route:
-      "Delhi → McLeod Ganj → Dharamkot → Triund → Dharamkot → Bir-Billing → Dharamshala → Delhi",
-    groupSize: "Max. 10 Reisende",
-    difficulty: "Moderate",
-    summary:
-      "Wachen Sie in einer tibetischen Bergstadt auf, schlafen Sie unter Millionen Sternen auf dem Triund-Grat und schweben Sie über Kiefernwälder von Asiens Paragliding-Hauptstadt. Eine langsame Woche im Herzen Himachals.",
-    overview:
-      "Diese einwöchige Runde verbindet die drei beliebtesten Orte im Kangra-Tal in Himachal — McLeod Ganj (Exil-Heimat des Dalai Lama), Dharamkot (ein Bergdorf voller Cafés, Yoga und langer Nachmittage) und Bir-Billing (die Paragliding-Hauptstadt Asiens). Im Zentrum steht der klassische Triund-Trek: eine sanfte, aber atemberaubende Übernachtungswanderung auf einen Graswiesen-Grat auf 2.875 m, von dem aus die Dhauladhar-Kette zum Greifen nah wirkt. Wir wandern in einer kleinen Gruppe mit zwei erfahrenen lokalen Guides, übernachten in einem ordentlichen Hochgebirgs-Camp und erleben einen der schönsten Sonnenaufgänge Indiens. Gemacht für Reisende, die echtes Himalaya-Trekking ohne harte Expedition wollen — und die langsame Cafés genauso lieben wie Bergpfade.",
-    highlights: [
-      "Übernachtung auf dem Triund-Trek (2.875 m) mit Sonnenaufgang über den Dhauladhars",
-      "Tee mit tibetischen Mönchen in den Klöstern Namgyal & Tsuglagkhang in McLeod Ganj",
-      "Langsame Café-Vormittage in Dharamkot — Pancakes, Yoga, Kiefernblicke",
-      "Tandem-Paragliding über das Kangra-Tal von Billing (wetterabhängig)",
-      "Kangra-Fort, Norbulingka-Institut für tibetische Kunst & der Baijnath-Tempel aus dem 9. Jahrhundert",
-    ],
-    itinerary: [
-      {
-        day: 1,
-        title: "Delhi → McLeod Ganj (Nachtfahrt)",
-        description:
-          "Treffen Sie Ihre Gruppe am Abend in Delhi und besteigen Sie einen Nacht-Volvo-Bus hinauf nach McLeod Ganj. Die Fahrt steigt langsam aus der Ebene in die Dhauladhar-Vorberge an — Ankunft zum Frühstück.",
-        overnight: "An Bord (Semi-Sleeper-Volvo)",
-      },
-      {
-        day: 2,
-        title: "Ankunft in McLeod Ganj — tibetisches Viertel & Klöster",
-        description:
-          "Check-in in einem Bergguesthouse in McLeod Ganj. Nach Frühstück und Pause Besuch des Tsuglagkhang-Komplexes des Dalai Lama, des Namgyal-Klosters und des Tibet-Museums. Am Abend Spaziergang zum Bhagsu-Nag-Tempel und Wasserfall.",
-        overnight: "Boutique-Guesthouse, McLeod Ganj",
-        highlight: "Tibetische Gebetsfahnen, Thangka-Malerei, Momos zum Abendessen",
-      },
-      {
-        day: 3,
-        title: "McLeod Ganj → Dharamkot (Café-Tag + Trek-Briefing)",
-        description:
-          "Kurzer Spaziergang hinüber nach Dharamkot — der ruhigere, grünere Zwilling. Vormittags optional eine Yoga-Klasse, nachmittags in den kiefernbeschatteten Cafés mit Talblick. Am Abend Trek-Briefing mit dem Bergführer: Ausrüstungs-Check, Höhen-Hinweise, Packliste für den Grat.",
-        overnight: "Guesthouse in Dharamkot",
-        highlight: "Pancakes mit Dhauladhar-Blick",
-      },
-      {
-        day: 4,
-        title: "Dharamkot → Triund-Trek (2.875 m) — Übernachtung auf dem Grat",
-        description:
-          "Ein klassischer 9-km-Trek durch Rhododendron- und Eichenwald hinauf zum Triund-Grat. Der Anstieg ist gleichmäßig — rechnen Sie mit 4–5 Stunden inkl. Teepausen. Gegen Nachmittag oben, Camp aufbauen, zusehen, wie die Dhauladhar-Wand bei Sonnenuntergang golden leuchtet, danach Sternehimmel am Lagerfeuer mit Abendessen aus der Bergküche.",
-        overnight: "Festes Zeltcamp, Triund",
-        highlight: "Sonnenuntergang hinter dem Mun Peak, Nachthimmel ohne Lichtsmog",
-      },
-      {
-        day: 5,
-        title: "Sonnenaufgang auf Triund → Abstieg → Bir-Billing",
-        description:
-          "Aufstehen zum Sonnenaufgang auf dem Grat — die Dhauladhars leuchten zuerst, dann das Kangra-Tal. Frühstück im Camp, Zusammenpacken, Rückweg nach Dharamkot bis Mittag. Nachmittags Fahrt (~3 Std.) nach Bir, einer ruhigen Mönchsstadt und Landeplatz der Paragliding-Piloten von Billing.",
-        overnight: "Cottage-Stay in Bir",
-        highlight: "Sonnenaufgang auf dem Grat, danach entspannter Abstieg",
-      },
-      {
-        day: 6,
-        title: "Bir-Billing — Tandem-Paragliding & tibetische Kolonie",
-        description:
-          "Morgens Fahrt hinauf zum Startplatz in Billing (2.400 m). Tandem-Paragliding-Flug (20–30 Min.) über Kiefernwälder und Reisfelder mit zertifiziertem Piloten (wetterabhängig — wir haben Puffertage eingeplant). Nachmittags Besuch der tibetischen Klöster Sherabling und Chokling, danach Kaffee in einem der berühmten Cafés von Bir.",
-        overnight: "Cottage-Stay in Bir",
-        highlight: "Fliegen mit den Dhauladhars im Rücken",
-      },
-      {
-        day: 7,
-        title: "Bir → Dharamshala → Delhi (Nacht-Rückfahrt)",
-        description:
-          "Morgens Besuch des Norbulingka-Instituts (tibetische Kunst & Handwerk) und, wenn Zeit bleibt, des Baijnath-Shiva-Tempels aus dem 9. Jahrhundert auf dem Weg. Am Abend in Dharamshala und Nacht-Volvo zurück nach Delhi — Ankunft am frühen Morgen von Tag 8.",
-        overnight: "An Bord (Semi-Sleeper-Volvo)",
-        highlight: "Zusehen, wie tibetische Meister Thangkas von Hand malen",
-      },
-    ],
-    inclusions: [
-      "6 Nächte insgesamt — 2× McLeod Ganj, 1× Dharamkot, 1× Triund-Grat (Zeltcamp), 2× Bir",
-      "Nacht-Volvo-Tickets Delhi ↔ Dharamshala (Hin- und Rückfahrt)",
-      "Privates Fahrzeug für alle Sightseeing- und Transferfahrten im Rundreiseverlauf",
-      "Alle Frühstücke + Abendessen an den Triund-Trek-Tagen + 2 Gruppen-Abendessen",
-      "Zwei zertifizierte Bergführer auf dem Triund-Trek plus Träger für die Campausrüstung",
-      "Trek-Genehmigungen, Campingausrüstung (Zelte, Schlafsäcke, Matten) und Lagerfeuer-Dinner auf dem Grat",
-      "Ein Tandem-Paragliding-Flug in Bir mit zertifiziertem Piloten (wetterabhängig)",
-      "24/7-Unterstützung und englischsprachige Gruppenleitung während der gesamten Reise",
-    ],
-    exclusions: [
-      "Internationale oder inländische Flüge nach/von Delhi",
-      "Mittagessen während der gesamten Reise und Mahlzeiten in den Volvo-Transits",
-      "Kameragebühren in Klöstern & persönliche Einkäufe (tibetisches Handwerk, Cafés)",
-      "Zusätzliche Aktivitäten über den einen enthaltenen Paragliding-Flug hinaus",
-      "Reise- und Krankenversicherung (dringend empfohlen, besonders für den Trek-Tag)",
-      "Kosten durch Wetterverzögerungen, Flugausfälle oder Trek-Umleitungen",
-    ],
-    pricing: [
-      { label: "Twin / Triple-Sharing (ab Delhi)", priceEUR: 2099, priceINR: 188900 },
-      { label: "Twin / Triple-Sharing (ab Dharamshala)", priceEUR: 1899, priceINR: 170900 },
-      { label: "Einzelzimmer-Zuschlag", priceEUR: 499, priceINR: 44900 },
-    ],
-    departures: ["22.–30. Mai 2026"],
   },
 
   "ladakh-grand-circuit": {
