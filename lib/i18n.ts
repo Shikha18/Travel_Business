@@ -5,7 +5,7 @@
 
 import { translations, type Locale, type TranslationKey } from "./translations";
 
-export const SUPPORTED_LOCALES: Locale[] = ["en", "de"];
+export const SUPPORTED_LOCALES: Locale[] = ["en", "de", "fr", "es", "it", "pt", "nl"];
 export const DEFAULT_LOCALE: Locale = "en";
 
 /**

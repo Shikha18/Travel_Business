@@ -9,6 +9,11 @@ import type { Locale } from "@/lib/translations";
 const LANGUAGE_LABELS: Record<Locale, { short: string; label: string; flag: string }> = {
   en: { short: "EN", label: "English", flag: "🇬🇧" },
   de: { short: "DE", label: "Deutsch", flag: "🇩🇪" },
+  fr: { short: "FR", label: "Français", flag: "🇫🇷" },
+  es: { short: "ES", label: "Español", flag: "🇪🇸" },
+  it: { short: "IT", label: "Italiano", flag: "🇮🇹" },
+  pt: { short: "PT", label: "Português", flag: "🇵🇹" },
+  nl: { short: "NL", label: "Nederlands", flag: "🇳🇱" },
 };
 
 export default function LanguageSwitcher() {

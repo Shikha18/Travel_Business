@@ -9,7 +9,7 @@
  *   2. Add the language to `SUPPORTED_LOCALES` in lib/i18n.ts.
  */
 
-export type Locale = "en" | "de";
+export type Locale = "en" | "de" | "fr" | "es" | "it" | "pt" | "nl";
 
 export const translations = {
   en: {
@@ -640,6 +640,1590 @@ export const translations = {
     "common.season": "2026",
     "common.loading": "Wird geladen…",
     "lang.label": "Sprache",
+  },
+  fr: {
+    // Navigation
+    "nav.home": "Accueil",
+    "nav.tours": "Voyages",
+    "nav.about": "À propos",
+    "nav.why": "Pourquoi Trustelle",
+    "nav.faq": "FAQ",
+    "nav.contact": "Contact",
+    "nav.planTrip": "Planifier mon voyage",
+    "nav.toggleMenu": "Ouvrir/fermer le menu",
+
+    // Buttons / CTA
+    "cta.viewDepartures": "Voir les départs 2026",
+    "cta.chatWhatsApp": "Chatter sur WhatsApp",
+    "cta.browseTours": "Découvrir nos voyages",
+    "cta.talkToUs": "Parlons-en",
+    "cta.viewAll": "Voir tous les voyages →",
+    "cta.viewTrip": "Voir le voyage →",
+    "cta.reserveWA": "Réserver sur WhatsApp",
+    "cta.requestEmail": "Demander des détails par e-mail",
+    "cta.sayHello": "Dire bonjour",
+    "cta.sendInquiry": "Envoyer une demande",
+    "cta.openWhatsApp": "Ouvrir WhatsApp",
+    "cta.emailUs": "Nous écrire",
+    "cta.messageFounderWA": "Écrire à Shikha sur WhatsApp",
+    "cta.ourTours": "Voir nos voyages",
+
+    // Home hero
+    "home.hero.season": "Petits groupes · 2026",
+    "home.hero.titleLine1": "Voyagez en Inde avec quelqu'un qui la comprend —",
+    "home.hero.titleLine2": "et qui vous comprend.",
+    "home.hero.title":
+      "Voyagez en Inde avec quelqu'un qui la comprend — et qui vous comprend.",
+    "home.hero.subtitle":
+      "Des voyages guidés avec soin pour les femmes et les voyageurs curieux qui souhaitent vivre l'Inde en profondeur, en toute sécurité, sans se sentir dépassés.",
+    "home.hero.rating": "Note moyenne 4,9/5",
+    "home.hero.countries": "Voyageurs de plus de 20 pays",
+    "home.hero.support": "Assistance 24h/24 pendant le voyage",
+
+    // Home sections
+    "home.featured.chip": "DES VOYAGES QUI VOUS RESSEMBLENT",
+    "home.featured.title": "Des voyages faits à la main, remplis de vrais moments.",
+    "home.featured.subtitle":
+      "Trois voyages phares pour l'été 2026. Réservez votre place avec 30 % d'acompte — solde à l'arrivée.",
+
+    "home.trust.chip": "Pourquoi les voyageurs nous choisissent",
+    "home.trust.title": "L'Inde est vaste. Nous la rendons personnelle.",
+    "home.trust.subtitle":
+      "Nous sommes une jeune entreprise fondée en 2026 avec une conviction claire : voyager en Inde doit se sentir sûr, chaleureux et sans précipitation — que ce soit votre premier voyage à l'étranger ou votre cinquantième.",
+
+    "home.trust.smallGroups.title": "7 à 10 personnes maximum par groupe",
+    "home.trust.smallGroups.body":
+      "Assez petit pour être intime, assez souple pour s'adapter à vous. Chaque départ est limité à 7–10 voyageurs pour que vous bénéficiiez toujours d'une vraie attention — pas d'une foule.",
+    "home.trust.localGuides.title": "Guides locaux triés sur le volet",
+    "home.trust.localGuides.body":
+      "Nos guides sont avant tout des conteurs — historiens, photographes et cuisiniers qui vivent dans les régions que nous visitons. Pas de discours appris par cœur, pas de commissions cachées.",
+    "home.trust.female.title": "Adapté aux femmes et aux voyageurs solo",
+    "home.trust.female.body":
+      "Fondé par une femme, conçu pour les voyageuses et les voyageurs en solo. Hébergements vérifiés, assistance 24h/24 et aucune pression sur le rythme.",
+    "home.trust.transparent.title": "Entièrement personnalisable",
+    "home.trust.transparent.body":
+      "Pas d'itinéraires figés. Chaque voyage est construit autour de votre rythme, de vos intérêts et de votre budget — dites-nous ce qui compte pour vous et nous le créons de zéro.",
+
+    "home.testimonials.chip": "Ce que disent les voyageurs",
+    "home.testimonials.title": "Histoires de voyage.",
+    "home.testimonials.sampleNote":
+      "* Ces témoignages sont des exemples illustratifs pour une nouvelle entreprise.",
+
+    "home.faq.chip": "Bon à savoir",
+    "home.faq.title": "Questions fréquentes",
+
+    "home.finalCTA.title": "Votre été indien vous attend.",
+    "home.finalCTA.subtitle":
+      "Réservez une place pour un départ en juin ou juillet 2026, ou donnez-nous vos dates et nous concevrons un voyage privé rien que pour vous.",
+
+    // Journeys listing
+    "tours.chip": "Nos voyages",
+    "tours.title": "Voyages en petits groupes à travers l'Inde.",
+    "tours.subtitle":
+      "Chaque voyage est tout compris : transferts, hébergements, guides, permis et les repas indiqués. Rejoignez un groupe existant ou demandez-nous de l'organiser en privé à vos dates.",
+    "tours.filter.all": "Tous",
+    "tours.filter.himalayan": "Himalaya",
+    "tours.filter.cultural": "Culturel",
+    "tours.customCTA.title": "Vous souhaitez un voyage rien que pour vous ?",
+    "tours.customCTA.subtitle":
+      "Chacun de nos voyages peut aussi être construit de A à Z — vos dates, votre taille de groupe, votre rythme. Familles, couples, voyageurs solo, retraites d'entreprise. Vous choisissez les régions ; nous nous occupons de chaque détail, de la première demande jusqu'au dépôt à l'aéroport.",
+    "tours.customCTA.wa": "Planifier mon voyage sur mesure →",
+
+    // Journey card
+    "tourCard.from": "À partir de",
+    "tourCard.perPerson": "/ personne",
+
+    // Journey detail
+    "tourDetail.duration": "Durée",
+    "tourDetail.groupSize": "Taille du groupe",
+    "tourDetail.region": "Région",
+    "tourDetail.startsFrom": "À partir de",
+    "tourDetail.overview": "Aperçu du voyage",
+    "tourDetail.route": "Itinéraire",
+    "tourDetail.highlights": "Points forts",
+    "tourDetail.itinerary": "Programme jour par jour",
+    "tourDetail.included": "Inclus",
+    "tourDetail.notIncluded": "Non inclus",
+    "tourDetail.startingFrom": "À partir de",
+    "tourDetail.perPerson": "par personne",
+    "tourDetail.deposit": "Réservez votre place avec 30 % d'acompte",
+    "tourDetail.departures": "Prochains départs",
+    "tourDetail.pricingOptions": "Options tarifaires",
+    "tourDetail.otherJourneys": "D'autres voyages qui pourraient vous plaire",
+    "tourDetail.difficultyLabel": "Difficulté",
+    "tourDetail.waMessage":
+      "Bonjour ! Je suis intéressé(e) par le voyage {tour}. Pouvez-vous me donner plus de détails ?",
+
+    // Journey difficulty labels
+    "difficulty.Easy": "Facile",
+    "difficulty.Moderate": "Modéré",
+    "difficulty.Challenging": "Exigeant",
+
+    // About
+    "about.chip": "Notre histoire",
+    "about.title": "Une petite équipe obsédée par chaque détail.",
+    "about.p1":
+      "GoTrustelle est une jeune entreprise de voyage indienne, fondée en 2026 par une équipe qui a grandi en voyageant et en accueillant des hôtes à travers l'Inde.",
+    "about.p2":
+      "Nous avons donc créé les voyages que nous aurions voulu offrir à nos amis venus de l'étranger — petits groupes, longues soirées, vrais repas avec de vraies personnes, et la liberté de ralentir.",
+    "about.principles.chip": "Ce en quoi nous croyons",
+    "about.principles.title": "Nos principes de voyage.",
+    "about.team.chip": "Avec qui vous voyagerez",
+    "about.team.title": "L'équipe derrière votre voyage.",
+    "about.team.subtitle":
+      "Fondée en Inde, avec une partenaire en Allemagne — pour que vous ayez une personne de confiance des deux côtés de votre voyage.",
+    "about.team.hoverHint": "Survolez les cartes pour en savoir plus",
+    "about.heroAlt": "Paysage himalayen, nord de l'Inde",
+    "about.bios.chip": "La longue histoire",
+    "about.bios.title": "Rencontrez les personnes derrière le voyage.",
+    "about.bios.subtitle":
+      "Chaque message, chaque itinéraire, chaque réponse WhatsApp tardive vient de l'une de nous deux.",
+    "about.bios.readShikha": "En savoir plus sur Shikha",
+    "about.bios.readMelissa": "En savoir plus sur Melissa",
+
+    "about.story.backToAbout": "← Retour à À propos",
+    "about.story.readFullStory": "Lire toute l'histoire →",
+    "about.story.meetOther": "Rencontrer notre partenaire en Allemagne",
+    "about.story.ctaTitle": "Prêt(e) à voyager avec nous ?",
+    "about.story.ctaSubtitle":
+      "Parcourez les départs en groupe 2026 ou écrivez-nous directement.",
+    "about.story.sectionStory": "Mon histoire",
+    "about.story.sectionConnect": "Dire bonjour",
+
+    "about.founder.tag": "Fondatrice",
+    "about.founder.country": "Basée en Inde",
+    "about.founder.role": "Fondatrice · Votre hôte sur place",
+    "about.founder.quote":
+      "\"Je veux que vous ressentiez l'Inde — pas seulement la voir.\"",
+    "about.founder.chip1": "🎒 Voyageuse solo",
+    "about.founder.chip2": "🏔️ Travaille depuis la montagne",
+    "about.founder.chip3": "🧭 A guidé des voyages dans le nord de l'Inde",
+    "about.founder.signature": "— Shikha",
+    "about.founder.followIG": "Suivre sur Instagram",
+    "about.founder.viewLinkedIn": "Se connecter sur LinkedIn",
+    "about.founder.emailDirect": "M'écrire directement",
+    "about.founder.photoCaption": "Shikha · Fondatrice",
+
+    "about.partner.tag": "Partenaire · Allemagne",
+    "about.partner.country": "Basée en Allemagne",
+    "about.partner.role": "Partenaire · Correspondante voyage Europe",
+    "about.partner.quote":
+      "\"L'Inde n'est ni meilleure ni pire — elle est simplement différente.\"",
+    "about.partner.signature": "— Melissa",
+
+    "about.founder.story1":
+      "Bonjour — je suis Shikha. GoTrustelle est mon bébé, et honnêtement, le projet que je voulais créer depuis des années.",
+    "about.founder.story2":
+      "De profession, je suis développeuse logicielle. Par passion, je suis backpackeuse.",
+    "about.founder.story3":
+      "Il y a quelques années, j'ai commencé à organiser de petits voyages en groupe pour des amis d'amis qui visitaient l'Inde.",
+    "about.founder.story4":
+      "Je suis la personne que vous rencontrerez réellement sur place.",
+    "about.founder.story5":
+      "Ce que je veux pour votre voyage est simple : que vous repartiez en ayant vraiment ressenti l'Inde.",
+
+    "about.partner.story1":
+      "Je suis Melissa, basée en Allemagne, et je suis discrètement fascinée par l'Inde depuis presque une décennie.",
+    "about.partner.story2":
+      "J'y retourne chaque année depuis.",
+    "about.partner.story3":
+      "Professionnellement, j'ai travaillé dans l'industrie du voyage en Allemagne pendant des années.",
+    "about.partner.story4":
+      "Mon rôle chez GoTrustelle est de m'occuper de tout côté européen.",
+    "about.partner.story5":
+      "Si vous étiez curieux(se) de l'Inde sans savoir par où commencer — c'est exactement le vide que nous voulions combler.",
+
+    "about.stats.inhouseLabel": "Planifié en interne",
+    "about.stats.inhouseBody":
+      "Aucun revendeur tiers. Nous gérons chaque réservation nous-mêmes.",
+    "about.stats.supportLabel": "Assistance pendant le voyage",
+    "about.stats.supportBody":
+      "Un vrai humain sur WhatsApp à toute heure, tous les jours de votre voyage.",
+    "about.stats.groupLabel": "Petits groupes (max. 10)",
+    "about.stats.groupBody": "Intime, personnel et entièrement adaptable à votre rythme et vos centres d'intérêt.",
+    "about.stats.customLabel": "Personnalisable",
+    "about.stats.customBody": "Chaque itinéraire est construit autour de vous — dates, rythme, intérêts. Aucun modèle fixe.",
+
+    // About principles list
+    "about.v.smallGroups.title": "Petits groupes. Toujours 7–10 max.",
+    "about.v.smallGroups.body":
+      "Nous limitons chaque départ à 7–10 voyageurs.",
+    "about.v.local.title": "Embauche locale, salaire juste.",
+    "about.v.local.body":
+      "Nos guides, chauffeurs et hôtes d'hébergement vivent dans les régions que nous visitons et sont rémunérés au-dessus des tarifs locaux.",
+    "about.v.leaveBetter.title": "Laisser mieux qu'à notre arrivée.",
+    "about.v.leaveBetter.body":
+      "Nous compensons le carbone à chaque voyage, évitons les plastiques à usage unique et travaillons avec des collectifs artisanaux dirigés par des femmes.",
+    "about.v.transparent.title": "Transparence, toujours.",
+    "about.v.transparent.body":
+      "Aucun arrêt caché en boutique, aucune commission. Ce que nous publions, c'est ce que nous livrons.",
+    "about.v.safety.title": "La sécurité avant tout.",
+    "about.v.safety.body":
+      "Hôtels vérifiés, assistance 24h/24 et un protocole de sécurité adapté aux voyageurs solo et aux femmes.",
+    "about.v.slow.title": "La lenteur est une fonctionnalité.",
+    "about.v.slow.body":
+      "Nous intégrons des jours tampons dans chaque itinéraire. Vous n'avez pas besoin de tout voir — vous avez besoin de bien voir.",
+
+    // Contact
+    "contact.chip": "Nous contacter",
+    "contact.title": "Planifions votre voyage en Inde.",
+    "contact.subtitle":
+      "Écrivez-nous sur WhatsApp pour une réponse rapide, ou remplissez le formulaire ci-dessous et nous vous répondrons dans les heures qui suivent (heure standard indienne).",
+    "contact.form.name": "Votre nom",
+    "contact.form.email": "E-mail",
+    "contact.form.country": "Pays",
+    "contact.form.countryPlaceholder": "ex. France",
+    "contact.form.whatsapp": "WhatsApp (facultatif)",
+    "contact.form.tour": "Quel(s) voyage(s) vous intéresse(nt) ?",
+    "contact.form.tourSelect": "Sélectionner un voyage",
+    "contact.form.tourCustom": "Voyage privé sur mesure",
+    "contact.form.tourUnsure": "Pas encore décidé(e)",
+    "contact.form.dates": "Dates de voyage approximatives",
+    "contact.form.datesPlaceholder": "ex. 10–20 juin 2026",
+    "contact.form.startDate": "Date de départ",
+    "contact.form.endDate": "Date de retour",
+    "contact.form.travelers": "Nombre de voyageurs",
+    "contact.form.travelersPlaceholder": "ex. 2 adultes",
+    "contact.form.message": "Autre chose à nous dire ?",
+    "contact.form.messagePlaceholder":
+      "Régime alimentaire, accessibilité, expériences que vous aimeriez vivre…",
+    "contact.form.privacy":
+      "En envoyant ce formulaire, vous acceptez que nous vous contactions au sujet de votre demande. Nous ne partageons jamais vos données.",
+    "contact.sidebar.fastest.title": "Réponse la plus rapide",
+    "contact.sidebar.fastest.body":
+      "WhatsApp est notre boîte de réception principale — nous répondons généralement en une heure pendant les heures ouvrables (IST).",
+    "contact.sidebar.email.title": "Ou écrivez-nous",
+    "contact.sidebar.hours.title": "Heures d'ouverture",
+    "contact.sidebar.hours.body":
+      "Lundi – Samedi · 9h00 – 21h00 IST\nDimanche · Assistance d'urgence uniquement",
+    "contact.sidebar.phone": "Téléphone",
+    "contact.sidebar.basedIn": "Basé à",
+
+    // Footer
+    "footer.explore": "Explorer",
+    "footer.exploreAll": "Tous les voyages",
+    "footer.contact": "Contact",
+    "footer.waChat": "Chat WhatsApp",
+    "footer.copyright": "Créé avec soin en Inde.",
+    "footer.subline": "Voyages en petits groupes indépendants · Basé à New Delhi",
+
+    // Months
+    "month.June": "Juin",
+    "month.July": "Juillet",
+    "month.August": "Août",
+    "month.September": "Septembre",
+
+    // Brand name breakdown
+    "about.brand.chip": "Le nom",
+    "about.brand.titlePrefix": "Pourquoi",
+    "about.brand.titleSuffix": "?",
+    "about.brand.desc": "GoTrustelle repose sur trois idées simples — la liberté d'explorer, le confort de la confiance et la chaleur d'un voyage mené par une femme.",
+    "brand.go.title": "Liberté d'explorer",
+    "brand.go.body": "Le mouvement, l'aventure et le courage de découvrir l'Inde au-delà des guides touristiques.",
+    "brand.trust.title": "Le confort de la confiance",
+    "brand.trust.body": "Chaque détail planifié, chaque partenaire vérifié. Vous voyagez — nous nous occupons du reste.",
+    "brand.elle.title": "Un voyage mené par une femme",
+    "brand.elle.body": "Elle — en français, c'est elle. Construit par une femme, conçu pour vous.",
+    "home.teaser.eyebrow": "Le nom derrière chaque voyage",
+
+    // Founding story
+    "about.origin.chip": "Notre histoire",
+    "about.origin.titleBefore": "Comment GoTrustelle a commencé —",
+    "about.origin.titleHighlight": "un café, un bébé et une vraie conversation",
+    "about.origin.p1": "Tout a commencé avec le sourire d'un bébé au Freedom Café de Rishikesh.",
+    "about.origin.p2": "Nous sommes restées en contact à travers les continents pendant des années, faisant des projets que la vie repoussait gentiment.",
+    "about.origin.p3a": "Le dernier soir, elle a dit quelque chose à quoi je pense chaque jour depuis :",
+    "about.origin.quote": "C'est ce qui nous manque quand on voyage en Inde. On ne veut pas seulement voir l'Inde — on veut la ressentir.",
+    "about.origin.p3b": "Cette phrase est devenue tout.",
+    "about.origin.signature": "— Shikha, Fondatrice",
+    "about.origin.gallery.label": "Vrais moments · pas de photos de stock",
+    "about.origin.photo1": "Rishikesh — la toute première fois que nous nous sommes rencontrées",
+    "about.origin.photo2": "Jouer avec la fille de Melissa — le moment où nous avons parlé pour la première fois",
+    "about.origin.photo3": "Melissa dans un sari indien traditionnel avec la mère de Shikha",
+    "about.origin.photo4": "Shikha & Melissa en route ensemble, 2026",
+    "about.origin.photo5": "Melissa participe à la pooja lors de la fête locale",
+    "about.origin.photo6": "En-cas de route et vraies conversations",
+    "about.origin.video.caption": "Un vrai moment de notre temps ensemble en Inde",
+    "about.origin.closing.title": "Venez — ne faites pas que découvrir l'Inde, ressentez-la.",
+    "about.origin.closing.body": "Chaque voyage que nous créons est une invitation à dépasser la surface.",
+    "about.origin.closing.cta1": "Voir nos voyages",
+    "about.origin.closing.cta2": "Écrire à Shikha",
+
+    // Footer tagline
+    "footer.tagline": "Expériences de voyage en Inde · par une femme, pour vous",
+
+    // Misc
+    "common.season": "2026",
+    "common.loading": "Chargement…",
+    "lang.label": "Langue",
+  },
+
+  es: {
+    // Navigation
+    "nav.home": "Inicio",
+    "nav.tours": "Viajes",
+    "nav.about": "Nosotros",
+    "nav.why": "Por qué Trustelle",
+    "nav.faq": "FAQ",
+    "nav.contact": "Contacto",
+    "nav.planTrip": "Planificar mi viaje",
+    "nav.toggleMenu": "Abrir/cerrar menú",
+
+    // Buttons / CTA
+    "cta.viewDepartures": "Ver salidas 2026",
+    "cta.chatWhatsApp": "Chatear en WhatsApp",
+    "cta.browseTours": "Explorar viajes",
+    "cta.talkToUs": "Hablar con nosotros",
+    "cta.viewAll": "Ver todos los viajes →",
+    "cta.viewTrip": "Ver viaje →",
+    "cta.reserveWA": "Reservar por WhatsApp",
+    "cta.requestEmail": "Solicitar detalles por e-mail",
+    "cta.sayHello": "Saluda",
+    "cta.sendInquiry": "Enviar consulta",
+    "cta.openWhatsApp": "Abrir chat de WhatsApp",
+    "cta.emailUs": "Escríbenos",
+    "cta.messageFounderWA": "Escribir a Shikha por WhatsApp",
+    "cta.ourTours": "Ver nuestros viajes",
+
+    // Home hero
+    "home.hero.season": "Grupos reducidos · 2026",
+    "home.hero.titleLine1": "Viaja a la India con alguien que la entiende —",
+    "home.hero.titleLine2": "y que te entiende a ti.",
+    "home.hero.title":
+      "Viaja a la India con alguien que la entiende — y que te entiende a ti.",
+    "home.hero.subtitle":
+      "Viajes guiados con cuidado para mujeres y viajeros curiosos que desean vivir la India en profundidad, con seguridad y sin agobios.",
+    "home.hero.rating": "Valoración media de 4,9/5",
+    "home.hero.countries": "Viajeros de más de 20 países",
+    "home.hero.support": "Asistencia 24/7 durante el viaje",
+
+    // Home sections
+    "home.featured.chip": "VIAJES QUE TE ENCANTARÁN",
+    "home.featured.title": "Viajes hechos a mano, llenos de momentos reales.",
+    "home.featured.subtitle":
+      "Tres viajes especiales para el verano de 2026. Asegura tu plaza con un 30 % de depósito — saldo al llegar.",
+
+    "home.trust.chip": "Por qué los viajeros nos eligen",
+    "home.trust.title": "La India es inmensa. Nosotros la hacemos personal.",
+    "home.trust.subtitle":
+      "Somos una empresa joven fundada en 2026 con una convicción clara: viajar por la India debe sentirse seguro, cálido y sin prisas — ya sea tu primer viaje al extranjero o el quincuagésimo.",
+
+    "home.trust.smallGroups.title": "Máximo 7–10 personas por grupo",
+    "home.trust.smallGroups.body":
+      "Suficientemente pequeño para sentirse íntimo, suficientemente flexible para adaptarse a ti. Cada salida tiene un límite de 7–10 viajeros para que siempre recibas atención real, no una masa.",
+    "home.trust.localGuides.title": "Guías locales seleccionados a mano",
+    "home.trust.localGuides.body":
+      "Nuestros guías son ante todo narradores — historiadores, fotógrafos y cocineros que viven en las regiones que visitamos. Sin discursos de memoria, sin comisiones ocultas.",
+    "home.trust.female.title": "Amigable para mujeres y viajeros solo",
+    "home.trust.female.body":
+      "Fundado por una mujer, diseñado con viajeras en solitario y femeninas en mente. Alojamientos verificados, asistencia 24/7 y cero presión sobre el ritmo.",
+    "home.trust.transparent.title": "Totalmente personalizable",
+    "home.trust.transparent.body":
+      "Sin itinerarios fijos. Cada viaje se moldea en torno a tu ritmo, tus intereses y tu presupuesto — cuéntanos lo que importa y lo construimos desde cero.",
+
+    "home.testimonials.chip": "Lo que dicen los viajeros",
+    "home.testimonials.title": "Historias desde el camino.",
+    "home.testimonials.sampleNote":
+      "* Los testimonios son ejemplos ilustrativos para una empresa nueva.",
+
+    "home.faq.chip": "Bueno saberlo",
+    "home.faq.title": "Preguntas frecuentes",
+
+    "home.finalCTA.title": "Tu verano indio te espera.",
+    "home.finalCTA.subtitle":
+      "Reserva una plaza en una salida de junio o julio de 2026, o dinos tus fechas y diseñaremos un viaje privado a tu medida.",
+
+    // Journeys listing
+    "tours.chip": "Nuestros viajes",
+    "tours.title": "Viajes en grupos reducidos por toda la India.",
+    "tours.subtitle":
+      "Cada viaje incluye todo: traslados, alojamiento, guías, permisos y las comidas indicadas. Únete a un grupo próximo o pídenos que lo organicemos de forma privada en tus fechas.",
+    "tours.filter.all": "Todos",
+    "tours.filter.himalayan": "Himalaya",
+    "tours.filter.cultural": "Cultural",
+    "tours.customCTA.title": "¿Quieres un viaje hecho solo para ti?",
+    "tours.customCTA.subtitle":
+      "Cada viaje que realizamos también puede construirse desde cero — tus fechas, tu tamaño de grupo, tu ritmo. Familias, parejas, viajeros en solitario, retiros corporativos. Tú eliges las regiones; nosotros nos encargamos de cada detalle, desde la primera consulta hasta el traslado al aeropuerto.",
+    "tours.customCTA.wa": "Planificar mi viaje a medida →",
+
+    // Journey card
+    "tourCard.from": "Desde",
+    "tourCard.perPerson": "/ persona",
+
+    // Journey detail
+    "tourDetail.duration": "Duración",
+    "tourDetail.groupSize": "Tamaño del grupo",
+    "tourDetail.region": "Región",
+    "tourDetail.startsFrom": "Desde",
+    "tourDetail.overview": "Resumen del viaje",
+    "tourDetail.route": "Ruta",
+    "tourDetail.highlights": "Lo mejor del viaje",
+    "tourDetail.itinerary": "Itinerario día a día",
+    "tourDetail.included": "Incluido",
+    "tourDetail.notIncluded": "No incluido",
+    "tourDetail.startingFrom": "Desde",
+    "tourDetail.perPerson": "por persona",
+    "tourDetail.deposit": "Asegura tu plaza con un 30 % de depósito",
+    "tourDetail.departures": "Próximas salidas",
+    "tourDetail.pricingOptions": "Opciones de precio",
+    "tourDetail.otherJourneys": "Otros viajes que podrían gustarte",
+    "tourDetail.difficultyLabel": "Dificultad",
+    "tourDetail.waMessage":
+      "¡Hola! Me interesa el viaje {tour}. ¿Puedes compartir más detalles?",
+
+    // Journey difficulty labels
+    "difficulty.Easy": "Fácil",
+    "difficulty.Moderate": "Moderado",
+    "difficulty.Challenging": "Exigente",
+
+    // About
+    "about.chip": "Nuestra historia",
+    "about.title": "Un equipo pequeño obsesionado con cada detalle.",
+    "about.p1":
+      "GoTrustelle es una joven empresa de viajes india, fundada en 2026 por un equipo que creció viajando y acogiendo huéspedes por toda la India.",
+    "about.p2":
+      "Así que creamos los viajes que querríamos que hicieran nuestros amigos del extranjero — grupos pequeños, largas noches, comidas reales con gente real y la libertad de ir despacio.",
+    "about.principles.chip": "En lo que creemos",
+    "about.principles.title": "Nuestros principios de viaje.",
+    "about.team.chip": "Con quién viajarás",
+    "about.team.title": "El equipo detrás de tu viaje.",
+    "about.team.subtitle":
+      "Fundada en la India, con una socia en Alemania — para que tengas una persona de confianza en ambos lados de tu viaje.",
+    "about.team.hoverHint": "Pasa el cursor sobre las tarjetas para saber más",
+    "about.heroAlt": "Paisaje himalayo, norte de la India",
+    "about.bios.chip": "La historia larga",
+    "about.bios.title": "Conoce a las personas detrás del viaje.",
+    "about.bios.subtitle":
+      "Cada mensaje, cada itinerario, cada respuesta de WhatsApp a altas horas viene de una de nosotras dos.",
+    "about.bios.readShikha": "Más sobre Shikha",
+    "about.bios.readMelissa": "Más sobre Melissa",
+
+    "about.story.backToAbout": "← Volver a Nosotros",
+    "about.story.readFullStory": "Leer la historia completa →",
+    "about.story.meetOther": "Conocer a nuestra socia en Alemania",
+    "about.story.ctaTitle": "¿Lista/o para viajar con nosotros?",
+    "about.story.ctaSubtitle":
+      "Explora las salidas grupales 2026 o escríbenos directamente.",
+    "about.story.sectionStory": "Mi historia",
+    "about.story.sectionConnect": "Dí hola",
+
+    "about.founder.tag": "Fundadora",
+    "about.founder.country": "Con base en la India",
+    "about.founder.role": "Fundadora · Tu anfitriona sobre el terreno",
+    "about.founder.quote":
+      "\"Quiero que sientas la India — no solo que la veas.\"",
+    "about.founder.chip1": "🎒 Mochilera en solitario",
+    "about.founder.chip2": "🏔️ Trabaja desde las montañas",
+    "about.founder.chip3": "🧭 Ha guiado viajes por el norte de la India",
+    "about.founder.signature": "— Shikha",
+    "about.founder.followIG": "Seguir en Instagram",
+    "about.founder.viewLinkedIn": "Conectar en LinkedIn",
+    "about.founder.emailDirect": "Escribirme directamente",
+    "about.founder.photoCaption": "Shikha · Fundadora",
+
+    "about.partner.tag": "Socia · Alemania",
+    "about.partner.country": "Con base en Alemania",
+    "about.partner.role": "Socia · Enlace de viajes en Europa",
+    "about.partner.quote":
+      "\"La India no es mejor ni peor — es simplemente diferente.\"",
+    "about.partner.signature": "— Melissa",
+
+    "about.founder.story1":
+      "Hola — soy Shikha. GoTrustelle es mi proyecto más querido, y honestamente, el que llevo años queriendo construir.",
+    "about.founder.story2":
+      "De profesión soy desarrolladora de software. Por pasión, soy mochilera.",
+    "about.founder.story3":
+      "Hace unos años empecé a organizar pequeños viajes en grupo para amigos de amigos que visitaban la India.",
+    "about.founder.story4":
+      "Soy la persona que realmente conocerás sobre el terreno.",
+    "about.founder.story5":
+      "Lo que quiero de tu viaje es sencillo: que te vayas habiendo realmente sentido la India.",
+
+    "about.partner.story1":
+      "Soy Melissa, vivo en Alemania y llevo casi una década discretamente fascinada con la India.",
+    "about.partner.story2":
+      "Llevo volviendo cada año desde entonces.",
+    "about.partner.story3":
+      "Profesionalmente, he trabajado en el sector de los viajes en Alemania durante años.",
+    "about.partner.story4":
+      "Mi trabajo en GoTrustelle es ocuparme de todo lo relacionado con el lado europeo.",
+    "about.partner.story5":
+      "Si sentías curiosidad por la India pero no sabías por dónde empezar — eso es exactamente el hueco que queríamos llenar.",
+
+    "about.stats.inhouseLabel": "Planificado internamente",
+    "about.stats.inhouseBody":
+      "Sin revendedores externos. Gestionamos cada reserva nosotros mismos.",
+    "about.stats.supportLabel": "Asistencia durante el viaje",
+    "about.stats.supportBody":
+      "Un ser humano real en WhatsApp a cualquier hora, cualquier día de tu viaje.",
+    "about.stats.groupLabel": "Grupos pequeños (máx. 10)",
+    "about.stats.groupBody": "Íntimo, personal y totalmente adaptable a tu ritmo e intereses.",
+    "about.stats.customLabel": "Personalizable",
+    "about.stats.customBody": "Cada itinerario se construye alrededor de ti — fechas, ritmo, intereses. Sin plantillas fijas.",
+
+    // About principles list
+    "about.v.smallGroups.title": "Grupos pequeños. Siempre 7–10 máx.",
+    "about.v.smallGroups.body":
+      "Limitamos cada salida a 7–10 viajeros.",
+    "about.v.local.title": "Contratar local, pagar justo.",
+    "about.v.local.body":
+      "Nuestros guías, conductores y anfitriones viven en las regiones que visitamos y reciben una remuneración por encima de las tarifas locales.",
+    "about.v.leaveBetter.title": "Dejar un lugar mejor.",
+    "about.v.leaveBetter.body":
+      "Compensamos el carbono en cada viaje, evitamos los plásticos de un solo uso y colaboramos con colectivos artesanales liderados por mujeres.",
+    "about.v.transparent.title": "Transparencia, siempre.",
+    "about.v.transparent.body":
+      "Sin paradas ocultas en tiendas, sin comisiones. Lo que publicamos es lo que entregamos.",
+    "about.v.safety.title": "La seguridad, primero.",
+    "about.v.safety.body":
+      "Hoteles verificados, asistencia 24/7 y un protocolo de seguridad adaptado para viajeros en solitario y mujeres.",
+    "about.v.slow.title": "La lentitud es una ventaja.",
+    "about.v.slow.body":
+      "Incluimos días de margen en cada itinerario. No necesitas verlo todo — necesitas verlo bien.",
+
+    // Contact
+    "contact.chip": "Ponte en contacto",
+    "contact.title": "Planifiquemos tu viaje a la India.",
+    "contact.subtitle":
+      "Escríbenos por WhatsApp para una respuesta rápida, o rellena el formulario de abajo y te contestaremos en unas horas (hora estándar de la India).",
+    "contact.form.name": "Tu nombre",
+    "contact.form.email": "Correo electrónico",
+    "contact.form.country": "País",
+    "contact.form.countryPlaceholder": "ej. España",
+    "contact.form.whatsapp": "WhatsApp (opcional)",
+    "contact.form.tour": "¿Qué viaje(s) te interesan?",
+    "contact.form.tourSelect": "Selecciona un viaje",
+    "contact.form.tourCustom": "Viaje privado a medida",
+    "contact.form.tourUnsure": "Aún no lo sé",
+    "contact.form.dates": "Fechas de viaje aproximadas",
+    "contact.form.datesPlaceholder": "ej. 10–20 junio 2026",
+    "contact.form.startDate": "Fecha de inicio",
+    "contact.form.endDate": "Fecha de fin",
+    "contact.form.travelers": "Número de viajeros",
+    "contact.form.travelersPlaceholder": "ej. 2 adultos",
+    "contact.form.message": "¿Algo más que debamos saber?",
+    "contact.form.messagePlaceholder":
+      "Necesidades dietéticas, accesibilidad, experiencias que te encantaría vivir…",
+    "contact.form.privacy":
+      "Al enviar aceptas que nos pongamos en contacto contigo sobre tu consulta. Nunca compartimos tus datos.",
+    "contact.sidebar.fastest.title": "Respuesta más rápida",
+    "contact.sidebar.fastest.body":
+      "WhatsApp es nuestra bandeja de entrada principal — solemos responder en una hora en horario laboral (IST).",
+    "contact.sidebar.email.title": "O escríbenos por correo",
+    "contact.sidebar.hours.title": "Horario de atención",
+    "contact.sidebar.hours.body":
+      "Lunes – Sábado · 9:00 – 21:00 IST\nDomingo · Solo asistencia de emergencia durante el viaje",
+    "contact.sidebar.phone": "Teléfono",
+    "contact.sidebar.basedIn": "Con sede en",
+
+    // Footer
+    "footer.explore": "Explorar",
+    "footer.exploreAll": "Todos los viajes",
+    "footer.contact": "Contacto",
+    "footer.waChat": "Chat de WhatsApp",
+    "footer.copyright": "Creado con cuidado en la India.",
+    "footer.subline": "Viajes independientes en grupos reducidos · Con sede en Nueva Delhi",
+
+    // Months
+    "month.June": "Junio",
+    "month.July": "Julio",
+    "month.August": "Agosto",
+    "month.September": "Septiembre",
+
+    // Brand name breakdown
+    "about.brand.chip": "El nombre",
+    "about.brand.titlePrefix": "¿Por qué",
+    "about.brand.titleSuffix": "?",
+    "about.brand.desc": "GoTrustelle se basa en tres ideas sencillas — la libertad de explorar, el confort de la confianza y la calidez de un viaje liderado por una mujer.",
+    "brand.go.title": "Libertad de explorar",
+    "brand.go.body": "Movimiento, aventura y el valor de descubrir la India más allá de las guías.",
+    "brand.trust.title": "El confort de la confianza",
+    "brand.trust.body": "Cada detalle planificado, cada socio verificado. Tú viajas — nosotros nos encargamos del resto.",
+    "brand.elle.title": "Un viaje liderado por una mujer",
+    "brand.elle.body": "Elle — «ella» en francés. Construido por una mujer, diseñado pensando en ti.",
+    "home.teaser.eyebrow": "El nombre detrás de cada viaje",
+
+    // Founding story
+    "about.origin.chip": "Nuestra historia",
+    "about.origin.titleBefore": "Cómo empezó GoTrustelle —",
+    "about.origin.titleHighlight": "un café, un bebé y una conversación real",
+    "about.origin.p1": "Todo empezó con la sonrisa de un bebé en el Freedom Café de Rishikesh.",
+    "about.origin.p2": "Mantuvimos el contacto a través de continentes durante años, haciendo planes que la vida seguía posponiendo amablemente.",
+    "about.origin.p3a": "La última noche, dijo algo en lo que he pensado cada día desde entonces:",
+    "about.origin.quote": "Esto es lo que nos perdemos cuando viajamos a la India. No solo queremos ver la India — queremos sentir la India.",
+    "about.origin.p3b": "Esa frase lo fue todo.",
+    "about.origin.signature": "— Shikha, Fundadora",
+    "about.origin.gallery.label": "Momentos reales · no fotos de stock",
+    "about.origin.photo1": "Rishikesh — la primera vez que nos conocimos",
+    "about.origin.photo2": "Jugando con la hija de Melissa — el momento en que hablamos por primera vez",
+    "about.origin.photo3": "Melissa con un sari indio tradicional junto a la madre de Shikha",
+    "about.origin.photo4": "Shikha y Melissa juntas en el camino, 2026",
+    "about.origin.photo5": "Melissa participa en la pooja de la fiesta local",
+    "about.origin.photo6": "Aperitivos de carretera y conversaciones reales",
+    "about.origin.video.caption": "Un momento real de nuestro tiempo juntas en la India",
+    "about.origin.closing.title": "Ven — no solo explores la India, siéntela.",
+    "about.origin.closing.body": "Cada viaje que creamos es una invitación a ir más allá de la superficie.",
+    "about.origin.closing.cta1": "Ver nuestros viajes",
+    "about.origin.closing.cta2": "Escribir a Shikha",
+
+    // Footer tagline
+    "footer.tagline": "Experiencias de viaje en la India · por una mujer, para ti",
+
+    // Misc
+    "common.season": "2026",
+    "common.loading": "Cargando…",
+    "lang.label": "Idioma",
+  },
+
+  it: {
+    // Navigation
+    "nav.home": "Home",
+    "nav.tours": "Viaggi",
+    "nav.about": "Chi siamo",
+    "nav.why": "Perché Trustelle",
+    "nav.faq": "FAQ",
+    "nav.contact": "Contatti",
+    "nav.planTrip": "Pianifica il mio viaggio",
+    "nav.toggleMenu": "Apri/chiudi menu",
+
+    // Buttons / CTA
+    "cta.viewDepartures": "Vedi partenze 2026",
+    "cta.chatWhatsApp": "Chatta su WhatsApp",
+    "cta.browseTours": "Esplora i viaggi",
+    "cta.talkToUs": "Parlaci",
+    "cta.viewAll": "Vedi tutti i viaggi →",
+    "cta.viewTrip": "Vedi il viaggio →",
+    "cta.reserveWA": "Prenota su WhatsApp",
+    "cta.requestEmail": "Richiedi dettagli via e-mail",
+    "cta.sayHello": "Di' ciao",
+    "cta.sendInquiry": "Invia richiesta",
+    "cta.openWhatsApp": "Apri chat WhatsApp",
+    "cta.emailUs": "Scrivici",
+    "cta.messageFounderWA": "Scrivi a Shikha su WhatsApp",
+    "cta.ourTours": "Vedi i nostri viaggi",
+
+    // Home hero
+    "home.hero.season": "Piccoli gruppi · 2026",
+    "home.hero.titleLine1": "Viaggia in India con chi la capisce davvero —",
+    "home.hero.titleLine2": "e che capisce te.",
+    "home.hero.title":
+      "Viaggia in India con chi la capisce davvero — e che capisce te.",
+    "home.hero.subtitle":
+      "Viaggi guidati con cura per donne e viaggiatori curiosi che vogliono vivere l'India in profondità, in sicurezza e senza stress.",
+    "home.hero.rating": "Valutazione media 4,9/5",
+    "home.hero.countries": "Viaggiatori da oltre 20 paesi",
+    "home.hero.support": "Supporto 24/7 durante il viaggio",
+
+    // Home sections
+    "home.featured.chip": "VIAGGI CHE AMERAi",
+    "home.featured.title": "Viaggi artigianali, pieni di momenti autentici.",
+    "home.featured.subtitle":
+      "Tre viaggi speciali per l'estate 2026. Assicura il tuo posto con un deposito del 30% — saldo all'arrivo.",
+
+    "home.trust.chip": "Perché i viaggiatori scelgono noi",
+    "home.trust.title": "L'India è vasta. Noi la rendiamo personale.",
+    "home.trust.subtitle":
+      "Siamo una giovane azienda fondata nel 2026 con una convinzione chiara: viaggiare in India deve sentirsi sicuro, caldo e senza fretta — che sia il tuo primo viaggio all'estero o il cinquantesimo.",
+
+    "home.trust.smallGroups.title": "Massimo 7–10 persone per gruppo",
+    "home.trust.smallGroups.body":
+      "Abbastanza piccolo da sentirsi personale, abbastanza flessibile da adattarsi a te. Ogni partenza è limitata a 7–10 viaggiatori per garantirti sempre attenzione vera, non una folla.",
+    "home.trust.localGuides.title": "Guide locali selezionate con cura",
+    "home.trust.localGuides.body":
+      "Le nostre guide sono prima di tutto narratori — storici, fotografi e cuochi che vivono nelle regioni che visitiamo. Niente discorsi a memoria, niente commissioni nascoste.",
+    "home.trust.female.title": "Adatto a donne e viaggiatori solo",
+    "home.trust.female.body":
+      "Fondato da una donna, pensato per viaggiatrici e viaggiatori in solitaria. Alloggi verificati, supporto 24/7 e nessuna pressione sul ritmo.",
+    "home.trust.transparent.title": "Completamente personalizzabile",
+    "home.trust.transparent.body":
+      "Nessun itinerario rigido. Ogni viaggio è modellato intorno al tuo ritmo, ai tuoi interessi e al tuo budget — dicci cosa conta per te e lo costruiamo da zero.",
+
+    "home.testimonials.chip": "Cosa dicono i viaggiatori",
+    "home.testimonials.title": "Storie dalla strada.",
+    "home.testimonials.sampleNote":
+      "* Le testimonianze sono esempi illustrativi per una nuova attività.",
+
+    "home.faq.chip": "Utile sapere",
+    "home.faq.title": "Domande frequenti",
+
+    "home.finalCTA.title": "La tua estate indiana ti aspetta.",
+    "home.finalCTA.subtitle":
+      "Prenota un posto per una partenza di giugno o luglio 2026, oppure dicci le tue date e progetteremo un viaggio privato su misura per te.",
+
+    // Journeys listing
+    "tours.chip": "I nostri viaggi",
+    "tours.title": "Viaggi in piccoli gruppi attraverso l'India.",
+    "tours.subtitle":
+      "Ogni viaggio è tutto compreso: trasferimenti, alloggi, guide, permessi e i pasti indicati. Unisciti a un gruppo esistente o chiedi un'organizzazione privata nelle tue date.",
+    "tours.filter.all": "Tutti",
+    "tours.filter.himalayan": "Himalaya",
+    "tours.filter.cultural": "Culturale",
+    "tours.customCTA.title": "Vuoi un viaggio pensato solo per te?",
+    "tours.customCTA.subtitle":
+      "Ogni viaggio che organizziamo può essere costruito da zero — le tue date, le tue dimensioni di gruppo, il tuo ritmo. Famiglie, coppie, viaggiatori solitari, ritiri aziendali. Tu scegli le regioni; noi curiamo ogni dettaglio dalla prima richiesta al trasferimento in aeroporto.",
+    "tours.customCTA.wa": "Pianifica il mio viaggio su misura →",
+
+    // Journey card
+    "tourCard.from": "Da",
+    "tourCard.perPerson": "/ persona",
+
+    // Journey detail
+    "tourDetail.duration": "Durata",
+    "tourDetail.groupSize": "Dimensione del gruppo",
+    "tourDetail.region": "Regione",
+    "tourDetail.startsFrom": "Da",
+    "tourDetail.overview": "Panoramica del viaggio",
+    "tourDetail.route": "Itinerario",
+    "tourDetail.highlights": "I punti salienti",
+    "tourDetail.itinerary": "Programma giorno per giorno",
+    "tourDetail.included": "Incluso",
+    "tourDetail.notIncluded": "Non incluso",
+    "tourDetail.startingFrom": "A partire da",
+    "tourDetail.perPerson": "a persona",
+    "tourDetail.deposit": "Assicura il tuo posto con un deposito del 30%",
+    "tourDetail.departures": "Prossime partenze",
+    "tourDetail.pricingOptions": "Opzioni di prezzo",
+    "tourDetail.otherJourneys": "Altri viaggi che potrebbero piacerti",
+    "tourDetail.difficultyLabel": "Difficoltà",
+    "tourDetail.waMessage":
+      "Ciao! Sono interessato/a al viaggio {tour}. Puoi condividere più dettagli?",
+
+    // Journey difficulty labels
+    "difficulty.Easy": "Facile",
+    "difficulty.Moderate": "Moderato",
+    "difficulty.Challenging": "Impegnativo",
+
+    // About
+    "about.chip": "La nostra storia",
+    "about.title": "Un piccolo team ossessionato da ogni dettaglio.",
+    "about.p1":
+      "GoTrustelle è una giovane azienda di viaggi indiana, fondata nel 2026 da un team cresciuto viaggiando e ospitando persone in tutta l'India.",
+    "about.p2":
+      "Così abbiamo creato i viaggi che avremmo voluto far fare ai nostri amici dall'estero — gruppi piccoli, serate lunghe, pasti veri con persone vere e la libertà di andare piano.",
+    "about.principles.chip": "In cosa crediamo",
+    "about.principles.title": "I nostri principi di viaggio.",
+    "about.team.chip": "Con chi viaggerai",
+    "about.team.title": "Il team dietro il tuo viaggio.",
+    "about.team.subtitle":
+      "Fondata in India, con una partner in Germania — per avere una persona di fiducia su entrambi i lati del tuo viaggio.",
+    "about.team.hoverHint": "Passa il cursore sulle schede per saperne di più",
+    "about.heroAlt": "Paesaggio himalayano, nord dell'India",
+    "about.bios.chip": "La storia lunga",
+    "about.bios.title": "Conosci le persone dietro il viaggio.",
+    "about.bios.subtitle":
+      "Ogni messaggio, ogni itinerario, ogni risposta WhatsApp notturna viene da una di noi due.",
+    "about.bios.readShikha": "Di più su Shikha",
+    "about.bios.readMelissa": "Di più su Melissa",
+
+    "about.story.backToAbout": "← Torna a Chi siamo",
+    "about.story.readFullStory": "Leggi la storia completa →",
+    "about.story.meetOther": "Conosci la nostra partner in Germania",
+    "about.story.ctaTitle": "Pronto/a a viaggiare con noi?",
+    "about.story.ctaSubtitle":
+      "Sfoglia le partenze di gruppo 2026 o scrivici direttamente.",
+    "about.story.sectionStory": "La mia storia",
+    "about.story.sectionConnect": "Di' ciao",
+
+    "about.founder.tag": "Fondatrice",
+    "about.founder.country": "Con base in India",
+    "about.founder.role": "Fondatrice · La tua host sul posto",
+    "about.founder.quote":
+      "\"Voglio che tu senta l'India — non solo che la veda.\"",
+    "about.founder.chip1": "🎒 Viaggiatrice solitaria",
+    "about.founder.chip2": "🏔️ Lavora dalla montagna",
+    "about.founder.chip3": "🧭 Ha guidato viaggi nel nord dell'India",
+    "about.founder.signature": "— Shikha",
+    "about.founder.followIG": "Segui su Instagram",
+    "about.founder.viewLinkedIn": "Collegati su LinkedIn",
+    "about.founder.emailDirect": "Scrivimi direttamente",
+    "about.founder.photoCaption": "Shikha · Fondatrice",
+
+    "about.partner.tag": "Partner · Germania",
+    "about.partner.country": "Con base in Germania",
+    "about.partner.role": "Partner · Referente viaggi Europa",
+    "about.partner.quote":
+      "\"L'India non è migliore né peggiore — è semplicemente diversa.\"",
+    "about.partner.signature": "— Melissa",
+
+    "about.founder.story1":
+      "Ciao — sono Shikha. GoTrustelle è il mio progetto del cuore, e onestamente, quello che volevo costruire da anni.",
+    "about.founder.story2":
+      "Di professione sono sviluppatrice software. Per passione, sono una backpacker.",
+    "about.founder.story3":
+      "Qualche anno fa ho iniziato a organizzare piccoli viaggi di gruppo per amici di amici che visitavano l'India.",
+    "about.founder.story4":
+      "Sono la persona che incontrerai davvero sul posto.",
+    "about.founder.story5":
+      "Quello che voglio dal tuo viaggio è semplice: che tu parta avendo davvero sentito l'India.",
+
+    "about.partner.story1":
+      "Sono Melissa, vivo in Germania e sono silenziosamente affascinata dall'India da quasi un decennio.",
+    "about.partner.story2":
+      "Ci torno ogni anno da allora.",
+    "about.partner.story3":
+      "Professionalmente, ho lavorato nel settore dei viaggi in Germania per anni.",
+    "about.partner.story4":
+      "Il mio ruolo in GoTrustelle è occuparmi di tutto sul lato europeo.",
+    "about.partner.story5":
+      "Se eri curioso/a dell'India ma non sapevi da dove cominciare — è esattamente questo il vuoto che volevamo riempire.",
+
+    "about.stats.inhouseLabel": "Pianificato internamente",
+    "about.stats.inhouseBody":
+      "Nessun rivenditore esterno. Gestiamo ogni prenotazione da soli.",
+    "about.stats.supportLabel": "Supporto durante il viaggio",
+    "about.stats.supportBody":
+      "Un essere umano vero su WhatsApp a qualsiasi ora, ogni giorno del tuo viaggio.",
+    "about.stats.groupLabel": "Gruppi piccoli (max. 10)",
+    "about.stats.groupBody": "Intimo, personale e completamente adattabile al tuo ritmo e ai tuoi interessi.",
+    "about.stats.customLabel": "Personalizzabile",
+    "about.stats.customBody": "Ogni itinerario è costruito intorno a te — date, ritmo, interessi. Nessun modello fisso.",
+
+    // About principles list
+    "about.v.smallGroups.title": "Gruppi piccoli. Sempre max. 7–10.",
+    "about.v.smallGroups.body":
+      "Limitiamo ogni partenza a 7–10 viaggiatori.",
+    "about.v.local.title": "Assumiamo locale, paghiamo equo.",
+    "about.v.local.body":
+      "Le nostre guide, autisti e host vivono nelle regioni che visitiamo e sono pagati al di sopra delle tariffe locali.",
+    "about.v.leaveBetter.title": "Lasciare meglio di come abbiamo trovato.",
+    "about.v.leaveBetter.body":
+      "Compensiamo le emissioni di carbonio in ogni viaggio, evitiamo le plastiche monouso e collaboriamo con collettivi artigianali guidati da donne.",
+    "about.v.transparent.title": "Trasparenza, sempre.",
+    "about.v.transparent.body":
+      "Nessuna sosta nascosta in negozi, nessuna commissione. Quello che pubblichiamo è quello che consegniamo.",
+    "about.v.safety.title": "La sicurezza prima di tutto.",
+    "about.v.safety.body":
+      "Hotel verificati, supporto 24/7 e un protocollo di sicurezza pensato per i viaggiatori solitari e le donne.",
+    "about.v.slow.title": "La lentezza è una caratteristica.",
+    "about.v.slow.body":
+      "Inseriamo giorni cuscinetto in ogni itinerario. Non devi vedere tutto — devi vederlo bene.",
+
+    // Contact
+    "contact.chip": "Mettiti in contatto",
+    "contact.title": "Pianifichiamo il tuo viaggio in India.",
+    "contact.subtitle":
+      "Scrivici su WhatsApp per una risposta rapida, o compila il modulo qui sotto e ti risponderemo entro poche ore (ora standard indiana).",
+    "contact.form.name": "Il tuo nome",
+    "contact.form.email": "E-mail",
+    "contact.form.country": "Paese",
+    "contact.form.countryPlaceholder": "es. Italia",
+    "contact.form.whatsapp": "WhatsApp (facoltativo)",
+    "contact.form.tour": "Quale/i viaggio/i ti interessa?",
+    "contact.form.tourSelect": "Seleziona un viaggio",
+    "contact.form.tourCustom": "Viaggio privato su misura",
+    "contact.form.tourUnsure": "Non ancora deciso/a",
+    "contact.form.dates": "Date di viaggio approssimative",
+    "contact.form.datesPlaceholder": "es. 10–20 giugno 2026",
+    "contact.form.startDate": "Data di inizio",
+    "contact.form.endDate": "Data di fine",
+    "contact.form.travelers": "Numero di viaggiatori",
+    "contact.form.travelersPlaceholder": "es. 2 adulti",
+    "contact.form.message": "Qualcos'altro che dovremmo sapere?",
+    "contact.form.messagePlaceholder":
+      "Esigenze alimentari, accessibilità, esperienze che vorresti vivere…",
+    "contact.form.privacy":
+      "Inviando accetti che ti contatteremo riguardo alla tua richiesta. Non condividiamo mai i tuoi dati.",
+    "contact.sidebar.fastest.title": "Risposta più rapida",
+    "contact.sidebar.fastest.body":
+      "WhatsApp è la nostra casella principale — di solito rispondiamo entro un'ora durante l'orario lavorativo (IST).",
+    "contact.sidebar.email.title": "O scrivici via e-mail",
+    "contact.sidebar.hours.title": "Orari di ufficio",
+    "contact.sidebar.hours.body":
+      "Lunedì – Sabato · 9:00 – 21:00 IST\nDomenica · Solo assistenza di emergenza durante il viaggio",
+    "contact.sidebar.phone": "Telefono",
+    "contact.sidebar.basedIn": "Con sede a",
+
+    // Footer
+    "footer.explore": "Esplora",
+    "footer.exploreAll": "Tutti i viaggi",
+    "footer.contact": "Contatti",
+    "footer.waChat": "Chat WhatsApp",
+    "footer.copyright": "Creato con cura in India.",
+    "footer.subline": "Viaggi indipendenti in piccoli gruppi · Con sede a Nuova Delhi",
+
+    // Months
+    "month.June": "Giugno",
+    "month.July": "Luglio",
+    "month.August": "Agosto",
+    "month.September": "Settembre",
+
+    // Brand name breakdown
+    "about.brand.chip": "Il nome",
+    "about.brand.titlePrefix": "Perché",
+    "about.brand.titleSuffix": "?",
+    "about.brand.desc": "GoTrustelle si fonda su tre idee semplici — la libertà di esplorare, il conforto della fiducia e il calore di un viaggio guidato da una donna.",
+    "brand.go.title": "Libertà di esplorare",
+    "brand.go.body": "Movimento, avventura e il coraggio di scoprire l'India al di là delle guide turistiche.",
+    "brand.trust.title": "Il conforto della fiducia",
+    "brand.trust.body": "Ogni dettaglio pianificato, ogni partner verificato. Tu viaggi — noi pensiamo al resto.",
+    "brand.elle.title": "Un viaggio guidato da una donna",
+    "brand.elle.body": "Elle — «lei» in francese. Costruito da una donna, progettato con te in mente.",
+    "home.teaser.eyebrow": "Il nome dietro ogni viaggio",
+
+    // Founding story
+    "about.origin.chip": "La nostra storia",
+    "about.origin.titleBefore": "Come è nata GoTrustelle —",
+    "about.origin.titleHighlight": "un caffè, un bambino e una vera conversazione",
+    "about.origin.p1": "Tutto è iniziato con il sorriso di un bambino al Freedom Café di Rishikesh.",
+    "about.origin.p2": "Siamo rimaste in contatto attraverso i continenti per anni, facendo piani che la vita continuava gentilmente a rimandare.",
+    "about.origin.p3a": "L'ultima sera, disse qualcosa a cui ho pensato ogni giorno da allora:",
+    "about.origin.quote": "Questo è ciò che ci manca quando viaggiamo in India. Non vogliamo solo vedere l'India — vogliamo sentire l'India.",
+    "about.origin.p3b": "Quella frase è diventata tutto.",
+    "about.origin.signature": "— Shikha, Fondatrice",
+    "about.origin.gallery.label": "Momenti reali · non foto di stock",
+    "about.origin.photo1": "Rishikesh — la prima volta che ci siamo incontrate",
+    "about.origin.photo2": "Giocando con la figlia di Melissa — il momento in cui abbiamo parlato per la prima volta",
+    "about.origin.photo3": "Melissa in un tradizionale sari indiano con la madre di Shikha",
+    "about.origin.photo4": "Shikha e Melissa insieme in viaggio, 2026",
+    "about.origin.photo5": "Melissa partecipa alla pooja della festa locale",
+    "about.origin.photo6": "Spuntini da viaggio e conversazioni vere",
+    "about.origin.video.caption": "Un momento vero del nostro tempo insieme in India",
+    "about.origin.closing.title": "Vieni — non limitarti a esplorare l'India, sentila.",
+    "about.origin.closing.body": "Ogni viaggio che creiamo è un invito ad andare oltre la superficie.",
+    "about.origin.closing.cta1": "Vedi i nostri viaggi",
+    "about.origin.closing.cta2": "Scrivi a Shikha",
+
+    // Footer tagline
+    "footer.tagline": "Esperienze di viaggio in India · da una donna, per te",
+
+    // Misc
+    "common.season": "2026",
+    "common.loading": "Caricamento…",
+    "lang.label": "Lingua",
+  },
+
+  pt: {
+    // Navigation
+    "nav.home": "Início",
+    "nav.tours": "Viagens",
+    "nav.about": "Sobre nós",
+    "nav.why": "Por que Trustelle",
+    "nav.faq": "FAQ",
+    "nav.contact": "Contato",
+    "nav.planTrip": "Planear a minha viagem",
+    "nav.toggleMenu": "Abrir/fechar menu",
+
+    // Buttons / CTA
+    "cta.viewDepartures": "Ver partidas 2026",
+    "cta.chatWhatsApp": "Conversar no WhatsApp",
+    "cta.browseTours": "Explorar viagens",
+    "cta.talkToUs": "Falar connosco",
+    "cta.viewAll": "Ver todas as viagens →",
+    "cta.viewTrip": "Ver viagem →",
+    "cta.reserveWA": "Reservar no WhatsApp",
+    "cta.requestEmail": "Pedir detalhes por e-mail",
+    "cta.sayHello": "Dizer olá",
+    "cta.sendInquiry": "Enviar pedido",
+    "cta.openWhatsApp": "Abrir chat WhatsApp",
+    "cta.emailUs": "Escreva-nos",
+    "cta.messageFounderWA": "Escrever à Shikha no WhatsApp",
+    "cta.ourTours": "Ver as nossas viagens",
+
+    // Home hero
+    "home.hero.season": "Grupos pequenos · 2026",
+    "home.hero.titleLine1": "Viaje pela Índia com alguém que a entende —",
+    "home.hero.titleLine2": "e que te entende a ti.",
+    "home.hero.title":
+      "Viaje pela Índia com alguém que a entende — e que te entende a ti.",
+    "home.hero.subtitle":
+      "Viagens guiadas com cuidado para mulheres e viajantes curiosos que querem viver a Índia de forma profunda, segura e sem stress.",
+    "home.hero.rating": "Avaliação média de 4,9/5",
+    "home.hero.countries": "Viajantes de mais de 20 países",
+    "home.hero.support": "Apoio 24/7 durante a viagem",
+
+    // Home sections
+    "home.featured.chip": "VIAGENS QUE VAI ADORAR",
+    "home.featured.title": "Viagens feitas à mão, cheias de momentos reais.",
+    "home.featured.subtitle":
+      "Três viagens especiais para o verão de 2026. Garanta o seu lugar com um depósito de 30% — saldo pago à chegada.",
+
+    "home.trust.chip": "Por que os viajantes nos escolhem",
+    "home.trust.title": "A Índia é vasta. Nós tornamo-la pessoal.",
+    "home.trust.subtitle":
+      "Somos uma empresa jovem fundada em 2026 com uma convicção clara: viajar pela Índia deve sentir-se seguro, caloroso e sem pressa — seja a sua primeira viagem ao estrangeiro ou a quinquagésima.",
+
+    "home.trust.smallGroups.title": "Máximo 7–10 pessoas por grupo",
+    "home.trust.smallGroups.body":
+      "Pequeno o suficiente para ser íntimo, flexível o suficiente para se adaptar a si. Cada partida está limitada a 7–10 viajantes para que receba sempre atenção real — não multidões.",
+    "home.trust.localGuides.title": "Guias locais escolhidos a dedo",
+    "home.trust.localGuides.body":
+      "Os nossos guias são antes de tudo contadores de histórias — historiadores, fotógrafos e cozinheiros que vivem nas regiões que visitamos. Sem discursos decorados, sem comissões ocultas.",
+    "home.trust.female.title": "Adaptado a mulheres e viajantes a solo",
+    "home.trust.female.body":
+      "Fundado por uma mulher, pensado para viajantes a solo e mulheres. Alojamentos verificados, apoio 24/7 e sem pressão sobre o ritmo.",
+    "home.trust.transparent.title": "Totalmente personalizável",
+    "home.trust.transparent.body":
+      "Sem itinerários fixos. Cada viagem é moldada em torno do seu ritmo, interesses e orçamento — diga-nos o que importa e construímo-la do zero.",
+
+    "home.testimonials.chip": "O que dizem os viajantes",
+    "home.testimonials.title": "Histórias da estrada.",
+    "home.testimonials.sampleNote":
+      "* Os testemunhos são exemplos ilustrativos para uma nova empresa.",
+
+    "home.faq.chip": "Bom saber",
+    "home.faq.title": "Perguntas frequentes",
+
+    "home.finalCTA.title": "O seu verão indiano está à espera.",
+    "home.finalCTA.subtitle":
+      "Reserve um lugar numa partida de junho ou julho de 2026, ou diga-nos as suas datas e desenhamos uma viagem privada à sua medida.",
+
+    // Journeys listing
+    "tours.chip": "As nossas viagens",
+    "tours.title": "Viagens em grupos pequenos por toda a Índia.",
+    "tours.subtitle":
+      "Cada viagem inclui tudo: transfers, alojamento, guias, licenças e as refeições indicadas. Junte-se a um grupo existente ou peça-nos para o organizar em privado nas suas datas.",
+    "tours.filter.all": "Todas",
+    "tours.filter.himalayan": "Himalaia",
+    "tours.filter.cultural": "Cultural",
+    "tours.customCTA.title": "Quer uma viagem feita só para si?",
+    "tours.customCTA.subtitle":
+      "Cada viagem que realizamos pode também ser construída de raiz — as suas datas, o tamanho do seu grupo, o seu ritmo. Famílias, casais, viajantes a solo, retiros corporativos. Escolhe as regiões; nós cuidamos de cada detalhe, desde a primeira consulta até ao transfer para o aeroporto.",
+    "tours.customCTA.wa": "Planear a minha viagem personalizada →",
+
+    // Journey card
+    "tourCard.from": "A partir de",
+    "tourCard.perPerson": "/ pessoa",
+
+    // Journey detail
+    "tourDetail.duration": "Duração",
+    "tourDetail.groupSize": "Tamanho do grupo",
+    "tourDetail.region": "Região",
+    "tourDetail.startsFrom": "A partir de",
+    "tourDetail.overview": "Resumo da viagem",
+    "tourDetail.route": "Itinerário",
+    "tourDetail.highlights": "Destaques da viagem",
+    "tourDetail.itinerary": "Programa dia a dia",
+    "tourDetail.included": "Incluído",
+    "tourDetail.notIncluded": "Não incluído",
+    "tourDetail.startingFrom": "A partir de",
+    "tourDetail.perPerson": "por pessoa",
+    "tourDetail.deposit": "Garanta o seu lugar com 30% de depósito",
+    "tourDetail.departures": "Próximas partidas",
+    "tourDetail.pricingOptions": "Opções de preço",
+    "tourDetail.otherJourneys": "Outras viagens que pode adorar",
+    "tourDetail.difficultyLabel": "Dificuldade",
+    "tourDetail.waMessage":
+      "Olá! Tenho interesse na viagem {tour}. Pode partilhar mais detalhes?",
+
+    // Journey difficulty labels
+    "difficulty.Easy": "Fácil",
+    "difficulty.Moderate": "Moderado",
+    "difficulty.Challenging": "Exigente",
+
+    // About
+    "about.chip": "A nossa história",
+    "about.title": "Uma equipa pequena obcecada com cada detalhe.",
+    "about.p1":
+      "A GoTrustelle é uma jovem empresa de viagens indiana, fundada em 2026 por uma equipa que cresceu a viajar e a receber hóspedes por toda a Índia.",
+    "about.p2":
+      "Por isso criámos as viagens que queríamos que os nossos amigos do estrangeiro fizessem — grupos pequenos, longas noites, refeições reais com pessoas reais e a liberdade de ir devagar.",
+    "about.principles.chip": "No que acreditamos",
+    "about.principles.title": "Os nossos princípios de viagem.",
+    "about.team.chip": "Com quem vai viajar",
+    "about.team.title": "A equipa por trás da sua viagem.",
+    "about.team.subtitle":
+      "Fundada na Índia, com uma parceira na Alemanha — para ter uma pessoa de confiança dos dois lados da sua viagem.",
+    "about.team.hoverHint": "Passe o cursor sobre os cartões para saber mais",
+    "about.heroAlt": "Paisagem himalaia, norte da Índia",
+    "about.bios.chip": "A história longa",
+    "about.bios.title": "Conheça as pessoas por trás da viagem.",
+    "about.bios.subtitle":
+      "Cada mensagem, cada itinerário, cada resposta de WhatsApp a altas horas vem de uma de nós duas.",
+    "about.bios.readShikha": "Mais sobre Shikha",
+    "about.bios.readMelissa": "Mais sobre Melissa",
+
+    "about.story.backToAbout": "← Voltar a Sobre nós",
+    "about.story.readFullStory": "Ler a história completa →",
+    "about.story.meetOther": "Conhecer a nossa parceira na Alemanha",
+    "about.story.ctaTitle": "Pronto/a para viajar connosco?",
+    "about.story.ctaSubtitle":
+      "Veja as partidas em grupo de 2026 ou escreva-nos diretamente.",
+    "about.story.sectionStory": "A minha história",
+    "about.story.sectionConnect": "Dizer olá",
+
+    "about.founder.tag": "Fundadora",
+    "about.founder.country": "Com base na Índia",
+    "about.founder.role": "Fundadora · A sua anfitriã no local",
+    "about.founder.quote":
+      "\"Quero que sinta a Índia — não apenas que a veja.\"",
+    "about.founder.chip1": "🎒 Mochileira a solo",
+    "about.founder.chip2": "🏔️ Trabalha a partir das montanhas",
+    "about.founder.chip3": "🧭 Guiou viagens pelo norte da Índia",
+    "about.founder.signature": "— Shikha",
+    "about.founder.followIG": "Seguir no Instagram",
+    "about.founder.viewLinkedIn": "Conectar no LinkedIn",
+    "about.founder.emailDirect": "Escrever-me diretamente",
+    "about.founder.photoCaption": "Shikha · Fundadora",
+
+    "about.partner.tag": "Parceira · Alemanha",
+    "about.partner.country": "Com base na Alemanha",
+    "about.partner.role": "Parceira · Ligação de viagens na Europa",
+    "about.partner.quote":
+      "\"A Índia não é melhor nem pior — é simplesmente diferente.\"",
+    "about.partner.signature": "— Melissa",
+
+    "about.founder.story1":
+      "Olá — sou a Shikha. A GoTrustelle é o meu projeto de coração, e honestamente, aquele que quis construir há anos.",
+    "about.founder.story2":
+      "De profissão sou programadora. Por paixão, sou mochileira.",
+    "about.founder.story3":
+      "Há alguns anos comecei a organizar pequenas viagens em grupo para amigos de amigos que visitavam a Índia.",
+    "about.founder.story4":
+      "Sou a pessoa que vai realmente conhecer no local.",
+    "about.founder.story5":
+      "O que quero da sua viagem é simples: que parta tendo realmente sentido a Índia.",
+
+    "about.partner.story1":
+      "Sou a Melissa, vivo na Alemanha e estou discretamente fascinada com a Índia há quase uma década.",
+    "about.partner.story2":
+      "Tenho voltado todos os anos desde então.",
+    "about.partner.story3":
+      "Profissionalmente, trabalhei no setor das viagens na Alemanha durante anos.",
+    "about.partner.story4":
+      "O meu papel na GoTrustelle é tratar de tudo do lado europeu.",
+    "about.partner.story5":
+      "Se tinha curiosidade sobre a Índia mas não sabia por onde começar — é exatamente esse espaço que queríamos preencher.",
+
+    "about.stats.inhouseLabel": "Planeado internamente",
+    "about.stats.inhouseBody":
+      "Sem revendedores externos. Gerimos cada reserva nós próprios.",
+    "about.stats.supportLabel": "Apoio durante a viagem",
+    "about.stats.supportBody":
+      "Um ser humano real no WhatsApp a qualquer hora, todos os dias da sua viagem.",
+    "about.stats.groupLabel": "Grupos pequenos (máx. 10)",
+    "about.stats.groupBody": "Íntimo, pessoal e totalmente adaptável ao seu ritmo e interesses.",
+    "about.stats.customLabel": "Personalizável",
+    "about.stats.customBody": "Cada itinerário é construído em torno de si — datas, ritmo, interesses. Sem modelos fixos.",
+
+    // About principles list
+    "about.v.smallGroups.title": "Grupos pequenos. Sempre 7–10 máx.",
+    "about.v.smallGroups.body":
+      "Limitamos cada partida a 7–10 viajantes.",
+    "about.v.local.title": "Contratar local, pagar justo.",
+    "about.v.local.body":
+      "Os nossos guias, motoristas e anfitriões vivem nas regiões que visitamos e são pagos acima das tarifas locais.",
+    "about.v.leaveBetter.title": "Deixar melhor do que encontrámos.",
+    "about.v.leaveBetter.body":
+      "Compensamos carbono em cada viagem, evitamos plásticos de uso único e colaboramos com coletivos artesanais liderados por mulheres.",
+    "about.v.transparent.title": "Transparência, sempre.",
+    "about.v.transparent.body":
+      "Sem paragens ocultas em lojas, sem comissões. O que publicamos é o que entregamos.",
+    "about.v.safety.title": "A segurança em primeiro lugar.",
+    "about.v.safety.body":
+      "Hotéis verificados, apoio 24/7 e um protocolo de segurança adaptado para viajantes a solo e mulheres.",
+    "about.v.slow.title": "A lentidão é uma vantagem.",
+    "about.v.slow.body":
+      "Incluímos dias de folga em cada itinerário. Não precisa de ver tudo — precisa de ver bem.",
+
+    // Contact
+    "contact.chip": "Entre em contacto",
+    "contact.title": "Vamos planear a sua viagem à Índia.",
+    "contact.subtitle":
+      "Escreva-nos no WhatsApp para uma resposta rápida, ou preencha o formulário abaixo e respondemos em poucas horas (hora padrão da Índia).",
+    "contact.form.name": "O seu nome",
+    "contact.form.email": "E-mail",
+    "contact.form.country": "País",
+    "contact.form.countryPlaceholder": "ex. Portugal",
+    "contact.form.whatsapp": "WhatsApp (opcional)",
+    "contact.form.tour": "Qual/quais viagem/ns lhe interessa(m)?",
+    "contact.form.tourSelect": "Selecionar uma viagem",
+    "contact.form.tourCustom": "Viagem privada personalizada",
+    "contact.form.tourUnsure": "Ainda não sei",
+    "contact.form.dates": "Datas de viagem aproximadas",
+    "contact.form.datesPlaceholder": "ex. 10–20 junho 2026",
+    "contact.form.startDate": "Data de início",
+    "contact.form.endDate": "Data de fim",
+    "contact.form.travelers": "Número de viajantes",
+    "contact.form.travelersPlaceholder": "ex. 2 adultos",
+    "contact.form.message": "Mais alguma coisa que devemos saber?",
+    "contact.form.messagePlaceholder":
+      "Necessidades alimentares, acessibilidade, experiências que adoraria ter…",
+    "contact.form.privacy":
+      "Ao enviar, aceita que o contactemos sobre a sua consulta. Nunca partilhamos os seus dados.",
+    "contact.sidebar.fastest.title": "Resposta mais rápida",
+    "contact.sidebar.fastest.body":
+      "O WhatsApp é a nossa caixa de entrada principal — normalmente respondemos em uma hora durante o horário de trabalho (IST).",
+    "contact.sidebar.email.title": "Ou escreva-nos por e-mail",
+    "contact.sidebar.hours.title": "Horário de atendimento",
+    "contact.sidebar.hours.body":
+      "Segunda – Sábado · 9:00 – 21:00 IST\nDomingo · Apenas apoio de emergência durante a viagem",
+    "contact.sidebar.phone": "Telefone",
+    "contact.sidebar.basedIn": "Sediado em",
+
+    // Footer
+    "footer.explore": "Explorar",
+    "footer.exploreAll": "Todas as viagens",
+    "footer.contact": "Contacto",
+    "footer.waChat": "Chat WhatsApp",
+    "footer.copyright": "Feito com cuidado na Índia.",
+    "footer.subline": "Viagens independentes em grupos pequenos · Sediado em Nova Deli",
+
+    // Months
+    "month.June": "Junho",
+    "month.July": "Julho",
+    "month.August": "Agosto",
+    "month.September": "Setembro",
+
+    // Brand name breakdown
+    "about.brand.chip": "O nome",
+    "about.brand.titlePrefix": "Porquê",
+    "about.brand.titleSuffix": "?",
+    "about.brand.desc": "A GoTrustelle assenta em três ideias simples — a liberdade de explorar, o conforto da confiança e o calor de uma viagem liderada por uma mulher.",
+    "brand.go.title": "Liberdade de explorar",
+    "brand.go.body": "Movimento, aventura e a coragem de descobrir a Índia para lá dos guias turísticos.",
+    "brand.trust.title": "O conforto da confiança",
+    "brand.trust.body": "Cada detalhe planeado, cada parceiro verificado. Você viaja — nós tratamos do resto.",
+    "brand.elle.title": "Uma viagem liderada por uma mulher",
+    "brand.elle.body": "Elle — «ela» em francês. Construído por uma mulher, pensado para si.",
+    "home.teaser.eyebrow": "O nome por trás de cada viagem",
+
+    // Founding story
+    "about.origin.chip": "A nossa história",
+    "about.origin.titleBefore": "Como a GoTrustelle começou —",
+    "about.origin.titleHighlight": "um café, um bebé e uma conversa real",
+    "about.origin.p1": "Começou com o sorriso de um bebé no Freedom Café em Rishikesh.",
+    "about.origin.p2": "Mantivemo-nos em contacto ao longo de continentes durante anos, fazendo planos que a vida foi gentilmente adiando.",
+    "about.origin.p3a": "Na última noite, disse algo em que tenho pensado todos os dias desde então:",
+    "about.origin.quote": "É isso que nos falta quando viajamos para a Índia. Não queremos apenas ver a Índia — queremos sentir a Índia.",
+    "about.origin.p3b": "Essa frase tornou-se tudo.",
+    "about.origin.signature": "— Shikha, Fundadora",
+    "about.origin.gallery.label": "Momentos reais · não fotos de stock",
+    "about.origin.photo1": "Rishikesh — a primeira vez que nos conhecemos",
+    "about.origin.photo2": "A brincar com a filha da Melissa — o momento em que falámos pela primeira vez",
+    "about.origin.photo3": "Melissa com um sari indiano tradicional com a mãe de Shikha",
+    "about.origin.photo4": "Shikha e Melissa na estrada juntas, 2026",
+    "about.origin.photo5": "Melissa participa na pooja da festa local",
+    "about.origin.photo6": "Petiscos de viagem e conversas reais",
+    "about.origin.video.caption": "Um momento real do nosso tempo juntas na Índia",
+    "about.origin.closing.title": "Venha — não explore apenas a Índia, sinta-a.",
+    "about.origin.closing.body": "Cada viagem que criamos é um convite a ir além da superfície.",
+    "about.origin.closing.cta1": "Ver as nossas viagens",
+    "about.origin.closing.cta2": "Escrever à Shikha",
+
+    // Footer tagline
+    "footer.tagline": "Experiências de viagem na Índia · por uma mulher, para si",
+
+    // Misc
+    "common.season": "2026",
+    "common.loading": "A carregar…",
+    "lang.label": "Idioma",
+  },
+
+  nl: {
+    // Navigation
+    "nav.home": "Home",
+    "nav.tours": "Reizen",
+    "nav.about": "Over ons",
+    "nav.why": "Waarom Trustelle",
+    "nav.faq": "FAQ",
+    "nav.contact": "Contact",
+    "nav.planTrip": "Mijn reis plannen",
+    "nav.toggleMenu": "Menu openen/sluiten",
+
+    // Buttons / CTA
+    "cta.viewDepartures": "Bekijk vertrekdata 2026",
+    "cta.chatWhatsApp": "Chatten op WhatsApp",
+    "cta.browseTours": "Reizen ontdekken",
+    "cta.talkToUs": "Praat met ons",
+    "cta.viewAll": "Alle reizen bekijken →",
+    "cta.viewTrip": "Reis bekijken →",
+    "cta.reserveWA": "Reserveren via WhatsApp",
+    "cta.requestEmail": "Details aanvragen per e-mail",
+    "cta.sayHello": "Zeg hallo",
+    "cta.sendInquiry": "Aanvraag versturen",
+    "cta.openWhatsApp": "WhatsApp-chat openen",
+    "cta.emailUs": "Stuur ons een e-mail",
+    "cta.messageFounderWA": "Shikha een bericht sturen via WhatsApp",
+    "cta.ourTours": "Onze reizen bekijken",
+
+    // Home hero
+    "home.hero.season": "Kleine groepsreizen · 2026",
+    "home.hero.titleLine1": "Reis door India met iemand die het begrijpt —",
+    "home.hero.titleLine2": "en die jou begrijpt.",
+    "home.hero.title":
+      "Reis door India met iemand die het begrijpt — en die jou begrijpt.",
+    "home.hero.subtitle":
+      "Zorgvuldig begeleide reizen voor vrouwen en nieuwsgierige reizigers die India diepgaand, veilig en zonder overweldiging willen beleven.",
+    "home.hero.rating": "Gemiddelde reizigersrating 4,9/5",
+    "home.hero.countries": "Reizigers uit meer dan 20 landen",
+    "home.hero.support": "24/7 ondersteuning tijdens de reis",
+
+    // Home sections
+    "home.featured.chip": "REIZEN DIE JE ZAL LIEFHEBBEN",
+    "home.featured.title": "Met zorg gemaakte reizen, vol echte momenten.",
+    "home.featured.subtitle":
+      "Drie handtekeningreizen voor zomer 2026. Reserveer je plek met 30% aanbetaling — restbedrag verschuldigd bij aankomst.",
+
+    "home.trust.chip": "Waarom reizigers voor ons kiezen",
+    "home.trust.title": "India is enorm. Wij maken het persoonlijk.",
+    "home.trust.subtitle":
+      "We zijn een jong bedrijf opgericht in 2026 met één duidelijke overtuiging: reizen in India moet veilig, warm en zonder haast aanvoelen — of het nu je eerste buitenlandse reis is of je vijftigste.",
+
+    "home.trust.smallGroups.title": "Maximaal 7–10 personen per groep",
+    "home.trust.smallGroups.body":
+      "Klein genoeg om persoonlijk te voelen, flexibel genoeg om zich aan jou aan te passen. Elke vertrekdatum is beperkt tot 7–10 reizigers zodat je altijd echte aandacht krijgt — geen menigte.",
+    "home.trust.localGuides.title": "Handpicked lokale gidsen",
+    "home.trust.localGuides.body":
+      "Onze gidsen zijn in de eerste plaats verhalenvertellers — historici, fotografen en koks die in de regio's leven die we bezoeken. Geen ingestudeerde praatjes, geen verborgen commissies.",
+    "home.trust.female.title": "Vriendelijk voor vrouwen en soloreizenden",
+    "home.trust.female.body":
+      "Opgericht door een vrouw, gebouwd met solo- en vrouwelijke reizigers in gedachten. Geverifieerde verblijven, 24/7 ondersteuning en nul druk op tempo.",
+    "home.trust.transparent.title": "Volledig aanpasbaar",
+    "home.trust.transparent.body":
+      "Geen vaste reisschema's. Elke reis is gevormd rond jouw tempo, interesses en budget — vertel ons wat belangrijk is en we bouwen het from scratch.",
+
+    "home.testimonials.chip": "Wat reizigers zeggen",
+    "home.testimonials.title": "Verhalen van onderweg.",
+    "home.testimonials.sampleNote":
+      "* Getuigenissen zijn illustratieve voorbeelden voor een nieuw bedrijf.",
+
+    "home.faq.chip": "Goed om te weten",
+    "home.faq.title": "Veelgestelde vragen",
+
+    "home.finalCTA.title": "Je Indiase zomer wacht.",
+    "home.finalCTA.subtitle":
+      "Reserveer een plek op een vertrek in juni of juli 2026, of geef ons je data en we ontwerpen een privéreis speciaal voor jou.",
+
+    // Journeys listing
+    "tours.chip": "Onze reizen",
+    "tours.title": "Kleine groepsreizen door India.",
+    "tours.subtitle":
+      "Elke reis hieronder is all-inclusive: transfers, verblijven, gidsen, vergunningen en de vermelde maaltijden. Sluit je aan bij een bestaande groep of vraag ons om een privé-uitvoering op jouw data.",
+    "tours.filter.all": "Alle",
+    "tours.filter.himalayan": "Himalaya",
+    "tours.filter.cultural": "Cultureel",
+    "tours.customCTA.title": "Wil je een reis speciaal voor jou?",
+    "tours.customCTA.subtitle":
+      "Elke reis die we uitvoeren kan ook from scratch worden gebouwd — jouw data, jouw groepsgrootte, jouw tempo. Gezinnen, koppels, soloreizigers, bedrijfsretreats. Jij kiest de regio's; wij regelen elk detail van de eerste aanvraag tot de drop-off op het vliegveld.",
+    "tours.customCTA.wa": "Mijn maatwerkreis plannen →",
+
+    // Journey card
+    "tourCard.from": "Vanaf",
+    "tourCard.perPerson": "/ persoon",
+
+    // Journey detail
+    "tourDetail.duration": "Duur",
+    "tourDetail.groupSize": "Groepsgrootte",
+    "tourDetail.region": "Regio",
+    "tourDetail.startsFrom": "Vanaf",
+    "tourDetail.overview": "Reisoverzicht",
+    "tourDetail.route": "Route",
+    "tourDetail.highlights": "Hoogtepunten",
+    "tourDetail.itinerary": "Dag-voor-dag programma",
+    "tourDetail.included": "Inbegrepen",
+    "tourDetail.notIncluded": "Niet inbegrepen",
+    "tourDetail.startingFrom": "Vanaf",
+    "tourDetail.perPerson": "per persoon",
+    "tourDetail.deposit": "Reserveer je plek met 30% aanbetaling",
+    "tourDetail.departures": "Komende vertrekdata",
+    "tourDetail.pricingOptions": "Prijsopties",
+    "tourDetail.otherJourneys": "Andere reizen die je misschien leuk vindt",
+    "tourDetail.difficultyLabel": "Moeilijkheidsgraad",
+    "tourDetail.waMessage":
+      "Hoi! Ik ben geïnteresseerd in de {tour} reis. Kun je meer details delen?",
+
+    // Journey difficulty labels
+    "difficulty.Easy": "Gemakkelijk",
+    "difficulty.Moderate": "Matig",
+    "difficulty.Challenging": "Uitdagend",
+
+    // About
+    "about.chip": "Ons verhaal",
+    "about.title": "Een klein team geobsedeerd door elk detail.",
+    "about.p1":
+      "GoTrustelle is een jong Indiaas reisbureau, opgericht in 2026 door een team dat opgroeide met reizen en het ontvangen van gasten door heel India.",
+    "about.p2":
+      "Dus bouwden we de reizen die we zouden willen dat onze vrienden uit het buitenland zouden maken — kleine groepen, lange avonden, echte maaltijden met echte mensen en de vrijheid om te vertragen.",
+    "about.principles.chip": "Waar we in geloven",
+    "about.principles.title": "Onze reisprincipes.",
+    "about.team.chip": "Met wie je reist",
+    "about.team.title": "Het team achter jouw reis.",
+    "about.team.subtitle":
+      "Opgericht in India, ondersteund door een partner in Duitsland — zodat je een vertrouwd persoon hebt aan beide kanten van je reis.",
+    "about.team.hoverHint": "Hover over de kaarten voor meer informatie",
+    "about.heroAlt": "Himalaya-landschap, Noord-India",
+    "about.bios.chip": "Het langere verhaal",
+    "about.bios.title": "Ontmoet de mensen achter de reis.",
+    "about.bios.subtitle":
+      "Elk bericht, elk reisschema, elke late WhatsApp-reactie komt van een van ons tweeën.",
+    "about.bios.readShikha": "Meer over Shikha",
+    "about.bios.readMelissa": "Meer over Melissa",
+
+    "about.story.backToAbout": "← Terug naar Over ons",
+    "about.story.readFullStory": "Volledig verhaal lezen →",
+    "about.story.meetOther": "Ontmoet onze partner in Duitsland",
+    "about.story.ctaTitle": "Klaar om met ons te reizen?",
+    "about.story.ctaSubtitle":
+      "Bekijk de groepsvertrekken voor 2026 of schrijf ons direct.",
+    "about.story.sectionStory": "Mijn verhaal",
+    "about.story.sectionConnect": "Zeg hallo",
+
+    "about.founder.tag": "Oprichtster",
+    "about.founder.country": "Gevestigd in India",
+    "about.founder.role": "Oprichtster · Jouw gastheer ter plaatse",
+    "about.founder.quote":
+      "\"Ik wil dat je India voelt — niet alleen ziet.\"",
+    "about.founder.chip1": "🎒 Solo backpacker",
+    "about.founder.chip2": "🏔️ Werkt vanuit de bergen",
+    "about.founder.chip3": "🧭 Leidde reizen door Noord-India",
+    "about.founder.signature": "— Shikha",
+    "about.founder.followIG": "Volgen op Instagram",
+    "about.founder.viewLinkedIn": "Verbinden op LinkedIn",
+    "about.founder.emailDirect": "Mij direct e-mailen",
+    "about.founder.photoCaption": "Shikha · Oprichtster",
+
+    "about.partner.tag": "Partner · Duitsland",
+    "about.partner.country": "Gevestigd in Duitsland",
+    "about.partner.role": "Partner · Europees reiscontactpersoon",
+    "about.partner.quote":
+      "\"India is niet beter of slechter — het is gewoon anders.\"",
+    "about.partner.signature": "— Melissa",
+
+    "about.founder.story1":
+      "Hoi — ik ben Shikha. GoTrustelle is mijn kindje, en eerlijk gezegd het project dat ik al jaren wilde bouwen.",
+    "about.founder.story2":
+      "Van beroep ben ik softwareontwikkelaar. Uit passie ben ik backpacker.",
+    "about.founder.story3":
+      "Een paar jaar geleden begon ik kleine groepsreizen te organiseren voor vrienden van vrienden die India bezochten.",
+    "about.founder.story4":
+      "Ik ben de persoon die je echt ter plaatse ontmoet.",
+    "about.founder.story5":
+      "Wat ik voor jouw reis wil, is eenvoudig: dat je vertrekt met het gevoel India echt te hebben gevoeld.",
+
+    "about.partner.story1":
+      "Ik ben Melissa, woonachtig in Duitsland, en ik ben al bijna een decennium stil geobsedeerd door India.",
+    "about.partner.story2":
+      "Ik ga er elk jaar naartoe sindsdien.",
+    "about.partner.story3":
+      "Professioneel heb ik jarenlang in de reisbranche in Duitsland gewerkt.",
+    "about.partner.story4":
+      "Mijn rol bij GoTrustelle is alles aan de Europese kant te regelen.",
+    "about.partner.story5":
+      "Als je nieuwsgierig was naar India maar niet wist waar te beginnen — dat is precies de kloof die we wilden vullen.",
+
+    "about.stats.inhouseLabel": "In eigen beheer gepland",
+    "about.stats.inhouseBody":
+      "Geen derde partijen. We regelen elke boeking zelf.",
+    "about.stats.supportLabel": "Ondersteuning tijdens de reis",
+    "about.stats.supportBody":
+      "Een echt mens op WhatsApp, elk uur, elke dag van je reis.",
+    "about.stats.groupLabel": "Kleine groepen (max. 10)",
+    "about.stats.groupBody": "Intiem, persoonlijk en volledig aanpasbaar aan jouw tempo en interesses.",
+    "about.stats.customLabel": "Aanpasbaar",
+    "about.stats.customBody": "Elk reisschema wordt rond jou gebouwd — data, tempo, interesses. Geen vaste sjablonen.",
+
+    // About principles list
+    "about.v.smallGroups.title": "Kleine groepen. Altijd max. 7–10.",
+    "about.v.smallGroups.body":
+      "We beperken elke vertrekdatum tot 7–10 reizigers.",
+    "about.v.local.title": "Lokaal inhuren, eerlijk betalen.",
+    "about.v.local.body":
+      "Onze gidsen, chauffeurs en gastheren wonen in de regio's die we bezoeken en worden boven de lokale markttarieven betaald.",
+    "about.v.leaveBetter.title": "Beter achterlaten.",
+    "about.v.leaveBetter.body":
+      "We compenseren koolstof op elke reis, vermijden wegwerpplastics onderweg en werken samen met door vrouwen geleide ambachtelijke collectieven.",
+    "about.v.transparent.title": "Transparantie, altijd.",
+    "about.v.transparent.body":
+      "Geen verborgen winkeltussenpozen, geen commissies. Wat we publiceren is wat we leveren.",
+    "about.v.safety.title": "Veiligheid eerst.",
+    "about.v.safety.body":
+      "Geverifieerde hotels, 24/7 ondersteuning en een veiligheidsprotocol op maat voor solo- en vrouwelijke reizigers.",
+    "about.v.slow.title": "Langzaam is een functie.",
+    "about.v.slow.body":
+      "We bouwen bufferdagen in elk reisschema. Je hoeft niet alles te zien — je moet het goed zien.",
+
+    // Contact
+    "contact.chip": "Neem contact op",
+    "contact.title": "Laten we jouw India-reis plannen.",
+    "contact.subtitle":
+      "Stuur ons een bericht op WhatsApp voor de snelste reactie, of vul het onderstaande formulier in en we nemen binnen een paar uur contact op (Indiase standaardtijd).",
+    "contact.form.name": "Jouw naam",
+    "contact.form.email": "E-mail",
+    "contact.form.country": "Land",
+    "contact.form.countryPlaceholder": "bijv. Nederland",
+    "contact.form.whatsapp": "WhatsApp (optioneel)",
+    "contact.form.tour": "Welke reis/reizen interesse jou?",
+    "contact.form.tourSelect": "Selecteer een reis",
+    "contact.form.tourCustom": "Privé maatwerkreis",
+    "contact.form.tourUnsure": "Nog niet zeker",
+    "contact.form.dates": "Geschatte reisdata",
+    "contact.form.datesPlaceholder": "bijv. 10–20 juni 2026",
+    "contact.form.startDate": "Startdatum",
+    "contact.form.endDate": "Einddatum",
+    "contact.form.travelers": "Aantal reizigers",
+    "contact.form.travelersPlaceholder": "bijv. 2 volwassenen",
+    "contact.form.message": "Nog iets anders dat we moeten weten?",
+    "contact.form.messagePlaceholder":
+      "Dieetwensen, toegankelijkheid, ervaringen die je graag wil beleven…",
+    "contact.form.privacy":
+      "Door te versturen ga je ermee akkoord dat we contact met je opnemen over je aanvraag. We delen je gegevens nooit.",
+    "contact.sidebar.fastest.title": "Snelste reactie",
+    "contact.sidebar.fastest.body":
+      "WhatsApp is onze primaire inbox — we reageren meestal binnen een uur tijdens kantooruren (IST).",
+    "contact.sidebar.email.title": "Of e-mail ons",
+    "contact.sidebar.hours.title": "Kantooruren",
+    "contact.sidebar.hours.body":
+      "Maandag – Zaterdag · 9:00 – 21:00 IST\nZondag · Alleen noodondersteuning tijdens de reis",
+    "contact.sidebar.phone": "Telefoon",
+    "contact.sidebar.basedIn": "Gevestigd in",
+
+    // Footer
+    "footer.explore": "Ontdekken",
+    "footer.exploreAll": "Alle reizen",
+    "footer.contact": "Contact",
+    "footer.waChat": "WhatsApp-chat",
+    "footer.copyright": "Met zorg gemaakt in India.",
+    "footer.subline": "Onafhankelijke kleine groepsreizen · Gevestigd in New Delhi",
+
+    // Months
+    "month.June": "Juni",
+    "month.July": "Juli",
+    "month.August": "Augustus",
+    "month.September": "September",
+
+    // Brand name breakdown
+    "about.brand.chip": "De naam",
+    "about.brand.titlePrefix": "Waarom",
+    "about.brand.titleSuffix": "?",
+    "about.brand.desc": "GoTrustelle is gebouwd op drie eenvoudige ideeën — de vrijheid om te verkennen, het comfort van vertrouwen en de warmte van een door een vrouw geleide reis.",
+    "brand.go.title": "Vrijheid om te verkennen",
+    "brand.go.body": "Beweging, avontuur en de moed om India voorbij de reisgids te ontdekken.",
+    "brand.trust.title": "Het comfort van vertrouwen",
+    "brand.trust.body": "Elk detail gepland, elke partner geverifieerd. Jij reist — wij zorgen voor de rest.",
+    "brand.elle.title": "Een door een vrouw geleide reis",
+    "brand.elle.body": "Elle — Frans voor «zij». Gebouwd door een vrouw, ontworpen met jou in gedachten.",
+    "home.teaser.eyebrow": "De naam achter elke reis",
+
+    // Founding story
+    "about.origin.chip": "Ons verhaal",
+    "about.origin.titleBefore": "Hoe GoTrustelle begon —",
+    "about.origin.titleHighlight": "een café, een baby en een echt gesprek",
+    "about.origin.p1": "Het begon met de glimlach van een baby in het Freedom Café in Rishikesh.",
+    "about.origin.p2": "We bleven over continenten jarenlang contact houden, plannen makend die het leven vriendelijk bleef uitstellen.",
+    "about.origin.p3a": "Op de laatste avond zei ze iets waar ik sindsdien elke dag aan denk:",
+    "about.origin.quote": "Dit is wat we missen als we naar India reizen. We willen India niet alleen zien — we willen India voelen.",
+    "about.origin.p3b": "Die ene zin werd alles.",
+    "about.origin.signature": "— Shikha, Oprichtster",
+    "about.origin.gallery.label": "Echte momenten · geen stockfoto's",
+    "about.origin.photo1": "Rishikesh — de allereerste keer dat we elkaar ontmoetten",
+    "about.origin.photo2": "Spelen met Melissa's dochter — het moment dat we voor het eerst spraken",
+    "about.origin.photo3": "Melissa in een traditionele Indiase sari met Shikha's moeder",
+    "about.origin.photo4": "Shikha & Melissa samen onderweg, 2026",
+    "about.origin.photo5": "Melissa doet mee aan de pooja bij het lokale festival",
+    "about.origin.photo6": "Wegsnoepjes en echte gesprekken",
+    "about.origin.video.caption": "Een echt moment van onze tijd samen in India",
+    "about.origin.closing.title": "Kom — verken India niet alleen, voel het.",
+    "about.origin.closing.body": "Elke reis die we maken is een uitnodiging om voorbij de oppervlakte te stappen.",
+    "about.origin.closing.cta1": "Onze reizen bekijken",
+    "about.origin.closing.cta2": "Schrijf aan Shikha",
+
+    // Footer tagline
+    "footer.tagline": "Reiservaringen in India · door een vrouw, voor jou",
+
+    // Misc
+    "common.season": "2026",
+    "common.loading": "Laden…",
+    "lang.label": "Taal",
   },
 } as const;
 

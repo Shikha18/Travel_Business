@@ -11,7 +11,7 @@ export type FaqCategory = {
   items: FaqItem[];
 };
 
-export const faqs: { en: FaqCategory[]; de: FaqCategory[] } = {
+export const faqs: Record<string, FaqCategory[]> = {
   en: [
     {
       icon: "🧭",

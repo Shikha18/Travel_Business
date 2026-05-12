@@ -24,7 +24,7 @@ export default function FaqPage({
 }) {
   const locale = getLocale(searchParams);
   const t = getTranslator(locale);
-  const localeFaqs = faqs[locale];
+  const localeFaqs = faqs[locale] ?? faqs["en"];
 
   return (
     <>
