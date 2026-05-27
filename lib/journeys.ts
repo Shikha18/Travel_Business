@@ -29,7 +29,7 @@ export type Journey = {
   durationNights: number;
   durationDays: number;
   route: string;           // e.g., "Delhi → Shimla → Kaza → Delhi"
-  months: ("June" | "July" | "August" | "September")[];
+  months: ("January" | "February" | "March" | "April" | "May" | "June" | "July" | "August" | "September" | "October" | "November" | "December")[];
   groupSize: string;       // e.g., "Max 10 travelers"
   difficulty: "Easy" | "Moderate" | "Challenging";
   summary: string;         // short card blurb
@@ -190,7 +190,7 @@ export const journeys: Journey[] = [
       { label: "Per person (small group)", priceEUR: 0, priceINR: 39999 },
     ],
     featured: true,
-    departures: ["June 18 – 28, 2026"],
+    departures: ["June 4 – 14, 2026"],
   },
 
   {
@@ -998,6 +998,235 @@ export const journeys: Journey[] = [
       { label: "Single supplement", priceEUR: 449, priceINR: 40400 },
     ],
     featured: false,
+    departures: ["Customisable — contact us"],
+  },
+
+  // ─── GOLDEN TRIANGLE ─────────────────────────────────────────────────
+  {
+    slug: "golden-triangle-classic",
+    title: "Golden Triangle Classic",
+    subtitle: "Delhi · Agra · Jaipur — India's iconic circuit, done properly",
+    heroImage: "/images/tours/golden-triangle/taj-mahal-1.jpg",
+    galleryImages: [
+      "/images/tours/golden-triangle/taj-mahal-1.jpg",
+      "/images/tours/golden-triangle/red-fort-delhi.jpg",
+      "/images/tours/golden-triangle/hawa-mahal-jaipur.jpg",
+    ],
+    region: "Delhi, Agra & Jaipur, North India",
+    durationNights: 6,
+    durationDays: 7,
+    route: "Delhi → Agra → Fatehpur Sikri → Jaipur → Delhi",
+    months: ["October", "November", "December", "January", "February", "March"],
+    groupSize: "Max 10 travelers",
+    difficulty: "Easy",
+    summary:
+      "The Taj Mahal at sunrise, an Old Delhi food walk that rewires your senses, a Rajasthani palace still inhabited by royals, and a market in Jaipur's Pink City where the colors don't stop. Seven days of India's greatest hits — unhurried, safe, and seriously good.",
+    overview:
+      "The Golden Triangle is called that for good reason: Delhi, Agra, and Jaipur form a rough triangle across northwestern India, and between them they hold more UNESCO World Heritage Sites, more Mughal architecture, more royal forts and bazaars than almost any equivalent distance in the world. But the Golden Triangle done badly — one monument after another in a bus, bad food, too many salespeople — leaves travelers exhausted. The Golden Triangle done well leaves them wanting to move here. This 7-day GoTrustelle circuit is built around the second kind of experience. We move by train between cities (fast, comfortable, and the most authentically Indian way to travel). We eat street food in Old Delhi's lanes with a guide who knows which stall has cooked for the same family for four generations. We reach the Taj Mahal at 6 AM, before the tour groups, when the light is rose-gold and the marble seems to glow from within. We stay in carefully chosen boutique hotels in each city — places with courtyard gardens and filtered water and beds that are actually good. And throughout, Shikha or a GoTrustelle host is available — not standing in front of you with a flag, but there, in the background, making sure everything works.",
+    highlights: [
+      "Taj Mahal at sunrise — the most beautiful building on Earth, at the moment it belongs only to you",
+      "Old Delhi food walk — six hours of jalebi, chaat, kebabs, and the lanes that haven't changed in 300 years",
+      "Amber Fort, Jaipur — a Rajput fortress that rises from a ridge above a lake, still breathtaking at hour three",
+      "Humayun's Tomb, Delhi — the prototype for the Taj Mahal, and somehow less crowded and more moving",
+      "Fatehpur Sikri — a Mughal ghost city abandoned 400 years ago, perfectly preserved in red sandstone",
+      "Hawa Mahal & City Palace — the Pink City's two great architectural icons, within walking distance of each other",
+      "Jantar Mantar, Jaipur — an 18th-century astronomical observatory that still works, and still astonishes",
+      "Train travel between cities — the most real, most Indian part of the journey",
+    ],
+    itinerary: [
+      {
+        day: 1,
+        title: "Arrival in Delhi — Check-in & Old Delhi evening food walk",
+        description:
+          "Arrive in Delhi and transfer to your boutique hotel in a central neighbourhood — clean, calm, a welcome contrast to the city outside. After settling in and a rest, the evening begins in Old Delhi: a curated food walk through Chandni Chowk, the 17th-century bazaar that remains one of the most electrically alive places in Asia. Jalebi fried fresh in ghee, chaat assembled in seconds, kebabs that have been marinated for twenty-four hours, chai served in small clay cups. Your guide knows which stalls to trust, what to try in which order, and the stories behind the oldest family-run shops. You return to the hotel full in every sense.",
+        overnight: "Boutique hotel, Central Delhi",
+        highlight: "Old Delhi food walk — your senses don't know what's happening until they do",
+      },
+      {
+        day: 2,
+        title: "Delhi full day — Monuments, markets & Lodhi Garden",
+        description:
+          "A full day in Delhi at a pace that lets the city breathe. Morning: Red Fort (the great Mughal citadel built by Shah Jahan) and Jama Masjid, India's largest mosque, with its courtyard that holds 25,000 worshippers. After lunch, Humayun's Tomb — a 16th-century garden mausoleum that served as the direct prototype for the Taj Mahal, more intimate, less photographed, and in some ways more moving. Late afternoon: Qutub Minar, a 12th-century minaret rising 73 metres from a complex of ruins, surrounded by ancient inscriptions in Arabic and Sanskrit. End the day in Lodhi Garden — 90 acres of ancient tombs, flamingoes, and Delhiites of every kind doing exactly what they please in the fading light.",
+        overnight: "Boutique hotel, Central Delhi",
+        highlight: "Humayun's Tomb at dusk — the building that taught Shah Jahan everything",
+      },
+      {
+        day: 3,
+        title: "Delhi → Agra by train — Agra Fort & Mehtab Bagh",
+        description:
+          "Morning train from Delhi to Agra (approximately 2 hours on the Gatimaan Express — the fastest train in India, and one of the most pleasant ways to travel in the country). Arrive in Agra by late morning. After check-in and lunch, visit Agra Fort — the massive Mughal citadel from which Shah Jahan was imprisoned by his own son and spent his final years gazing at the Taj Mahal across the Yamuna. In the late afternoon, drive to Mehtab Bagh — the garden on the opposite bank of the river, from which the Taj Mahal appears framed perfectly at golden hour. This is the photograph. Return for dinner at a rooftop restaurant with the dome glowing white across the water.",
+        overnight: "Boutique hotel, Agra",
+        highlight: "Taj Mahal from Mehtab Bagh at sunset — the view Shah Jahan never tired of",
+      },
+      {
+        day: 4,
+        title: "Agra — Taj Mahal sunrise & Fatehpur Sikri",
+        description:
+          "Wake at 5:30 AM. The Taj Mahal opens at sunrise, and the first thirty minutes — when the light is still rose-gold and the crowds haven't arrived — are unlike any other thirty minutes in India. Stand at the main gate. Walk to the reflecting pool. Watch the colour change. The Taj was built by Shah Jahan over 22 years as a mausoleum for his wife Mumtaz Mahal, and at this hour, in this light, that context lands differently than it does in a guidebook. After a late breakfast, drive to Fatehpur Sikri — a Mughal city built by Emperor Akbar in 1571, abandoned 14 years later when the water supply failed, and preserved ever since in extraordinary red sandstone. The Buland Darwaza (Victory Gate), the ghost courtyards, the Palace of the Wind — a place that time genuinely stopped.",
+        overnight: "Boutique hotel, Agra",
+        highlight: "The Taj Mahal at sunrise — the most beautiful building in the world, in its best light",
+      },
+      {
+        day: 5,
+        title: "Agra → Jaipur via Abhaneri — Arrival in the Pink City",
+        description:
+          "Drive from Agra to Jaipur (approximately 4.5 hours), stopping en route at Abhaneri — one of India's most extraordinary and least-visited sites. The Chand Baori stepwell here is 13 storeys deep and over 1,200 years old, its 3,500 steps descending in perfect geometric symmetry to water at the bottom. It is, in the best possible sense, impossible. Arrive in Jaipur by late afternoon, check into your heritage haveli hotel, and spend the evening in Johari Bazaar — the Pink City's jewellery and textile district, where block-printed cotton, blue pottery, and semi-precious stones spill across every counter.",
+        overnight: "Heritage haveli hotel, Jaipur",
+        highlight: "Abhaneri stepwell — 1,200 years old, geometrically perfect, almost completely unknown",
+      },
+      {
+        day: 6,
+        title: "Jaipur full day — Amber Fort, Hawa Mahal & the Pink City",
+        description:
+          "Jaipur's greatest day. Morning at Amber Fort — a Rajput palace-fortress built into a ridge above Maota Lake, its interiors an extraordinary layering of mirror mosaic, painted plaster, and carved marble. Walk the ramparts, stand in the Sheesh Mahal (Hall of Mirrors), and understand why the Rajput kings were considered the finest fortress-builders in Asia. After lunch, the Hawa Mahal — the Palace of Winds, five stories of pink sandstone latticework built so that royal women could watch the street below without being seen. Jantar Mantar: Maharaja Jai Singh II's 18th-century astronomical observatory, a complex of giant geometric instruments that calculated celestial positions with remarkable accuracy. End with the City Palace — still partially inhabited by the royal family of Jaipur — and a final walk through the market as evening falls and the spice stalls close.",
+        overnight: "Heritage haveli hotel, Jaipur",
+        highlight: "Amber Fort at morning — the Rajput world at its most magnificent",
+      },
+      {
+        day: 7,
+        title: "Jaipur → Delhi — Departure",
+        description:
+          "A slow final morning in Jaipur — last chai on the haveli rooftop, one more walk through the market if the day allows. Train or private vehicle back to Delhi (approximately 5 hours by train, 6 hours by road). Our team arranges your onward connection — flight, hotel in Delhi, or onward train — and ensures you leave with exactly what you need to get where you're going. You arrive home carrying the Taj at 6 AM, the taste of jalebi, and the particular feeling of having understood something about this country that most people only touch the edges of.",
+        overnight: "—",
+        highlight: "Last morning in Jaipur — one more cup of chai before India lets you go",
+      },
+    ],
+    inclusions: [
+      "6 nights boutique accommodation: 2× boutique hotel Delhi + 2× boutique hotel Agra + 2× heritage haveli hotel Jaipur (twin-sharing)",
+      "Gatimaan Express train Delhi–Agra (2nd AC, or 1st AC on Premium tier)",
+      "Jaipur–Delhi train or private vehicle for return journey",
+      "Private AC vehicle for all sightseeing and city transfers throughout",
+      "Professional licensed guide in each city (Old Delhi food walk, monuments, Jaipur)",
+      "Taj Mahal guided visit (sunrise entry included)",
+      "Old Delhi evening food walk with tasting stops",
+      "Abhaneri stepwell stop on Agra–Jaipur drive",
+      "6 breakfasts + 5 dinners",
+      "All monument entry fees listed in the itinerary",
+      "All tolls, parking and driver allowances",
+      "24/7 on-trip support — GoTrustelle host available throughout",
+    ],
+    exclusions: [
+      "International or domestic flights to/from Delhi",
+      "Taj Mahal Photography Permit (optional, ₹200)",
+      "Lunches during the tour (budget ₹500–800 per meal)",
+      "Personal expenses: shopping, tips, beverages",
+      "Camel/elephant rides or optional activities at forts",
+      "Travel & medical insurance (strongly recommended)",
+      "5% GST on total package value",
+    ],
+    pricing: [
+      { label: "Twin sharing — Standard (from Delhi)", priceEUR: 1299, priceINR: 116900 },
+      { label: "Twin sharing — Premium (from Delhi)", priceEUR: 1699, priceINR: 152900 },
+      { label: "Single supplement", priceEUR: 299, priceINR: 26900 },
+    ],
+    featured: true,
+    departures: ["Customisable — contact us"],
+  },
+
+  // ─── VARANASI ────────────────────────────────────────────────────────
+  {
+    slug: "varanasi-ganges-soul",
+    title: "Varanasi — Soul of the Ganges",
+    subtitle: "The oldest living city on Earth · Ghats, fire, silence & the river that never stops",
+    heroImage: "/images/tours/varanasi/srivatsan-balaji-YpX8_xuV1zE-unsplash.jpg",
+    galleryImages: [
+      "/images/tours/varanasi/srivatsan-balaji-YpX8_xuV1zE-unsplash.jpg",
+      "/images/tours/varanasi/snowscat-JIjCxenDxPY-unsplash.jpg",
+      "/images/tours/varanasi/martijn-vonk-tX8Vr5cBv2Y-unsplash.jpg",
+      "/images/tours/varanasi/samyak-jain-2q4dRv1Z5Cw-unsplash.jpg",
+    ],
+    region: "Varanasi, Uttar Pradesh, North India",
+    durationNights: 4,
+    durationDays: 5,
+    route: "Delhi → Varanasi → Sarnath → Varanasi → Delhi",
+    months: ["October", "November", "December", "January", "February", "March"],
+    groupSize: "Max 8 travelers",
+    difficulty: "Easy",
+    summary:
+      "Varanasi is the oldest continuously inhabited city on Earth, and it is unlike anywhere else: a city built on the edge of death and rebirth, where the Ganges runs between the living and the divine. Five days on its ghats, in its lanes, and at the fire that has burned for 3,500 years.",
+    overview:
+      "Mark Twain called Varanasi 'older than history, older than tradition, older even than legend.' The Hindu scriptures say it was founded by Shiva himself. Pilgrims have come here to die since before Rome existed — because dying in Varanasi, on the banks of the Ganges, is believed to bring immediate moksha, liberation from the cycle of rebirth. It is one of the most extraordinary places on Earth, and also one of the most difficult to navigate alone: the lanes are a labyrinth, the rituals layered and complex, and the energy — part devotion, part commerce, part something older than both — can overwhelm a first-time visitor quickly. This 5-day GoTrustelle journey is built to give you the real Varanasi: the pre-dawn boat ride when the ghats are half-wrapped in mist and the city is still waking, the Ganga Aarti at Dashashwamedh with a close, calm position away from the crowd, the Kashi Vishwanath Temple corridor that pilgrims have walked for centuries, the silk weavers of the Muslim weavers' quarter who have been producing Banarasi silk since the Mughal era. And Sarnath — the deer park 13 km from Varanasi where the Buddha gave his first teaching after enlightenment, a place of profound stillness that stands in perfect counterpoint to Varanasi's intensity. Throughout, you are accompanied by a guide who was born in Varanasi and understands its rhythms better than any guidebook. Varanasi is not relaxing. It is not meant to be. But in the right hands, it is the most alive place in India.",
+    highlights: [
+      "Pre-dawn boat ride on the Ganges — the ghats emerging from mist, the city beginning to stir",
+      "Ganga Aarti at Dashashwamedh Ghat — fire, chanting, and the river in the dark",
+      "Kashi Vishwanath Temple — one of Hinduism's twelve Jyotirlinga shrines, rebuilt by Ahilyabai Holkar in 1780",
+      "Sarnath — where the Buddha first taught after enlightenment, 2,500 years ago, the Dhamek Stupa still standing",
+      "Manikarnika Ghat — the eternal cremation ghat where the fire has burned continuously for 3,500 years",
+      "Banarasi silk weaving — Muslim master weavers producing the most refined silk in India on handlooms",
+      "The inner lanes of Varanasi — a world of temples, chai wallahs, and cows that hasn't changed in centuries",
+      "Assi Ghat sunrise — the quieter southern end of the ghat circuit, where sadhus gather at first light",
+    ],
+    itinerary: [
+      {
+        day: 1,
+        title: "Delhi → Varanasi — Arrival & Ganga Aarti",
+        description:
+          "Fly or take the Vande Bharat Express from Delhi to Varanasi (flight: 1.5 hours; train: 8 hours overnight, arriving fresh in the morning). Transfer to your heritage hotel in the old city — chosen for its rooftop Ganges views and its proximity to the main ghats on foot. In the late afternoon, your guide walks you through the lanes to Dashashwamedh Ghat — the most important ghat in Varanasi — arriving before the crowd fills in. As darkness falls, seven priests perform the Ganga Aarti: a precisely choreographed fire ceremony with conch shells, incense, and brass lamps that has been performed at the same hour every evening for centuries. From your position — calm, close, not pushed — the ceremony is not a spectacle. It is a ritual of a city talking to its river.",
+        overnight: "Heritage hotel, Varanasi old city",
+        highlight: "Ganga Aarti at Dashashwamedh — the city's nightly conversation with the Ganges",
+      },
+      {
+        day: 2,
+        title: "Pre-dawn boat ride, Kashi Vishwanath & the silk weavers",
+        description:
+          "5:30 AM. You are on the Ganges before the sun. The boat moves slowly along the ghat line — 84 ghats in total, each with its own story — while the city wakes around you. Pilgrims descend stone steps in the half-dark, sadhus begin their morning rituals, smoke rises from Manikarnika. As dawn comes, the light turns the water silver, then copper, then gold. By 8 AM you are back at the ghats for chai and breakfast. Late morning: your guide takes you through the narrow lanes to the Kashi Vishwanath Temple — one of the twelve most sacred Shiva shrines in India, its gold spires visible above the rooftops. After lunch, visit the Muslim weavers' quarter: families who have produced Banarasi silk for four to six generations on handlooms, weaving zari (gold thread) patterns into fabric with a precision that makes automated looms look crude. Watch the process, understand the patterns, buy directly if you wish — no middleman, no pressure.",
+        overnight: "Heritage hotel, Varanasi old city",
+        highlight: "The pre-dawn boat ride — Varanasi at its most quietly extraordinary",
+      },
+      {
+        day: 3,
+        title: "Sarnath — Where the Buddha first spoke",
+        description:
+          "Drive 13 km north to Sarnath — the deer park where Siddhartha Gautama gave his first teaching after his enlightenment at Bodh Gaya, setting in motion a tradition that now holds over 500 million followers. The contrast with Varanasi is immediate and powerful: where Varanasi is noise and fire and the full insistence of Hindu life, Sarnath is cool, green, and extraordinarily still. The Dhamek Stupa — a 5th-century cylinder of brick and stone rising 43 metres — marks the exact spot of the first sermon. The Sarnath Museum holds some of the most important Buddhist sculpture in Asia, including the Lion Capital of Ashoka, which became the national emblem of India. Return to Varanasi in the afternoon. Evening walk to Assi Ghat — the southern end of the ghat circuit, quieter, where local yogis, students, and older Varanasi families sit at the water's edge.",
+        overnight: "Heritage hotel, Varanasi old city",
+        highlight: "Dhamek Stupa, Sarnath — standing where the Buddha stood 2,500 years ago",
+      },
+      {
+        day: 4,
+        title: "Varanasi at leisure — Lanes, temples & Manikarnika",
+        description:
+          "A day without a fixed schedule — which is exactly right for Varanasi. Morning is yours: a return to the ghats, a walk deep into the lanes where the temples number in the thousands and the streets are too narrow for anything wider than a bicycle. Your guide is available if you want company; solitude is equally possible. After lunch, a walk to Manikarnika Ghat — the great cremation ghat, where pyres have burned without interruption for 3,500 years. This is not a morbid visit. In Varanasi, death is not hidden — it is woven into life, treated not as an ending but as a transition, and approached with ritual attention and family presence. Your guide explains the tradition slowly and with care. The afternoon ends at a rooftop overlooking the river — one last long look at the ghat line before the sun drops.",
+        overnight: "Heritage hotel, Varanasi old city",
+        highlight: "Manikarnika Ghat — the eternal fire, understood rather than observed",
+      },
+      {
+        day: 5,
+        title: "Varanasi → Delhi — Final morning, departure",
+        description:
+          "A last early walk to the ghats before breakfast — the city at its most devotional, its most itself. Depending on your departure, your guide accompanies you to the airport or to Varanasi Junction station. The flight back to Delhi takes 1.5 hours. On the train it is 8–10 hours, with the plains of Uttar Pradesh rolling past. You leave Varanasi carrying something that is difficult to name — not peace exactly, not excitement, but a heightened awareness of what a city can hold when it has been inhabited without interruption for three millennia. Our team confirms your onward connections.",
+        overnight: "—",
+        highlight: "Last morning on the ghats — Varanasi at first light, one final time",
+      },
+    ],
+    inclusions: [
+      "4 nights heritage hotel in Varanasi old city (twin-sharing, rooftop Ganges view property)",
+      "Private AC vehicle for all transfers and Sarnath excursion",
+      "Expert local guide — born in Varanasi, 8+ years' experience — for all city walks and visits",
+      "Pre-dawn boat ride on the Ganges (Day 2 — private boat, 90 minutes)",
+      "VIP Ganga Aarti positioning at Dashashwamedh Ghat (Day 1)",
+      "Kashi Vishwanath Temple guided visit",
+      "Sarnath guided visit including Dhamek Stupa and Museum entry",
+      "Banarasi silk weaving workshop visit",
+      "4 breakfasts + 4 dinners (at heritage hotel or trusted local restaurants)",
+      "All monument and museum entry fees in the itinerary",
+      "All tolls, parking and driver allowances",
+      "24/7 on-trip support",
+    ],
+    exclusions: [
+      "Flights or trains Delhi ↔ Varanasi (we assist with booking on request — Vande Bharat Express recommended)",
+      "Lunches during the tour (budget ₹400–700 per meal)",
+      "Silk or handicraft purchases (we accompany, never pressure)",
+      "Personal expenses: tips, beverages, shopping",
+      "Photography permits at certain sites",
+      "Travel & medical insurance (recommended)",
+      "5% GST on total package value",
+    ],
+    pricing: [
+      { label: "Twin sharing — Heritage (from Varanasi)", priceEUR: 899, priceINR: 80900 },
+      { label: "Twin sharing — Premium (from Varanasi)", priceEUR: 1199, priceINR: 107900 },
+      { label: "Single supplement", priceEUR: 199, priceINR: 17900 },
+    ],
+    featured: true,
     departures: ["Customisable — contact us"],
   },
 ];
