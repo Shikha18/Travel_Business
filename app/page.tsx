@@ -309,18 +309,18 @@ export default function Home({
           <div className="grid gap-10 md:grid-cols-2 md:items-center md:gap-16">
             {/* Left — text */}
             <div>
-              <span className="chip">We see you ♡</span>
+              <span className="chip">{t("home.weSeeYou.chip")}</span>
               <h2 className="mt-4 font-display text-2xl font-semibold leading-snug md:text-3xl">
-                India can be{" "}
-                <em className="not-italic text-terracotta-500 italic">incredible.</em>
-                <br />But it can also be a lot.
+                {t("home.weSeeYou.titleLine1")}{" "}
+                <em className="not-italic text-terracotta-500 italic">{t("home.weSeeYou.titleEm")}</em>
+                <br />{t("home.weSeeYou.titleLine2")}
               </h2>
               <ul className="mt-6 space-y-3.5">
                 {[
-                  "The noise. The pace. The attention.",
-                  "The moments where you're not quite sure what's happening — or who to trust.",
-                  "We've seen it.",
-                  "That's exactly why we created this.",
+                  t("home.weSeeYou.point1"),
+                  t("home.weSeeYou.point2"),
+                  t("home.weSeeYou.point3"),
+                  t("home.weSeeYou.point4"),
                 ].map((line) => (
                   <li key={line} className="flex items-start gap-3 text-ink-700">
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="mt-0.5 h-5 w-5 shrink-0 text-terracotta-400">
@@ -331,8 +331,8 @@ export default function Home({
                 ))}
               </ul>
               <p className="mt-6 text-sm leading-relaxed text-ink-500">
-                We stand beside you — not just showing you places,<br />
-                but helping you feel at home in them.
+                {t("home.weSeeYou.footerLine1")}<br />
+                {t("home.weSeeYou.footerLine2")}
               </p>
             </div>
             {/* Right — image */}
@@ -396,21 +396,19 @@ export default function Home({
 
             {/* Right — content */}
             <div>
-              <span className="chip">Our promise ♡</span>
+              <span className="chip">{t("home.promise.chip")}</span>
               <h2 className="mt-4 font-display text-2xl font-semibold leading-snug md:text-3xl">
-                You&apos;re not just another booking.<br />
-                You&apos;re{" "}
+                {t("home.promise.titleLine1")}<br />
+                {t("home.promise.titleLine2")}{" "}
                 <span className="font-script text-3xl text-terracotta-500 md:text-4xl" style={{ fontStyle: "italic", letterSpacing: "-0.01em" }}>
-                  our guest.
+                  {t("home.promise.titleGuest")}
                 </span>
               </h2>
               <p className="mt-4 text-sm leading-relaxed text-ink-600">
-                We take care of the details, the logistics and the fine print — so
-                you can be fully present for the beauty, the people and the stories
-                that matter.
+                {t("home.promise.body")}
               </p>
               <ul className="mt-5 space-y-3">
-                {["No hidden costs", "Hand-picked local guides", "Responsible & thoughtful travel"].map((item) => (
+                {[t("home.promise.point1"), t("home.promise.point2"), t("home.promise.point3")].map((item) => (
                   <li key={item} className="flex items-center gap-3 text-sm font-medium text-ink-800">
                     <span className="flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-terracotta-100 text-[10px] text-terracotta-600">✓</span>
                     {item}
@@ -419,7 +417,7 @@ export default function Home({
               </ul>
               <div className="mt-7">
                 <LocaleLink href="/contact" className="btn-primary">
-                  Plan your trip with us →
+                  {t("home.promise.cta")}
                 </LocaleLink>
               </div>
             </div>

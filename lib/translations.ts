@@ -57,6 +57,30 @@ export const translations = {
     "home.featured.subtitle":
       "Three signature trips for summer 2026. Secure your seat with a 30% deposit — balance due on arrival.",
 
+    "home.weSeeYou.chip": "We see you ♡",
+    "home.weSeeYou.titleLine1": "India can be",
+    "home.weSeeYou.titleEm": "incredible.",
+    "home.weSeeYou.titleLine2": "But it can also be a lot.",
+    "home.weSeeYou.point1": "The noise. The pace. The attention.",
+    "home.weSeeYou.point2":
+      "The moments where you're not quite sure what's happening — or who to trust.",
+    "home.weSeeYou.point3": "We've seen it.",
+    "home.weSeeYou.point4": "That's exactly why we created this.",
+    "home.weSeeYou.footerLine1":
+      "We stand beside you — not just showing you places,",
+    "home.weSeeYou.footerLine2": "but helping you feel at home in them.",
+
+    "home.promise.chip": "Our promise ♡",
+    "home.promise.titleLine1": "You're not just another booking.",
+    "home.promise.titleLine2": "You're",
+    "home.promise.titleGuest": "our guest.",
+    "home.promise.body":
+      "We take care of the details, the logistics and the fine print — so you can be fully present for the beauty, the people and the stories that matter.",
+    "home.promise.point1": "No hidden costs",
+    "home.promise.point2": "Hand-picked local guides",
+    "home.promise.point3": "Responsible & thoughtful travel",
+    "home.promise.cta": "Plan your trip with us →",
+
     "home.trust.chip": "Why travelers choose us",
     "home.trust.title": "India is vast. We make it feel personal.",
     "home.trust.subtitle":
@@ -122,6 +146,7 @@ export const translations = {
     "tourDetail.pricingOptions": "Pricing options",
     "tourDetail.otherJourneys": "Other journeys you might love",
     "tourDetail.difficultyLabel": "Difficulty",
+    "tourDetail.travelTips": "Good to know — for European travelers",
     "tourDetail.waMessage":
       "Hi! I'm interested in the {tour} journey. Can you share more details?",
 
@@ -372,6 +397,30 @@ export const translations = {
     "home.featured.subtitle":
       "Drei signature Reisen für Sommer 2026. Sichern Sie sich Ihren Platz mit 30 % Anzahlung — Restbetrag bei Ankunft.",
 
+    "home.weSeeYou.chip": "Wir sehen Sie ♡",
+    "home.weSeeYou.titleLine1": "Indien kann",
+    "home.weSeeYou.titleEm": "unglaublich sein.",
+    "home.weSeeYou.titleLine2": "Aber es kann auch viel sein.",
+    "home.weSeeYou.point1": "Der Lärm. Das Tempo. Die Aufmerksamkeit.",
+    "home.weSeeYou.point2":
+      "Die Momente, in denen Sie nicht ganz sicher sind, was passiert — oder wem Sie vertrauen können.",
+    "home.weSeeYou.point3": "Wir haben es erlebt.",
+    "home.weSeeYou.point4": "Genau deshalb haben wir das geschaffen.",
+    "home.weSeeYou.footerLine1":
+      "Wir stehen Ihnen zur Seite — wir zeigen Ihnen nicht nur Orte,",
+    "home.weSeeYou.footerLine2": "sondern helfen Ihnen, sich dort wie zuhause zu fühlen.",
+
+    "home.promise.chip": "Unser Versprechen ♡",
+    "home.promise.titleLine1": "Sie sind nicht einfach nur eine Buchung.",
+    "home.promise.titleLine2": "Sie sind",
+    "home.promise.titleGuest": "unser Gast.",
+    "home.promise.body":
+      "Wir kümmern uns um die Details, die Logistik und das Kleingedruckte — damit Sie ganz präsent sein können für die Schönheit, die Menschen und die Geschichten, die zählen.",
+    "home.promise.point1": "Keine versteckten Kosten",
+    "home.promise.point2": "Handverlesene lokale Guides",
+    "home.promise.point3": "Verantwortungsbewusstes & achtsames Reisen",
+    "home.promise.cta": "Planen Sie Ihre Reise mit uns →",
+
     "home.trust.chip": "Warum Reisende uns wählen",
     "home.trust.title": "Indien ist riesig. Wir machen es persönlich.",
     "home.trust.subtitle":
@@ -437,6 +486,7 @@ export const translations = {
     "tourDetail.pricingOptions": "Preisoptionen",
     "tourDetail.otherJourneys": "Weitere Reisen, die Sie lieben könnten",
     "tourDetail.difficultyLabel": "Schwierigkeit",
+    "tourDetail.travelTips": "Gut zu wissen — für europäische Reisende",
     "tourDetail.waMessage":
       "Hallo! Ich interessiere mich für die Reise {tour}. Können Sie mir mehr Details zusenden?",
 
@@ -686,6 +736,30 @@ export const translations = {
     "home.featured.subtitle":
       "Trois voyages phares pour l'été 2026. Réservez votre place avec 30 % d'acompte — solde à l'arrivée.",
 
+    "home.weSeeYou.chip": "Nous vous comprenons ♡",
+    "home.weSeeYou.titleLine1": "L'Inde peut être",
+    "home.weSeeYou.titleEm": "incroyable.",
+    "home.weSeeYou.titleLine2": "Mais cela peut aussi être beaucoup.",
+    "home.weSeeYou.point1": "Le bruit. Le rythme. L'attention.",
+    "home.weSeeYou.point2":
+      "Les moments où vous ne savez pas vraiment ce qui se passe — ni à qui faire confiance.",
+    "home.weSeeYou.point3": "Nous l'avons vécu.",
+    "home.weSeeYou.point4": "C'est exactement pour cela que nous avons créé ceci.",
+    "home.weSeeYou.footerLine1":
+      "Nous sommes à vos côtés — nous ne vous montrons pas seulement des lieux,",
+    "home.weSeeYou.footerLine2": "nous vous aidons à vous y sentir chez vous.",
+
+    "home.promise.chip": "Notre promesse ♡",
+    "home.promise.titleLine1": "Vous n'êtes pas juste une réservation de plus.",
+    "home.promise.titleLine2": "Vous êtes",
+    "home.promise.titleGuest": "notre invité.",
+    "home.promise.body":
+      "Nous nous occupons des détails, de la logistique et des petites lignes — pour que vous puissiez profiter pleinement de la beauté, des gens et des histoires qui comptent.",
+    "home.promise.point1": "Aucun coût caché",
+    "home.promise.point2": "Guides locaux soigneusement sélectionnés",
+    "home.promise.point3": "Un voyage responsable et réfléchi",
+    "home.promise.cta": "Planifiez votre voyage avec nous →",
+
     "home.trust.chip": "Pourquoi les voyageurs nous choisissent",
     "home.trust.title": "L'Inde est vaste. Nous la rendons personnelle.",
     "home.trust.subtitle":
@@ -751,6 +825,7 @@ export const translations = {
     "tourDetail.pricingOptions": "Options tarifaires",
     "tourDetail.otherJourneys": "D'autres voyages qui pourraient vous plaire",
     "tourDetail.difficultyLabel": "Difficulté",
+    "tourDetail.travelTips": "Bon à savoir — pour les voyageurs européens",
     "tourDetail.waMessage":
       "Bonjour ! Je suis intéressé(e) par le voyage {tour}. Pouvez-vous me donner plus de détails ?",
 
@@ -1003,6 +1078,30 @@ export const translations = {
     "home.featured.subtitle":
       "Tres viajes especiales para el verano de 2026. Asegura tu plaza con un 30 % de depósito — saldo al llegar.",
 
+    "home.weSeeYou.chip": "Te entendemos ♡",
+    "home.weSeeYou.titleLine1": "La India puede ser",
+    "home.weSeeYou.titleEm": "increíble.",
+    "home.weSeeYou.titleLine2": "Pero también puede ser mucho.",
+    "home.weSeeYou.point1": "El ruido. El ritmo. La atención.",
+    "home.weSeeYou.point2":
+      "Los momentos en los que no estás del todo seguro de lo que pasa — o en quién confiar.",
+    "home.weSeeYou.point3": "Lo hemos vivido.",
+    "home.weSeeYou.point4": "Por eso creamos esto.",
+    "home.weSeeYou.footerLine1":
+      "Estamos a tu lado — no solo te mostramos lugares,",
+    "home.weSeeYou.footerLine2": "te ayudamos a sentirte como en casa en ellos.",
+
+    "home.promise.chip": "Nuestra promesa ♡",
+    "home.promise.titleLine1": "No eres solo otra reserva más.",
+    "home.promise.titleLine2": "Eres",
+    "home.promise.titleGuest": "nuestro invitado.",
+    "home.promise.body":
+      "Nos encargamos de los detalles, la logística y la letra pequeña — para que puedas estar plenamente presente en la belleza, la gente y las historias que importan.",
+    "home.promise.point1": "Sin costos ocultos",
+    "home.promise.point2": "Guías locales cuidadosamente seleccionados",
+    "home.promise.point3": "Viaje responsable y consciente",
+    "home.promise.cta": "Planifica tu viaje con nosotros →",
+
     "home.trust.chip": "Por qué los viajeros nos eligen",
     "home.trust.title": "La India es inmensa. Nosotros la hacemos personal.",
     "home.trust.subtitle":
@@ -1068,6 +1167,7 @@ export const translations = {
     "tourDetail.pricingOptions": "Opciones de precio",
     "tourDetail.otherJourneys": "Otros viajes que podrían gustarte",
     "tourDetail.difficultyLabel": "Dificultad",
+    "tourDetail.travelTips": "Lo que debes saber — para viajeros europeos",
     "tourDetail.waMessage":
       "¡Hola! Me interesa el viaje {tour}. ¿Puedes compartir más detalles?",
 
@@ -1320,6 +1420,30 @@ export const translations = {
     "home.featured.subtitle":
       "Tre viaggi speciali per l'estate 2026. Assicura il tuo posto con un deposito del 30% — saldo all'arrivo.",
 
+    "home.weSeeYou.chip": "Ti capiamo ♡",
+    "home.weSeeYou.titleLine1": "L'India può essere",
+    "home.weSeeYou.titleEm": "incredibile.",
+    "home.weSeeYou.titleLine2": "Ma può anche essere tanto.",
+    "home.weSeeYou.point1": "Il rumore. Il ritmo. L'attenzione.",
+    "home.weSeeYou.point2":
+      "I momenti in cui non sei del tutto sicuro di cosa stia succedendo — o di chi fidarti.",
+    "home.weSeeYou.point3": "Lo abbiamo vissuto.",
+    "home.weSeeYou.point4": "Per questo abbiamo creato tutto ciò.",
+    "home.weSeeYou.footerLine1":
+      "Siamo al tuo fianco — non ti mostriamo solo i luoghi,",
+    "home.weSeeYou.footerLine2": "ti aiutiamo a sentirti a casa in essi.",
+
+    "home.promise.chip": "La nostra promessa ♡",
+    "home.promise.titleLine1": "Non sei solo un'altra prenotazione.",
+    "home.promise.titleLine2": "Sei",
+    "home.promise.titleGuest": "nostro ospite.",
+    "home.promise.body":
+      "Ci occupiamo dei dettagli, della logistica e delle clausole — così puoi essere completamente presente per la bellezza, le persone e le storie che contano.",
+    "home.promise.point1": "Nessun costo nascosto",
+    "home.promise.point2": "Guide locali selezionate con cura",
+    "home.promise.point3": "Viaggio responsabile e consapevole",
+    "home.promise.cta": "Pianifica il tuo viaggio con noi →",
+
     "home.trust.chip": "Perché i viaggiatori scelgono noi",
     "home.trust.title": "L'India è vasta. Noi la rendiamo personale.",
     "home.trust.subtitle":
@@ -1385,6 +1509,7 @@ export const translations = {
     "tourDetail.pricingOptions": "Opzioni di prezzo",
     "tourDetail.otherJourneys": "Altri viaggi che potrebbero piacerti",
     "tourDetail.difficultyLabel": "Difficoltà",
+    "tourDetail.travelTips": "Da sapere — per i viaggiatori europei",
     "tourDetail.waMessage":
       "Ciao! Sono interessato/a al viaggio {tour}. Puoi condividere più dettagli?",
 
@@ -1637,6 +1762,30 @@ export const translations = {
     "home.featured.subtitle":
       "Três viagens especiais para o verão de 2026. Garanta o seu lugar com um depósito de 30% — saldo pago à chegada.",
 
+    "home.weSeeYou.chip": "Nós entendemos você ♡",
+    "home.weSeeYou.titleLine1": "A Índia pode ser",
+    "home.weSeeYou.titleEm": "incrível.",
+    "home.weSeeYou.titleLine2": "Mas também pode ser muito.",
+    "home.weSeeYou.point1": "O ruído. O ritmo. A atenção.",
+    "home.weSeeYou.point2":
+      "Os momentos em que você não tem bem certeza do que está acontecendo — ou em quem confiar.",
+    "home.weSeeYou.point3": "Já vivemos isso.",
+    "home.weSeeYou.point4": "É exatamente por isso que criámos isto.",
+    "home.weSeeYou.footerLine1":
+      "Estamos ao seu lado — não apenas mostrando lugares,",
+    "home.weSeeYou.footerLine2": "mas ajudando você a se sentir em casa neles.",
+
+    "home.promise.chip": "Nossa promessa ♡",
+    "home.promise.titleLine1": "Você não é apenas mais uma reserva.",
+    "home.promise.titleLine2": "Você é",
+    "home.promise.titleGuest": "nosso convidado.",
+    "home.promise.body":
+      "Cuidamos dos detalhes, da logística e da letra pequena — para que possa estar totalmente presente para a beleza, as pessoas e as histórias que importam.",
+    "home.promise.point1": "Sem custos ocultos",
+    "home.promise.point2": "Guias locais cuidadosamente escolhidos",
+    "home.promise.point3": "Viagem responsável e consciente",
+    "home.promise.cta": "Planeie a sua viagem com a gente →",
+
     "home.trust.chip": "Por que os viajantes nos escolhem",
     "home.trust.title": "A Índia é vasta. Nós tornamo-la pessoal.",
     "home.trust.subtitle":
@@ -1702,6 +1851,7 @@ export const translations = {
     "tourDetail.pricingOptions": "Opções de preço",
     "tourDetail.otherJourneys": "Outras viagens que pode adorar",
     "tourDetail.difficultyLabel": "Dificuldade",
+    "tourDetail.travelTips": "Bom saber — para viajantes europeus",
     "tourDetail.waMessage":
       "Olá! Tenho interesse na viagem {tour}. Pode partilhar mais detalhes?",
 
@@ -1954,6 +2104,30 @@ export const translations = {
     "home.featured.subtitle":
       "Drie handtekeningreizen voor zomer 2026. Reserveer je plek met 30% aanbetaling — restbedrag verschuldigd bij aankomst.",
 
+    "home.weSeeYou.chip": "Wij begrijpen je ♡",
+    "home.weSeeYou.titleLine1": "India kan",
+    "home.weSeeYou.titleEm": "ongelooflijk zijn.",
+    "home.weSeeYou.titleLine2": "Maar het kan ook veel zijn.",
+    "home.weSeeYou.point1": "Het lawaai. Het tempo. De aandacht.",
+    "home.weSeeYou.point2":
+      "De momenten waarop je niet helemaal zeker weet wat er gebeurt — of wie je kunt vertrouwen.",
+    "home.weSeeYou.point3": "Wij hebben het gezien.",
+    "home.weSeeYou.point4": "Daarom hebben we dit precies zo gemaakt.",
+    "home.weSeeYou.footerLine1":
+      "Wij staan naast je — we laten je niet alleen plekken zien,",
+    "home.weSeeYou.footerLine2": "we helpen je je er thuis te voelen.",
+
+    "home.promise.chip": "Onze belofte ♡",
+    "home.promise.titleLine1": "Je bent niet zomaar nog een boeking.",
+    "home.promise.titleLine2": "Je bent",
+    "home.promise.titleGuest": "onze gast.",
+    "home.promise.body":
+      "Wij regelen de details, de logistiek en de kleine lettertjes — zodat jij volledig aanwezig kunt zijn voor de schoonheid, de mensen en de verhalen die ertoe doen.",
+    "home.promise.point1": "Geen verborgen kosten",
+    "home.promise.point2": "Zorgvuldig gekozen lokale gidsen",
+    "home.promise.point3": "Verantwoord en bewust reizen",
+    "home.promise.cta": "Plan je reis met ons →",
+
     "home.trust.chip": "Waarom reizigers voor ons kiezen",
     "home.trust.title": "India is enorm. Wij maken het persoonlijk.",
     "home.trust.subtitle":
@@ -2019,6 +2193,7 @@ export const translations = {
     "tourDetail.pricingOptions": "Prijsopties",
     "tourDetail.otherJourneys": "Andere reizen die je misschien leuk vindt",
     "tourDetail.difficultyLabel": "Moeilijkheidsgraad",
+    "tourDetail.travelTips": "Goed om te weten — voor Europese reizigers",
     "tourDetail.waMessage":
       "Hoi! Ik ben geïnteresseerd in de {tour} reis. Kun je meer details delen?",
 

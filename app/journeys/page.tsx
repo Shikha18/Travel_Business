@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import JourneyCard from "@/components/JourneyCard";
+import CustomJourneyPanel from "@/components/CustomJourneyPanel";
 import { getLocalizedJourneys } from "@/lib/journeys";
 import { siteConfig } from "@/lib/site-config";
 import { getLocale, getTranslator } from "@/lib/i18n";
@@ -59,6 +60,8 @@ export default function JourneysPage({
       </section>
 
       <section className="container-wide py-8 md:py-12">
+        <CustomJourneyPanel />
+
         <div className="grid gap-7 md:grid-cols-2 lg:grid-cols-3">
           {journeys.map((journey) => (
             <JourneyCard key={journey.slug} journey={journey} />

@@ -47,7 +47,22 @@ export default function JourneyCard({ journey, defaultHover = false }: { journey
           {journey.summary}
         </p>
 
-        <div className="mt-5 flex items-center justify-end border-t border-ink-900/5 pt-4">
+        <div className="mt-5 flex items-center justify-between border-t border-ink-900/5 pt-4">
+          {(() => {
+            const eurPrices = journey.pricing.map((p) => p.priceEUR).filter((p) => p > 0);
+            const minEUR = eurPrices.length > 0 ? Math.min(...eurPrices) : 0;
+            const minINR = Math.min(...journey.pricing.map((p) => p.priceINR).filter((p) => p > 0));
+            return (
+              <div className="text-sm">
+                <span className="text-xs text-ink-500">from </span>
+                {minEUR > 0 ? (
+                  <span className="font-semibold text-ink-900">€{minEUR.toLocaleString()} pp</span>
+                ) : (
+                  <span className="font-semibold text-ink-900">₹{minINR.toLocaleString()} pp</span>
+                )}
+              </div>
+            );
+          })()}
           <span className={`rounded-full border px-4 py-2 text-xs font-semibold transition group-hover:border-saffron-500 group-hover:bg-saffron-500 group-hover:text-white ${
             defaultHover
               ? "border-saffron-500 bg-saffron-500 text-white"

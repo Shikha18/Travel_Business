@@ -236,6 +236,23 @@ export default function JourneyDetail({
             </ol>
           </div>
 
+          {/* Travel tips for European travelers */}
+          {journey.travelTips.length > 0 && (
+            <div className="rounded-2xl border border-saffron-200 bg-saffron-50/50 p-6">
+              <h3 className="font-display text-xl font-semibold text-saffron-700">
+                {t("tourDetail.travelTips")}
+              </h3>
+              <ul className="mt-4 space-y-2.5">
+                {journey.travelTips.map((tip, i) => (
+                  <li key={i} className="flex gap-2 text-sm text-ink-800">
+                    <span className="text-saffron-600">•</span>
+                    <span>{tip}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
+
           {/* Inclusions & Exclusions */}
           <div className="grid gap-6 md:grid-cols-2">
             <div className="rounded-2xl border border-teal-200 bg-teal-50/50 p-6">
@@ -271,7 +288,25 @@ export default function JourneyDetail({
         <aside className="md:col-span-1">
           <div className="sticky top-24 space-y-5">
             <div className="card p-6">
-              <div className="rounded-xl bg-cream-100 p-4">
+              {/* Pricing */}
+              <div className="rounded-xl bg-saffron-50 p-4 border border-saffron-100">
+                <div className="text-xs font-semibold uppercase tracking-wider text-saffron-700">
+                  {t("tourDetail.pricingOptions")}
+                </div>
+                <ul className="mt-3 space-y-2.5">
+                  {journey.pricing.map((tier, i) => (
+                    <li key={i} className="flex items-center justify-between gap-3">
+                      <span className="text-xs text-ink-600 leading-tight">{tier.label}</span>
+                      <span className="shrink-0 font-semibold text-ink-900 text-sm">
+                        {tier.priceEUR > 0 ? `€${tier.priceEUR.toLocaleString()}` : `₹${tier.priceINR.toLocaleString()}`}
+                      </span>
+                    </li>
+                  ))}
+                </ul>
+                <p className="mt-3 text-[11px] text-ink-500">Per person · prices in EUR</p>
+              </div>
+
+              <div className="mt-4 rounded-xl bg-cream-100 p-4">
                 <div className="text-xs font-semibold uppercase tracking-wider text-ink-600">
                   {t("tourDetail.departures")}
                 </div>
