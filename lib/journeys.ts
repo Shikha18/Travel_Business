@@ -48,33 +48,35 @@ export const journeys: Journey[] = [
   // ─── GOLDEN TRIANGLE ─────────────────────────────────────────────────
   {
     slug: "golden-triangle-classic",
-    title: "Golden Triangle Classic",
-    subtitle: "Delhi · Agra · Jaipur — India's iconic circuit, done properly",
+    title: "Golden Triangle & Ranthambore",
+    subtitle: "Delhi · Agra · Jaipur · Ranthambore — India's iconic circuit, now with tigers",
     heroImage: "/images/tours/golden-triangle/taj-mahal-1.jpg",
     galleryImages: [
       "/images/tours/golden-triangle/taj-mahal-1.jpg",
       "/images/tours/golden-triangle/red-fort-delhi.jpg",
       "/images/tours/golden-triangle/hawa-mahal-jaipur.jpg",
+      "/images/tours/golden-triangle/ranthambore-tiger-safari.jpg",
     ],
-    region: "Delhi, Agra & Jaipur, North India",
-    durationNights: 6,
-    durationDays: 7,
-    route: "Delhi → Agra → Fatehpur Sikri → Jaipur → Delhi",
+    region: "Delhi, Agra, Jaipur & Ranthambore, North India",
+    durationNights: 8,
+    durationDays: 9,
+    route: "Delhi → Agra → Fatehpur Sikri → Jaipur → Ranthambore → Delhi",
     months: ["October", "November", "December", "January", "February", "March"],
     groupSize: "Max 10 travelers",
     difficulty: "Easy",
     summary:
-      "The Taj Mahal at sunrise, an Old Delhi food walk that rewires your senses, a Rajasthani palace still inhabited by royals, and a market in Jaipur's Pink City where the colors don't stop. Seven days of India's greatest hits — unhurried, safe, and seriously good.",
+      "The Taj Mahal at sunrise, an Old Delhi food walk that rewires your senses, a Rajasthani palace still inhabited by royals, a market in Jaipur's Pink City where the colors don't stop — and two jeep safaris into the tiger heartland of Ranthambore. Nine days of India's greatest hits plus its wildest chapter, unhurried, safe, and seriously good.",
     overview:
-      "The Golden Triangle is called that for good reason: Delhi, Agra, and Jaipur form a rough triangle across northwestern India, and between them they hold more UNESCO World Heritage Sites, more Mughal architecture, more royal forts and bazaars than almost any equivalent distance in the world. But the Golden Triangle done badly — one monument after another in a bus, bad food, too many salespeople — leaves travelers exhausted. The Golden Triangle done well leaves them wanting to move here. This 7-day GoTrustelle circuit is built around the second kind of experience. We move by train between cities (fast, comfortable, and the most authentically Indian way to travel). We eat street food in Old Delhi's lanes with a guide who knows which stall has cooked for the same family for four generations. We reach the Taj Mahal at 6 AM, before the tour groups, when the light is rose-gold and the marble seems to glow from within. We stay in carefully chosen boutique hotels in each city — places with courtyard gardens and filtered water and beds that are actually good. And throughout, Shikha or a GoTrustelle host is available — not standing in front of you with a flag, but there, in the background, making sure everything works.",
+      "The Golden Triangle is called that for good reason: Delhi, Agra, and Jaipur form a rough triangle across northwestern India, and between them they hold more UNESCO World Heritage Sites, more Mughal architecture, more royal forts and bazaars than almost any equivalent distance in the world. This 9-day GoTrustelle circuit extends the classic route with two days at Ranthambore National Park — one of India's premier tiger reserves, where Bengal tigers move openly through dry deciduous forest and the ruins of a 10th-century fort rise from the hilltop above the lakes. We move by train between Delhi, Agra and Jaipur (fast, comfortable, and the most authentically Indian way to travel), then drive south to Ranthambore for two open-jeep safaris with a naturalist guide. We eat street food in Old Delhi's lanes with a guide who knows which stall has cooked for the same family for four generations. We reach the Taj Mahal at 6 AM, before the tour groups, when the light is rose-gold and the marble seems to glow from within. We stay in carefully chosen boutique hotels and a safari lodge — places with courtyard gardens, filtered water and beds that are actually good. And throughout, Shikha or a GoTrustelle host is available — not standing in front of you with a flag, but there, in the background, making sure everything works.",
     highlights: [
       "Taj Mahal at sunrise — the most beautiful building on Earth, at the moment it belongs only to you",
+      "Two open-jeep safaris in Ranthambore National Park — one of India's best chances to see a wild Bengal tiger",
+      "Ranthambore Fort — a 10th-century hilltop fortress overlooking the reserve's lakes and forest",
       "Old Delhi food walk — six hours of jalebi, chaat, kebabs, and the lanes that haven't changed in 300 years",
       "Amber Fort, Jaipur — a Rajput fortress that rises from a ridge above a lake, still breathtaking at hour three",
       "Humayun's Tomb, Delhi — the prototype for the Taj Mahal, and somehow less crowded and more moving",
       "Fatehpur Sikri — a Mughal ghost city abandoned 400 years ago, perfectly preserved in red sandstone",
       "Hawa Mahal & City Palace — the Pink City's two great architectural icons, within walking distance of each other",
-      "Jantar Mantar, Jaipur — an 18th-century astronomical observatory that still works, and still astonishes",
       "Train travel between cities — the most real, most Indian part of the journey",
     ],
     itinerary: [
@@ -128,24 +130,41 @@ export const journeys: Journey[] = [
       },
       {
         day: 7,
-        title: "Jaipur → Delhi — Departure",
+        title: "Jaipur → Ranthambore — Into tiger country",
         description:
-          "A slow final morning in Jaipur — last chai on the haveli rooftop, one more walk through the market if the day allows. Train or private vehicle back to Delhi (approximately 5 hours by train, 6 hours by road). Our team arranges your onward connection — flight, hotel in Delhi, or onward train — and ensures you leave with exactly what you need to get where you're going. You arrive home carrying the Taj at 6 AM, the taste of jalebi, and the particular feeling of having understood something about this country that most people only touch the edges of.",
+          "Morning drive from Jaipur to Sawai Madhopur, gateway to Ranthambore National Park (approximately 3.5–4 hours, or by train on request). Check into your safari lodge on the edge of the park. In the late afternoon, your first open-jeep safari into the reserve — dry deciduous forest, ancient banyan trees, crocodile-filled lakes, and the chance of a Bengal tiger moving through the undergrowth in the day's last light.",
+        overnight: "Safari lodge, Ranthambore",
+        highlight: "First safari at dusk — the forest at its most alive",
+      },
+      {
+        day: 8,
+        title: "Ranthambore — Full day, two safaris & the hilltop fort",
+        description:
+          "An early-morning safari when the park is coolest and wildlife most active: sloth bears, marsh crocodiles, spotted deer, langurs, and — with patience and a good naturalist guide — Ranthambore's famous tigers. Between safaris, visit Ranthambore Fort, a 10th-century hilltop fortress rising above the reserve's lakes, with sweeping views across the forest canopy. A second jeep safari in the late afternoon closes out a full day with the park.",
+        overnight: "Safari lodge, Ranthambore",
+        highlight: "Two safaris in one day — Ranthambore's best chance at a wild tiger sighting",
+      },
+      {
+        day: 9,
+        title: "Ranthambore → Delhi — Departure",
+        description:
+          "A slow final morning at the lodge before the drive or train back to Delhi (approximately 6 hours by road, or via Sawai Madhopur–Delhi train). Our team arranges your onward connection — flight, hotel in Delhi, or onward train — and ensures you leave with exactly what you need to get where you're going. You arrive home carrying the Taj at 6 AM, the taste of jalebi, and — if the forest was generous — the memory of a tiger in the wild.",
         overnight: "—",
-        highlight: "Last morning in Jaipur — one more cup of chai before India lets you go",
+        highlight: "Last morning at the lodge — one more look toward the forest before India lets you go",
       },
     ],
     inclusions: [
-      "6 nights boutique accommodation: 2× boutique hotel Delhi + 2× boutique hotel Agra + 2× heritage haveli hotel Jaipur (twin-sharing)",
+      "8 nights accommodation: 2× boutique hotel Delhi + 2× boutique hotel Agra + 2× heritage haveli hotel Jaipur + 2× safari lodge Ranthambore (twin-sharing)",
       "Gatimaan Express train Delhi–Agra (2nd AC, or 1st AC on Premium tier)",
-      "Jaipur–Delhi train or private vehicle for return journey",
-      "Private AC vehicle for all sightseeing and city transfers throughout",
+      "Private AC vehicle for all sightseeing, city transfers and the Jaipur–Ranthambore–Delhi legs",
       "Professional licensed guide in each city (Old Delhi food walk, monuments, Jaipur)",
       "Taj Mahal guided visit (sunrise entry included)",
       "Old Delhi evening food walk with tasting stops",
       "Abhaneri stepwell stop on Agra–Jaipur drive",
-      "6 breakfasts + 5 dinners",
-      "All monument entry fees listed in the itinerary",
+      "2 open-jeep safaris in Ranthambore National Park with naturalist guide",
+      "Ranthambore Fort visit",
+      "8 breakfasts + 7 dinners",
+      "All monument, fort and park entry fees listed in the itinerary",
       "All tolls, parking and driver allowances",
       "24/7 on-trip support — GoTrustelle host available throughout",
     ],
@@ -155,6 +174,7 @@ export const journeys: Journey[] = [
       "Lunches during the tour (budget ₹500–800 per meal)",
       "Personal expenses: shopping, tips, beverages",
       "Camel/elephant rides or optional activities at forts",
+      "Additional Ranthambore safaris beyond the 2 included",
       "Travel & medical insurance (strongly recommended)",
       "5% GST on total package value",
     ],
@@ -162,14 +182,15 @@ export const journeys: Journey[] = [
       "Most EU/EEA, UK, Swiss and Norwegian passport holders are eligible for the Indian e-Visa — apply online at least 4–7 days before travel",
       "Plug types C, D & M, 230V — bring a universal travel adapter (most hotels can also lend one)",
       "Vegetarian, vegan and Jain meal options are available everywhere on this route — just tell us your preferences in advance",
-      "Winter mornings (Dec–Feb) can be foggy and cool (5–10°C) for the sunrise Taj visit — pack a warm layer",
+      "Winter mornings (Dec–Feb) can be foggy and cool (5–10°C) for the sunrise Taj visit and the early Ranthambore safari — pack a warm layer plus neutral-coloured clothing for the jeep",
+      "Ranthambore National Park is closed during the monsoon (Jul–Sep), so this route only runs Oct–Mar",
     ],
     pricing: [
-      { label: "Twin sharing — Standard (from Delhi)", priceEUR: 1299, priceINR: 116900 },
-      { label: "Twin sharing — Premium (from Delhi)", priceEUR: 1699, priceINR: 152900 },
+      { label: "Twin sharing — Standard (from Delhi)", priceEUR: 1599, priceINR: 143900 },
+      { label: "Twin sharing — Premium (from Delhi)", priceEUR: 1999, priceINR: 179900 },
     ],
     featured: true,
-    departures: ["Customisable — contact us"],
+    departures: ["November 14 – 22, 2026 (fixed group departure)", "Customisable — contact us"],
   },
 
   // ─── RAJASTHAN ROYAL DESERT CIRCUIT ──────────────────────────────────
@@ -319,7 +340,7 @@ export const journeys: Journey[] = [
       { label: "Twin sharing — Premium (from Jaipur)", priceEUR: 1999, priceINR: 179900 },
     ],
     featured: true,
-    departures: ["Customisable — contact us"],
+    departures: ["October 10 – 18, 2026 (fixed group departure)", "Customisable — contact us"],
   },
 
   // ─── VARANASI ────────────────────────────────────────────────────────
@@ -531,7 +552,7 @@ export const journeys: Journey[] = [
       { label: "Royal (6 pax)", priceEUR: 1899, priceINR: 170900 },
     ],
     featured: true,
-    departures: ["Customisable — contact us"],
+    departures: ["September 12 – 19, 2026 (fixed group departure)", "Customisable — contact us"],
   },
 
   {
@@ -991,7 +1012,7 @@ export const journeys: Journey[] = [
       { label: "Double occupancy (from Delhi)", priceEUR: 1799, priceINR: 161900 },
     ],
     featured: true,
-    departures: ["Customisable — contact us"],
+    departures: ["July 25 – August 2, 2026 (fixed group departure)", "Customisable — contact us"],
   },
 
   {
@@ -1427,6 +1448,411 @@ export const journeys: Journey[] = [
     ],
     featured: true,
     departures: ["Customisable — contact us"],
+  },
+
+  // ─── VALLEY OF FLOWERS ───────────────────────────────────────────────
+  {
+    slug: "valley-of-flowers-trek",
+    title: "Valley of Flowers Trek",
+    subtitle: "A UNESCO meadow in full bloom & the glacial lake of Hemkund Sahib",
+    heroImage: "/images/tours/valley-of-flowers/flowersValley1.jpg",
+    galleryImages: [
+      "/images/tours/valley-of-flowers/flowersValley1.jpg",
+      "/images/tours/valley-of-flowers/flowersValley2.jpg",
+      "/images/tours/valley-of-flowers/flowersValley3.jpg",
+      "/images/tours/valley-of-flowers/flowersValley4.jpg",
+    ],
+    region: "Chamoli, Uttarakhand, North India",
+    durationNights: 6,
+    durationDays: 7,
+    route: "Delhi → Haridwar → Govindghat → Ghangaria → Valley of Flowers → Hemkund Sahib → Ghangaria → Govindghat → Delhi",
+    months: ["July", "August", "September"],
+    groupSize: "Max 10 travelers",
+    difficulty: "Moderate",
+    summary:
+      "A high-Himalayan meadow that explodes into hundreds of wildflower species every monsoon, reached on foot through pine and birch forest, with a glacial Sikh shrine at 4,329 m as the trek's spiritual high point. Seven days for a UNESCO World Heritage Site almost no one outside India has heard of.",
+    overview:
+      "The Valley of Flowers is a 87.5 km² alpine valley in the Western Himalaya that the Forest Research Institute only properly documented in the 1930s, and UNESCO inscribed as a World Heritage Site in 2005 — yet it remains one of India's least-visited natural wonders, open to trekkers for barely four months a year. From late July through August, the valley floor turns into a continuous carpet of wildflowers: blue poppies, cobra lilies, brahma kamal, and over 300 other species, set against glaciers and 6,000 m peaks. This 7-day journey takes you from Delhi up through Haridwar and Joshimath to Govindghat, then on foot — there is no other way in — through Ghangaria to the valley itself, with a side trek to Hemkund Sahib, a glacial lake at 4,329 m ringed by seven mountain peaks and one of Sikhism's most important high-altitude shrines. We move at a comfortable pace, acclimatize properly, and stay in clean, simple guesthouses throughout. This is a trek for travelers who want real wilderness without needing technical climbing experience.",
+    highlights: [
+      "The Valley of Flowers in full monsoon bloom — hundreds of wildflower species across a glacial valley floor",
+      "Hemkund Sahib (4,329 m) — a glacial lake and Sikh shrine ringed by seven Himalayan peaks",
+      "The trek to Ghangaria — pine and birch forest, waterfalls, and the Pushpawati River alongside the trail",
+      "Govindghat & the Alaknanda-Bhyundar confluence — the gateway to the valley",
+      "A UNESCO World Heritage Site most travelers to India never even hear about",
+    ],
+    itinerary: [
+      {
+        day: 1,
+        title: "Delhi → Haridwar → Joshimath (overnight drive)",
+        description:
+          "Early morning departure from Delhi by private vehicle to Haridwar, then onward through Rudraprayag along the Alaknanda River to Joshimath (approximately 10–11 hours total, with stops). The drive itself is part of the experience — the plains give way to foothills, then to proper Himalayan gorge scenery as the road climbs.",
+        overnight: "Guesthouse, Joshimath",
+        highlight: "The Alaknanda gorge road — your first real sight of the high Himalaya",
+      },
+      {
+        day: 2,
+        title: "Joshimath → Govindghat → Ghangaria (trek begins)",
+        description:
+          "Short drive to Govindghat (1,828 m), where the trek begins. A 9 km trail climbs steadily alongside the Pushpawati River through forest and past waterfalls to Ghangaria (3,049 m), the last settlement before both the Valley of Flowers and Hemkund Sahib. Mules and porters are available for those who want them; our guide sets a comfortable, steady pace.",
+        overnight: "Guesthouse, Ghangaria",
+        highlight: "The forest trail to Ghangaria — waterfalls and the first thin mountain air",
+      },
+      {
+        day: 3,
+        title: "Ghangaria → Valley of Flowers → Ghangaria",
+        description:
+          "A full day inside the valley itself: a 4 km trail from Ghangaria leads into the Valley of Flowers, where the path opens onto a wide glacial valley floor carpeted in wildflowers, framed by the Rataban and Nilgiri Parbat peaks. There is no settlement inside the valley — only the trail, the flowers, and the glaciers above. Walk as far as your legs and the weather allow, then return to Ghangaria by evening.",
+        overnight: "Guesthouse, Ghangaria",
+        highlight: "The valley floor in full bloom — the reason this trek exists",
+      },
+      {
+        day: 4,
+        title: "Ghangaria → Hemkund Sahib → Ghangaria",
+        description:
+          "The trek's hardest and most rewarding day: a steep 6 km climb from Ghangaria to Hemkund Sahib (4,329 m), a glacial lake held sacred in both Sikh and Hindu tradition, ringed by seven snow-streaked peaks. The gurdwara on its shore sits at one of the highest inhabited points reachable on foot in the Indian Himalaya. Pause at the lake, take in the silence, then descend back to Ghangaria.",
+        overnight: "Guesthouse, Ghangaria",
+        highlight: "Hemkund Sahib — a glacial lake at 4,329 m, ringed by seven peaks",
+      },
+      {
+        day: 5,
+        title: "Ghangaria → Govindghat → Joshimath",
+        description:
+          "Descend from Ghangaria back to Govindghat (9 km, mostly downhill) and drive to Joshimath. An easier day physically, with time to process the previous two days inside the valley and at the lake. Optional visit to Joshimath's ropeway or the old town if energy allows.",
+        overnight: "Guesthouse, Joshimath",
+        highlight: "The descent — looking back at the valley from below",
+      },
+      {
+        day: 6,
+        title: "Joshimath → Rishikesh (overnight drive)",
+        description:
+          "Long drive back down through the Alaknanda valley to Rishikesh (approximately 9–10 hours). Stop along the way at scenic points on the river. Arrive in Rishikesh in the evening for a proper hot shower and a relaxed dinner by the Ganges — a soft landing after five days at altitude.",
+        overnight: "Riverside hotel, Rishikesh",
+        highlight: "Back to the Ganges — the trip's gentle final note",
+      },
+      {
+        day: 7,
+        title: "Rishikesh → Delhi — Departure",
+        description:
+          "Final drive back to Delhi (approximately 6 hours) or an early train from Haridwar on request. Our team confirms your onward connection. You leave with a trek most travelers to India never attempt — and a valley that's hard to describe accurately to anyone who wasn't there.",
+        overnight: "—",
+        highlight: "Last look at the foothills before the plains take over again",
+      },
+    ],
+    inclusions: [
+      "6 nights accommodation: 2× guesthouse Joshimath + 2× guesthouse Ghangaria + 1× guesthouse Joshimath + 1× riverside hotel Rishikesh (twin-sharing)",
+      "Private AC vehicle for all road transfers throughout",
+      "Experienced trekking guide for the Ghangaria–Valley of Flowers–Hemkund Sahib sector",
+      "Valley of Flowers National Park entry permits and fees",
+      "Porter/mule arrangement available on request (extra cost)",
+      "6 breakfasts + 6 dinners",
+      "First-aid kit and basic altitude-sickness medication on the trek",
+      "All tolls, parking and driver allowances",
+      "24/7 on-trip support — GoTrustelle host available throughout",
+    ],
+    exclusions: [
+      "International or domestic flights to/from Delhi",
+      "Lunches during the trek (budget ₹300–500 per meal)",
+      "Personal porter or mule hire (available locally, approx. ₹1,500–2,500/day)",
+      "Personal trekking gear: trekking poles, rain gear, proper boots (we provide a packing list)",
+      "Personal expenses: shopping, tips, beverages",
+      "Travel & medical insurance with trekking cover (strongly recommended)",
+      "5% GST on total package value",
+    ],
+    travelTips: [
+      "Most EU/EEA, UK, Swiss and Norwegian passport holders are eligible for the Indian e-Visa — apply online at least 4–7 days before travel",
+      "Plug types C, D & M, 230V — charging is limited in Ghangaria, bring a power bank",
+      "Vegetarian meals are the norm in Ghangaria and Joshimath's guesthouses — vegan and Jain requests are easily accommodated",
+      "Pack proper waterproof trekking shoes and rain gear — this trek runs during the monsoon, and trails are often wet and muddy",
+      "Travel insurance with trekking and high-altitude evacuation cover is strongly recommended for the Hemkund Sahib day",
+    ],
+    pricing: [
+      { label: "Twin sharing (from Delhi)", priceEUR: 1199, priceINR: 107900 },
+      { label: "Twin sharing — Premium (from Delhi)", priceEUR: 1499, priceINR: 134900 },
+    ],
+    featured: true,
+    departures: ["August 15 – 21, 2026 (fixed group departure)", "Customisable — contact us"],
+  },
+
+  // ─── KERALA ESCAPE ───────────────────────────────────────────────────
+  {
+    slug: "kerala-backwaters-escape",
+    title: "Kerala Escape",
+    subtitle: "Tea hills, spice gardens, a private houseboat & the backwaters of God's Own Country",
+    heroImage: "/images/tours/kerala/alleppey-houseboat.jpg",
+    galleryImages: [
+      "/images/tours/kerala/alleppey-houseboat.jpg",
+      "/images/tours/kerala/munnar-tea-gardens.jpg",
+      "/images/tours/kerala/kochi-fishing-nets.jpg",
+      "/images/tours/kerala/kumarakom-backwaters.jpg",
+    ],
+    region: "Kochi, Munnar, Thekkady & Alleppey, Kerala, South India",
+    durationNights: 8,
+    durationDays: 9,
+    route: "Kochi → Munnar → Thekkady → Alleppey (houseboat) → Kumarakom → Kochi",
+    months: ["November", "December", "January", "February"],
+    groupSize: "Max 10 travelers",
+    difficulty: "Easy",
+    summary:
+      "Rolling tea estates in the clouds, a spice-scented walk through a working plantation, a night drifting through palm-lined backwaters on a private houseboat, and a colonial port city where Chinese fishing nets still work the harbour at dusk. Nine days through Kerala at its most complete.",
+    overview:
+      "Kerala calls itself 'God's Own Country', and after a week here most travelers stop arguing. This 9-day circuit moves from Kochi's Fort Kochi quarter — Portuguese churches, Chinese fishing nets, Jewish synagogues, all within a few square kilometres — up into the cool tea hills of Munnar, across to the spice gardens and forested hills of Thekkady on the edge of Periyar Tiger Reserve, and down onto the water itself: a private houseboat through the Alleppey backwaters, followed by a quieter lakeside stay at Kumarakom. Kerala's pace is slower than the north, the food is extraordinary (coconut, curry leaf, fresh-caught seafood, properly made filter coffee), and the landscape changes completely every two days. We travel by private air-conditioned vehicle throughout, choose boutique and heritage properties, and keep the group small.",
+    highlights: [
+      "A private houseboat overnight on the Alleppey backwaters — palm groves, paddy fields and village life from the water",
+      "Munnar's tea estates — rolling green hills, a working tea factory, and views across the Western Ghats",
+      "Periyar Tiger Reserve, Thekkady — a spice plantation walk and a boat ride on Periyar Lake",
+      "Fort Kochi — Chinese fishing nets, Jewish Town, Portuguese and Dutch colonial architecture in one walkable quarter",
+      "Kumarakom — a quieter lakeside stay among mangroves and backwater channels",
+      "A traditional Kathakali dance performance, Kochi",
+    ],
+    itinerary: [
+      {
+        day: 1,
+        title: "Arrival in Kochi — Fort Kochi heritage walk",
+        description:
+          "Arrive in Kochi and transfer to your heritage hotel in Fort Kochi. In the late afternoon, a walking tour of the old quarter: the iconic Chinese fishing nets along the waterfront, St. Francis Church (one of the oldest European churches in India), the Dutch Palace, and Jew Town's spice warehouses and antique shops. Evening Kathakali performance — Kerala's centuries-old classical dance-drama, with elaborate makeup and costume.",
+        overnight: "Heritage hotel, Fort Kochi",
+        highlight: "Chinese fishing nets at sunset — Kochi's most iconic image, in person",
+      },
+      {
+        day: 2,
+        title: "Kochi full day — Markets, spices & the harbour",
+        description:
+          "A relaxed full day in Kochi: the spice markets of Mattancherry, a visit to a working antique and textile warehouse, and time to wander Fort Kochi's quiet colonial lanes at your own pace. Optional afternoon boat ride around the harbour to watch the working fishing boats and container ships pass.",
+        overnight: "Heritage hotel, Fort Kochi",
+        highlight: "Mattancherry spice markets — the smell of cardamom and pepper sacks stacked to the ceiling",
+      },
+      {
+        day: 3,
+        title: "Kochi → Munnar — Into the tea hills",
+        description:
+          "Drive up into the Western Ghats to Munnar (approximately 4 hours), the landscape changing from coastal plain to tea-covered hillside as you climb. Stop en route at the Cheeyappara and Valara waterfalls. Arrive in Munnar by afternoon and settle into your hillside resort, with views across rolling tea estates.",
+        overnight: "Hillside resort, Munnar",
+        highlight: "First sight of Munnar's tea hills — green in every direction",
+      },
+      {
+        day: 4,
+        title: "Munnar full day — Tea factory, Eravikulam & viewpoints",
+        description:
+          "Visit a working tea factory and museum to see how the leaf becomes the cup, then drive to Eravikulam National Park, home to the endangered Nilgiri tahr and some of the best high-altitude views in the Western Ghats. Afternoon at Top Station and Mattupetty Dam for sweeping panoramas across the tea country.",
+        overnight: "Hillside resort, Munnar",
+        highlight: "Eravikulam National Park — tahr, grasslands and views for miles",
+      },
+      {
+        day: 5,
+        title: "Munnar → Thekkady — Spice gardens & Periyar",
+        description:
+          "Drive to Thekkady (approximately 3.5 hours) on the edge of Periyar Tiger Reserve. En route, walk through a working spice plantation — cardamom, pepper, cinnamon and cloves growing together under a forest canopy, with a guide who explains how each is grown and harvested. In the late afternoon, a boat ride on Periyar Lake for a chance to spot wild elephants, bison and birdlife along the shore.",
+        overnight: "Boutique resort, Thekkady",
+        highlight: "Periyar Lake boat ride — wild elephants on the shoreline, if you're lucky",
+      },
+      {
+        day: 6,
+        title: "Thekkady → Alleppey — Board your private houseboat",
+        description:
+          "Drive to Alleppey (approximately 4 hours) and board your private traditional kettuvallam (rice barge) houseboat in the early afternoon. Cruise slowly through the backwaters — palm-lined canals, paddy fields below sea level, village life unfolding along the banks — with all meals cooked fresh on board by your private crew. Moor for the night on a quiet stretch of water.",
+        overnight: "Private houseboat, Alleppey backwaters",
+        highlight: "Sunset on the backwaters from your houseboat deck",
+      },
+      {
+        day: 7,
+        title: "Alleppey backwaters → Kumarakom",
+        description:
+          "Wake to the sound of water and birdlife. A final slow morning cruise before disembarking at Kumarakom, a quieter backwater town on the shore of Vembanad Lake — Kerala's largest lake — known for its bird sanctuary and mangrove-lined channels. Check into a lakeside resort for a more restful pace after the houseboat.",
+        overnight: "Lakeside resort, Kumarakom",
+        highlight: "Disembarking into Kumarakom's stillness after a night on the water",
+      },
+      {
+        day: 8,
+        title: "Kumarakom — Bird sanctuary & leisure day",
+        description:
+          "A slow day: an optional visit to the Kumarakom Bird Sanctuary, a paddle through the smaller mangrove channels by canoe, or simply time at the resort by the lake. In the afternoon, drive back to Kochi (approximately 1.5 hours) for your final night.",
+        overnight: "Heritage hotel, Fort Kochi",
+        highlight: "Kumarakom's mangrove channels by canoe — the backwaters at their quietest",
+      },
+      {
+        day: 9,
+        title: "Kochi — Departure",
+        description:
+          "A final relaxed morning — one more walk along the Fort Kochi waterfront, a last filter coffee, before transfer to Kochi airport for your departure. Our team confirms your onward connection and sees you off.",
+        overnight: "—",
+        highlight: "Last morning by the Chinese fishing nets before you go",
+      },
+    ],
+    inclusions: [
+      "8 nights accommodation: 2× heritage hotel Fort Kochi + 2× hillside resort Munnar + 1× boutique resort Thekkady + 1× private houseboat Alleppey + 1× lakeside resort Kumarakom + 1× heritage hotel Fort Kochi (twin-sharing)",
+      "Private AC vehicle for all sightseeing and inter-city transfers throughout",
+      "Private houseboat for one full day and overnight on the Alleppey backwaters, all meals on board included",
+      "Professional licensed guide in Kochi, Munnar and Thekkady",
+      "Spice plantation walk, Thekkady",
+      "Periyar Lake boat ride",
+      "Kathakali dance performance, Kochi",
+      "8 breakfasts + 7 dinners (including all meals aboard the houseboat)",
+      "All monument, park and sanctuary entry fees listed in the itinerary",
+      "All tolls, parking and driver allowances",
+      "24/7 on-trip support — GoTrustelle host available throughout",
+    ],
+    exclusions: [
+      "International or domestic flights to/from Kochi",
+      "Lunches outside the houseboat day (budget ₹400–700 per meal)",
+      "Personal expenses: shopping, tips, beverages",
+      "Optional activities: Ayurvedic spa treatments, additional canoe trips",
+      "Travel & medical insurance (strongly recommended)",
+      "5% GST on total package value",
+    ],
+    travelTips: [
+      "Most EU/EEA, UK, Swiss and Norwegian passport holders are eligible for the Indian e-Visa — apply online at least 4–7 days before travel",
+      "Plug types C, D & M, 230V",
+      "Kerala cuisine is naturally rich in vegetarian, vegan and seafood options — let us know dietary needs in advance, especially for the houseboat menu",
+      "Pack light cotton clothing — Kerala is warm and humid year-round, even in the Dec–Feb 'cool' season",
+      "Mosquito repellent is worth packing for the backwaters and Periyar evenings",
+    ],
+    pricing: [
+      { label: "Twin sharing — Standard (from Kochi)", priceEUR: 1699, priceINR: 152900 },
+      { label: "Twin sharing — Premium (from Kochi)", priceEUR: 2099, priceINR: 188900 },
+    ],
+    featured: true,
+    departures: ["December 5 – 13, 2026 (fixed group departure)", "Customisable — contact us"],
+  },
+
+  // ─── CHRISTMAS & NEW YEAR RAJASTHAN SPECIAL ──────────────────────────
+  {
+    slug: "christmas-new-year-rajasthan-special",
+    title: "Christmas & New Year Rajasthan Special",
+    subtitle: "Jaipur · Pushkar · Udaipur — ring in the New Year on Lake Pichola",
+    heroImage: "/images/tours/rajasthan/udaipur.jpg",
+    galleryImages: [
+      "/images/tours/rajasthan/udaipur.jpg",
+      "/images/tours/rajasthan/jaipur.jpg",
+      "/images/tours/rajasthan/Pushkar.jpg",
+    ],
+    region: "Jaipur, Pushkar & Udaipur, Rajasthan, North India",
+    durationNights: 8,
+    durationDays: 9,
+    route: "Delhi → Jaipur → Pushkar → Udaipur → Delhi",
+    months: ["December", "January"],
+    groupSize: "Max 10 travelers",
+    difficulty: "Easy",
+    summary:
+      "A festive, unhurried edition of our Rajasthan circuit, timed to close out the year on a rooftop over Lake Pichola as fireworks reflect off the water. Nine days of palaces, a holy lake town, and a New Year's Eve most travelers talk about for years.",
+    overview:
+      "This is our once-a-year special departure: a Rajasthan circuit built specifically around spending New Year's Eve in Udaipur, the most romantic of all Rajasthan's cities. We move at a gentler pace than our standard Rajasthan circuit, with extra time built in at each stop — Jaipur's Pink City, the holy lake town of Pushkar, and three full nights in Udaipur, where the City Palace and Lake Palace Hotel glow against the water and the whole city seems to lean toward the lake at dusk. The trip is timed so that December 31st is spent entirely in Udaipur: a relaxed day by the lake, then a festive rooftop dinner with live Rajasthani music as midnight approaches and fireworks reflect off Lake Pichola. It's a small-group, personally hosted way to spend the turn of the year somewhere genuinely beautiful, without the crowds of Goa or the cold of home.",
+    highlights: [
+      "New Year's Eve rooftop dinner over Lake Pichola, with fireworks reflected on the water",
+      "Three full nights in Udaipur — enough time to actually settle into the City of Lakes",
+      "Camel ride into the Pushkar dunes at sunset",
+      "Amber Fort & the City Palace, Jaipur — Rajput grandeur to open the trip",
+      "Lake Pichola boat ride past the Lake Palace Hotel and Jag Mandir island",
+      "Festive seasonal touches throughout — heritage hotels decorated for the season, special dinners",
+    ],
+    itinerary: [
+      {
+        day: 1,
+        title: "Delhi → Jaipur — Arrival & festive welcome dinner",
+        description:
+          "Drive or train to Jaipur (approx. 4.5–5 hours) and check into your heritage haveli hotel, decorated for the season. A festive welcome dinner in the courtyard sets the tone for the trip ahead — warm, unhurried, and a long way from a typical New Year's package tour.",
+        overnight: "Heritage haveli hotel, Jaipur",
+        highlight: "Festive welcome dinner in a candle-lit haveli courtyard",
+      },
+      {
+        day: 2,
+        title: "Jaipur full day — Amber Fort, City Palace & Hawa Mahal",
+        description:
+          "Morning at Amber Fort, the Rajput palace-fortress above Maota Lake. After lunch, the City Palace — still partly home to Jaipur's royal family — and the Hawa Mahal. End the day at Jantar Mantar before an evening stroll through Johari Bazaar.",
+        overnight: "Heritage haveli hotel, Jaipur",
+        highlight: "Amber Fort at morning light",
+      },
+      {
+        day: 3,
+        title: "Jaipur → Pushkar — Camel ride at sunset",
+        description:
+          "Drive to Pushkar (approx. 3 hours), a holy lake town built around 52 bathing ghats. Visit the Brahma Temple, walk the ghats at dusk, and take a short camel ride into the dunes outside town as the sun drops over the Aravalli hills.",
+        overnight: "Heritage guesthouse, Pushkar",
+        highlight: "Sunset camel ride over the Pushkar dunes",
+      },
+      {
+        day: 4,
+        title: "Pushkar → Udaipur — Arrival in the City of Lakes",
+        description:
+          "Drive to Udaipur (approximately 6–6.5 hours), arriving by evening. Check into your lakeside heritage hotel for the next three nights and watch the City Palace catch its first evening light from your terrace.",
+        overnight: "Lakeside heritage hotel, Udaipur",
+        highlight: "First view of Lake Pichola lit up at night",
+      },
+      {
+        day: 5,
+        title: "Udaipur full day — City Palace, Jagdish Temple & Lake Pichola",
+        description:
+          "Morning at the City Palace complex, built over four centuries on the eastern shore of Lake Pichola. Visit Jagdish Temple, then an afternoon boat ride past the Lake Palace Hotel and Jag Mandir island as the light turns gold.",
+        overnight: "Lakeside heritage hotel, Udaipur",
+        highlight: "Boat ride on Lake Pichola at golden hour",
+      },
+      {
+        day: 6,
+        title: "Udaipur — New Year's Eve",
+        description:
+          "A deliberately slow day: sleep in, wander Saheliyon Ki Bari's fountains and lotus pools, browse the old city's miniature painting studios. In the evening, a festive New Year's Eve dinner on a rooftop overlooking Lake Pichola — live Rajasthani folk music, a multi-course celebration menu, and a clear view of the fireworks over the water as midnight arrives.",
+        overnight: "Lakeside heritage hotel, Udaipur",
+        highlight: "Midnight fireworks over Lake Pichola from your rooftop table",
+      },
+      {
+        day: 7,
+        title: "Udaipur — New Year's Day, at leisure",
+        description:
+          "A slow, deliberately unstructured New Year's Day. Late breakfast, a walk through the quiet old-city lanes, optional boat ride or simply time by the lake. Evening at leisure — many travelers choose a quiet dinner reflecting on the year ahead.",
+        overnight: "Lakeside heritage hotel, Udaipur",
+        highlight: "A proper, unhurried New Year's Day by the lake",
+      },
+      {
+        day: 8,
+        title: "Udaipur → Delhi",
+        description:
+          "Morning flight from Udaipur to Delhi (approximately 1.5 hours). Check into your Delhi hotel for the final night, with a final group dinner to close out the trip together.",
+        overnight: "Hotel, Delhi",
+        highlight: "Final group dinner in Delhi",
+      },
+      {
+        day: 9,
+        title: "Delhi — Departure",
+        description:
+          "Transfer to Delhi airport for your departure flight. Our team confirms your onward connection and sees you off — carrying the start of a new year, and the memory of fireworks over a lake in Rajasthan.",
+        overnight: "—",
+        highlight: "One last look at Delhi before you fly home",
+      },
+    ],
+    inclusions: [
+      "8 nights accommodation: 1× heritage haveli hotel Jaipur + 1× heritage guesthouse Pushkar + 3× lakeside heritage hotel Udaipur + 1× hotel Delhi (twin-sharing)",
+      "Udaipur–Delhi flight",
+      "Private AC vehicle for all sightseeing and inter-city transfers throughout",
+      "Professional licensed guide in each city",
+      "Camel ride at sunset, Pushkar",
+      "Lake Pichola boat ride, Udaipur",
+      "New Year's Eve festive rooftop dinner with live music, Udaipur",
+      "Final group dinner, Delhi",
+      "8 breakfasts + 8 dinners",
+      "All monument and fort entry fees listed in the itinerary",
+      "All tolls, parking and driver allowances",
+      "24/7 on-trip support — GoTrustelle host available throughout",
+    ],
+    exclusions: [
+      "International or domestic flights to/from Delhi",
+      "Lunches during the tour (budget ₹500–800 per meal)",
+      "Personal expenses: shopping, tips, beverages",
+      "Optional activities: hot-air ballooning, additional spa treatments",
+      "Travel & medical insurance (strongly recommended)",
+      "5% GST on total package value",
+    ],
+    travelTips: [
+      "Most EU/EEA, UK, Swiss and Norwegian passport holders are eligible for the Indian e-Visa — apply online at least 4–7 days before travel",
+      "Plug types C, D & M, 230V — bring a universal travel adapter",
+      "Pushkar is a strictly vegetarian, alcohol-free holy town — meals there respect this fully; elsewhere on the route vegetarian, vegan and Jain meals are easily arranged",
+      "Rajasthan nights in late December can drop close to freezing — pack a proper warm layer for evenings, including New Year's Eve",
+      "This is a fixed-date group departure with limited seats — book well ahead of the December holiday season",
+    ],
+    pricing: [
+      { label: "Twin sharing — Standard (from Delhi)", priceEUR: 1899, priceINR: 170900 },
+      { label: "Twin sharing — Premium (from Delhi)", priceEUR: 2299, priceINR: 206900 },
+    ],
+    featured: true,
+    departures: ["December 26, 2026 – January 3, 2027 (fixed group departure)"],
   },
 
 
