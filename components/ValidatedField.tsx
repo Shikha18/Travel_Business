@@ -7,6 +7,14 @@ const PATTERNS: Record<string, RegExp> = {
   tel: /^\+?[0-9\s\-()]{7,20}$/,
 };
 
+// Same rules as PATTERNS above, without the ^$ anchors the native `pattern`
+// attribute already applies implicitly — lets the browser block submission
+// on bad input too, not just our own touched-state message.
+const NATIVE_PATTERNS: Record<string, string> = {
+  email: "[^\\s@]+@[^\\s@]+\\.[^\\s@]+",
+  tel: "\\+?[0-9\\s\\-()]{7,20}",
+};
+
 export default function ValidatedField({
   label,
   name,
@@ -63,6 +71,9 @@ export default function ValidatedField({
         value={value}
         onChange={(e) => setValue(e.target.value)}
         onBlur={() => setTouched(true)}
+        onInvalid={() => setTouched(true)}
+        pattern={NATIVE_PATTERNS[type]}
+        title={errorMessage}
         aria-invalid={showError}
         className={inputClass}
       />

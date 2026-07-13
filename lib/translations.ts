@@ -343,7 +343,7 @@ export const translations = {
       "Tell us a bit about your trip and preferred times, and we'll confirm a slot on WhatsApp or email.",
     "consult.form.name": "Your name",
     "consult.form.email": "Email",
-    "consult.form.whatsapp": "WhatsApp (optional)",
+    "consult.form.whatsapp": "WhatsApp number",
     "consult.form.topic": "What would you like to talk about?",
     "consult.form.topicPlaceholder":
       "e.g., Is Northeast India safe for solo female travelers in December?",

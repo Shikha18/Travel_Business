@@ -4,6 +4,7 @@ import { getLocalizedJourneys } from "@/lib/journeys";
 import { getLocale, getTranslator } from "@/lib/i18n";
 import ContactDateFields from "./ContactDateFields";
 import ValidatedField from "@/components/ValidatedField";
+import PhoneField from "@/components/PhoneField";
 
 export const metadata: Metadata = {
   title: "Contact GoTrustelle — plan your India trip",
@@ -70,11 +71,9 @@ export default function ContactPage({
                 name="country"
                 placeholder={t("contact.form.countryPlaceholder")}
               />
-              <ValidatedField
+              <PhoneField
                 label={t("contact.form.whatsapp")}
                 name="whatsapp"
-                type="tel"
-                placeholder="+91…"
                 errorMessage={t("validation.phone")}
               />
             </div>

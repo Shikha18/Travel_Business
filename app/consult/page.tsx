@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { siteConfig } from "@/lib/site-config";
 import { getLocale, getTranslator } from "@/lib/i18n";
 import ValidatedField from "@/components/ValidatedField";
+import PhoneField from "@/components/PhoneField";
 import FutureDateField from "@/components/FutureDateField";
 
 export const metadata: Metadata = {
@@ -76,11 +77,9 @@ export default function ConsultPage({
                 <span className="chip">
                   +{ext.minutes} {t("consult.pricing.perMinutes")}
                 </span>
-                <p className="mt-3 font-display text-3xl font-semibold text-ink-900">
-                  €{ext.priceEUR}{" "}
-                  <span className="text-base font-normal text-ink-500">
-                    / ${ext.priceUSD}
-                  </span>
+                <p className="mt-3 flex items-baseline gap-0.5 text-3xl font-semibold text-ink-900">
+                  <span className="font-sans">€</span>
+                  <span className="font-display">{ext.priceEUR}</span>
                 </p>
                 <p className="mt-2 text-sm text-ink-600 leading-relaxed">
                   {t("consult.pricing.extra.body")}
@@ -136,11 +135,10 @@ export default function ConsultPage({
                     errorMessage={t("validation.email")}
                   />
                 </div>
-                <ValidatedField
+                <PhoneField
                   label={t("consult.form.whatsapp")}
                   name="whatsapp"
-                  type="tel"
-                  placeholder="+91…"
+                  required
                   errorMessage={t("validation.phone")}
                 />
                 <div>
