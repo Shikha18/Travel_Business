@@ -39,6 +39,23 @@ export const translations = {
     "cta.messageFounderWA": "Message Shikha on WhatsApp",
     "cta.ourTours": "View our journeys",
 
+    "validation.email": "Please enter a valid email address",
+    "validation.phone": "Please enter a valid phone number, e.g. +91 98765 43210",
+    "validation.futureDate": "Please choose a date today or later",
+
+    "popup.chip": "Free 1:1 call",
+    "popup.title": "Before you go — let's talk India.",
+    "popup.subtitle":
+      "Free 30-min advice on routes, safety and budget. No obligation to book.",
+    "popup.name": "Your name",
+    "popup.email": "Email address",
+    "popup.consent": "Send me trip ideas & updates too",
+    "popup.cta": "Get my free call →",
+    "popup.later": "Not now",
+    "popup.privacy":
+      "By sending you agree we can contact you to schedule the call. We never share your details.",
+    "popup.success": "Thanks! We'll be in touch shortly to find a time.",
+
     // Home hero
     "home.hero.season": "Small-group departures · 2026",
     "home.hero.titleLine1": "Travel India with someone who understands it —",
@@ -80,6 +97,17 @@ export const translations = {
     "home.promise.point2": "Hand-picked local guides",
     "home.promise.point3": "Responsible & thoughtful travel",
     "home.promise.cta": "Plan your trip with us →",
+
+    "home.consult.chip": "Free 1:1 call",
+    "home.consult.title": "Talk to us before you book anything.",
+    "home.consult.subtitle":
+      "Consultation is at the heart of GoTrustelle. Get a free 30-minute call with our founder — honest advice on routes, safety and budget, with zero pressure to book.",
+    "home.consult.point1": "30 minutes, completely free",
+    "home.consult.point2": "No obligation to book with us",
+    "home.consult.point3": "Real answers from someone who's actually been there",
+    "home.consult.cta": "Book your free call →",
+    "home.consult.statLabel": "Free, no-pressure call",
+    "home.consult.statNote": "Usually confirmed within 24 hours",
 
     "home.trust.chip": "Why travelers choose us",
     "home.trust.title": "India is vast. We make it feel personal.",
@@ -293,6 +321,42 @@ export const translations = {
     "contact.sidebar.phone": "Phone",
     "contact.sidebar.basedIn": "Based in",
 
+    // Consult
+    "nav.consult": "Free Consult",
+    "consult.chip": "Ask us anything",
+    "consult.title": "Thinking about India? Let's talk it through.",
+    "consult.subtitle":
+      "Whether you end up traveling with us or not, we're happy to answer your questions about visiting India. The first 30 minutes are free — no strings attached.",
+    "consult.pricing.title": "How it works",
+    "consult.pricing.free.title": "First 30 minutes",
+    "consult.pricing.free.price": "Free",
+    "consult.pricing.free.body":
+      "A relaxed call to answer whatever's on your mind — safety, routes, budgets, best time to go, or anything else about traveling in India.",
+    "consult.pricing.extra.title": "Want more time?",
+    "consult.pricing.extra.body":
+      "If 30 minutes isn't enough, book an extended session below. Same call, just more time to go deep.",
+    "consult.pricing.perMinutes": "min session",
+    "consult.pricing.book": "Book & pay",
+    "consult.pricing.comingSoon": "Payment link coming soon — WhatsApp us to book",
+    "consult.form.title": "Book your free 30-minute call",
+    "consult.form.subtitle":
+      "Tell us a bit about your trip and preferred times, and we'll confirm a slot on WhatsApp or email.",
+    "consult.form.name": "Your name",
+    "consult.form.email": "Email",
+    "consult.form.whatsapp": "WhatsApp (optional)",
+    "consult.form.topic": "What would you like to talk about?",
+    "consult.form.topicPlaceholder":
+      "e.g., Is Northeast India safe for solo female travelers in December?",
+    "consult.form.availabilityDate": "Preferred date for the call",
+    "consult.form.availabilityTime": "Preferred time & timezone",
+    "consult.form.availabilityTimePlaceholder": "e.g., Weekday evenings, CET",
+    "consult.form.submit": "Request my free call",
+    "consult.form.privacy":
+      "By sending you agree we can contact you to schedule the call. We never share your details.",
+    "consult.sidebar.fastest.title": "Prefer WhatsApp?",
+    "consult.sidebar.fastest.body":
+      "Message us directly and we'll find a time that works for you.",
+
     // Footer
     "footer.explore": "Explore",
     "footer.exploreAll": "All journeys",
@@ -379,6 +443,23 @@ export const translations = {
     "cta.messageFounderWA": "Shikha per WhatsApp schreiben",
     "cta.ourTours": "Unsere Reisen",
 
+    "validation.email": "Bitte geben Sie eine gültige E-Mail-Adresse ein",
+    "validation.phone": "Bitte geben Sie eine gültige Telefonnummer ein, z. B. +49 151 23456789",
+    "validation.futureDate": "Bitte wählen Sie ein Datum in der Zukunft",
+
+    "popup.chip": "Kostenloses Gespräch",
+    "popup.title": "Bevor Sie gehen — sprechen wir über Indien.",
+    "popup.subtitle":
+      "Kostenlose 30-minütige Beratung zu Routen, Sicherheit und Budget. Ganz ohne Verpflichtung.",
+    "popup.name": "Ihr Name",
+    "popup.email": "E-Mail-Adresse",
+    "popup.consent": "Schicken Sie mir auch Reiseideen & Neuigkeiten",
+    "popup.cta": "Kostenloses Gespräch buchen →",
+    "popup.later": "Nicht jetzt",
+    "popup.privacy":
+      "Mit dem Absenden stimmen Sie zu, dass wir Sie zur Terminvereinbarung kontaktieren dürfen. Wir geben Ihre Daten nie weiter.",
+    "popup.success": "Danke! Wir melden uns in Kürze, um einen Termin zu finden.",
+
     // Home hero
     "home.hero.season": "Kleine Gruppenreisen · 2026",
     "home.hero.titleLine1": "Ich will Indien nicht zeigen.",
@@ -420,6 +501,17 @@ export const translations = {
     "home.promise.point2": "Handverlesene lokale Guides",
     "home.promise.point3": "Verantwortungsbewusstes & achtsames Reisen",
     "home.promise.cta": "Planen Sie Ihre Reise mit uns →",
+
+    "home.consult.chip": "Unser Markenzeichen · Kostenloses Gespräch",
+    "home.consult.title": "Sprechen Sie mit uns, bevor Sie etwas buchen.",
+    "home.consult.subtitle":
+      "Die Beratung steht im Mittelpunkt von GoTrustelle. Führen Sie ein kostenloses 30-minütiges Gespräch mit unserer Gründerin — ehrlicher Rat zu Routen, Sicherheit und Budget, ganz ohne Druck.",
+    "home.consult.point1": "30 Minuten, völlig kostenlos",
+    "home.consult.point2": "Keine Verpflichtung, bei uns zu buchen",
+    "home.consult.point3": "Echte Antworten von jemandem, der es selbst erlebt hat",
+    "home.consult.cta": "Kostenloses Gespräch buchen →",
+    "home.consult.statLabel": "Kostenloses, druckfreies Gespräch",
+    "home.consult.statNote": "Meist innerhalb von 24 Stunden bestätigt",
 
     "home.trust.chip": "Warum Reisende uns wählen",
     "home.trust.title": "Indien ist riesig. Wir machen es persönlich.",
@@ -718,6 +810,23 @@ export const translations = {
     "cta.messageFounderWA": "Écrire à Shikha sur WhatsApp",
     "cta.ourTours": "Voir nos voyages",
 
+    "validation.email": "Veuillez saisir une adresse e-mail valide",
+    "validation.phone": "Veuillez saisir un numéro de téléphone valide, par ex. +33 6 12 34 56 78",
+    "validation.futureDate": "Veuillez choisir une date future",
+
+    "popup.chip": "Appel gratuit",
+    "popup.title": "Avant de partir — parlons de l'Inde.",
+    "popup.subtitle":
+      "Conseils gratuits de 30 minutes sur les itinéraires, la sécurité et le budget. Sans aucune obligation.",
+    "popup.name": "Votre nom",
+    "popup.email": "Adresse e-mail",
+    "popup.consent": "Envoyez-moi aussi des idées de voyage et des actualités",
+    "popup.cta": "Réserver mon appel gratuit →",
+    "popup.later": "Pas maintenant",
+    "popup.privacy":
+      "En envoyant, vous acceptez que nous vous contactions pour fixer l'appel. Nous ne partageons jamais vos données.",
+    "popup.success": "Merci ! Nous vous recontacterons bientôt pour convenir d'un horaire.",
+
     // Home hero
     "home.hero.season": "Petits groupes · 2026",
     "home.hero.titleLine1": "Voyagez en Inde avec quelqu'un qui la comprend —",
@@ -759,6 +868,17 @@ export const translations = {
     "home.promise.point2": "Guides locaux soigneusement sélectionnés",
     "home.promise.point3": "Un voyage responsable et réfléchi",
     "home.promise.cta": "Planifiez votre voyage avec nous →",
+
+    "home.consult.chip": "Notre atout · Appel gratuit",
+    "home.consult.title": "Parlez-nous avant de réserver quoi que ce soit.",
+    "home.consult.subtitle":
+      "La consultation est au cœur de GoTrustelle. Bénéficiez d'un appel gratuit de 30 minutes avec notre fondatrice — des conseils honnêtes sur les itinéraires, la sécurité et le budget, sans aucune pression.",
+    "home.consult.point1": "30 minutes, entièrement gratuit",
+    "home.consult.point2": "Aucune obligation de réserver avec nous",
+    "home.consult.point3": "De vraies réponses de quelqu'un qui l'a vécu",
+    "home.consult.cta": "Réservez votre appel gratuit →",
+    "home.consult.statLabel": "Appel gratuit, sans pression",
+    "home.consult.statNote": "Généralement confirmé sous 24 heures",
 
     "home.trust.chip": "Pourquoi les voyageurs nous choisissent",
     "home.trust.title": "L'Inde est vaste. Nous la rendons personnelle.",
@@ -1060,6 +1180,23 @@ export const translations = {
     "cta.messageFounderWA": "Escribir a Shikha por WhatsApp",
     "cta.ourTours": "Ver nuestros viajes",
 
+    "validation.email": "Introduce una dirección de correo electrónico válida",
+    "validation.phone": "Introduce un número de teléfono válido, p. ej. +34 612 345 678",
+    "validation.futureDate": "Elige una fecha futura",
+
+    "popup.chip": "Llamada gratuita",
+    "popup.title": "Antes de irte — hablemos de la India.",
+    "popup.subtitle":
+      "Asesoramiento gratuito de 30 minutos sobre rutas, seguridad y presupuesto. Sin ninguna obligación.",
+    "popup.name": "Tu nombre",
+    "popup.email": "Correo electrónico",
+    "popup.consent": "Envíame también ideas de viaje y novedades",
+    "popup.cta": "Reservar mi llamada gratuita →",
+    "popup.later": "Ahora no",
+    "popup.privacy":
+      "Al enviar aceptas que te contactemos para concretar la llamada. Nunca compartimos tus datos.",
+    "popup.success": "¡Gracias! Te contactaremos pronto para acordar un horario.",
+
     // Home hero
     "home.hero.season": "Grupos reducidos · 2026",
     "home.hero.titleLine1": "Viaja a la India con alguien que la entiende —",
@@ -1101,6 +1238,17 @@ export const translations = {
     "home.promise.point2": "Guías locales cuidadosamente seleccionados",
     "home.promise.point3": "Viaje responsable y consciente",
     "home.promise.cta": "Planifica tu viaje con nosotros →",
+
+    "home.consult.chip": "Nuestra ventaja · Llamada gratuita",
+    "home.consult.title": "Habla con nosotros antes de reservar nada.",
+    "home.consult.subtitle":
+      "La consulta está en el corazón de GoTrustelle. Reserva una llamada gratuita de 30 minutos con nuestra fundadora — consejos honestos sobre rutas, seguridad y presupuesto, sin ninguna presión.",
+    "home.consult.point1": "30 minutos, totalmente gratis",
+    "home.consult.point2": "Sin obligación de reservar con nosotros",
+    "home.consult.point3": "Respuestas reales de alguien que lo ha vivido",
+    "home.consult.cta": "Reserva tu llamada gratuita →",
+    "home.consult.statLabel": "Llamada gratuita, sin presión",
+    "home.consult.statNote": "Normalmente confirmada en 24 horas",
 
     "home.trust.chip": "Por qué los viajeros nos eligen",
     "home.trust.title": "La India es inmensa. Nosotros la hacemos personal.",
@@ -1402,6 +1550,23 @@ export const translations = {
     "cta.messageFounderWA": "Scrivi a Shikha su WhatsApp",
     "cta.ourTours": "Vedi i nostri viaggi",
 
+    "validation.email": "Inserisci un indirizzo email valido",
+    "validation.phone": "Inserisci un numero di telefono valido, es. +39 320 123 4567",
+    "validation.futureDate": "Scegli una data futura",
+
+    "popup.chip": "Chiamata gratuita",
+    "popup.title": "Prima di partire — parliamo dell'India.",
+    "popup.subtitle":
+      "Consulenza gratuita di 30 minuti su itinerari, sicurezza e budget. Senza alcun obbligo.",
+    "popup.name": "Il tuo nome",
+    "popup.email": "Indirizzo email",
+    "popup.consent": "Inviami anche idee di viaggio e novità",
+    "popup.cta": "Prenota la mia chiamata gratuita →",
+    "popup.later": "Non ora",
+    "popup.privacy":
+      "Inviando accetti che ti contattiamo per fissare la chiamata. Non condividiamo mai i tuoi dati.",
+    "popup.success": "Grazie! Ti contatteremo a breve per fissare un orario.",
+
     // Home hero
     "home.hero.season": "Piccoli gruppi · 2026",
     "home.hero.titleLine1": "Viaggia in India con chi la capisce davvero —",
@@ -1443,6 +1608,17 @@ export const translations = {
     "home.promise.point2": "Guide locali selezionate con cura",
     "home.promise.point3": "Viaggio responsabile e consapevole",
     "home.promise.cta": "Pianifica il tuo viaggio con noi →",
+
+    "home.consult.chip": "Il nostro punto di forza · Chiamata gratuita",
+    "home.consult.title": "Parla con noi prima di prenotare qualsiasi cosa.",
+    "home.consult.subtitle":
+      "La consulenza è il cuore di GoTrustelle. Prenota una chiamata gratuita di 30 minuti con la nostra fondatrice — consigli onesti su itinerari, sicurezza e budget, senza alcuna pressione.",
+    "home.consult.point1": "30 minuti, completamente gratis",
+    "home.consult.point2": "Nessun obbligo di prenotare con noi",
+    "home.consult.point3": "Risposte vere da chi l'ha vissuto in prima persona",
+    "home.consult.cta": "Prenota la tua chiamata gratuita →",
+    "home.consult.statLabel": "Chiamata gratuita, senza pressioni",
+    "home.consult.statNote": "Solitamente confermata entro 24 ore",
 
     "home.trust.chip": "Perché i viaggiatori scelgono noi",
     "home.trust.title": "L'India è vasta. Noi la rendiamo personale.",
@@ -1744,6 +1920,23 @@ export const translations = {
     "cta.messageFounderWA": "Escrever à Shikha no WhatsApp",
     "cta.ourTours": "Ver as nossas viagens",
 
+    "validation.email": "Introduza um endereço de email válido",
+    "validation.phone": "Introduza um número de telefone válido, ex. +351 912 345 678",
+    "validation.futureDate": "Escolha uma data futura",
+
+    "popup.chip": "Chamada gratuita",
+    "popup.title": "Antes de partir — vamos falar sobre a Índia.",
+    "popup.subtitle":
+      "Aconselhamento gratuito de 30 minutos sobre rotas, segurança e orçamento. Sem qualquer obrigação.",
+    "popup.name": "O seu nome",
+    "popup.email": "Endereço de email",
+    "popup.consent": "Enviem-me também ideias de viagem e novidades",
+    "popup.cta": "Marcar a minha chamada gratuita →",
+    "popup.later": "Agora não",
+    "popup.privacy":
+      "Ao enviar, aceita que o contactemos para marcar a chamada. Nunca partilhamos os seus dados.",
+    "popup.success": "Obrigado! Entraremos em contacto em breve para combinar um horário.",
+
     // Home hero
     "home.hero.season": "Grupos pequenos · 2026",
     "home.hero.titleLine1": "Viaje pela Índia com alguém que a entende —",
@@ -1785,6 +1978,17 @@ export const translations = {
     "home.promise.point2": "Guias locais cuidadosamente escolhidos",
     "home.promise.point3": "Viagem responsável e consciente",
     "home.promise.cta": "Planeie a sua viagem com a gente →",
+
+    "home.consult.chip": "Nosso diferencial · Chamada gratuita",
+    "home.consult.title": "Fale connosco antes de reservar qualquer coisa.",
+    "home.consult.subtitle":
+      "A consulta está no coração da GoTrustelle. Marque uma chamada gratuita de 30 minutos com a nossa fundadora — conselhos honestos sobre rotas, segurança e orçamento, sem qualquer pressão.",
+    "home.consult.point1": "30 minutos, totalmente gratuita",
+    "home.consult.point2": "Sem obrigação de reservar connosco",
+    "home.consult.point3": "Respostas reais de quem já viveu a experiência",
+    "home.consult.cta": "Marque a sua chamada gratuita →",
+    "home.consult.statLabel": "Chamada gratuita, sem pressão",
+    "home.consult.statNote": "Normalmente confirmada em 24 horas",
 
     "home.trust.chip": "Por que os viajantes nos escolhem",
     "home.trust.title": "A Índia é vasta. Nós tornamo-la pessoal.",
@@ -2086,6 +2290,23 @@ export const translations = {
     "cta.messageFounderWA": "Shikha een bericht sturen via WhatsApp",
     "cta.ourTours": "Onze reizen bekijken",
 
+    "validation.email": "Voer een geldig e-mailadres in",
+    "validation.phone": "Voer een geldig telefoonnummer in, bijv. +31 6 12345678",
+    "validation.futureDate": "Kies een datum in de toekomst",
+
+    "popup.chip": "Gratis gesprek",
+    "popup.title": "Voordat u vertrekt — laten we over India praten.",
+    "popup.subtitle":
+      "Gratis advies van 30 minuten over routes, veiligheid en budget. Zonder enige verplichting.",
+    "popup.name": "Uw naam",
+    "popup.email": "E-mailadres",
+    "popup.consent": "Stuur mij ook reisideeën & updates",
+    "popup.cta": "Boek mijn gratis gesprek →",
+    "popup.later": "Niet nu",
+    "popup.privacy":
+      "Door te verzenden gaat u ermee akkoord dat wij contact met u opnemen om het gesprek in te plannen. Wij delen uw gegevens nooit.",
+    "popup.success": "Bedankt! We nemen binnenkort contact op om een tijdstip af te spreken.",
+
     // Home hero
     "home.hero.season": "Kleine groepsreizen · 2026",
     "home.hero.titleLine1": "Reis door India met iemand die het begrijpt —",
@@ -2127,6 +2348,17 @@ export const translations = {
     "home.promise.point2": "Zorgvuldig gekozen lokale gidsen",
     "home.promise.point3": "Verantwoord en bewust reizen",
     "home.promise.cta": "Plan je reis met ons →",
+
+    "home.consult.chip": "Ons kenmerk · Gratis gesprek",
+    "home.consult.title": "Praat met ons voordat u iets boekt.",
+    "home.consult.subtitle":
+      "Persoonlijk advies staat centraal bij GoTrustelle. Boek een gratis gesprek van 30 minuten met onze oprichtster — eerlijk advies over routes, veiligheid en budget, zonder enige druk.",
+    "home.consult.point1": "30 minuten, volledig gratis",
+    "home.consult.point2": "Geen verplichting om bij ons te boeken",
+    "home.consult.point3": "Eerlijke antwoorden van iemand die het zelf heeft meegemaakt",
+    "home.consult.cta": "Boek uw gratis gesprek →",
+    "home.consult.statLabel": "Gratis, drukvrij gesprek",
+    "home.consult.statNote": "Meestal binnen 24 uur bevestigd",
 
     "home.trust.chip": "Waarom reizigers voor ons kiezen",
     "home.trust.title": "India is enorm. Wij maken het persoonlijk.",

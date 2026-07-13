@@ -6,6 +6,7 @@ import { siteConfig } from "@/lib/site-config";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
+import ConsultPopup from "@/components/ConsultPopup";
 
 const fraunces = Fraunces({
   subsets: ["latin"],
@@ -141,6 +142,9 @@ export default function RootLayout({
         </Suspense>
         <Suspense fallback={null}>
           <WhatsAppButton />
+        </Suspense>
+        <Suspense fallback={null}>
+          <ConsultPopup />
         </Suspense>
       </body>
     </html>

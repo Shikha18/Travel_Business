@@ -93,6 +93,7 @@ export default function Footer() {
                 { href: "/", label: t("nav.home") },
                 { href: "/journeys", label: t("nav.tours") },
                 { href: "/about", label: t("nav.about") },
+                { href: "/consult", label: t("nav.consult") },
                 { href: "/contact", label: t("nav.contact") },
               ].map((link) => (
                 <li key={link.href}>

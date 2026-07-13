@@ -56,10 +56,10 @@
 
 @layer components {
   .container-narrow {
-    @apply max-w-6xl mx-auto px-5 sm:px-8;
+    @apply max-w-7xl mx-auto px-4 sm:px-6;
   }
   .container-wide {
-    @apply max-w-7xl mx-auto px-5 sm:px-8;
+    @apply max-w-[1440px] mx-auto px-4 sm:px-6;
   }
 
   /* ── BUTTONS ─────────────────────────────────────────────── */
@@ -158,6 +158,15 @@
     border-radius: 9999px;
     background: linear-gradient(90deg, #b47018 0%, #cc8c24 100%);
   }
+}
+
+/* ──────────────────────────────────────────────────────────────
+   CONSULT POPUP — entrance animation for the modal card
+   ────────────────────────────────────────────────────────────── */
+
+@keyframes popup-in {
+  from { opacity: 0; transform: translateY(14px) scale(0.97); }
+  to   { opacity: 1; transform: translateY(0) scale(1); }
 }
 
 /* ──────────────────────────────────────────────────────────────

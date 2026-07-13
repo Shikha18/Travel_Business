@@ -3,6 +3,7 @@ import { siteConfig } from "@/lib/site-config";
 import { getLocalizedJourneys } from "@/lib/journeys";
 import { getLocale, getTranslator } from "@/lib/i18n";
 import ContactDateFields from "./ContactDateFields";
+import ValidatedField from "@/components/ValidatedField";
 
 export const metadata: Metadata = {
   title: "Contact GoTrustelle — plan your India trip",
@@ -55,7 +56,13 @@ export default function ContactPage({
           >
             <div className="grid gap-5 sm:grid-cols-2">
               <Field label={t("contact.form.name")} name="name" required />
-              <Field label={t("contact.form.email")} name="email" type="email" required />
+              <ValidatedField
+                label={t("contact.form.email")}
+                name="email"
+                type="email"
+                required
+                errorMessage={t("validation.email")}
+              />
             </div>
             <div className="grid gap-5 sm:grid-cols-2">
               <Field
@@ -63,10 +70,12 @@ export default function ContactPage({
                 name="country"
                 placeholder={t("contact.form.countryPlaceholder")}
               />
-              <Field
+              <ValidatedField
                 label={t("contact.form.whatsapp")}
                 name="whatsapp"
+                type="tel"
                 placeholder="+91…"
+                errorMessage={t("validation.phone")}
               />
             </div>
             <div>

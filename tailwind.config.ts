@@ -92,6 +92,8 @@ const config: Config = {
           "linear-gradient(135deg, #f4a55a 0%, #cd5930 50%, #8e3218 100%)",
         "spice-gradient":
           "linear-gradient(135deg, #fef9ee 0%, #fef0cc 40%, #f7c87e 100%)",
+        "dusk-gradient":
+          "linear-gradient(135deg, #4a4632 0%, #241d16 30%, #1c1512 48%, #6e4c2e 74%, #cda06e 100%)",
         "haveli-gradient":
           "linear-gradient(135deg, #fef9ee 0%, #fdf3ed 55%, #f8ddcb 100%)",
       },

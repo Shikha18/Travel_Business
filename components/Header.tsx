@@ -34,6 +34,7 @@ export default function Header() {
     { href: "/about", label: t("nav.about") },
     { href: "/why-trustelle", label: t("nav.why") },
     { href: "/faq", label: t("nav.faq") },
+    { href: "/consult", label: t("nav.consult") },
     { href: "/contact", label: t("nav.contact") },
   ];
 

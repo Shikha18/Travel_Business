@@ -234,6 +234,70 @@ export default function Home({
       </section>
       </ScrollReveal>
 
+      {/* FREE CONSULTATION — USP */}
+      <ScrollReveal direction="bottom">
+      <section className="container-wide py-8 md:py-12">
+        <div className="relative overflow-hidden rounded-3xl bg-dusk-gradient px-8 py-12 text-white shadow-glow md:px-14 md:py-16">
+          <div aria-hidden="true" className="pointer-events-none absolute -left-16 -top-16 h-64 w-64 rounded-full bg-white/10 blur-3xl" />
+          <div aria-hidden="true" className="pointer-events-none absolute -right-12 bottom-0 h-56 w-56 rounded-full bg-black/10 blur-3xl" />
+
+          <div className="relative grid gap-10 md:grid-cols-[1.1fr_0.9fr] md:items-center">
+            {/* Left — pitch */}
+            <div>
+              <span className="inline-flex items-center gap-2 rounded-full bg-white/15 px-4 py-1.5 text-xs font-semibold uppercase tracking-wider text-white backdrop-blur">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" className="h-3.5 w-3.5">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M3 5.5A1.5 1.5 0 014.5 4h2.1a1.5 1.5 0 011.45 1.11l.9 3.3a1.5 1.5 0 01-.4 1.47l-1.4 1.4a13.5 13.5 0 006.07 6.07l1.4-1.4a1.5 1.5 0 011.47-.4l3.3.9A1.5 1.5 0 0120.5 18v2.1a1.5 1.5 0 01-1.6 1.5C9.6 21.02 2.98 14.4 2.5 6.1A1.5 1.5 0 013 5.5z" />
+                </svg>
+                {t("home.consult.chip")}
+              </span>
+              <h2 className="mt-4 font-display text-3xl font-semibold leading-snug md:text-4xl">
+                {t("home.consult.title")}
+              </h2>
+              <p className="mt-4 max-w-lg text-white/85">{t("home.consult.subtitle")}</p>
+
+              <ul className="mt-6 space-y-3">
+                {[t("home.consult.point1"), t("home.consult.point2"), t("home.consult.point3")].map((line) => (
+                  <li key={line} className="flex items-start gap-3 text-sm text-white/90">
+                    <span className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-white/20 text-[10px]">✓</span>
+                    {line}
+                  </li>
+                ))}
+              </ul>
+
+              <div className="mt-8 flex flex-wrap gap-3">
+                <LocaleLink
+                  href="/consult"
+                  className="inline-flex items-center justify-center gap-2 rounded-full bg-white px-6 py-3 text-sm font-semibold text-terracotta-700 shadow-soft transition-all duration-300 hover:-translate-y-0.5 hover:bg-cream-50"
+                >
+                  {t("home.consult.cta")}
+                </LocaleLink>
+                <a
+                  href={`https://wa.me/${siteConfig.whatsappNumber}?text=${encodeURIComponent(
+                    "Hi! I'd like to book a free 30-minute India travel consultation."
+                  )}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center gap-2 rounded-full border border-white/40 bg-white/15 px-6 py-3 text-sm font-semibold text-white backdrop-blur transition-all duration-300 hover:-translate-y-0.5 hover:bg-white/25"
+                >
+                  {t("cta.openWhatsApp")}
+                </a>
+              </div>
+            </div>
+
+            {/* Right — stat card */}
+            <div className="relative rounded-2xl border border-white/20 bg-white/10 p-7 text-center backdrop-blur">
+              <p className="font-display text-6xl font-semibold leading-none md:text-7xl">30</p>
+              <p className="mt-1 text-xs font-semibold uppercase tracking-[0.2em] text-white/70">
+                {t("consult.pricing.perMinutes")}
+              </p>
+              <p className="mt-4 font-display text-lg font-semibold">{t("home.consult.statLabel")}</p>
+              <p className="mt-1 text-sm text-white/75">{t("home.consult.statNote")}</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      </ScrollReveal>
+
       {/* TRUST STRIP */}
       <section className="border-b bg-cream-50" style={{ borderColor: "rgba(228,170,66,0.15)" }}>
         <div className="container-wide py-10 md:py-14">

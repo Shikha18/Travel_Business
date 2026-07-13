@@ -73,6 +73,17 @@ export const siteConfig = {
     label: "June – July 2026 Group Departures",
     bookingOpen: true,
   },
+
+  // 1:1 India travel consultation calls (/consult page)
+  // Paste real Stripe Payment Link URLs here once created in the Stripe
+  // Dashboard (Payment Links → New). Leave as "" to hide a button.
+  consult: {
+    freeMinutes: 30,
+    extensions: [
+      { minutes: 30, priceEUR: 35, priceUSD: 40, stripeLink: "" },
+      { minutes: 60, priceEUR: 60, priceUSD: 68, stripeLink: "" },
+    ],
+  },
 };
 
 export type SiteConfig = typeof siteConfig;
