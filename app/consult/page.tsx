@@ -38,10 +38,20 @@ export default function ConsultPage({
 
   return (
     <>
+      <section className="bg-cream-100">
+        <div className="container-wide py-10 md:py-14">
+          <span className="chip">{t("consult.chip")}</span>
+          <h1 className="mt-3 font-display text-3xl font-semibold md:text-4xl">
+            {t("consult.title")}
+          </h1>
+          <p className="mt-4 max-w-2xl text-ink-600">{t("consult.subtitle")}</p>
+        </div>
+      </section>
+
       <section id="book" className="container-wide py-8 md:py-12">
-        <div className="grid gap-5 md:grid-cols-2">
+        <div className="grid gap-6 md:grid-cols-[1fr_auto_1fr]">
           {/* Left column: pricing */}
-          <div className="flex flex-col gap-5">
+          <div className="order-2 flex flex-col gap-5 md:order-1">
             {/* Free tier */}
             <div className="card p-6">
               <span className="chip-saffron">{t("consult.pricing.free.title")}</span>
@@ -95,8 +105,20 @@ export default function ConsultPage({
                 )}
               </div>
             ))}
+          </div>
 
-            <div id="form" className="card flex flex-col p-8 scroll-mt-24">
+          {/* Middle column: compact video, vertically centered against the two side columns */}
+          <div className="order-1 flex justify-center md:order-2 md:h-full md:items-center">
+            <div className="card w-full max-w-[240px] overflow-hidden p-2 md:w-[240px]">
+              <div className="aspect-[9/16] overflow-hidden rounded-xl bg-black">
+                <ConsultVideo className="h-full w-full object-cover" />
+              </div>
+            </div>
+          </div>
+
+          {/* Right column: form */}
+          <div className="order-3 md:order-3 md:h-full">
+            <div id="form" className="card flex h-full flex-col p-8 scroll-mt-24">
               <h2 className="font-display text-xl font-semibold text-ink-900">
                 {t("consult.form.title")}
               </h2>
@@ -153,23 +175,6 @@ export default function ConsultPage({
                 </button>
                 <p className="text-xs text-ink-600">{t("consult.form.privacy")}</p>
               </form>
-            </div>
-          </div>
-
-          {/* Right column: hero text + video */}
-          <div className="flex h-full flex-col gap-5">
-            <div className="card bg-cream-100 p-6">
-              <span className="chip">{t("consult.chip")}</span>
-              <h1 className="mt-4 font-display text-2xl font-semibold md:text-3xl">
-                {t("consult.title")}
-              </h1>
-              <p className="mt-3 text-ink-600">{t("consult.subtitle")}</p>
-            </div>
-
-            <div className="card flex w-full flex-1 flex-col overflow-hidden p-3">
-              <div className="flex aspect-[9/16] min-h-[320px] flex-1 items-center justify-center overflow-hidden rounded-xl bg-black md:aspect-auto md:min-h-[420px]">
-                <ConsultVideo className="h-full w-full object-cover" />
-              </div>
             </div>
           </div>
         </div>
