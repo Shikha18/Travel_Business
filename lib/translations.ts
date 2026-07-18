@@ -327,12 +327,10 @@ export const translations = {
     "consult.title": "Thinking about India? Let's talk it through.",
     "consult.subtitle":
       "Whether you end up traveling with us or not, we're happy to answer your questions about visiting India. The first 30 minutes are free — no strings attached.",
-    "consult.pricing.title": "How it works",
     "consult.pricing.free.title": "First 30 minutes",
     "consult.pricing.free.price": "Free",
     "consult.pricing.free.body":
       "A relaxed call to answer whatever's on your mind — safety, routes, budgets, best time to go, or anything else about traveling in India.",
-    "consult.pricing.extra.title": "Want more time?",
     "consult.pricing.extra.body":
       "If 30 minutes isn't enough, book an extended session below. Same call, just more time to go deep.",
     "consult.pricing.perMinutes": "min session",
@@ -353,9 +351,6 @@ export const translations = {
     "consult.form.submit": "Request my free call",
     "consult.form.privacy":
       "By sending you agree we can contact you to schedule the call. We never share your details.",
-    "consult.sidebar.fastest.title": "Prefer WhatsApp?",
-    "consult.sidebar.fastest.body":
-      "Message us directly and we'll find a time that works for you.",
 
     // Footer
     "footer.explore": "Explore",

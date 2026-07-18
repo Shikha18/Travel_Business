@@ -103,7 +103,7 @@ export default function JourneyDetail({
         dangerouslySetInnerHTML={{ __html: JSON.stringify(journeySchema) }}
       />
       {/* HERO — full-bleed image with gradient; all text stays inside the dark overlay */}
-      <section className="relative min-h-[560px] overflow-hidden md:min-h-[680px]">
+      <section className="relative min-h-[440px] overflow-hidden md:min-h-[620px]">
         {/* Background carousel + gradient */}
         <div className="absolute inset-0">
           <HeroImageCarousel
@@ -114,7 +114,7 @@ export default function JourneyDetail({
         </div>
 
         {/* All content lives inside the dark gradient — never on the cream page background */}
-        <div className="relative container-wide flex min-h-[560px] flex-col justify-end pb-12 pt-20 text-white md:min-h-[680px] md:pb-16 md:pt-28">
+        <div className="relative container-wide flex min-h-[440px] flex-col justify-end pb-10 pt-16 text-white md:min-h-[620px] md:pb-16 md:pt-28">
           <div className="max-w-3xl">
             {/* Difficulty chip only */}
             <div className="flex flex-wrap gap-2">
@@ -124,7 +124,7 @@ export default function JourneyDetail({
             </div>
 
             {/* Title */}
-            <h1 className="mt-4 font-display text-4xl font-semibold leading-tight text-white drop-shadow-lg md:text-6xl">
+            <h1 className="mt-4 font-display text-3xl font-semibold leading-tight text-white drop-shadow-lg md:text-4xl">
               {journey.title}
             </h1>
             <p className="mt-3 max-w-2xl text-base text-white/85 md:text-lg">

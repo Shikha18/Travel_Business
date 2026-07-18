@@ -43,7 +43,7 @@ export default function WhyTrustelle({
           </div>
           <div>
             <span className="chip">{t("about.brand.chip")}</span>
-            <h1 className="mt-3 font-display text-3xl font-semibold md:text-4xl">
+            <h1 className="mt-3 font-display text-2xl font-semibold md:text-3xl">
               {t("about.brand.titlePrefix")}{" "}
               <span className="bg-gradient-to-r from-terracotta-600 to-saffron-500 bg-clip-text text-transparent">
                 GoTrustelle
@@ -101,8 +101,8 @@ export default function WhyTrustelle({
         </div>
 
         <div className="mx-auto mt-10 max-w-3xl">
-          <div className="relative rounded-3xl bg-gradient-to-br from-cream-50 via-white to-terracotta-50 px-8 py-10 shadow-card ring-1 ring-terracotta-100 md:px-12 md:py-12">
-            <div aria-hidden="true" className="absolute -top-5 left-10 font-display text-8xl leading-none text-terracotta-200 select-none">
+          <div className="relative rounded-3xl bg-gradient-to-br from-cream-50 via-white to-terracotta-50 px-6 py-8 shadow-card ring-1 ring-terracotta-100 sm:px-8 sm:py-10 md:px-12 md:py-12">
+            <div aria-hidden="true" className="absolute -top-4 left-6 font-display text-6xl leading-none text-terracotta-200 select-none sm:left-10 md:text-8xl">
               &ldquo;
             </div>
             <p className="relative text-ink-700 leading-[1.85] text-base md:text-lg">

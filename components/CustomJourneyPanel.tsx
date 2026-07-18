@@ -92,9 +92,9 @@ export default function CustomJourneyPanel() {
           </div>
 
           {/* How it works */}
-          <p className="text-xs font-semibold uppercase tracking-wider text-ink-500 mb-4">
+          {/* <p className="text-xs font-semibold uppercase tracking-wider text-ink-500 mb-4">
             How it works
-          </p>
+          </p> */}
           <ol className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4 mb-7">
             {STEPS.map((s) => (
               <li key={s.n} className="flex gap-3 rounded-2xl bg-white border border-saffron-100 p-4 shadow-soft">

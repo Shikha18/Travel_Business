@@ -180,7 +180,7 @@ export default function Header() {
             <LanguageSwitcher />
             <button
               type="button"
-              className="rounded-full p-2 text-ink-900 hover:bg-cream-100 transition-colors"
+              className="rounded-full p-3 text-ink-900 hover:bg-cream-100 transition-colors"
               onClick={() => setOpen(!open)}
               aria-label={t("nav.toggleMenu")}
               aria-expanded={open}

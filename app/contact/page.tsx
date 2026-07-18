@@ -41,7 +41,7 @@ export default function ContactPage({
       <section className="bg-cream-100">
         <div className="container-wide py-10 md:py-14">
           <span className="chip">{t("contact.chip")}</span>
-          <h1 className="mt-3 font-display text-4xl font-semibold md:text-5xl">
+          <h1 className="mt-3 font-display text-3xl font-semibold md:text-4xl">
             {t("contact.title")}
           </h1>
           <p className="mt-4 max-w-2xl text-ink-600">{t("contact.subtitle")}</p>
@@ -53,7 +53,7 @@ export default function ContactPage({
           <form
             action={FORMSPREE_ENDPOINT}
             method="POST"
-            className="card space-y-5 p-8"
+            className="card space-y-5 p-6 sm:p-8"
           >
             <div className="grid gap-5 sm:grid-cols-2">
               <Field label={t("contact.form.name")} name="name" required />

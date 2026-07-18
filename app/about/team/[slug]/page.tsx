@@ -108,7 +108,7 @@ export default function TeamMemberPage({
                   <div
                     className={`flex h-full w-full items-center justify-center bg-gradient-to-br ${member.gradient}`}
                   >
-                    <span className="font-display text-8xl font-semibold text-white drop-shadow-lg">
+                    <span className="font-display text-6xl font-semibold text-white drop-shadow-lg md:text-7xl">
                       {member.firstName.charAt(0)}
                     </span>
                   </div>
@@ -123,7 +123,7 @@ export default function TeamMemberPage({
             {/* Copy */}
             <div className="md:col-span-3">
               <span className={chipClass}>★ {t(k("tag"))}</span>
-              <h1 className="mt-4 font-display text-4xl font-semibold leading-tight md:text-5xl">
+              <h1 className="mt-4 font-display text-3xl font-semibold leading-tight md:text-4xl">
                 {member.fullName}
               </h1>
               <p

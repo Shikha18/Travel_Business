@@ -38,7 +38,7 @@ export default function JourneysPage({
       <section className="bg-cream-100">
         <div className="container-wide py-10 md:py-14">
           <span className="chip">{t("tours.chip")}</span>
-          <h1 className="mt-3 font-display text-4xl font-semibold md:text-5xl">
+          <h1 className="mt-3 font-display text-3xl font-semibold md:text-4xl">
             {t("tours.title")}
           </h1>
           <p className="mt-4 max-w-2xl text-ink-600">{t("tours.subtitle")}</p>
@@ -68,10 +68,10 @@ export default function JourneysPage({
           ))}
         </div>
 
-        <div className="relative mt-16 overflow-hidden rounded-3xl bg-warm-gradient px-8 py-14 text-center text-white shadow-card md:py-16">
+        <div className="relative mt-16 overflow-hidden rounded-3xl bg-warm-gradient px-5 py-10 text-center text-white shadow-card sm:px-8 md:py-16">
           <div aria-hidden="true" className="pointer-events-none absolute -left-10 -top-10 h-48 w-48 rounded-full bg-white/10 blur-3xl" />
           <div aria-hidden="true" className="pointer-events-none absolute -right-10 bottom-0 h-40 w-40 rounded-full bg-black/10 blur-3xl" />
-          <h2 className="relative font-display text-3xl font-semibold md:text-4xl">
+          <h2 className="relative font-display text-2xl font-semibold md:text-3xl">
             {t("tours.customCTA.title")}
           </h2>
           <p className="relative mx-auto mt-4 max-w-xl text-white/90">

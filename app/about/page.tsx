@@ -63,7 +63,7 @@ export default function AboutPage({
         <div className="container-wide grid gap-10 py-10 md:grid-cols-2 md:items-center md:py-16">
           <div>
             <span className="chip">{t("about.chip")}</span>
-            <h1 className="mt-3 font-display text-4xl font-semibold md:text-5xl">
+            <h1 className="mt-3 font-display text-3xl font-semibold md:text-4xl">
               {t("about.title")}
             </h1>
             <p className="mt-5 text-ink-700 leading-relaxed">{t("about.p1")}</p>
@@ -103,7 +103,7 @@ export default function AboutPage({
         <div className="container-wide relative">
           <div className="mx-auto max-w-2xl text-center">
             <span className="chip">{t("about.team.chip")}</span>
-            <h2 className="mt-3 font-display text-3xl font-semibold md:text-4xl">
+            <h2 className="mt-3 font-display text-2xl font-semibold md:text-3xl">
               {t("about.team.title")}
             </h2>
             <p className="mt-4 text-ink-600">{t("about.team.subtitle")}</p>
@@ -147,7 +147,7 @@ export default function AboutPage({
                       className={`flex h-full w-full items-center justify-center bg-gradient-to-br ${m.gradient}`}
                     >
                       <div className="flex h-40 w-40 items-center justify-center rounded-full bg-white/10 ring-4 ring-white/30 backdrop-blur-sm md:h-52 md:w-52">
-                        <span className="font-display text-7xl font-semibold text-white drop-shadow-[0_4px_24px_rgba(0,0,0,0.3)] md:text-8xl">
+                        <span className="font-display text-6xl font-semibold text-white drop-shadow-[0_4px_24px_rgba(0,0,0,0.3)] md:text-7xl">
                           {m.firstName.charAt(0)}
                         </span>
                       </div>
@@ -216,7 +216,7 @@ export default function AboutPage({
         <div className="container-wide">
         <div className="max-w-2xl">
           <span className="chip">{t("about.principles.chip")}</span>
-          <h2 className="mt-3 font-display text-3xl font-semibold md:text-4xl">
+          <h2 className="mt-3 font-display text-2xl font-semibold md:text-3xl">
             {t("about.principles.title")}
           </h2>
         </div>
@@ -237,19 +237,19 @@ export default function AboutPage({
       {/* STATS */}
       <section className="bg-white py-10 md:py-14">
         <div className="container-wide">
-        <div className="grid gap-8 rounded-3xl bg-cream-50 p-10 sm:grid-cols-2 md:grid-cols-4">
+        <div className="grid gap-6 rounded-3xl bg-cream-50 p-6 sm:grid-cols-2 sm:p-10 md:grid-cols-4">
           <div>
-            <div className="font-display text-4xl font-semibold text-saffron-500">100%</div>
+            <div className="font-display text-3xl font-semibold text-saffron-500">100%</div>
             <div className="mt-2 text-sm font-semibold text-ink-900">{t("about.stats.inhouseLabel")}</div>
             <p className="mt-1 text-sm text-ink-600">{t("about.stats.inhouseBody")}</p>
           </div>
           <div>
-            <div className="font-display text-4xl font-semibold text-terracotta-500">24/7</div>
+            <div className="font-display text-3xl font-semibold text-terracotta-500">24/7</div>
             <div className="mt-2 text-sm font-semibold text-ink-900">{t("about.stats.supportLabel")}</div>
             <p className="mt-1 text-sm text-ink-600">{t("about.stats.supportBody")}</p>
           </div>
           <div>
-            <div className="font-display text-4xl font-semibold text-saffron-500">Max 10</div>
+            <div className="font-display text-3xl font-semibold text-saffron-500">Max 10</div>
             <div className="mt-2 text-sm font-semibold text-ink-900">{t("about.stats.groupLabel")}</div>
             <p className="mt-1 text-sm text-ink-600">{t("about.stats.groupBody")}</p>
           </div>

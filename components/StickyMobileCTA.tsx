@@ -9,7 +9,10 @@ interface Props {
 
 export default function StickyMobileCTA({ price, durationDays, groupSize, waLink }: Props) {
   return (
-    <div className="fixed inset-x-0 bottom-0 z-50 md:hidden border-t border-white/10 bg-ink-900 px-4 pb-safe py-3">
+    <div
+      className="fixed inset-x-0 bottom-0 z-50 md:hidden border-t border-white/10 bg-ink-900 px-4 pt-3"
+      style={{ paddingBottom: "calc(0.75rem + env(safe-area-inset-bottom))" }}
+    >
       <div className="flex items-center justify-between gap-3">
         <div className="min-w-0">
           <div className="text-[10px] font-semibold uppercase tracking-wider text-white/50">From</div>

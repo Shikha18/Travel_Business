@@ -4,6 +4,7 @@ import { getLocale, getTranslator } from "@/lib/i18n";
 import ValidatedField from "@/components/ValidatedField";
 import PhoneField from "@/components/PhoneField";
 import FutureDateField from "@/components/FutureDateField";
+import ConsultVideo from "@/components/ConsultVideo";
 
 export const metadata: Metadata = {
   title: "Free India Travel Consultation — GoTrustelle",
@@ -37,23 +38,10 @@ export default function ConsultPage({
 
   return (
     <>
-      <section className="bg-cream-100">
-        <div className="container-wide py-10 md:py-14">
-          <span className="chip">{t("consult.chip")}</span>
-          <h1 className="mt-3 font-display text-4xl font-semibold md:text-5xl">
-            {t("consult.title")}
-          </h1>
-          <p className="mt-4 max-w-2xl text-ink-600">{t("consult.subtitle")}</p>
-        </div>
-      </section>
-
-      <section className="container-wide py-8 md:py-12">
-        {/* Pricing */}
-        <div className="mb-10">
-          <h2 className="font-display text-2xl font-semibold text-ink-900">
-            {t("consult.pricing.title")}
-          </h2>
-          <div className="mt-5 grid gap-5 md:grid-cols-3">
+      <section id="book" className="container-wide py-8 md:py-12">
+        <div className="grid gap-5 md:grid-cols-2">
+          {/* Left column: pricing */}
+          <div className="flex flex-col gap-5">
             {/* Free tier */}
             <div className="card p-6">
               <span className="chip-saffron">{t("consult.pricing.free.title")}</span>
@@ -64,7 +52,7 @@ export default function ConsultPage({
                 {t("consult.pricing.free.body")}
               </p>
               <a
-                href="#book"
+                href="#form"
                 className="btn-primary mt-5 inline-flex w-full items-center justify-center"
               >
                 {t("consult.form.submit")}
@@ -107,13 +95,8 @@ export default function ConsultPage({
                 )}
               </div>
             ))}
-          </div>
-        </div>
 
-        {/* Form + sidebar */}
-        <div id="book" className="grid gap-8 md:grid-cols-5 scroll-mt-24">
-          <div className="md:col-span-3">
-            <div className="card p-8">
+            <div id="form" className="card flex flex-col p-8 scroll-mt-24">
               <h2 className="font-display text-xl font-semibold text-ink-900">
                 {t("consult.form.title")}
               </h2>
@@ -173,26 +156,22 @@ export default function ConsultPage({
             </div>
           </div>
 
-          <aside className="md:col-span-2">
-            <div className="card p-6">
-              <h3 className="font-display text-xl font-semibold">
-                {t("consult.sidebar.fastest.title")}
-              </h3>
-              <p className="mt-2 text-sm text-ink-600">
-                {t("consult.sidebar.fastest.body")}
-              </p>
-              <a
-                href={`https://wa.me/${siteConfig.whatsappNumber}?text=${encodeURIComponent(
-                  "Hi! I'd like to book a free 30-minute India travel consultation."
-                )}`}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="btn-primary mt-4 w-full bg-[#25D366] hover:bg-[#1da851]"
-              >
-                {t("cta.openWhatsApp")}
-              </a>
+          {/* Right column: hero text + video */}
+          <div className="flex h-full flex-col gap-5">
+            <div className="card bg-cream-100 p-6">
+              <span className="chip">{t("consult.chip")}</span>
+              <h1 className="mt-4 font-display text-2xl font-semibold md:text-3xl">
+                {t("consult.title")}
+              </h1>
+              <p className="mt-3 text-ink-600">{t("consult.subtitle")}</p>
             </div>
-          </aside>
+
+            <div className="card flex w-full flex-1 flex-col overflow-hidden p-3">
+              <div className="flex aspect-[9/16] min-h-[320px] flex-1 items-center justify-center overflow-hidden rounded-xl bg-black md:aspect-auto md:min-h-[420px]">
+                <ConsultVideo className="h-full w-full object-cover" />
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </>

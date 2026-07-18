@@ -145,7 +145,7 @@ export default function Home({
               {t("home.hero.season")}
             </span>
 
-            <h1 className="mt-6 font-display text-3xl font-semibold leading-tight tracking-tight text-white md:text-4xl lg:text-5xl">
+            <h1 className="mt-6 font-display text-2xl font-semibold leading-tight tracking-tight text-white md:text-3xl lg:text-4xl">
               <span className="block">{t("home.hero.titleLine1")}</span>
               <span className="block">
                 and understands{" "}
@@ -237,7 +237,7 @@ export default function Home({
       {/* FREE CONSULTATION — USP */}
       <ScrollReveal direction="bottom">
       <section className="container-wide py-8 md:py-12">
-        <div className="relative overflow-hidden rounded-3xl bg-dusk-gradient px-8 py-12 text-white shadow-glow md:px-14 md:py-16">
+        <div className="relative overflow-hidden rounded-3xl bg-dusk-gradient px-5 py-8 text-white shadow-glow sm:px-8 md:px-14 md:py-16">
           <div aria-hidden="true" className="pointer-events-none absolute -left-16 -top-16 h-64 w-64 rounded-full bg-white/10 blur-3xl" />
           <div aria-hidden="true" className="pointer-events-none absolute -right-12 bottom-0 h-56 w-56 rounded-full bg-black/10 blur-3xl" />
 
@@ -250,7 +250,7 @@ export default function Home({
                 </svg>
                 {t("home.consult.chip")}
               </span>
-              <h2 className="mt-4 font-display text-3xl font-semibold leading-snug md:text-4xl">
+              <h2 className="mt-4 font-display text-xl font-semibold leading-snug md:text-2xl">
                 {t("home.consult.title")}
               </h2>
               <p className="mt-4 max-w-lg text-white/85">{t("home.consult.subtitle")}</p>
@@ -286,7 +286,7 @@ export default function Home({
 
             {/* Right — stat card */}
             <div className="relative rounded-2xl border border-white/20 bg-white/10 p-7 text-center backdrop-blur">
-              <p className="font-display text-6xl font-semibold leading-none md:text-7xl">30</p>
+              <p className="font-display text-5xl font-semibold leading-none md:text-6xl">30</p>
               <p className="mt-1 text-xs font-semibold uppercase tracking-[0.2em] text-white/70">
                 {t("consult.pricing.perMinutes")}
               </p>
@@ -312,7 +312,7 @@ export default function Home({
             </p>
           </div>
           {/* 4-column icon strip */}
-          <div className="grid grid-cols-2 gap-8 md:grid-cols-4">
+          <div className="grid grid-cols-2 gap-6 sm:gap-8 md:grid-cols-4">
             {[
               {
                 title: "Small groups only",
@@ -374,7 +374,7 @@ export default function Home({
             {/* Left — text */}
             <div>
               <span className="chip">{t("home.weSeeYou.chip")}</span>
-              <h2 className="mt-4 font-display text-2xl font-semibold leading-snug md:text-3xl">
+              <h2 className="mt-4 font-display text-xl font-semibold leading-snug md:text-2xl">
                 {t("home.weSeeYou.titleLine1")}{" "}
                 <em className="not-italic text-terracotta-500 italic">{t("home.weSeeYou.titleEm")}</em>
                 <br />{t("home.weSeeYou.titleLine2")}
@@ -420,7 +420,7 @@ export default function Home({
           <ScrollReveal direction="left">
           <div>
             <span className="chip">{t("home.featured.chip")}</span>
-            <h2 className="mt-3 font-display text-3xl font-semibold md:text-4xl">
+            <h2 className="mt-3 font-display text-2xl font-semibold md:text-3xl">
               {t("home.featured.title")}
             </h2>
             <p className="mt-3 max-w-xl text-ink-600">
@@ -461,10 +461,10 @@ export default function Home({
             {/* Right — content */}
             <div>
               <span className="chip">{t("home.promise.chip")}</span>
-              <h2 className="mt-4 font-display text-2xl font-semibold leading-snug md:text-3xl">
+              <h2 className="mt-4 font-display text-xl font-semibold leading-snug md:text-2xl">
                 {t("home.promise.titleLine1")}<br />
                 {t("home.promise.titleLine2")}{" "}
-                <span className="font-script text-3xl text-terracotta-500 md:text-4xl" style={{ fontStyle: "italic", letterSpacing: "-0.01em" }}>
+                <span className="font-script text-2xl text-terracotta-500 md:text-3xl" style={{ fontStyle: "italic", letterSpacing: "-0.01em" }}>
                   {t("home.promise.titleGuest")}
                 </span>
               </h2>
@@ -495,7 +495,7 @@ export default function Home({
         <ScrollReveal direction="bottom">
         <div className="max-w-2xl">
           <span className="chip">{t("home.testimonials.chip")}</span>
-          <h2 className="mt-3 font-display text-3xl font-semibold md:text-4xl">
+          <h2 className="mt-3 font-display text-2xl font-semibold md:text-3xl">
             {t("home.testimonials.title")}
           </h2>
         </div>
@@ -521,17 +521,15 @@ export default function Home({
             </ScrollReveal>
           ))}
         </div>
-
       </section>
-
 
       {/* FINAL CTA */}
       <ScrollReveal direction="bottom">
       <section className="container-wide py-8 md:py-12">
-        <div className="relative overflow-hidden rounded-3xl bg-warm-gradient px-8 py-10 text-center text-white shadow-card md:py-14">
+        <div className="relative overflow-hidden rounded-3xl bg-warm-gradient px-5 py-8 text-center text-white shadow-card sm:px-8 md:py-14">
           <div aria-hidden="true" className="pointer-events-none absolute -left-10 -top-10 h-48 w-48 rounded-full bg-white/10 blur-3xl" />
           <div aria-hidden="true" className="pointer-events-none absolute -right-10 bottom-0 h-40 w-40 rounded-full bg-black/10 blur-3xl" />
-          <h2 className="relative font-display text-3xl font-semibold md:text-5xl">
+          <h2 className="relative font-display text-2xl font-semibold md:text-3xl">
             {t("home.finalCTA.title")}
           </h2>
           <p className="relative mx-auto mt-4 max-w-xl text-white/90">

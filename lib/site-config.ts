@@ -27,9 +27,10 @@ export const siteConfig = {
 
   // Social (brand accounts — currently point to founder's personal IG until brand accounts are made)
   social: {
-    instagram: "https://www.instagram.com/backpacker_shikha/",
+    instagram: "https://www.instagram.com/gotrustelle/",
     facebook: "https://facebook.com/",
     youtube: "https://youtube.com/",
+    linkedin: "https://www.linkedin.com/company/117413955/",
   },
 
   // Team (shown on the About page)

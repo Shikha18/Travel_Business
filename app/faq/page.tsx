@@ -32,7 +32,7 @@ export default function FaqPage({
       <section className="bg-cream-100 py-14 md:py-20">
         <div className="container-narrow text-center">
           <span className="chip">Good to know</span>
-          <h1 className="mt-4 font-display text-4xl font-semibold tracking-tight md:text-5xl">
+          <h1 className="mt-4 font-display text-3xl font-semibold tracking-tight md:text-4xl">
             Frequently asked questions
           </h1>
           <p className="mx-auto mt-5 max-w-xl text-ink-600 leading-relaxed">
