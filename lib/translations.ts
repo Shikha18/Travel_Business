@@ -17,7 +17,7 @@ export const translations = {
     "nav.home": "Home",
     "nav.tours": "Journeys",
     "nav.about": "About",
-    "nav.why": "Why Trustelle",
+    "nav.why": "Why GoTrustelle",
     "nav.faq": "FAQ",
     "nav.contact": "Contact",
     "nav.planTrip": "Plan my trip",
@@ -416,7 +416,7 @@ export const translations = {
     "nav.home": "Start",
     "nav.tours": "Reisen",
     "nav.about": "Über uns",
-    "nav.why": "Warum Trustelle",
+    "nav.why": "Warum GoTrustelle",
     "nav.faq": "FAQ",
     "nav.contact": "Kontakt",
     "nav.planTrip": "Reise planen",
@@ -720,6 +720,37 @@ export const translations = {
     "contact.sidebar.phone": "Telefon",
     "contact.sidebar.basedIn": "Sitz in",
 
+    // Consult
+    "nav.consult": "Kostenlose Beratung",
+    "consult.chip": "Fragen Sie uns alles",
+    "consult.title": "Denken Sie über Indien nach? Lassen Sie uns reden.",
+    "consult.subtitle":
+      "Ob Sie am Ende mit uns reisen oder nicht, wir beantworten Ihnen gerne Ihre Fragen zu einer Reise nach Indien. Die ersten 30 Minuten sind kostenlos — ganz ohne Verpflichtung.",
+    "consult.pricing.free.title": "Erste 30 Minuten",
+    "consult.pricing.free.price": "Kostenlos",
+    "consult.pricing.free.body":
+      "Ein entspanntes Gespräch, um alles zu beantworten, was Sie beschäftigt — Sicherheit, Routen, Budgets, beste Reisezeit oder alles andere rund um das Reisen in Indien.",
+    "consult.pricing.extra.body":
+      "Falls 30 Minuten nicht reichen, buchen Sie unten eine verlängerte Sitzung. Derselbe Anruf, nur mit mehr Zeit für die Details.",
+    "consult.pricing.perMinutes": "Min. Sitzung",
+    "consult.pricing.book": "Buchen & bezahlen",
+    "consult.pricing.comingSoon": "Zahlungslink folgt in Kürze — schreiben Sie uns auf WhatsApp zur Buchung",
+    "consult.form.title": "Buchen Sie Ihr kostenloses 30-minütiges Gespräch",
+    "consult.form.subtitle":
+      "Erzählen Sie uns kurz von Ihrer Reise und Ihren gewünschten Zeiten, und wir bestätigen einen Termin per WhatsApp oder E-Mail.",
+    "consult.form.name": "Ihr Name",
+    "consult.form.email": "E-Mail",
+    "consult.form.whatsapp": "WhatsApp-Nummer",
+    "consult.form.topic": "Worüber möchten Sie sprechen?",
+    "consult.form.topicPlaceholder":
+      "z. B. Ist Nordostindien im Dezember sicher für alleinreisende Frauen?",
+    "consult.form.availabilityDate": "Bevorzugtes Datum für das Gespräch",
+    "consult.form.availabilityTime": "Bevorzugte Zeit & Zeitzone",
+    "consult.form.availabilityTimePlaceholder": "z. B. Wochentags abends, MEZ",
+    "consult.form.submit": "Kostenloses Gespräch anfragen",
+    "consult.form.privacy":
+      "Mit dem Absenden stimmen Sie zu, dass wir Sie zur Terminvereinbarung kontaktieren dürfen. Wir geben Ihre Daten niemals weiter.",
+
     // Footer
     "footer.explore": "Entdecken",
     "footer.exploreAll": "Alle Reisen",
@@ -783,7 +814,7 @@ export const translations = {
     "nav.home": "Accueil",
     "nav.tours": "Voyages",
     "nav.about": "À propos",
-    "nav.why": "Pourquoi Trustelle",
+    "nav.why": "Pourquoi GoTrustelle",
     "nav.faq": "FAQ",
     "nav.contact": "Contact",
     "nav.planTrip": "Planifier mon voyage",
@@ -1089,6 +1120,37 @@ export const translations = {
     "contact.sidebar.phone": "Téléphone",
     "contact.sidebar.basedIn": "Basé à",
 
+    // Consult
+    "nav.consult": "Consultation gratuite",
+    "consult.chip": "Posez-nous vos questions",
+    "consult.title": "Vous pensez à l'Inde ? Discutons-en.",
+    "consult.subtitle":
+      "Que vous voyagiez avec nous ou non, nous sommes ravis de répondre à vos questions sur un voyage en Inde. Les 30 premières minutes sont gratuites — sans aucun engagement.",
+    "consult.pricing.free.title": "Les 30 premières minutes",
+    "consult.pricing.free.price": "Gratuit",
+    "consult.pricing.free.body":
+      "Un appel décontracté pour répondre à toutes vos questions — sécurité, itinéraires, budgets, meilleure période pour partir, ou tout autre sujet lié à un voyage en Inde.",
+    "consult.pricing.extra.body":
+      "Si 30 minutes ne suffisent pas, réservez une session prolongée ci-dessous. Le même appel, avec plus de temps pour approfondir.",
+    "consult.pricing.perMinutes": "min de session",
+    "consult.pricing.book": "Réserver et payer",
+    "consult.pricing.comingSoon": "Lien de paiement bientôt disponible — contactez-nous sur WhatsApp pour réserver",
+    "consult.form.title": "Réservez votre appel gratuit de 30 minutes",
+    "consult.form.subtitle":
+      "Parlez-nous un peu de votre voyage et de vos disponibilités, et nous confirmerons un créneau par WhatsApp ou e-mail.",
+    "consult.form.name": "Votre nom",
+    "consult.form.email": "E-mail",
+    "consult.form.whatsapp": "Numéro WhatsApp",
+    "consult.form.topic": "De quoi souhaitez-vous parler ?",
+    "consult.form.topicPlaceholder":
+      "ex. : L'Inde du Nord-Est est-elle sûre pour les femmes voyageant seules en décembre ?",
+    "consult.form.availabilityDate": "Date souhaitée pour l'appel",
+    "consult.form.availabilityTime": "Heure et fuseau horaire souhaités",
+    "consult.form.availabilityTimePlaceholder": "ex. : En semaine le soir, CET",
+    "consult.form.submit": "Demander mon appel gratuit",
+    "consult.form.privacy":
+      "En envoyant ce formulaire, vous acceptez que nous vous contactions pour planifier l'appel. Nous ne partageons jamais vos coordonnées.",
+
     // Footer
     "footer.explore": "Explorer",
     "footer.exploreAll": "Tous les voyages",
@@ -1153,7 +1215,7 @@ export const translations = {
     "nav.home": "Inicio",
     "nav.tours": "Viajes",
     "nav.about": "Nosotros",
-    "nav.why": "Por qué Trustelle",
+    "nav.why": "Por qué GoTrustelle",
     "nav.faq": "FAQ",
     "nav.contact": "Contacto",
     "nav.planTrip": "Planificar mi viaje",
@@ -1459,6 +1521,37 @@ export const translations = {
     "contact.sidebar.phone": "Teléfono",
     "contact.sidebar.basedIn": "Con sede en",
 
+    // Consult
+    "nav.consult": "Consulta gratuita",
+    "consult.chip": "Pregúntanos lo que quieras",
+    "consult.title": "¿Estás pensando en la India? Hablemos.",
+    "consult.subtitle":
+      "Viajes con nosotros o no, nos encantará responder tus preguntas sobre visitar la India. Los primeros 30 minutos son gratis, sin ningún compromiso.",
+    "consult.pricing.free.title": "Primeros 30 minutos",
+    "consult.pricing.free.price": "Gratis",
+    "consult.pricing.free.body":
+      "Una llamada relajada para responder lo que tengas en mente: seguridad, rutas, presupuestos, mejor época para viajar o cualquier otra cosa sobre viajar por la India.",
+    "consult.pricing.extra.body":
+      "Si 30 minutos no son suficientes, reserva una sesión ampliada a continuación. La misma llamada, con más tiempo para profundizar.",
+    "consult.pricing.perMinutes": "min de sesión",
+    "consult.pricing.book": "Reservar y pagar",
+    "consult.pricing.comingSoon": "Enlace de pago disponible próximamente — escríbenos por WhatsApp para reservar",
+    "consult.form.title": "Reserva tu llamada gratuita de 30 minutos",
+    "consult.form.subtitle":
+      "Cuéntanos un poco sobre tu viaje y tus horarios preferidos, y confirmaremos un horario por WhatsApp o correo electrónico.",
+    "consult.form.name": "Tu nombre",
+    "consult.form.email": "Correo electrónico",
+    "consult.form.whatsapp": "Número de WhatsApp",
+    "consult.form.topic": "¿De qué te gustaría hablar?",
+    "consult.form.topicPlaceholder":
+      "ej.: ¿Es seguro el noreste de la India para mujeres que viajan solas en diciembre?",
+    "consult.form.availabilityDate": "Fecha preferida para la llamada",
+    "consult.form.availabilityTime": "Hora y zona horaria preferidas",
+    "consult.form.availabilityTimePlaceholder": "ej.: Tardes de días de semana, CET",
+    "consult.form.submit": "Solicitar mi llamada gratuita",
+    "consult.form.privacy":
+      "Al enviar aceptas que podamos contactarte para programar la llamada. Nunca compartimos tus datos.",
+
     // Footer
     "footer.explore": "Explorar",
     "footer.exploreAll": "Todos los viajes",
@@ -1523,7 +1616,7 @@ export const translations = {
     "nav.home": "Home",
     "nav.tours": "Viaggi",
     "nav.about": "Chi siamo",
-    "nav.why": "Perché Trustelle",
+    "nav.why": "Perché GoTrustelle",
     "nav.faq": "FAQ",
     "nav.contact": "Contatti",
     "nav.planTrip": "Pianifica il mio viaggio",
@@ -1829,6 +1922,37 @@ export const translations = {
     "contact.sidebar.phone": "Telefono",
     "contact.sidebar.basedIn": "Con sede a",
 
+    // Consult
+    "nav.consult": "Consulenza gratuita",
+    "consult.chip": "Chiedici pure",
+    "consult.title": "Stai pensando all'India? Parliamone.",
+    "consult.subtitle":
+      "Che tu finisca per viaggiare con noi o no, siamo felici di rispondere alle tue domande su una visita in India. I primi 30 minuti sono gratuiti, senza alcun impegno.",
+    "consult.pricing.free.title": "Primi 30 minuti",
+    "consult.pricing.free.price": "Gratuito",
+    "consult.pricing.free.body":
+      "Una chiamata rilassata per rispondere a tutto ciò che hai in mente — sicurezza, itinerari, budget, periodo migliore per partire o qualsiasi altra cosa su come viaggiare in India.",
+    "consult.pricing.extra.body":
+      "Se 30 minuti non bastano, prenota una sessione estesa qui sotto. Stessa chiamata, solo più tempo per approfondire.",
+    "consult.pricing.perMinutes": "min di sessione",
+    "consult.pricing.book": "Prenota e paga",
+    "consult.pricing.comingSoon": "Link di pagamento in arrivo — scrivici su WhatsApp per prenotare",
+    "consult.form.title": "Prenota la tua chiamata gratuita di 30 minuti",
+    "consult.form.subtitle":
+      "Raccontaci un po' del tuo viaggio e degli orari preferiti, e confermeremo un appuntamento su WhatsApp o via e-mail.",
+    "consult.form.name": "Il tuo nome",
+    "consult.form.email": "Email",
+    "consult.form.whatsapp": "Numero WhatsApp",
+    "consult.form.topic": "Di cosa vorresti parlare?",
+    "consult.form.topicPlaceholder":
+      "es.: L'India nord-orientale è sicura per le donne che viaggiano da sole a dicembre?",
+    "consult.form.availabilityDate": "Data preferita per la chiamata",
+    "consult.form.availabilityTime": "Orario e fuso orario preferiti",
+    "consult.form.availabilityTimePlaceholder": "es.: Sere nei giorni feriali, CET",
+    "consult.form.submit": "Richiedi la mia chiamata gratuita",
+    "consult.form.privacy":
+      "Inviando accetti che possiamo contattarti per fissare la chiamata. Non condividiamo mai i tuoi dati.",
+
     // Footer
     "footer.explore": "Esplora",
     "footer.exploreAll": "Tutti i viaggi",
@@ -1893,7 +2017,7 @@ export const translations = {
     "nav.home": "Início",
     "nav.tours": "Viagens",
     "nav.about": "Sobre nós",
-    "nav.why": "Por que Trustelle",
+    "nav.why": "Por que GoTrustelle",
     "nav.faq": "FAQ",
     "nav.contact": "Contato",
     "nav.planTrip": "Planear a minha viagem",
@@ -2199,6 +2323,37 @@ export const translations = {
     "contact.sidebar.phone": "Telefone",
     "contact.sidebar.basedIn": "Sediado em",
 
+    // Consult
+    "nav.consult": "Consulta gratuita",
+    "consult.chip": "Pergunte-nos qualquer coisa",
+    "consult.title": "Está pensando na Índia? Vamos conversar.",
+    "consult.subtitle":
+      "Quer acabe viajando com a gente ou não, temos prazer em responder às suas perguntas sobre visitar a Índia. Os primeiros 30 minutos são gratuitos — sem qualquer compromisso.",
+    "consult.pricing.free.title": "Primeiros 30 minutos",
+    "consult.pricing.free.price": "Gratuito",
+    "consult.pricing.free.body":
+      "Uma conversa tranquila para responder ao que estiver em sua mente — segurança, rotas, orçamentos, melhor época para ir, ou qualquer outra coisa sobre viajar na Índia.",
+    "consult.pricing.extra.body":
+      "Se 30 minutos não forem suficientes, reserve uma sessão estendida abaixo. A mesma chamada, só com mais tempo para se aprofundar.",
+    "consult.pricing.perMinutes": "min de sessão",
+    "consult.pricing.book": "Reservar e pagar",
+    "consult.pricing.comingSoon": "Link de pagamento em breve — fale conosco no WhatsApp para reservar",
+    "consult.form.title": "Reserve sua chamada gratuita de 30 minutos",
+    "consult.form.subtitle":
+      "Conte-nos um pouco sobre sua viagem e horários preferidos, e confirmaremos um horário por WhatsApp ou e-mail.",
+    "consult.form.name": "Seu nome",
+    "consult.form.email": "E-mail",
+    "consult.form.whatsapp": "Número de WhatsApp",
+    "consult.form.topic": "Sobre o que você gostaria de falar?",
+    "consult.form.topicPlaceholder":
+      "ex.: O nordeste da Índia é seguro para mulheres viajando sozinhas em dezembro?",
+    "consult.form.availabilityDate": "Data preferida para a chamada",
+    "consult.form.availabilityTime": "Horário e fuso horário preferidos",
+    "consult.form.availabilityTimePlaceholder": "ex.: Noites de dias de semana, CET",
+    "consult.form.submit": "Solicitar minha chamada gratuita",
+    "consult.form.privacy":
+      "Ao enviar, você concorda que podemos contatá-lo para agendar a chamada. Nunca compartilhamos seus dados.",
+
     // Footer
     "footer.explore": "Explorar",
     "footer.exploreAll": "Todas as viagens",
@@ -2263,7 +2418,7 @@ export const translations = {
     "nav.home": "Home",
     "nav.tours": "Reizen",
     "nav.about": "Over ons",
-    "nav.why": "Waarom Trustelle",
+    "nav.why": "Waarom GoTrustelle",
     "nav.faq": "FAQ",
     "nav.contact": "Contact",
     "nav.planTrip": "Mijn reis plannen",
@@ -2568,6 +2723,37 @@ export const translations = {
       "Maandag – Zaterdag · 9:00 – 21:00 IST\nZondag · Alleen noodondersteuning tijdens de reis",
     "contact.sidebar.phone": "Telefoon",
     "contact.sidebar.basedIn": "Gevestigd in",
+
+    // Consult
+    "nav.consult": "Gratis adviesgesprek",
+    "consult.chip": "Vraag ons alles",
+    "consult.title": "Denk je aan India? Laten we erover praten.",
+    "consult.subtitle":
+      "Of je nu wel of niet met ons reist, we beantwoorden graag je vragen over een bezoek aan India. De eerste 30 minuten zijn gratis — zonder verplichtingen.",
+    "consult.pricing.free.title": "Eerste 30 minuten",
+    "consult.pricing.free.price": "Gratis",
+    "consult.pricing.free.body":
+      "Een ontspannen gesprek om al je vragen te beantwoorden — veiligheid, routes, budgetten, beste reistijd, of iets anders over reizen in India.",
+    "consult.pricing.extra.body":
+      "Als 30 minuten niet genoeg zijn, boek dan hieronder een langere sessie. Hetzelfde gesprek, maar meer tijd om de diepte in te gaan.",
+    "consult.pricing.perMinutes": "min sessie",
+    "consult.pricing.book": "Boek & betaal",
+    "consult.pricing.comingSoon": "Betaallink volgt binnenkort — app ons op WhatsApp om te boeken",
+    "consult.form.title": "Boek je gratis gesprek van 30 minuten",
+    "consult.form.subtitle":
+      "Vertel ons iets over je reis en gewenste tijden, en we bevestigen een moment via WhatsApp of e-mail.",
+    "consult.form.name": "Je naam",
+    "consult.form.email": "E-mail",
+    "consult.form.whatsapp": "WhatsApp-nummer",
+    "consult.form.topic": "Waarover wil je graag praten?",
+    "consult.form.topicPlaceholder":
+      "bijv.: Is Noordoost-India veilig voor alleenreizende vrouwen in december?",
+    "consult.form.availabilityDate": "Gewenste datum voor het gesprek",
+    "consult.form.availabilityTime": "Gewenste tijd & tijdzone",
+    "consult.form.availabilityTimePlaceholder": "bijv.: Doordeweeks 's avonds, CET",
+    "consult.form.submit": "Vraag mijn gratis gesprek aan",
+    "consult.form.privacy":
+      "Door te versturen ga je ermee akkoord dat we contact met je opnemen om het gesprek in te plannen. We delen je gegevens nooit.",
 
     // Footer
     "footer.explore": "Ontdekken",
