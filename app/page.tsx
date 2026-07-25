@@ -88,7 +88,7 @@ const testimonials = [
       "The Old Delhi food walk alone was worth the trip. Shikha and team go the extra mile — small touches like arranged airport pickups and a local SIM ready on arrival.",
     name: "James T.",
     location: "Toronto, Canada",
-    trip: "Golden Triangle Classic",
+    trip: "Golden Triangle, Pushkar & Varanasi",
   },
 ];
 
