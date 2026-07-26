@@ -145,6 +145,13 @@ export default function JourneyDetail({
       <section className="container-wide grid gap-10 py-14 md:grid-cols-3">
         {/* LEFT — content */}
         <div className="md:col-span-2 space-y-14">
+          {/* Itinerary map */}
+          {journey.routeStops && journey.routeStops.length > 0 && (
+            <div>
+              <RouteMap stops={journey.routeStops} />
+            </div>
+          )}
+
           {/* Overview */}
           <div>
             <h2 className="font-display text-2xl font-semibold md:text-3xl">
@@ -159,11 +166,6 @@ export default function JourneyDetail({
                 {journey.route}
               </div>
             </div>
-            {journey.routeStops && journey.routeStops.length > 0 && (
-              <div className="mt-4">
-                <RouteMap stops={journey.routeStops} />
-              </div>
-            )}
           </div>
 
           {/* Highlights */}
