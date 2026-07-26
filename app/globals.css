@@ -599,3 +599,22 @@ html.nj-no-intro .intro-overlay {
     display: none !important;
   }
 }
+
+/* Route map stop labels: plain text with a white halo instead of Leaflet's
+   default bordered tooltip box, so place names read directly over the tiles. */
+.route-stop-label {
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  padding: 0;
+  font: 600 11px/1.2 sans-serif;
+  color: #3a2c1f;
+  text-shadow:
+    0 0 3px #fff,
+    0 0 3px #fff,
+    0 0 3px #fff,
+    0 1px 2px #fff;
+}
+.route-stop-label::before {
+  display: none;
+}

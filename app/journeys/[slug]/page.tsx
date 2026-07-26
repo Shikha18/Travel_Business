@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import HeroImageCarousel from "@/components/HeroImageCarousel";
 import LocaleLink from "@/components/LocaleLink";
+import RouteMap from "@/components/RouteMapClient";
 import { notFound } from "next/navigation";
 import {
   getJourneyBySlug,
@@ -158,6 +159,11 @@ export default function JourneyDetail({
                 {journey.route}
               </div>
             </div>
+            {journey.routeStops && journey.routeStops.length > 0 && (
+              <div className="mt-4">
+                <RouteMap stops={journey.routeStops} />
+              </div>
+            )}
           </div>
 
           {/* Highlights */}

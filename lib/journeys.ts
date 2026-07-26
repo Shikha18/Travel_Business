@@ -19,6 +19,12 @@ export type JourneyPricing = {
   priceINR: number;    // per person in INR (secondary, for Indian guests)
 };
 
+export type RouteStop = {
+  name: string;
+  lat: number;
+  lng: number;
+};
+
 export type Journey = {
   slug: string;
   title: string;
@@ -29,6 +35,7 @@ export type Journey = {
   durationNights: number;
   durationDays: number;
   route: string;           // e.g., "Delhi → Shimla → Kaza → Delhi"
+  routeStops?: RouteStop[]; // ordered waypoints (lat/lng are locale-independent, set once on the English entry)
   months: ("January" | "February" | "March" | "April" | "May" | "June" | "July" | "August" | "September" | "October" | "November" | "December")[];
   groupSize: string;       // e.g., "Max 10 travelers"
   difficulty: "Easy" | "Moderate" | "Challenging";
@@ -61,6 +68,7 @@ export const journeys: Journey[] = [
     durationNights: 9,
     durationDays: 10,
     route: "Delhi → Agra → Jaipur → Pushkar → Delhi → Varanasi (optional) → Delhi",
+    routeStops: [{ name: "Delhi", lat: 28.6139, lng: 77.209 }, { name: "Agra", lat: 27.1767, lng: 78.0081 }, { name: "Jaipur", lat: 26.9124, lng: 75.7873 }, { name: "Pushkar", lat: 26.4899, lng: 74.5511 }, { name: "Delhi", lat: 28.6139, lng: 77.209 }, { name: "Varanasi", lat: 25.3176, lng: 82.9739 }, { name: "Delhi", lat: 28.6139, lng: 77.209 }],
     months: ["September", "October", "November", "December"],
     groupSize: "Max 10 travelers",
     difficulty: "Easy",
@@ -229,6 +237,7 @@ export const journeys: Journey[] = [
     durationNights: 4,
     durationDays: 5,
     route: "Srinagar → Gulmarg → Pahalgam → Sonmarg → Srinagar",
+    routeStops: [{ name: "Srinagar", lat: 34.0837, lng: 74.7973 }, { name: "Gulmarg", lat: 34.0484, lng: 74.3805 }, { name: "Pahalgam", lat: 34.0161, lng: 75.3145 }, { name: "Sonmarg", lat: 34.3033, lng: 75.2926 }, { name: "Srinagar", lat: 34.0837, lng: 74.7973 }],
     months: ["June", "July"],
     groupSize: "Max 10 travelers",
     difficulty: "Easy",
@@ -330,6 +339,7 @@ export const journeys: Journey[] = [
     durationNights: 9,
     durationDays: 10,
     route: "Delhi ✈ Leh → Nubra Valley → Turtuk → Pangong Tso → Leh → Delhi ✈",
+    routeStops: [{ name: "Delhi", lat: 28.6139, lng: 77.209 }, { name: "Leh", lat: 34.1526, lng: 77.5771 }, { name: "Nubra Valley", lat: 34.556, lng: 77.463 }, { name: "Turtuk", lat: 34.7967, lng: 76.993 }, { name: "Pangong Tso", lat: 33.77, lng: 78.66 }, { name: "Leh", lat: 34.1526, lng: 77.5771 }, { name: "Delhi", lat: 28.6139, lng: 77.209 }],
     months: ["June", "July", "August", "September"],
     groupSize: "Max 10 travelers",
     difficulty: "Moderate",
@@ -482,6 +492,7 @@ export const journeys: Journey[] = [
     durationNights: 12,
     durationDays: 13,
     route: "Delhi ✈ Leh → Nubra → Turtuk → Pangong Tso → Hanle → Tso Moriri → Leh → Delhi ✈",
+    routeStops: [{ name: "Delhi", lat: 28.6139, lng: 77.209 }, { name: "Leh", lat: 34.1526, lng: 77.5771 }, { name: "Nubra", lat: 34.556, lng: 77.463 }, { name: "Turtuk", lat: 34.7967, lng: 76.993 }, { name: "Pangong Tso", lat: 33.77, lng: 78.66 }, { name: "Hanle", lat: 32.7794, lng: 78.9711 }, { name: "Tso Moriri", lat: 32.902, lng: 78.322 }, { name: "Leh", lat: 34.1526, lng: 77.5771 }, { name: "Delhi", lat: 28.6139, lng: 77.209 }],
     months: ["July", "August", "September"],
     groupSize: "Max 10 travelers",
     difficulty: "Moderate",
@@ -660,6 +671,7 @@ export const journeys: Journey[] = [
     durationNights: 6,
     durationDays: 7,
     route: "Delhi → Shimla → Chitkul → Tabo → Kaza → Kalpa → Shimla → Delhi",
+    routeStops: [{ name: "Delhi", lat: 28.6139, lng: 77.209 }, { name: "Shimla", lat: 31.1048, lng: 77.1734 }, { name: "Chitkul", lat: 31.3221, lng: 78.4341 }, { name: "Tabo", lat: 32.0958, lng: 78.3819 }, { name: "Kaza", lat: 32.2246, lng: 78.072 }, { name: "Kalpa", lat: 31.5405, lng: 78.2587 }, { name: "Shimla", lat: 31.1048, lng: 77.1734 }, { name: "Delhi", lat: 28.6139, lng: 77.209 }],
     months: ["June", "July"],
     groupSize: "Max 10 travelers",
     difficulty: "Moderate",
@@ -790,6 +802,7 @@ export const journeys: Journey[] = [
     durationNights: 6,
     durationDays: 7,
     route: "Delhi → Rishikesh → Chopta → Himalayan Village → Rishikesh → Delhi",
+    routeStops: [{ name: "Delhi", lat: 28.6139, lng: 77.209 }, { name: "Rishikesh", lat: 30.0869, lng: 78.2676 }, { name: "Chopta", lat: 30.4167, lng: 79.1167 }, { name: "Himalayan Village", lat: 30.4, lng: 79.1 }, { name: "Rishikesh", lat: 30.0869, lng: 78.2676 }, { name: "Delhi", lat: 28.6139, lng: 77.209 }],
     months: ["June", "July", "September"],
     groupSize: "Max 8 travelers",
     difficulty: "Easy",
@@ -921,6 +934,7 @@ export const journeys: Journey[] = [
     durationNights: 9,
     durationDays: 10,
     route: "Delhi → Guwahati → Shillong → Cherrapunji → Nongriat → Mawlynnong → Dawki → Guwahati → Delhi",
+    routeStops: [{ name: "Delhi", lat: 28.6139, lng: 77.209 }, { name: "Guwahati", lat: 26.1445, lng: 91.7362 }, { name: "Shillong", lat: 25.5788, lng: 91.8933 }, { name: "Cherrapunji", lat: 25.3, lng: 91.5822 }, { name: "Nongriat", lat: 25.2415, lng: 91.628 }, { name: "Mawlynnong", lat: 25.2019, lng: 91.9219 }, { name: "Dawki", lat: 25.1931, lng: 92.0198 }, { name: "Guwahati", lat: 26.1445, lng: 91.7362 }, { name: "Delhi", lat: 28.6139, lng: 77.209 }],
     months: ["July", "August", "September"],
     groupSize: "Max 10 travelers",
     difficulty: "Easy",
@@ -1071,6 +1085,7 @@ export const journeys: Journey[] = [
     durationNights: 9,
     durationDays: 10,
     route: "Delhi → Bir → Waterfall → Monasteries → Barot → Hanumangarh → Sherabling → Palampur → Andretta → Machhiyal → Dharamkot → Triund → Delhi",
+    routeStops: [{ name: "Delhi", lat: 28.6139, lng: 77.209 }, { name: "Bir", lat: 32.0463, lng: 76.7159 }, { name: "Barot", lat: 32.0667, lng: 76.8167 }, { name: "Palampur", lat: 32.1109, lng: 76.5363 }, { name: "Andretta", lat: 32.0965, lng: 76.5951 }, { name: "Dharamkot", lat: 32.2432, lng: 76.3237 }, { name: "Triund", lat: 32.2523, lng: 76.3922 }, { name: "Delhi", lat: 28.6139, lng: 77.209 }],
     months: ["June"],
     groupSize: "Small Groups",
     difficulty: "Moderate",
@@ -1225,6 +1240,7 @@ export const journeys: Journey[] = [
     durationNights: 6,
     durationDays: 7,
     route: "Delhi → Haridwar → Govindghat → Ghangaria → Valley of Flowers → Hemkund Sahib → Ghangaria → Govindghat → Delhi",
+    routeStops: [{ name: "Delhi", lat: 28.6139, lng: 77.209 }, { name: "Haridwar", lat: 29.9457, lng: 78.1642 }, { name: "Govindghat", lat: 30.6412, lng: 79.561 }, { name: "Ghangaria", lat: 30.6803, lng: 79.6027 }, { name: "Valley of Flowers", lat: 30.7286, lng: 79.6047 }, { name: "Hemkund Sahib", lat: 30.6961, lng: 79.6083 }, { name: "Ghangaria", lat: 30.6803, lng: 79.6027 }, { name: "Govindghat", lat: 30.6412, lng: 79.561 }, { name: "Delhi", lat: 28.6139, lng: 77.209 }],
     months: ["July", "August", "September"],
     groupSize: "Max 10 travelers",
     difficulty: "Moderate",
@@ -1348,6 +1364,7 @@ export const journeys: Journey[] = [
     durationNights: 8,
     durationDays: 9,
     route: "Kochi → Munnar → Thekkady → Alleppey (houseboat) → Kumarakom → Kochi",
+    routeStops: [{ name: "Kochi", lat: 9.9312, lng: 76.2673 }, { name: "Munnar", lat: 10.0889, lng: 77.0595 }, { name: "Thekkady", lat: 9.6041, lng: 77.1653 }, { name: "Alleppey", lat: 9.4981, lng: 76.3388 }, { name: "Kumarakom", lat: 9.6186, lng: 76.4302 }, { name: "Kochi", lat: 9.9312, lng: 76.2673 }],
     months: ["November", "December", "January", "February"],
     groupSize: "Max 10 travelers",
     difficulty: "Easy",
