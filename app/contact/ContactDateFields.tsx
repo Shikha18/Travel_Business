@@ -5,9 +5,11 @@ import { useState } from "react";
 export default function ContactDateFields({
   startLabel,
   endLabel,
+  required,
 }: {
   startLabel: string;
   endLabel: string;
+  required?: boolean;
 }) {
   const today = new Date().toISOString().split("T")[0];
   const [startDate, setStartDate] = useState("");
@@ -30,6 +32,7 @@ export default function ContactDateFields({
         <input
           name="startDate"
           type="date"
+          required={required}
           min={today}
           value={startDate}
           onChange={(e) => setStartDate(e.target.value)}
@@ -43,6 +46,7 @@ export default function ContactDateFields({
         <input
           name="endDate"
           type="date"
+          required={required}
           min={startDate || today}
           onChange={handleEndChange}
           className={`mt-1 w-full rounded-xl border bg-white px-4 py-3 text-sm focus:outline-none focus:ring-1 ${

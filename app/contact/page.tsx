@@ -65,24 +65,34 @@ export default function ContactPage({
                 errorMessage={t("validation.email")}
               />
             </div>
+            <PhoneField
+              label={t("contact.form.whatsapp")}
+              name="whatsapp"
+              required
+              errorMessage={t("validation.phone")}
+            />
             <div className="grid gap-5 sm:grid-cols-2">
               <Field
                 label={t("contact.form.country")}
                 name="country"
                 placeholder={t("contact.form.countryPlaceholder")}
+                required
               />
-              <PhoneField
-                label={t("contact.form.whatsapp")}
-                name="whatsapp"
-                errorMessage={t("validation.phone")}
+              <Field
+                label={t("contact.form.travelers")}
+                name="travelers"
+                placeholder={t("contact.form.travelersPlaceholder")}
+                required
               />
             </div>
             <div>
               <label className="block text-sm font-medium text-ink-900">
                 {t("contact.form.tour")}
+                <span className="ml-0.5 text-saffron-600">*</span>
               </label>
               <select
                 name="journey"
+                required
                 className="mt-1.5 w-full rounded-xl border border-ink-900/10 bg-white px-4 py-3 text-sm focus:border-saffron-500 focus:outline-none focus:ring-1 focus:ring-saffron-500"
                 defaultValue=""
               >
@@ -99,26 +109,23 @@ export default function ContactPage({
             <div>
               <label className="block text-sm font-medium text-ink-900">
                 {t("contact.form.dates")}
+                <span className="ml-0.5 text-saffron-600">*</span>
               </label>
               <ContactDateFields
                 startLabel={t("contact.form.startDate")}
                 endLabel={t("contact.form.endDate")}
-              />
-            </div>
-            <div>
-              <Field
-                label={t("contact.form.travelers")}
-                name="travelers"
-                placeholder={t("contact.form.travelersPlaceholder")}
+                required
               />
             </div>
             <div>
               <label className="block text-sm font-medium text-ink-900">
                 {t("contact.form.message")}
+                <span className="ml-0.5 text-saffron-600">*</span>
               </label>
               <textarea
                 name="message"
                 rows={5}
+                required
                 placeholder={t("contact.form.messagePlaceholder")}
                 className="mt-1.5 w-full rounded-xl border border-ink-900/10 bg-white px-4 py-3 text-sm focus:border-saffron-500 focus:outline-none focus:ring-1 focus:ring-saffron-500"
               />

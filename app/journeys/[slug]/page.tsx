@@ -340,6 +340,12 @@ export default function JourneyDetail({
                 <LocaleLink href="/contact" className="btn-secondary">
                   {t("cta.requestEmail")}
                 </LocaleLink>
+                <LocaleLink
+                  href="/consult"
+                  className="mt-1 text-center text-sm font-semibold text-terracotta-600 underline underline-offset-2 hover:text-terracotta-700"
+                >
+                  {t("tourDetail.freeConsult")}
+                </LocaleLink>
               </div>
             </div>
           </div>

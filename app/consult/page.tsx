@@ -35,6 +35,10 @@ export default function ConsultPage({
 
   const { extensions } = siteConfig.consult;
 
+  const waLink = `https://wa.me/${siteConfig.whatsappNumber}?text=${encodeURIComponent(
+    "Hi! I'd like to book a free 30-minute India travel consultation."
+  )}`;
+
   return (
     <>
       {/* HERO — headline + compact video, aligned side by side */}
@@ -98,6 +102,7 @@ export default function ConsultPage({
                 label={t("consult.form.availabilityTime")}
                 name="availabilityTime"
                 placeholder={t("consult.form.availabilityTimePlaceholder")}
+                required
               />
               <button type="submit" className="btn-primary w-full sm:w-auto">
                 {t("consult.form.submit")}
@@ -119,7 +124,9 @@ export default function ConsultPage({
                 {t("consult.pricing.free.body")}
               </p>
               <a
-                href="#book"
+                href={waLink}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="btn-primary mt-auto inline-flex w-full items-center justify-center pt-4"
               >
                 {t("consult.pricing.bookNow")}
