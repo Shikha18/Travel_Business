@@ -93,9 +93,11 @@ export default function RootLayout({
       <head>
         {/* Google Analytics 4 — ID: G-X7QYGNLDXL */}
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-X7QYGNLDXL" />
+        {/* Google Ads conversion tag — ID: AW-18332876056 */}
+        <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18332876056" />
         <script
           dangerouslySetInnerHTML={{
-            __html: `window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-X7QYGNLDXL');`,
+            __html: `window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-X7QYGNLDXL');gtag('config','AW-18332876056');`,
           }}
         />
         {/* Meta Pixel — replace YOUR_PIXEL_ID_HERE with your 15-16 digit Pixel ID from Meta Business Manager → Events Manager */}
