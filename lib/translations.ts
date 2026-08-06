@@ -165,6 +165,8 @@ export const translations = {
     "tourDetail.route": "Route",
     "tourDetail.highlights": "Trip highlights",
     "tourDetail.itinerary": "Day-by-day itinerary",
+    "tourDetail.showFullItinerary": "Show full itinerary",
+    "tourDetail.showLessItinerary": "Show less",
     "tourDetail.included": "What's included",
     "tourDetail.notIncluded": "Not included",
     "tourDetail.startingFrom": "Starting from",
@@ -175,7 +177,9 @@ export const translations = {
     "tourDetail.otherJourneys": "Other journeys you might love",
     "tourDetail.freeConsult": "Not sure yet? Book a free consultation →",
     "tourDetail.difficultyLabel": "Difficulty",
-    "tourDetail.travelTips": "Good to know — for European travelers",
+    "tourDetail.travelTips": "Good to know",
+    "tourDetail.showMoreTips": "Show more tips",
+    "tourDetail.showLessTips": "Show less",
     "tourDetail.waMessage":
       "Hi! I'm interested in the {tour} journey. Can you share more details?",
 
@@ -561,6 +565,8 @@ export const translations = {
     "tourDetail.route": "Route",
     "tourDetail.highlights": "Reise-Highlights",
     "tourDetail.itinerary": "Tag-für-Tag-Programm",
+    "tourDetail.showFullItinerary": "Vollständiges Programm anzeigen",
+    "tourDetail.showLessItinerary": "Weniger anzeigen",
     "tourDetail.included": "Inklusive",
     "tourDetail.notIncluded": "Nicht inklusive",
     "tourDetail.startingFrom": "Ab",
@@ -571,7 +577,9 @@ export const translations = {
     "tourDetail.otherJourneys": "Weitere Reisen, die Sie lieben könnten",
     "tourDetail.freeConsult": "Noch unentschlossen? Kostenloses Beratungsgespräch buchen →",
     "tourDetail.difficultyLabel": "Schwierigkeit",
-    "tourDetail.travelTips": "Gut zu wissen — für europäische Reisende",
+    "tourDetail.travelTips": "Gut zu wissen",
+    "tourDetail.showMoreTips": "Mehr Tipps anzeigen",
+    "tourDetail.showLessTips": "Weniger anzeigen",
     "tourDetail.waMessage":
       "Hallo! Ich interessiere mich für die Reise {tour}. Können Sie mir mehr Details zusenden?",
 
@@ -956,6 +964,8 @@ export const translations = {
     "tourDetail.route": "Itinéraire",
     "tourDetail.highlights": "Points forts",
     "tourDetail.itinerary": "Programme jour par jour",
+    "tourDetail.showFullItinerary": "Voir le programme complet",
+    "tourDetail.showLessItinerary": "Voir moins",
     "tourDetail.included": "Inclus",
     "tourDetail.notIncluded": "Non inclus",
     "tourDetail.startingFrom": "À partir de",
@@ -966,7 +976,9 @@ export const translations = {
     "tourDetail.otherJourneys": "D'autres voyages qui pourraient vous plaire",
     "tourDetail.freeConsult": "Pas encore sûr ? Réservez une consultation gratuite →",
     "tourDetail.difficultyLabel": "Difficulté",
-    "tourDetail.travelTips": "Bon à savoir — pour les voyageurs européens",
+    "tourDetail.travelTips": "Bon à savoir",
+    "tourDetail.showMoreTips": "Voir plus de conseils",
+    "tourDetail.showLessTips": "Voir moins",
     "tourDetail.waMessage":
       "Bonjour ! Je suis intéressé(e) par le voyage {tour}. Pouvez-vous me donner plus de détails ?",
 
@@ -1354,6 +1366,8 @@ export const translations = {
     "tourDetail.route": "Ruta",
     "tourDetail.highlights": "Lo mejor del viaje",
     "tourDetail.itinerary": "Itinerario día a día",
+    "tourDetail.showFullItinerary": "Ver el itinerario completo",
+    "tourDetail.showLessItinerary": "Ver menos",
     "tourDetail.included": "Incluido",
     "tourDetail.notIncluded": "No incluido",
     "tourDetail.startingFrom": "Desde",
@@ -1364,7 +1378,9 @@ export const translations = {
     "tourDetail.otherJourneys": "Otros viajes que podrían gustarte",
     "tourDetail.freeConsult": "¿Aún no estás seguro? Reserva una consulta gratuita →",
     "tourDetail.difficultyLabel": "Dificultad",
-    "tourDetail.travelTips": "Lo que debes saber — para viajeros europeos",
+    "tourDetail.travelTips": "Lo que debes saber",
+    "tourDetail.showMoreTips": "Ver más consejos",
+    "tourDetail.showLessTips": "Ver menos",
     "tourDetail.waMessage":
       "¡Hola! Me interesa el viaje {tour}. ¿Puedes compartir más detalles?",
 
@@ -1752,6 +1768,8 @@ export const translations = {
     "tourDetail.route": "Itinerario",
     "tourDetail.highlights": "I punti salienti",
     "tourDetail.itinerary": "Programma giorno per giorno",
+    "tourDetail.showFullItinerary": "Vedi il programma completo",
+    "tourDetail.showLessItinerary": "Vedi meno",
     "tourDetail.included": "Incluso",
     "tourDetail.notIncluded": "Non incluso",
     "tourDetail.startingFrom": "A partire da",
@@ -1762,7 +1780,9 @@ export const translations = {
     "tourDetail.otherJourneys": "Altri viaggi che potrebbero piacerti",
     "tourDetail.freeConsult": "Non sei ancora sicuro? Prenota una consulenza gratuita →",
     "tourDetail.difficultyLabel": "Difficoltà",
-    "tourDetail.travelTips": "Da sapere — per i viaggiatori europei",
+    "tourDetail.travelTips": "Da sapere",
+    "tourDetail.showMoreTips": "Vedi altri consigli",
+    "tourDetail.showLessTips": "Vedi meno",
     "tourDetail.waMessage":
       "Ciao! Sono interessato/a al viaggio {tour}. Puoi condividere più dettagli?",
 
@@ -2150,6 +2170,8 @@ export const translations = {
     "tourDetail.route": "Itinerário",
     "tourDetail.highlights": "Destaques da viagem",
     "tourDetail.itinerary": "Programa dia a dia",
+    "tourDetail.showFullItinerary": "Ver o programa completo",
+    "tourDetail.showLessItinerary": "Ver menos",
     "tourDetail.included": "Incluído",
     "tourDetail.notIncluded": "Não incluído",
     "tourDetail.startingFrom": "A partir de",
@@ -2160,7 +2182,9 @@ export const translations = {
     "tourDetail.otherJourneys": "Outras viagens que pode adorar",
     "tourDetail.freeConsult": "Ainda não tem certeza? Marque uma consulta gratuita →",
     "tourDetail.difficultyLabel": "Dificuldade",
-    "tourDetail.travelTips": "Bom saber — para viajantes europeus",
+    "tourDetail.travelTips": "Bom saber",
+    "tourDetail.showMoreTips": "Ver mais dicas",
+    "tourDetail.showLessTips": "Ver menos",
     "tourDetail.waMessage":
       "Olá! Tenho interesse na viagem {tour}. Pode partilhar mais detalhes?",
 
@@ -2548,6 +2572,8 @@ export const translations = {
     "tourDetail.route": "Route",
     "tourDetail.highlights": "Hoogtepunten",
     "tourDetail.itinerary": "Dag-voor-dag programma",
+    "tourDetail.showFullItinerary": "Volledig programma bekijken",
+    "tourDetail.showLessItinerary": "Minder weergeven",
     "tourDetail.included": "Inbegrepen",
     "tourDetail.notIncluded": "Niet inbegrepen",
     "tourDetail.startingFrom": "Vanaf",
@@ -2558,7 +2584,9 @@ export const translations = {
     "tourDetail.otherJourneys": "Andere reizen die je misschien leuk vindt",
     "tourDetail.freeConsult": "Nog niet zeker? Boek een gratis adviesgesprek →",
     "tourDetail.difficultyLabel": "Moeilijkheidsgraad",
-    "tourDetail.travelTips": "Goed om te weten — voor Europese reizigers",
+    "tourDetail.travelTips": "Goed om te weten",
+    "tourDetail.showMoreTips": "Meer tips bekijken",
+    "tourDetail.showLessTips": "Minder weergeven",
     "tourDetail.waMessage":
       "Hoi! Ik ben geïnteresseerd in de {tour} reis. Kun je meer details delen?",
 

@@ -224,7 +224,7 @@ export default function Home({
 
             {/* CTA */}
             <LocaleLink
-              href="/why-trustelle"
+              href="/why-gotrustelle"
               className="shrink-0 text-sm font-semibold text-saffron-600 hover:text-saffron-700 hover:underline"
             >
               Our story →

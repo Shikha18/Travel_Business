@@ -140,8 +140,8 @@ export default function ConsultPage({
                     +{ext.minutes} {t("consult.pricing.perMinutes")}
                   </span>
                   <span className="flex items-baseline gap-0.5 font-display text-2xl font-semibold text-ink-900">
-                    <span className="font-sans text-lg">€</span>
-                    {ext.priceEUR}
+                    <span className="font-sans text-lg">$</span>
+                    {ext.priceUSD}
                   </span>
                 </div>
                 <p className="mt-2 text-sm text-ink-600 leading-relaxed">

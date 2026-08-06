@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import HeroImageCarousel from "@/components/HeroImageCarousel";
+import ItineraryList from "@/components/ItineraryList";
+import ExpandableTipsList from "@/components/ExpandableTipsList";
 import LocaleLink from "@/components/LocaleLink";
 import RouteMap from "@/components/RouteMapClient";
 import { notFound } from "next/navigation";
@@ -195,69 +197,24 @@ export default function JourneyDetail({
             <h2 className="font-display text-2xl font-semibold md:text-3xl">
               {t("tourDetail.itinerary")}
             </h2>
-            <ol className="mt-6 space-y-4">
-              {journey.itinerary.map((day) => (
-                <li
-                  key={day.day}
-                  className="relative overflow-hidden rounded-2xl border border-ink-900/5 bg-white shadow-soft"
-                >
-                  {day.image && (
-                    <div className="relative h-48 w-full sm:h-56">
-                      <Image
-                        src={day.image}
-                        alt={day.title}
-                        fill
-                        sizes="(max-width: 768px) 100vw, 66vw"
-                        className="object-cover"
-                      />
-                    </div>
-                  )}
-                  <div className="p-6">
-                    <div className="flex items-start gap-5">
-                      <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-warm-gradient text-lg font-semibold text-white">
-                        {day.day}
-                      </div>
-                      <div className="flex-1">
-                        <h3 className="font-display text-lg font-semibold text-ink-900">
-                          {day.title}
-                        </h3>
-                        <p className="mt-2 text-sm text-ink-700 leading-relaxed">
-                          {day.description}
-                        </p>
-                        <div className="mt-3 flex flex-wrap gap-3 text-xs text-ink-600">
-                          {day.overnight && (
-                            <span className="rounded-full bg-cream-100 px-3 py-1">
-                              🏠 {day.overnight}
-                            </span>
-                          )}
-                          {day.highlight && (
-                            <span className="rounded-full bg-saffron-100 px-3 py-1 text-saffron-700">
-                              ✨ {day.highlight}
-                            </span>
-                          )}
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </li>
-              ))}
-            </ol>
+            <ItineraryList
+              itinerary={journey.itinerary}
+              showFullLabel={t("tourDetail.showFullItinerary")}
+              showLessLabel={t("tourDetail.showLessItinerary")}
+            />
           </div>
 
-          {/* Travel tips for European travelers */}
+          {/* Travel tips */}
           {journey.travelTips.length > 0 && (
             <div className="rounded-2xl border border-saffron-200 bg-saffron-50/50 p-6">
               <h3 className="font-display text-xl font-semibold text-saffron-700">
                 {t("tourDetail.travelTips")}
               </h3>
-              <ul className="mt-4 space-y-2.5">
-                {journey.travelTips.map((tip, i) => (
-                  <li key={i} className="flex gap-2 text-sm text-ink-800">
-                    <span className="text-saffron-600">•</span>
-                    <span>{tip}</span>
-                  </li>
-                ))}
-              </ul>
+              <ExpandableTipsList
+                tips={journey.travelTips}
+                showFullLabel={t("tourDetail.showMoreTips")}
+                showLessLabel={t("tourDetail.showLessTips")}
+              />
             </div>
           )}
 
@@ -306,12 +263,12 @@ export default function JourneyDetail({
                     <li key={i} className="flex items-center justify-between gap-3">
                       <span className="text-xs text-ink-600 leading-tight">{tier.label}</span>
                       <span className="shrink-0 font-semibold text-ink-900 text-sm">
-                        {tier.priceEUR > 0 ? `€${tier.priceEUR.toLocaleString()}` : `₹${tier.priceINR.toLocaleString()}`}
+                        {tier.priceUSD > 0 ? `$${tier.priceUSD.toLocaleString()}` : `₹${tier.priceINR.toLocaleString()}`}
                       </span>
                     </li>
                   ))}
                 </ul>
-                <p className="mt-3 text-[11px] text-ink-500">Per person · prices in EUR</p>
+                <p className="mt-3 text-[11px] text-ink-500">Per person · prices in USD</p>
               </div>
 
               <div className="mt-4 rounded-xl bg-cream-100 p-4">

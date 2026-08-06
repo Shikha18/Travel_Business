@@ -127,7 +127,7 @@ export default function RootLayout({
                 addressCountry: "IN",
               },
               sameAs: [siteConfig.social.instagram],
-              priceRange: "€€",
+              priceRange: "$$",
             }),
           }}
         />

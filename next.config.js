@@ -7,6 +7,15 @@ const nextConfig = {
       { protocol: "https", hostname: "source.unsplash.com" },
     ],
   },
+  async redirects() {
+    return [
+      {
+        source: "/why-trustelle",
+        destination: "/why-gotrustelle",
+        permanent: true,
+      },
+    ];
+  },
 };
 
 module.exports = nextConfig;

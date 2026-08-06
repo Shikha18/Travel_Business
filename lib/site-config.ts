@@ -81,8 +81,8 @@ export const siteConfig = {
   consult: {
     freeMinutes: 30,
     extensions: [
-      { minutes: 30, priceEUR: 35, priceUSD: 40, stripeLink: "" },
-      { minutes: 60, priceEUR: 60, priceUSD: 68, stripeLink: "" },
+      { minutes: 30, priceUSD: 40, stripeLink: "" },
+      { minutes: 60, priceUSD: 68, stripeLink: "" },
     ],
   },
 };

@@ -49,14 +49,14 @@ export default function JourneyCard({ journey, defaultHover = false }: { journey
 
         <div className="mt-5 flex items-center justify-between border-t border-ink-900/5 pt-4">
           {(() => {
-            const eurPrices = journey.pricing.map((p) => p.priceEUR).filter((p) => p > 0);
-            const minEUR = eurPrices.length > 0 ? Math.min(...eurPrices) : 0;
+            const usdPrices = journey.pricing.map((p) => p.priceUSD).filter((p) => p > 0);
+            const minUSD = usdPrices.length > 0 ? Math.min(...usdPrices) : 0;
             const minINR = Math.min(...journey.pricing.map((p) => p.priceINR).filter((p) => p > 0));
             return (
               <div className="text-sm">
                 <span className="text-xs text-ink-500">from </span>
-                {minEUR > 0 ? (
-                  <span className="font-semibold text-ink-900">€{minEUR.toLocaleString()} pp</span>
+                {minUSD > 0 ? (
+                  <span className="font-semibold text-ink-900">${minUSD.toLocaleString()} pp</span>
                 ) : (
                   <span className="font-semibold text-ink-900">₹{minINR.toLocaleString()} pp</span>
                 )}

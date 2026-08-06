@@ -17,7 +17,7 @@ export default function StickyMobileCTA({ price, durationDays, groupSize, waLink
         <div className="min-w-0">
           <div className="text-[10px] font-semibold uppercase tracking-wider text-white/50">From</div>
           <div className="text-sm font-bold text-white">
-            €{price.toLocaleString("en-GB")}{" "}
+            ${price.toLocaleString("en-US")}{" "}
             <span className="font-normal text-white/50">/ person</span>
           </div>
           <div className="mt-0.5 flex items-center gap-2 text-[10px] text-white/40">

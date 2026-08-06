@@ -10,15 +10,15 @@ export const metadata: Metadata = {
   description:
     "Learn why GoTrustelle exists — from a chance meeting in a Rishikesh café to a travel company built on trust, connection and real India experiences.",
   alternates: {
-    canonical: `${siteConfig.url}/why-trustelle`,
+    canonical: `${siteConfig.url}/why-gotrustelle`,
     languages: {
-      en: `${siteConfig.url}/why-trustelle`,
-      de: `${siteConfig.url}/why-trustelle?lang=de`,
+      en: `${siteConfig.url}/why-gotrustelle`,
+      de: `${siteConfig.url}/why-gotrustelle?lang=de`,
     },
   },
 };
 
-export default function WhyTrustelle({
+export default function WhyGoTrustelle({
   searchParams,
 }: {
   searchParams?: { lang?: string };
