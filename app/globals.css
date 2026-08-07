@@ -19,10 +19,10 @@
   }
   html {
     scroll-behavior: smooth;
-    overflow-x: hidden;
+    overflow-x: clip;
   }
   body {
-    overflow-x: hidden;
+    overflow-x: clip;
     color: rgb(var(--foreground));
     background: rgb(var(--background));
     font-feature-settings: "cv11", "ss01";
